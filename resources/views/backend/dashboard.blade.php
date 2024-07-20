@@ -39,8 +39,8 @@
                 <div class="card-body">
                     <div class="d-flex align-items-center">
                         <div>
-                            <h4 class="mb-0 text-white">Total Tests</h4>
-                            <h4 class="my-1 text-white">{{ $data['tests'] }}</h4>
+                            <h4 class="mb-0 text-white">Total Quizs</h4>
+                            <h4 class="my-1 text-white">{{ $data['quizs'] }}</h4>
 
                         </div>
                         <div class="widgets-icons bg-light-transparent text-white ms-auto"><i class="bx bxs-category"></i>

@@ -53,11 +53,11 @@
                 <div class="menu-title">Quiz</div>
             </a>
             <ul>
-                <li> <a href="{{ route('tests.create') }}"><i class="bx bx-right-arrow-alt"></i>Tạo Quiz</a>
+                <li> <a href="{{ route('quizs.create') }}"><i class="bx bx-right-arrow-alt"></i>Tạo Quiz</a>
                 </li>
-                <li> <a href="{{ route('tests.index') }}"><i class="bx bx-right-arrow-alt"></i>Danh sách Quiz</a>
+                <li> <a href="{{ route('quizs.index') }}"><i class="bx bx-right-arrow-alt"></i>Danh sách Quiz</a>
                 </li>
-                <li> <a href="{{ route('test.results') }}"><i class="bx bx-right-arrow-alt"></i>Danh sách kết quả</a>
+                <li> <a href="{{ route('quizs.results') }}"><i class="bx bx-right-arrow-alt"></i>Danh sách kết quả</a>
                 </li>
             </ul>
         </li>

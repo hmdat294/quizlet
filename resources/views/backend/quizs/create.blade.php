@@ -8,7 +8,7 @@
             <div class="ps-3">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb mb-0 p-0">
-                        <li class="breadcrumb-item"><a href="{{ route('tests.index') }}"><i class="bx bx-book"></i></a>
+                        <li class="breadcrumb-item"><a href="{{ route('quizs.index') }}"><i class="bx bx-book"></i></a>
                         </li>
                         <li class="breadcrumb-item active" aria-current="page">Tạo Quiz mới</li>
                     </ol>
@@ -18,7 +18,7 @@
         </div>
         <!--end breadcrumb-->
         <hr />
-        <form action="{{ route('tests.store') }}" method="POST" enctype="multipart/form-data"
+        <form action="{{ route('quizs.store') }}" method="POST" enctype="multipart/form-data"
             class="row g-3 needs-validation" novalidate>
             @csrf
             <div class="card border-top border-0 border-4 border-primary">
@@ -79,12 +79,12 @@
                                 <div class="row row my-2 border p-2" style="border-radius:10px;">
                                     @for ($j = 0; $j < 2; $j++)
                                         <div class="col-6 ">
-                                            <label for="questions[{{ $i * 2 + $j }}][options][]" class="form-label">Câu
+                                            <label for="questions[0][options][{{ $i * 2 + $j }}]" class="form-label">Câu
                                                 trả lời {{ $i * 2 + $j + 1 }}</label>
                                             <div class="input-group">
                                                 <input type="text" class="form-control border-start-0"
-                                                    id="questions[{{ $i * 2 + $j }}][options][]"
-                                                    name="questions[{{ $i * 2 + $j }}][options][]"
+                                                    id="questions[0][options][{{ $i * 2 + $j }}]"
+                                                    name="questions[0][options][{{ $i * 2 + $j }}]"
                                                     placeholder="Câu trả lời {{ $i * 2 + $j + 1 }}">
                                                 <div class="invalid-feedback">Hãy nhập câu trả lời hợp lệ.</div>
                                             </div>

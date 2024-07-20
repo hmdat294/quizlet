@@ -11,15 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tests', function (Blueprint $table) {
+        Schema::create('quizs', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('category_id')->nullable();
-            $table->foreign('category_id')->references('id')->on('category')->onDelete('set null');
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('set null');
             $table->string('title');
             $table->text('description')->nullable();
             $table->unsignedTinyInteger('duration')->default(0);
-            $table->unsignedTinyInteger('pass_mark')->default(0);
-            $table->unsignedTinyInteger('number_of_questions')->default(0);
             $table->boolean('certification')->default(false);
             $table->timestamps();
         });
@@ -30,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tests');
+        Schema::dropIfExists('quizs');
     }
 };

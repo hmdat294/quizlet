@@ -13,14 +13,14 @@ return new class extends Migration
     {
         Schema::create('questions', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('test_id')->constrained('tests')->onUpdate('cascade')->onDelete('cascade');
+            $table->unsignedBigInteger('quiz_id');
+            $table->foreign('quiz_id')->references('id')->on('quizs')->onDelete('cascade');
             $table->text('question');
             $table->text('option_1');
             $table->text('option_2');
             $table->text('option_3');
             $table->text('option_4');
             $table->tinyInteger('answer');
-            $table->boolean('is_image')->default(false);
             $table->timestamps();
         });
     }

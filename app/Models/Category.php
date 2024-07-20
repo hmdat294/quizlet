@@ -5,20 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Test extends Model
+class Category extends Model
 {
     use HasFactory;
-
+    protected $table = 'categories';
     protected $fillable = [
         'title',
-        'duration',
-        'pass_mark',
-        'number_of_questions',
-        'description'
+        'image',
+        'status'
     ];
-
-    public function questions()
+    public function Quizs()
     {
-        return $this->hasMany(Question::class);
+        return $this->hasMany(Quiz::class);
     }
 }

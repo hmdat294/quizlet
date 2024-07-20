@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Result extends Model
 {
     use HasFactory;
-
+    protected $table = 'results';
     protected $guarded = [];
 
     protected $casts = [
@@ -24,7 +24,7 @@ class Result extends Model
 
     public function test()
     {
-        return $this->belongsTo(Test::class);
+        return $this->belongsTo(Quiz::class);
     }
 
     public function user()

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\Models\Test;
+use App\Models\Quiz;
 use App\Models\Question;
 use App\Models\Result;
 use App\Models\User;
@@ -20,7 +20,7 @@ class DashboardController extends Controller
         if (Auth::check() && Auth::user()->is_admin) {
             $data = [
                 'users' => User::count(),
-                'tests' => Test::count(),
+                'quizs' => Quiz::count(),
                 'questions' => Question::count(),
                 'results' => Result::count(),
             ];

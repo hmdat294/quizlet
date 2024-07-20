@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
-use App\Models\Test;
+use App\Models\Quiz;
 use App\Models\Question;
 use App\Models\Result;
 use Illuminate\Support\Facades\Auth;
@@ -18,9 +18,9 @@ class PagesController extends Controller
      */
     public function home()
     {
-        $tests = Test::all();
+        $quizs = Quiz::all();
 
-        return view('frontend.home', compact('tests'));
+        return view('frontend.home', compact('quizs'));
     }
 
 
@@ -60,32 +60,32 @@ class PagesController extends Controller
         // return view('frontend.profile', compact('user'));
     }
 
-    public function tests()
+    public function quizzes()
     {
-        $tests = Test::all();
+        $quizs = Quiz::all();
 
-        return view('frontend.tests', compact('tests'));
+        return view('frontend.quizzes', compact('quizs'));
     }
 
     /**
      * Display the specified resource.
      */
-    public function viewTest($id)
+    public function viewQuiz($id)
     {
-        $test = Test::find($id);
+        $quiz = Quiz::find($id);
         // dd($test);
 
-        return view('frontend.view_test', compact('test'));
+        return view('frontend.view_quiz', compact('quiz'));
     }
 
 
-    public function startTest($id)
+    public function startQuiz($id)
     {
         if (Auth::check()) {
 
-            $test = Test::find($id);
+            $quiz = Quiz::find($id);
 
-            $data = Result::where([['test_id', $id], ['user_id', Auth::user()->id]])
+            $data = Result::where([['quiz_id', $id], ['user_id', Auth::user()->id]])
                 ->whereMonth('created_at', date('m'))
                 ->count();
             $counter = Result::where('user_id', Auth::user()->id)
@@ -100,12 +100,11 @@ class PagesController extends Controller
                 return redirect()->back()->withSuccess('You already have given 3 tests for this month. Please try again next month.');
             }
 
-            $questions = Question::where('test_id', $id)
+            $questions = Question::where('quiz_id', $id)
                 ->inRandomOrder()
-                ->limit($test->number_of_questions)
                 ->get();
 
-            return view('frontend.start_test', compact('test', 'questions'));
+            return view('frontend.start_quiz', compact('quiz', 'questions'));
         } else {
             return redirect("login")->withSuccess('Please Login to Start Test');
         }
@@ -115,7 +114,7 @@ class PagesController extends Controller
     public function result(Request $request)
     {
         // dd($request);
-        $test = Test::find($request->test_id);
+        $quiz = Quiz::find($request->quiz_id);
         $user = Auth::user()->id;
         $score = 0;
 
@@ -128,15 +127,15 @@ class PagesController extends Controller
             }
         }
         // dd($score);
-        $pass = $score >= $test->pass_mark ? true : false;
+        $pass = $score >= $quiz->pass_mark ? true : false;
 
         Result::create([
             'user_id' => $user,
-            'test_id' => $test->id,
+            'quiz_id' => $quiz->id,
             'score'   => $score,
             'is_pass' => $pass,
         ]);
 
-        return view('frontend.test_result', compact('test', 'pass', 'score'));
+        return view('frontend.quiz_result', compact('quiz', 'pass', 'score'));
     }
 }

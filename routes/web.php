@@ -6,7 +6,7 @@ use BayAreaWebPro\MultiStepForms\MultiStepForm;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CategoriesController;
-use App\Http\Controllers\TestController;
+use App\Http\Controllers\QuizController;
 use App\Http\Controllers\QuestionController;
 // Frontend Controllers
 use App\Http\Controllers\PagesController;
@@ -26,8 +26,8 @@ Route::post('post-registration', [AuthController::class, 'postRegistration'])->n
 Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::group(['middleware' => 'auth'], function () {
-    Route::get('/tests', [PagesController::class, "tests"])->name('home');
-    Route::get('/test/{id}', [PagesController::class, "viewTest"])->name('test.view');
+    Route::get('/quizzes', [PagesController::class, "quizzes"])->name('home');
+    Route::get('/quiz/{id}', [PagesController::class, "viewQuiz"])->name('quiz.view');
     Route::get('/start-test/{id}', [PagesController::class, "startTest"])->name('test.start');
     Route::post('/test-result', [PagesController::class, "result"])->name('test.result');
     Route::get('/about-us', [PagesController::class, "aboutUs"])->name('about_us');
@@ -49,10 +49,10 @@ Route::group(['middleware' => 'auth'], function () {
 
 Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
     Route::get('/dashboard', [DashboardController::class, "dashboard"])->name('dashboard');
-    Route::get('/test-results', [TestController::class, "testResults"])->name('test.results');
+    Route::get('/quiz-results', [QuizController::class, "quizResults"])->name('quizs.results');
     Route::resource('categories', CategoriesController::class);
     Route::resource('users', UserController::class);
-    Route::resource('tests', TestController::class);
+    Route::resource('quizs', QuizController::class);
     Route::resource('questions', QuestionController::class);
 
 });
