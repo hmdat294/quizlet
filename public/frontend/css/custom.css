@@ -1,0 +1,44 @@
+/* Add here all your CSS customizations */
+#header .header-nav-main nav>ul>li>a {
+    font-size: 14px;
+}
+
+.mcq-list {
+    list-style: none;
+    position: relative
+}
+
+.mcq-list>li>label {
+    cursor: pointer;
+}
+
+@media (max-width: 575px) {
+    .mcq-list {
+        padding-left: 10px;
+    }
+}
+
+.jst-hours {
+    display: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 25px;
+    height: 15px;
+    accent-color: green;
+}
+
+.profile-tabs {
+    border-radius: 10px;
+    background: lavender;
+}
+
+#footer .footer-copyright p {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+section.section {
+    background: none !important;
+}
