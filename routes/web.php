@@ -58,3 +58,5 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
 // Route::get('/', function(){
 //     echo "Đăng đã ở đây";
 // });
+
+//Minh dat ne
