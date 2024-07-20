@@ -53,3 +53,10 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
     Route::resource('tests', TestController::class);
     Route::resource('questions', QuestionController::class);
 });
+
+//Đăng đã ở đây
+// Route::get('/', function(){
+//     echo "Đăng đã ở đây";
+// });
+
+//Minh dat ne
