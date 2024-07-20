@@ -2,7 +2,6 @@
 
 @section('content')
 
-<<<<<<< HEAD
 <section class="page-header page-header-classic" style="padding-top: 100px; margin:0;">
     <div class="container">
         <div class="row">
@@ -18,24 +17,12 @@
                 <span class="page-header-title-border visible" style="width: 145.509px;"></span>
                 <h1 data-title-border="">Tests</h1>
 
-=======
-<section class="page-header page-header-classic" style="padding-top: 120px; margin:0;">
-    <div class="container">
-        <div class="row">
-            <div class="col p-static">
-                <span class="page-header-title-border visible" style="width: 100px;"></span>
-                <h1 data-title-border="">Tests</h1>
->>>>>>> minhdat
             </div>
         </div>
     </div>
 </section>
 
-<<<<<<< HEAD
-<section class="section border-0 my-0">
-=======
 <section class="container border-0 my-4">
->>>>>>> minhdat
     <div class="row">
         <div class="col-11 mx-auto">
 
@@ -46,32 +33,18 @@
                 <div class="row">
 
                     @foreach ($tests as $test)
-<<<<<<< HEAD
-                    <div class="col-md-4 col-lg-4 mb-3 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400" style="animation-delay: 400ms;">
-
-                        <div class="card card-background-image-hover border-0" style="background-image: url({{ asset('frontend/img/blog/square/blog-1.jpg') }});">
-=======
                     <div class="col-md-3 col-lg-3 mb-3 appear-animation animated fadeInUpShorter appear-animation-visible profile-tabs rounded shadow" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400" style="animation-delay: 400ms;">
                         <div class="card border-0 profile-tabs">
->>>>>>> minhdat
                             <div class="card-body text-center p-5">
                                 <i class="icon-layers icons text-color-primary text-10"></i>
                                 <h4 class="card-title mt-2 mb-2 text-5 font-weight-bold">{{ $test->title }}</h4>
                                 <p class="card-text">{{ $test->description }}</p>
-<<<<<<< HEAD
-                                <a href="{{ route('test.view', $test->id) }}" class="btn btn-primary btn-modern">View Test</a>
-=======
                                 <a href="{{ route('test.view', $test->id) }}" class="button px-4 py-2">View Test</a>
->>>>>>> minhdat
                             </div>
                         </div>
                     </div>
                     @endforeach
 
-<<<<<<< HEAD
-
-=======
->>>>>>> minhdat
                 </div>
 
                 {{-- <div class="row">
