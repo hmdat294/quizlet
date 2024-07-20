@@ -80,11 +80,7 @@
 
                         <div class="form-group row">
                             <div class="form-group col-6 mx-auto text-center">
-<<<<<<< HEAD
-                                <input type="submit" value="Update Profile" class="btn btn-success btn-modern" data-loading-text="Loading...">
-=======
                                 <input type="submit" value="Update Profile" class="button border-0 px-4 py-2" data-loading-text="Loading...">
->>>>>>> minhdat
                             </div>
                         </div>
                     </form>

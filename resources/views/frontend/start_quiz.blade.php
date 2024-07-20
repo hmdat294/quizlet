@@ -36,13 +36,13 @@
 
                     <div class="">
                         <i class="icon-layers icons text-color-primary text-10"></i>
-                        <h4 class="card-title mt-2 mb-3 text-5 font-weight-bold">{{ $test->title }}</h4>
+                        <h4 class="card-title mt-2 mb-3 text-5 font-weight-bold">{{ $quiz->title }}</h4>
 
                     </div>
                     <div class="">
                         <div class="badge badge-warning badge-md">
                             <h1 class='timer m-0 font-weight-bold' style="display: inline-flex;" data-minutes-left={{
-                                $test->duration }}></h1>
+                                $quiz->duration }}></h1>
                         </div>
 
                     </div>
@@ -51,15 +51,14 @@
 
 
 
-                <form action="{{ route('test.result') }}" id="text_form" method="post">
+                <form action="{{ route('quiz.result') }}" id="text_form" method="post">
                     @csrf
-                    <input type="hidden" name="test_id" value="{{ $test->id }}">
+                    <input type="hidden" name="quiz_id" value="{{ $quiz->id }}">
                     @php
                     $i = 1;
                     @endphp
                     @foreach ($questions as $q)
                     <div class="mb-3 appear-animation animated bounceInRight appear-animation-visible q-{{ $i }}" data-appear-animation="bounceInRight" data-appear-animation-delay="0" data-appear-animation-duration="1s" style="animation-duration: 1s; animation-delay: 0ms; display:none;">
-
 
                         <div class="card border-radius-0 bg-color-light border-0 box-shadow-1 text-left">
                             <div class="card-body">
@@ -144,7 +143,7 @@
 </section>
 
 <script>
-    var test = @json($test);
+    var test = @json($quiz);
     var total = test.number_of_questions;
 
 </script>

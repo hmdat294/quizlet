@@ -55,7 +55,7 @@ input[type="checkbox"] {
 
 .profile-tabs {
     border-radius: 10px;
-    background: lavender;
+    box-shadow: 0 0 15px rgb(200, 200, 200);
 }
 
 #footer .footer-copyright p {
@@ -65,9 +65,6 @@ input[type="checkbox"] {
 
 section.section {
     background: none !important;
-<<<<<<< HEAD
-}
-=======
 }
 
 .button {
@@ -85,4 +82,7 @@ section.section {
     background-color: #00f7ff;
     box-shadow: 0 0 15px #00f7ff;
 }
->>>>>>> minhdat
+
+.table th{
+    text-align: center;
+}

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Quiz;
@@ -18,9 +19,9 @@ class PagesController extends Controller
      */
     public function home()
     {
-        $quizs = Quiz::all();
+        $categories = Category::where('status',1)->get();
 
-        return view('frontend.home', compact('quizs'));
+        return view('frontend.home', compact('categories'));
     }
 
 
@@ -62,9 +63,9 @@ class PagesController extends Controller
 
     public function quizzes()
     {
-        $quizs = Quiz::all();
+        $categories = Category::where('status',1)->get();
 
-        return view('frontend.quizzes', compact('quizs'));
+        return view('frontend.quizzes', compact('categories'));
     }
 
     /**
@@ -72,10 +73,9 @@ class PagesController extends Controller
      */
     public function viewQuiz($id)
     {
-        $quiz = Quiz::find($id);
-        // dd($test);
+        $quizs = Quiz::where('category_id', $id)->get();
 
-        return view('frontend.view_quiz', compact('quiz'));
+        return view('frontend.view_quiz', compact('quizs'));
     }
 
 
@@ -113,10 +113,13 @@ class PagesController extends Controller
 
     public function result(Request $request)
     {
-        // dd($request);
+        dd($request);
         $quiz = Quiz::find($request->quiz_id);
         $user = Auth::user()->id;
         $score = 0;
+        
+
+        // dd($request->answers);
 
         foreach ($request->answers as $q => $answer) {
 
