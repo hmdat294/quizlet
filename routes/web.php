@@ -1,16 +1,17 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
 // use App\Http\Middleware\Admin;
 use BayAreaWebPro\MultiStepForms\MultiStepForm;
 // Backend Controllers
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\QuestionController;
 // Frontend Controllers
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\AuthController;
+
 /*
 |--------------------------------------------------------------------------
 | Frontend Routes
@@ -49,9 +50,11 @@ Route::group(['middleware' => 'auth'], function () {
 Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
     Route::get('/dashboard', [DashboardController::class, "dashboard"])->name('dashboard');
     Route::get('/test-results', [TestController::class, "testResults"])->name('test.results');
+    Route::resource('categories', CategoriesController::class);
     Route::resource('users', UserController::class);
     Route::resource('tests', TestController::class);
     Route::resource('questions', QuestionController::class);
+
 });
 
 //Đăng đã ở đây

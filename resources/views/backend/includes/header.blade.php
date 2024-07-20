@@ -5,4 +5,4 @@
 <link rel="icon" href="{{ asset('common/favicon-UnicMinds.png') }}" type="image/png" />
 
 
-<title>Admin | UNICMINDS</title>
+<title>Admin | Quizlet</title>

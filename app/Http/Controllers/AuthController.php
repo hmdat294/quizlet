@@ -14,7 +14,7 @@ class AuthController extends Controller
     /**
      * Write code on Method
      *
-     * @return response()
+     *
      */
     public function index()
     {
@@ -34,7 +34,7 @@ class AuthController extends Controller
     /**
      * Write code on Method
      *
-     * @return response()
+     *
      */
     public function postLogin(Request $request)
     {
@@ -61,7 +61,7 @@ class AuthController extends Controller
     /**
      * Write code on Method
      *
-     * @return response()
+     *
      */
     public function postRegistration(Request $request)
     {
@@ -95,7 +95,7 @@ class AuthController extends Controller
     /**
      * Write code on Method
      *
-     * @return response()
+     *
      */
     public function logout()
     {
