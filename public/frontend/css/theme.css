@@ -4490,7 +4490,11 @@ html.ie #header .header-column .header-extra-info .feature-box .feature-box-info
 }
 /* Page Header */
 .page-header {
+<<<<<<< HEAD
 	background-color: #212529;
+=======
+	background-color: #120a30;
+>>>>>>> minhdat
 	margin: 0 0 35px 0;
 	padding: 30px 0;
 	position: relative;
@@ -5835,8 +5839,13 @@ html.dark .text-muted {
 /* RTL */
 /* #Footer */
 #footer {
+<<<<<<< HEAD
 	background: #212529;
 	border-top: 4px solid #212529;
+=======
+	background: #120a30;
+	border-top: 5px solid #120a30;
+>>>>>>> minhdat
 	font-size: 0.9em;
 	margin-top: 50px;
 	padding: 0;

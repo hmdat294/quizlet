@@ -53,6 +53,7 @@
             </div>
         </div>
     </div>
+<<<<<<< HEAD
     <div class="footer-copyright" style="background: #1F497D;">
 
         <div class="container py-2">
@@ -61,6 +62,14 @@
                     <p>Copyright © 2022 UnicMinds. All Rights Reserved | Designed by <a href="mailto:shamsiarhamid@gmail.com" target="_blank" rel="nofollow noopener"><strong>Shamsiar Hamid</strong></a></p>
 
 
+=======
+    <div class="footer-copyright" style="background-color: #2a4ff6;">
+
+        <div class="container py-0">
+            <div class="row py-4 text-center">
+                <div class="col-6 mx-auto">
+                    <p>Copyright © 2022 UnicMinds. All Rights Reserved | Designed by <a href="mailto:shamsiarhamid@gmail.com" target="_blank" rel="nofollow noopener"><strong>Shamsiar Hamid</strong></a></p>
+>>>>>>> minhdat
                 </div>
                 {{-- <div
                     class="col-lg-1 d-flex align-items-center justify-content-center justify-content-lg-start mb-2 mb-lg-0">
@@ -78,4 +87,8 @@
         </div>
     </div>
     </div>
+<<<<<<< HEAD
 </footer>
+=======
+</footer>
+>>>>>>> minhdat

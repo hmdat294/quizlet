@@ -2,6 +2,7 @@
 [ FONT ]*/
 
 @font-face {
+<<<<<<< HEAD
   font-family: Poppins-Regular;
   src: url('../fonts/poppins/Poppins-Regular.ttf');
 }
@@ -14,6 +15,20 @@
 @font-face {
   font-family: Poppins-Medium;
   src: url('../fonts/poppins/Poppins-Medium.ttf');
+=======
+  font-family: Arial, Helvetica, sans-serif;
+  src: url('../fonts/Arial, Helvetica, sans-serif.ttf');
+}
+
+@font-face {
+  font-family: Arial, Helvetica, sans-serif;
+  src: url('../fonts/Arial, Helvetica, sans-serif.ttf');
+}
+
+@font-face {
+  font-family: Arial, Helvetica, sans-serif;
+  src: url('../fonts/Arial, Helvetica, sans-serif.ttf');
+>>>>>>> minhdat
 }
 
 @font-face {
@@ -33,12 +48,20 @@
 body,
 html {
   height: 100%;
+<<<<<<< HEAD
   font-family: Poppins-Regular, sans-serif;
+=======
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+>>>>>>> minhdat
 }
 
 /*---------------------------------------------*/
 a {
+<<<<<<< HEAD
   font-family: Poppins-Regular;
+=======
+  font-family: Arial, Helvetica, sans-serif;
+>>>>>>> minhdat
   font-size: 14px;
   line-height: 1.7;
   color: #1F497D;
@@ -70,7 +93,11 @@ h6 {
 }
 
 p {
+<<<<<<< HEAD
   font-family: Poppins-Regular;
+=======
+  font-family: Arial, Helvetica, sans-serif;
+>>>>>>> minhdat
   font-size: 14px;
   line-height: 1.7;
   color: #666666;
@@ -187,14 +214,22 @@ iframe {
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
 .txt1 {
+<<<<<<< HEAD
   font-family: Poppins-Regular;
+=======
+  font-family: Arial, Helvetica, sans-serif;
+>>>>>>> minhdat
   font-size: 14px;
   line-height: 1.5;
   color: #999999;
 }
 
 .txt2 {
+<<<<<<< HEAD
   font-family: Poppins-Regular;
+=======
+  font-family: Arial, Helvetica, sans-serif;
+>>>>>>> minhdat
   font-size: 14px;
   line-height: 1.5;
   color: #fff;
@@ -219,10 +254,20 @@ iframe {
 .limiter {
   width: 100%;
   margin: 0 auto;
+<<<<<<< HEAD
 }
 
 .container-login100 {
   width: 100%;
+=======
+  background: #120a30;
+  min-height: 100%;
+  padding-bottom: 30px;
+}
+
+.container-login100 {
+  /* width: 100%; */
+>>>>>>> minhdat
   /* min-height: 100vh; */
   display: -webkit-box;
   display: -webkit-flex;
@@ -233,17 +278,27 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
+<<<<<<< HEAD
   background: #9053c7;
   background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
   background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
   background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
   background: linear-gradient(224deg, #c850c0, #4158d0);
+=======
+  /* background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: linear-gradient(224deg, #c850c0, #4158d0); */
+>>>>>>> minhdat
 }
 
 .wrap-login100 {
   width: 100%;
   border-radius: 10px;
+<<<<<<< HEAD
   overflow: hidden;
+=======
+>>>>>>> minhdat
 
   display: -webkit-box;
   display: -webkit-flex;
@@ -259,7 +314,11 @@ iframe {
 [  ]*/
 .login100-pic {
   width: 50%;
+<<<<<<< HEAD
   background: #1F497D;
+=======
+  /* background: #1F497D; */
+>>>>>>> minhdat
 }
 
 /*------------------------------------------------------------------
@@ -269,15 +328,25 @@ iframe {
 }
 
 .login100-form-title {
+<<<<<<< HEAD
   font-family: Poppins-Regular;
   font-size: 24px;
+=======
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+>>>>>>> minhdat
   /* color: #333333; */
   color: #fff;
   line-height: 1.6;
   text-align: center;
   width: 100%;
   display: block;
+<<<<<<< HEAD
   padding-bottom: 50px;
+=======
+  /* padding-bottom: 50px; */
+>>>>>>> minhdat
 }
 
 
@@ -287,6 +356,7 @@ iframe {
   width: 80%;
   margin: 0 auto;
   z-index: 1;
+<<<<<<< HEAD
   margin-bottom: 10px;
 }
 
@@ -299,6 +369,21 @@ iframe {
   display: block;
   width: 100%;
   background: #e6e6e6;
+=======
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.input100 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #00f7ff;
+  display: block;
+  width: 100%;
+  box-shadow: 0 0 10px #00f7ff;
+  background: rgba(0, 0, 0, 0.5);
+>>>>>>> minhdat
   height: 50px;
   border-radius: 25px;
   padding: 0 30px 0 68px;
@@ -317,7 +402,11 @@ iframe {
   width: 100%;
   height: 100%;
   box-shadow: 0px 0px 0px 0px;
+<<<<<<< HEAD
   color: rgba(87, 184, 70, 0.8);
+=======
+  color: #00f7ff;
+>>>>>>> minhdat
 }
 
 .input100:focus+.focus-input100 {
@@ -365,8 +454,13 @@ iframe {
 }
 
 .input100:focus+.focus-input100+.symbol-input100 {
+<<<<<<< HEAD
   color: #57b846;
   padding-left: 28px;
+=======
+  color: #00f7ff;
+  /* padding-left: 28px; */
+>>>>>>> minhdat
 }
 
 /*------------------------------------------------------------------
@@ -487,7 +581,11 @@ iframe {
   right: 8px;
   pointer-events: none;
 
+<<<<<<< HEAD
   font-family: Poppins-Medium;
+=======
+  font-family: Arial, Helvetica, sans-serif;
+>>>>>>> minhdat
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;
@@ -528,4 +626,27 @@ iframe {
     visibility: visible;
     opacity: 1;
   }
+<<<<<<< HEAD
+=======
+}
+
+.dangky {
+  background-color: #5ce1e6;
+  color: #120a30;
+  border-radius: 100px;
+  box-shadow: 0 0 15px #5ce1e6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.dangky:hover {
+  background-color: #00f7ff;
+  box-shadow: 0 0 15px #00f7ff;
+}
+
+.bg-form {
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00f7ff;
+  background-color: #00f7ff10;
+>>>>>>> minhdat
 }

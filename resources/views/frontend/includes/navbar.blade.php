@@ -1,12 +1,20 @@
 <header id="header" class="header-transparent header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
+<<<<<<< HEAD
     <div class="header-body border-top-0 bg-light box-shadow-none">
+=======
+    <div class="header-body border-top-0 box-shadow-none" style="background-color: #120a30 !important;">
+>>>>>>> minhdat
         <div class="header-container container">
             <div class="header-row">
                 <div class="header-column">
                     <div class="header-row">
                         <div class="header-logo">
                             <a href="{{ route('home') }}">
+<<<<<<< HEAD
                                 <img alt="Porto" width="240" height="48" data-sticky-width="120" data-sticky-height="40" src="{{ asset('frontend/img/um/Logo-UnicMinds.png') }}">
+=======
+                                <img src="{{ asset('frontend/img/logos/logoquizlet.png') }}" alt="LOGO" class="" width="100px">
+>>>>>>> minhdat
                             </a>
                         </div>
                     </div>
@@ -24,7 +32,11 @@
                                         </li> --}}
                                         <li class="dropdown">
                                             <a class="dropdown-item dropdown-toggle @if(Route::is('home')) {{ 'active' }} @endif " href="{{ route('home') }}">
+<<<<<<< HEAD
                                                 Home
+=======
+                                                Trang chủ
+>>>>>>> minhdat
                                             </a>
                                         </li>
                                         {{-- <li class="dropdown">
@@ -41,14 +53,22 @@
                                         @else
                                         <li class="dropdown">
                                             <a class="dropdown-item dropdown-toggle @if(Route::is('profile')) {{ 'active' }} @endif" href="{{ route('profile') }}">
+<<<<<<< HEAD
 
                                                 Profile
+=======
+                                                Thông tin
+>>>>>>> minhdat
                                             </a>
                                         </li>
                                         @if(auth()->user()->is_admin)
                                         <li class="dropdown">
                                             <a class="dropdown-item dropdown-toggle" href=" {{ route('dashboard') }}">
+<<<<<<< HEAD
                                                 Admin Dashboard
+=======
+                                                Quản trị
+>>>>>>> minhdat
                                             </a>
                                         </li>
 
@@ -56,7 +76,11 @@
                                         @endif
                                         <li class="dropdown">
                                             <a class="dropdown-item dropdown-toggle " href="{{ route('logout') }}">
+<<<<<<< HEAD
                                                 Logout
+=======
+                                                Đăng xuất
+>>>>>>> minhdat
                                             </a>
                                         </li>
                                         @endguest
@@ -90,4 +114,8 @@
             </div>
         </div>
     </div>
+<<<<<<< HEAD
 </header>
+=======
+</header>
+>>>>>>> minhdat

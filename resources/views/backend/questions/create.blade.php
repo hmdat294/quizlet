@@ -18,6 +18,7 @@
         </div>
         <!--end breadcrumb-->
         <hr />
+<<<<<<< HEAD
         <form action="{{ route('questions.store') }}" method="POST" enctype="multipart/form-data"
             class="row g-3 needs-validation" novalidate>
             @csrf
@@ -63,6 +64,31 @@
                         <h5 class="mb-0 text-primary">Danh sách câu hỏi</h5>
                     </div>
                     <hr>
+=======
+
+        <div class="card border-top border-0 border-4 border-primary">
+            <div class="card-body p-5">
+                <div class="card-title d-flex align-items-center">
+                    <div><i class="bx bxs-book me-1 font-22 text-primary"></i>
+                    </div>
+                    <h5 class="mb-0 text-primary">Question Form</h5>
+                </div>
+                <hr>
+                <form action="{{ route('questions.store') }}" method="POST" enctype="multipart/form-data"
+                    class="row g-3 needs-validation" novalidate>
+                    @csrf
+                    <div class="col-4">
+                        <label for="test_id" class="form-label">Chọn đề Quiz</label>
+                        <select class="form-select" id="test_id" name="test_id" required>
+                            <option selected disabled value="">Chọn đề Quiz</option>
+                            @foreach ($tests as $test)
+                                <option value="{{ $test->id }}">{{ $test->title }}</option>
+                            @endforeach
+                        </select>
+                        <div class="invalid-feedback">Please select a valid Test.</div>
+                    </div>
+
+>>>>>>> minhdat
                     <div id="questions-container">
                         <div class="mb-6 question-container" data-question-counter="0">
                             <div class="col-12">
@@ -75,6 +101,7 @@
                             </div>
 
                             <label class="block text-gray-700 font-bold mt-2">Danh sách câu trả lời:</label>
+<<<<<<< HEAD
                             @for ($i = 0; $i < 2; $i++)
                                 <div class="row row my-2 border p-2" style="border-radius:10px;">
                                     @for ($j = 0; $j < 2; $j++)
@@ -90,6 +117,29 @@
                                             </div>
                                         </div>
                                     @endfor
+=======
+                            @for ($i = 0; $i < 4; $i++)
+                                {{-- <input type="text" name="questions[0][options][]" class="w-full p-2 border rounded mb-2"> --}}
+                                <div class="row row my-2 border p-2" style="border-radius:10px;">
+                                    <div class="col-6">
+                                        <label for="questions[0][options][]" class="form-label">Câu trả lời
+                                            {{ $i + 1 }}</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control border-start-0"
+                                                id="questions[0][options][]" name="questions[0][options][]"
+                                                placeholder="Option 1">
+                                            <div class="invalid-feedback">Hãy nhập câu trả lời hợp lệ.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="questions[0][options][]" class="form-label">Hoặc upload hình
+                                            ảnh.</label>
+                                        <div class="input-group">
+                                            <input type="file" class="form-control border-start-0"
+                                                id="questions[0][options][]" name="questions[0][options][]">
+                                        </div>
+                                    </div>
+>>>>>>> minhdat
                                 </div>
                             @endfor
                             <div class="col-4">
@@ -113,6 +163,7 @@
                     <div class="col-12 submit-container mb-4">
                         <button type="submit" class="btn btn-danger px-5 rounded">Tạo quiz</button>
                     </div>
+<<<<<<< HEAD
                 </div>
             </div>
         </form>
@@ -147,6 +198,37 @@
 @endsection
 {{-- Gốc: --}}
 {{-- <form action="{{ route('questions.store') }}" method="POST" enctype="multipart/form-data"
+=======
+                </form>
+                <script>
+                    let questionCounter = 1;
+
+                    document.getElementById('add-question').addEventListener('click', function() {
+                        const questionsContainer = document.getElementById('questions-container');
+                        const newQuestionContainer = document.querySelector('.question-container').cloneNode(true);
+                        newQuestionContainer.dataset.questionCounter = questionCounter;
+                        newQuestionContainer.querySelectorAll('input, select').forEach(input => {
+                            input.value = '';
+                            input.name = input.name.replace('[0]', `[${questionCounter}]`);
+                        });
+                        newQuestionContainer.querySelector('label[for="questions"]').textContent =
+                            `Câu hỏi ${questionCounter + 1}:`;
+
+                        questionsContainer.appendChild(newQuestionContainer);
+                        questionCounter++;
+                    });
+
+                    document.getElementById('remove-question').addEventListener('click', function() {
+                        const questionsContainer = document.getElementById('questions-container');
+                        const questionContainers = questionsContainer.querySelectorAll('.question-container');
+                        if (questionContainers.length > 1) {
+                            questionsContainer.removeChild(questionContainers[questionContainers.length - 1]);
+                            questionCounter--;
+                        }
+                    });
+                </script>
+                {{-- <form action="{{ route('questions.store') }}" method="POST" enctype="multipart/form-data"
+>>>>>>> minhdat
                     class="row g-3 needs-validation" novalidate>
 
                     @csrf
@@ -264,3 +346,10 @@
                         <button type="submit" class="btn btn-danger px-5">Submit</button>
                     </div>
                 </form> --}}
+<<<<<<< HEAD
+=======
+            </div>
+        </div>
+    </div>
+@endsection
+>>>>>>> minhdat

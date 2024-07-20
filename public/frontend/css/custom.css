@@ -1,3 +1,30 @@
+<<<<<<< HEAD
+=======
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+    font-family: Arial, Helvetica, sans-serif;
+    src: url('../fonts/Arial, Helvetica, sans-serif.ttf');
+}
+
+@font-face {
+    font-family: Arial, Helvetica, sans-serif;
+    src: url('../fonts/Arial, Helvetica, sans-serif.ttf');
+}
+
+@font-face {
+    font-family: Arial, Helvetica, sans-serif;
+    src: url('../fonts/Arial, Helvetica, sans-serif.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url('../fonts/montserrat/Montserrat-Bold.ttf');
+}
+
+
+>>>>>>> minhdat
 /* Add here all your CSS customizations */
 #header .header-nav-main nav>ul>li>a {
     font-size: 14px;
@@ -41,4 +68,24 @@ input[type="checkbox"] {
 
 section.section {
     background: none !important;
+<<<<<<< HEAD
 }
+=======
+}
+
+.button {
+    background-color: #5ce1e6;
+    color: #120a30;
+    border-radius: 100px;
+    box-shadow: 0 0 15px #5ce1e6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.button:hover {
+    color: #120a30;
+    text-decoration: none;
+    background-color: #00f7ff;
+    box-shadow: 0 0 15px #00f7ff;
+}
+>>>>>>> minhdat
