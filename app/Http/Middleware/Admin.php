@@ -21,6 +21,6 @@ class Admin
             return $next($request);
         }
 
-        return redirect()->back()->withSuccess('You are not allowed to access this page. Please Login as Admin');
+        return redirect()->back()->withErrors('You are not allowed to access this page. Please Login as Admin');
     }
 }

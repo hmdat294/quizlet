@@ -53,14 +53,11 @@
                                             <a class="btn btn-sm btn-primary" href="{{ route('quizs.edit', $quiz->id) }}">
                                                 <i class="lni lni-pencil-alt"></i>
                                             </a>
-
                                             @csrf
                                             @method('DELETE')
                                             <button type="button" id="delete-quiz"
                                                 class="btn btn-sm btn-danger show_confirm"><i
                                                     class="lni lni-trash"></i></button>
-
-
                                         </form>
                                     </td>
                                 </tr>

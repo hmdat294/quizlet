@@ -54,8 +54,7 @@ class AuthController extends Controller
                 return redirect()->route('home')->withSuccess('You have Successfully loggedin');
             }
         }
-
-        return redirect("login")->withSuccess('Oppes! You have entered invalid credentials');
+        return redirect()->route('login')->withSuccess('Oppes! You have entered invalid credentials');
     }
 
     /**
