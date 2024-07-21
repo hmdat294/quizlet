@@ -79,6 +79,12 @@ class PagesController extends Controller
         return view('frontend.view_quiz', compact('quizs'));
     }
 
+    
+    // public function viewQuizDetail($id)
+    // {
+        
+    // }
+
 
     public function startQuiz($id)
     {

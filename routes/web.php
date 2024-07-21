@@ -54,7 +54,6 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
     Route::resource('users', UserController::class);
     Route::resource('quizs', QuizController::class);
     Route::resource('questions', QuestionController::class);
-
 });
 
 //Đăng đã ở đây
