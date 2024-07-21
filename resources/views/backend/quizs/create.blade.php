@@ -30,7 +30,7 @@
                     </div>
                     <hr>
 
-                    <div class="row g-3">
+                    <div class="row mb-4">
                         <label for="category_id" class="form-label">Chọn chủ đề:</label>
                         <select class="form-select" id="category_id" name="category_id" required>
                             <option selected disabled value="">Chọn chủ đề</option>
@@ -39,6 +39,16 @@
                             @endforeach
                         </select>
                         <div class="invalid-feedback">Vui lòng chọn chủ đề.</div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <label for="type" class="form-label">Chọn loại câu hỏi:</label>
+                        <select class="form-select" id="type" name="type" required>
+                            <option selected disabled value="">Chọn loại câu hỏi</option>
+                            <option value="0">Trắc nghiệm</option>
+                            <option value="1">Điền vào chỗ trống</option>
+                        </select>
+                        <div class="invalid-feedback">Vui lòng chọn loại câu hỏi.</div>
                     </div>
                 </div>
             </div>

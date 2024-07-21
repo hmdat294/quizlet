@@ -28,7 +28,7 @@ Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/quizzes', [PagesController::class, "quizzes"])->name('home');
     Route::get('/quiz/{id}', [PagesController::class, "viewQuiz"])->name('quiz.view');
-    Route::get('/start-quiz/{id}', [PagesController::class, "startQuiz"])->name('quiz.start');
+    Route::get('/start-quiz/{id}/{type}', [PagesController::class, "startQuiz"])->name('quiz.start');
     Route::post('/quiz-result', [PagesController::class, "result"])->name('quiz.result');
     Route::get('/about-us', [PagesController::class, "aboutUs"])->name('about_us');
     Route::get('/profile', [PagesController::class, "profile"])->name('profile');

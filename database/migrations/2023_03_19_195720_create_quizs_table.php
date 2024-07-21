@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('title');
             $table->text('description')->nullable();
             $table->unsignedTinyInteger('duration')->default(0);
+            $table->unsignedTinyInteger('type')->default(0);
             $table->boolean('certification')->default(false);
             $table->timestamps();
         });

@@ -29,11 +29,12 @@
             <div class="blog-posts text-center">
 
                 <h2 class="font-weight-bold mb-4 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1500" style="animation-delay: 1500ms;">Coding Skill Quizzes</h2>
-                
+
                 <table class="table appear-animation animated fadeInUpShorter appear-animation-visible text-center profile-tabs " data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400" style="animation-delay: 400ms;">
                     <tr>
                         <th>Tiêu đề</th>
                         <th>Thời gian làm bài</th>
+                        <th>Dạng câu hỏi</th>
                         <th>Mô tả</th>
                         <th>#</th>
                     </tr>
@@ -42,9 +43,10 @@
                     <tr class="">
                         <td>{{ $quiz->title }}</td>
                         <td>{{ $quiz->duration }} phút</td>
+                        <td>{{ ($quiz->type == 0)?'Trắc nghiệm':(($quiz->type == 1)?'Điền vào chỗ trống':'') }}</td>
                         <td>{{ $quiz->description }}</td>
                         <td>
-                            <a href="{{ route('quiz.start', $quiz->id) }}" class="button px-4 py-1 fs-10">Bắt đầu</a>
+                            <a href="{{ route('quiz.start', [$quiz->id, $quiz->type]) }}" class="button px-4 py-1 fs-10">Bắt đầu</a>
                         </td>
                     </tr>
                     @endforeach

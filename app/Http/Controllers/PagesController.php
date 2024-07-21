@@ -79,20 +79,16 @@ class PagesController extends Controller
         return view('frontend.view_quiz', compact('quizs'));
     }
 
-    
+
     // public function viewQuizDetail($id)
     // {
-        
+
     // }
 
 
-    public function startQuiz($id)
+    public function startQuiz($id, $type)
     {
         if (Auth::check()) {
-
-            $quiz = Quiz::find($id);
-            $limit = Question::where('quiz_id', $id)->count();
-
 
             // $data = Result::where([['quiz_id', $id], ['user_id', Auth::user()->id]])
             //     ->whereMonth('created_at', date('m'))
@@ -109,14 +105,24 @@ class PagesController extends Controller
             //     return redirect()->back()->withSuccess('You already have given 3 tests for this month. Please try again next month.');
             // }
 
-            $questions = Question::where('quiz_id', $id)
-                ->inRandomOrder()
-                ->limit($limit)
-                ->get();
 
-            // dd($questions);
+            // dd($id, $type);
 
-            return view('frontend.start_quiz', compact('quiz', 'questions', 'limit'));
+            $quiz = Quiz::where('type', $type)->find($id);
+            $limit = Question::where('quiz_id', $id)->count();
+
+            if ($type == 0) {
+
+                $questions = Question::where('quiz_id', $id)
+                    ->inRandomOrder()
+                    ->limit($limit)
+                    ->get();
+
+                return view('frontend.start_quiz_choice', compact('quiz', 'questions', 'limit'));
+            } else if ($type == 1) {
+
+                return view('frontend.start_quiz_essay');
+            }
         } else {
             return redirect("login")->withSuccess('Vui lòng đăng nhập để làm bài.');
         }

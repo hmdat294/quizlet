@@ -13,6 +13,7 @@ class Quiz extends Model
         'category_id',
         'title',
         'duration',
+        'type',
         'description'
     ];
 

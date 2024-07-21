@@ -39,8 +39,10 @@ class QuizController extends Controller
             'title' => 'required',
             'category_id' => 'required',
             'duration' => 'required',
+            'type' => 'required',
             'description' => 'required'
         ]);
+
 
         $quiz = Quiz::create($quizValidate);
 
