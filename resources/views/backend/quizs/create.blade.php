@@ -21,7 +21,28 @@
         <form action="{{ route('quizs.store') }}" method="POST" enctype="multipart/form-data"
             class="row g-3 needs-validation" novalidate>
             @csrf
-            <div class="card border-top border-0 border-4 border-primary">
+            <div class="card border-top border-0 border-4 border-primary col-md-3">
+                <div class="card-body p-5">
+                    <div class="card-title d-flex align-items-center">
+                        <div><i class="bx bxs-category me-1 font-22 text-primary"></i>
+                        </div>
+                        <h5 class="mb-0 text-primary">Chủ đề</h5>
+                    </div>
+                    <hr>
+
+                    <div class="row g-3">
+                            <label for="category_id" class="form-label">Chọn chủ đề:</label>
+                            <select class="form-select" id="category_id" name="category_id" required>
+                                <option selected disabled value="">Chọn chủ đề</option>
+                                @foreach ($categories as $category)
+                                <option value="{{ $category->id }}">{{ $category->title }}</option>
+                                @endforeach
+                            </select>
+                            <div class="invalid-feedback">Vui lòng chọn chủ đề.</div>
+                        </div>
+                </div>
+            </div>
+            <div class="card border-top border-0 border-4 border-primary col-md-9">
                 <div class="card-body p-5">
                     <div class="card-title d-flex align-items-center">
                         <div><i class="bx bxs-category me-1 font-22 text-primary"></i>
@@ -31,7 +52,7 @@
                     <hr>
 
                     <div class="row g-3">
-                        <div class="col-md-6">
+                        <div class="col-md-7">
                             <label for="title" class="form-label">Tên bài Quiz</label>
                             <div class="input-group">
                                 <input type="text" class="form-control border-start-0" id="title" name="title"
@@ -39,7 +60,7 @@
                                 <div class="invalid-feedback">Vui lòng nhập tên bài Quiz.</div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-5">
                             <label for="duration" class="form-label">Thời gian</label>
                             <div class="input-group">
                                 <input type="text" class="form-control border-start-0" id="duration" name="duration"
@@ -47,7 +68,6 @@
                                 <div class="invalid-feedback">Vui lòng nhập thời gian của bài quiz.</div>
                             </div>
                         </div>
-
                         <div class="col-12">
                             <label for="description" class="form-label">Mô tả bài quiz</label>
                             <textarea class="form-control" id="description" name="description" placeholder="Description..." rows="3"></textarea>

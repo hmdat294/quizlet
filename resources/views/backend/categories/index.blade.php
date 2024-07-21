@@ -8,7 +8,7 @@
             <div class="ps-3">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb mb-0 p-0">
-                        <li class="breadcrumb-item"><a href="{{ route('questions.index') }}"><i class="bx bx-book"></i></a>
+                        <li class="breadcrumb-item"><a href="{{ route('categories.index') }}"><i class="bx bx-book"></i></a>
                         </li>
                         <li class="breadcrumb-item active" aria-current="page">Quản lý chủ đề</li>
                     </ol>
@@ -16,14 +16,14 @@
             </div>
             <div class="ms-auto">
                 <div class="btn-group">
-                    <a class="btn btn-primary" href="{{ route('questions.create') }}">
-                        <i class="bx bxs-plus-square"></i>Add New Question</a>
+                    <a class="btn btn-primary" href="{{ route('categories.create') }}">
+                        <i class="bx bxs-plus-square"></i>Tạo chủ đề mới</a>
                 </div>
             </div>
         </div>
         <!--end breadcrumb-->
 
-        <h6 class="mb-0 text-uppercase">Question List</h6>
+        <h6 class="mb-0 text-uppercase">Danh sách chủ đề</h6>
         <hr />
 
         <div class="card">
@@ -35,7 +35,7 @@
                                 <th>#</th>
                                 <th width=150>Hình đại diện</th>
                                 <th>Chủ đề</th>
-                                <th>Số quiz</th>
+                                <th>Kích hoạt</th>
                                 <th>Hành động</th>
                             </tr>
                         </thead>
@@ -69,7 +69,6 @@
                                             <button type="button" id="delete-categories"
                                                 class="btn btn-sm btn-danger show_confirm"><i
                                                     class="bi bi-trash"></i></button>
-
                                         </form>
                                     </td>
                                 </tr>
