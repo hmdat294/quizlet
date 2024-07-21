@@ -41,7 +41,7 @@
                     @foreach ($quizs as $quiz)
                     <tr class="">
                         <td>{{ $quiz->title }}</td>
-                        <td>{{ $quiz->duration }}</td>
+                        <td>{{ $quiz->duration }} phút</td>
                         <td>{{ $quiz->description }}</td>
                         <td>
                             <a href="{{ route('quiz.start', $quiz->id) }}" class="button px-4 py-1 fs-10">Bắt đầu</a>

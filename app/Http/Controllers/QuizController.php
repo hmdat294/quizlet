@@ -35,6 +35,7 @@ class QuizController extends Controller
         // dd($request->all());
         $quizValidate = $request->validate([
             'title' => 'required',
+            'duration' => 'required',
         ]);
         $quiz = Quiz::create($quizValidate);
 

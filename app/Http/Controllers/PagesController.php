@@ -19,7 +19,7 @@ class PagesController extends Controller
      */
     public function home()
     {
-        $categories = Category::where('status',1)->get();
+        $categories = Category::where('status', 1)->get();
 
         return view('frontend.home', compact('categories'));
     }
@@ -35,6 +35,7 @@ class PagesController extends Controller
     {
         $user = Auth::user();
         $results = Result::where('user_id', $user->id)->latest()->get();
+
         return view('frontend.profile', compact('user', 'results'));
     }
 
@@ -63,7 +64,7 @@ class PagesController extends Controller
 
     public function quizzes()
     {
-        $categories = Category::where('status',1)->get();
+        $categories = Category::where('status', 1)->get();
 
         return view('frontend.quizzes', compact('categories'));
     }
@@ -84,27 +85,32 @@ class PagesController extends Controller
         if (Auth::check()) {
 
             $quiz = Quiz::find($id);
+            $limit = Question::where('quiz_id', $id)->count();
 
-            $data = Result::where([['quiz_id', $id], ['user_id', Auth::user()->id]])
-                ->whereMonth('created_at', date('m'))
-                ->count();
-            $counter = Result::where('user_id', Auth::user()->id)
-                ->whereMonth('created_at', date('m'))
-                ->count();
 
-            if ($data) {
-                return redirect()->back()->withSuccess('You already have given this test. Please try again next month.');
-            }
-            // dd($counter);
-            if ($counter >= 3) {
-                return redirect()->back()->withSuccess('You already have given 3 tests for this month. Please try again next month.');
-            }
+            // $data = Result::where([['quiz_id', $id], ['user_id', Auth::user()->id]])
+            //     ->whereMonth('created_at', date('m'))
+            //     ->count();
+            // $counter = Result::where('user_id', Auth::user()->id)
+            //     ->whereMonth('created_at', date('m'))
+            //     ->count();
+
+            // if ($data) {
+            //     return redirect()->back()->withSuccess('You already have given this test. Please try again next month.');
+            // }
+            // // dd($counter);
+            // if ($counter >= 3) {
+            //     return redirect()->back()->withSuccess('You already have given 3 tests for this month. Please try again next month.');
+            // }
 
             $questions = Question::where('quiz_id', $id)
                 ->inRandomOrder()
+                ->limit($limit)
                 ->get();
 
-            return view('frontend.start_quiz', compact('quiz', 'questions'));
+            // dd($questions);
+
+            return view('frontend.start_quiz', compact('quiz', 'questions', 'limit'));
         } else {
             return redirect("login")->withSuccess('Please Login to Start Test');
         }
@@ -113,11 +119,13 @@ class PagesController extends Controller
 
     public function result(Request $request)
     {
-        dd($request);
+        // dd($request);
         $quiz = Quiz::find($request->quiz_id);
+        $countQuiz = Question::where('quiz_id', $request->quiz_id)->count();
+
         $user = Auth::user()->id;
         $score = 0;
-        
+
 
         // dd($request->answers);
 
@@ -130,15 +138,14 @@ class PagesController extends Controller
             }
         }
         // dd($score);
-        $pass = $score >= $quiz->pass_mark ? true : false;
 
         Result::create([
             'user_id' => $user,
             'quiz_id' => $quiz->id,
             'score'   => $score,
-            'is_pass' => $pass,
+            'count_quiz'   => $countQuiz,
         ]);
 
-        return view('frontend.quiz_result', compact('quiz', 'pass', 'score'));
+        return view('frontend.quiz_result', compact('quiz', 'score'));
     }
 }
