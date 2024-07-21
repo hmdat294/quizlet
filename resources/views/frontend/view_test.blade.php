@@ -28,19 +28,19 @@
         <div class="card card-background-image-hover border-0" style="background-image: url({{ asset('frontend/img/blog/square/blog-1.jpg') }});">
             <div class="card-body text-center p-5">
                 <i class="icon-layers icons text-color-primary text-10"></i>
-                <h4 class="card-title mt-2 mb-2 text-5 font-weight-bold">{{ $test->title }}</h4>
-                <p class="card-text">{{ $test->description }}</p>
+                <h4 class="card-title mt-2 mb-2 text-5 font-weight-bold">{{ $quiz->title }}</h4>
+                <p class="card-text">{{ $quiz->description }}</p>
 
                 <ul class="list list-icons list-primary list-borders text-left">
                     <li>
-                        <i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Duration:</strong> {{ $test->duration }} Minutes.
+                        <i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Duration:</strong> {{ $quiz->duration }} Minutes.
                     </li>
                     <li>
-                        <i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Questions:</strong> {{ $test->number_of_questions }}
+                        <i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Questions:</strong> {{ $quiz->number_of_questions }}
                     </li>
                     <li>
                         <i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Pass
-                            Mark:</strong> {{ $test->pass_mark }}
+                            Mark:</strong> {{ $quiz->pass_mark }}
                     </li>
 
                 </ul>
@@ -48,7 +48,7 @@
                 <p class="card-text">If the question is unanswered, then it will be considered as an incorrect response.<br>
                     All the best!
                 </p>
-                <a href="{{ route('test.start', $test->id) }}" class="btn btn-primary btn-modern"> Start Test </a>
+                <a href="{{ route('quiz.start', $quiz->id) }}" class="btn btn-primary btn-modern"> Start Quiz </a>
             </div>
         </div>
     </div>

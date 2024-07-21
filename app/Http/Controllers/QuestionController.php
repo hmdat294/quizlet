@@ -24,7 +24,7 @@ class QuestionController extends Controller
      */
     public function create()
     {
-        $tests = Test::all();
+        // $tests = Test::all();
         return view('backend.questions.create', compact('tests'));
     }
 
@@ -64,7 +64,7 @@ class QuestionController extends Controller
      */
     public function edit(Question $question)
     {
-        $tests = Test::all();
+        // $tests = Test::all();
 
         return view('backend.questions.edit', compact('question', 'tests'));
     }

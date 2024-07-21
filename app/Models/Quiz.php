@@ -10,6 +10,7 @@ class Quiz extends Model
     use HasFactory;
     protected $table ="quizs";
     protected $fillable = [
+        'category_id',
         'title',
         'duration',
         'description'

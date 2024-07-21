@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\Category;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
 use \App\Models\User;
@@ -24,6 +26,16 @@ class DatabaseSeeder extends Seeder
             'password' => password_hash('123456',PASSWORD_BCRYPT), // password
             'is_admin' => 1,
             'remember_token' => Str::random(10),
+        ]);
+
+        Category::insert([
+            ['title' => 'HTML', 'image' => 'html.png', 'status' => 1],
+            ['title' => 'CSS', 'image' => 'css.png', 'status' => 1],
+            ['title' => 'JavaScript', 'image' => 'js.png', 'status' => 1],
+            ['title' => 'PHP', 'image' => 'php.png', 'status' => 1],
+            ['title' => 'Angular', 'image' => 'angular.png', 'status' => 1],
+            ['title' => 'Laravel', 'image' => 'laravel.png', 'status' => 1],
+            ['title' => 'React', 'image' => 'react.png', 'status' => 1],
         ]);
     }
 }
