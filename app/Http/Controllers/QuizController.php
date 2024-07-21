@@ -36,6 +36,7 @@ class QuizController extends Controller
         $quizValidate = $request->validate([
             'title' => 'required',
             'duration' => 'required',
+            'description' => 'required'
         ]);
 
         $quiz = Quiz::create($quizValidate);
@@ -94,6 +95,6 @@ class QuizController extends Controller
     {
         $quiz->delete();
 
-        return redirect()->route('quiz.index')->with('success', 'Quiz deleted successfully');
+        return redirect()->route('quizs.index')->with('success', 'Quiz deleted successfully');
     }
 }

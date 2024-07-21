@@ -30,8 +30,8 @@
                     </div>
                     <hr>
 
-                    <div class="row g-3">
-                        <div class="col-md-6">
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-7">
                             <label for="title" class="form-label">Tên chủ đề</label>
                             <div class="input-group">
                                 <input type="text" class="form-control border-start-0" id="title" name="title"
@@ -39,13 +39,26 @@
                                 <div class="invalid-feedback">Vui lòng nhập tên chủ đề.</div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-5">
                             <label for="image" class="form-label">Chọn ảnh đại diện</label>
                             <div class="input-group">
                                 <input type="file" class="form-control border-start-0" id="image" name="image"
                                     value="35" required>
                                 <div class="invalid-feedback">Chọn ảnh đại diện.</div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-md-7"></div>
+                        <div class="col-md-5">
+                            <label for="status" class="form-label">Trạng thái</label>
+                            <select class="form-select" id="status" name="status" required>
+                                <option selected disabled value="">Lựa chọn</option>
+                                <option value="0">Xuất bản</option>
+                                <option value="1">Không xuất bản</option>
+                                {{-- <option value="2">Option 3</option> --}}
+                            </select>
+                            <div class="invalid-feedback">Vui lòng chọn trạng thái.</div>
                         </div>
                     </div>
                     <div class="col-12 submit-container mb-4 mt-3">

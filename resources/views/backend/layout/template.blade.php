@@ -32,6 +32,7 @@
 
         @include('backend.includes.switcher')
         @include('backend.includes.scripts')
+
 </body>
 
 </html>
