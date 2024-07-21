@@ -35,28 +35,21 @@
                             <h4 class="card-title mt-2 mb-3 text-5 text-tertiary font-weight-bold">
 
 
-                                @if($pass)
-                                Congratulations You have passed the test successfully.
-                                @else
-                                Sorry You have failed. Try again later.
-                                @endif
+                                
                             </h4>
                             <hr>
 
                             <ul class="list list-icons list-primary list-borders text-left text-4 font-weight-bold">
 
                                 <li>
-                                    <i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Test:</strong> {{ $test->title }}.
+                                    <i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Test:</strong> {{ $quiz->title }}.
 
                                 </li>
                                 <li>
-                                    <i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Total Questions:</strong> {{ $test->number_of_questions }}
+                                    <i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Total Questions:</strong> {{ $quiz->number_of_questions }}
                                 </li>
                                 <li>
                                     <i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Score:</strong> {{ $score }}
-                                </li>
-                                <li>
-                                    <i class="fas fa-caret-right left-10"></i> <strong class="text-color-primary">Result:</strong> <span class="text-secondary">{{ $pass ? 'PASS' : 'FAIL' }}</span>
                                 </li>
 
                             </ul>
@@ -70,7 +63,7 @@
                                 <h3 style="padding: 15px;background: #fff;position: absolute;top: 203px;z-index: 1;left: 305px;font-size: 36px;">{{ Auth::user()->name }}</h3>
 
 
-                                <div style="padding: 15px;background: #fff;position: absolute;top: 278px;z-index: 1;left: 160px;font-size: 20px;width: 60%;">{{ $test->title }}</div>
+                                <div style="padding: 15px;background: #fff;position: absolute;top: 278px;z-index: 1;left: 160px;font-size: 20px;width: 60%;">{{ $quiz->title }}</div>
 
 
                                 <img src="{{ asset('frontend/img/um/unicminds_certificate.jpg') }}" alt="Certificate" class="img-thumbnail img-fluid">

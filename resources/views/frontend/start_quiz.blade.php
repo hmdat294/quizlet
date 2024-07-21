@@ -142,8 +142,8 @@
 </section>
 
 <script>
-    var test = @json($quiz);
-    var total = test.number_of_questions;
+    var quiz = @json($limit);
+    var total = quiz;
 
 </script>
 @endsection

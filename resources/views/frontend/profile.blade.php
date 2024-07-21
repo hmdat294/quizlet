@@ -100,10 +100,10 @@
                         <thead class="thead-dark">
                             <tr>
                                 <th>#</th>
-                                <th>Test Title</th>
-                                <th>Score</th>
-                                <th>Result</th>
-                                <th>Date</th>
+                                <th>Tiêu đề</th>
+                                <th>Kết quả</th>
+                                <th>Điểm</th>
+                                <th>Ngày</th>
                             </tr>
                         </thead>
                         @php
@@ -111,17 +111,13 @@
                         @endphp
                         @foreach ($results as $result)
                         <tbody>
-                            <tr>
+                            <tr class="text-center">
                                 <td>{{ $i++ }}</td>
-                                <td>{{ $result->test->title }}</td>
-                                <td>{{ $result->score }}</td>
-                                <td class="text-tertiary font-weight-bold">{{ $result->is_pass ? 'PASS' : 'FAIL' }}</td>
-
+                                <td>{{ $result->quiz->title }}</td>
+                                <td>{{ $result->score }} / {{ $result->count_quiz }}</td>
+                                <td>{{ round(($result->score/$result->count_quiz)*10, 2)}}</td>
 
                                 <td>{{ date('d F Y', strtotime($result->created_at)) }}</td>
-
-
-
 
                             </tr>
 

@@ -22,7 +22,7 @@ class Result extends Model
     //     'score',
     // ];
 
-    public function test()
+    public function quiz()
     {
         return $this->belongsTo(Quiz::class);
     }

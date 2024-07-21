@@ -18,7 +18,7 @@ return new class extends Migration
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->unsignedTinyInteger('score');
-            $table->boolean('is_pass')->default(false);
+            $table->unsignedTinyInteger('count_quiz');
             $table->timestamps();
         });
     }
