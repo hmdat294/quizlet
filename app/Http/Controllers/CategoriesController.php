@@ -58,7 +58,7 @@ class CategoriesController extends Controller
     /**
      * Display the specified resource.
      */
-    public function updateStatus($id, Request $request)
+    public function updateStatus(Request $request, $id)
     {
         $category = Category::findOrFail($id);
         $category->status = $request->input('status');
@@ -81,9 +81,47 @@ class CategoriesController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, $id)
     {
-        //
+        // Lấy thông tin category cần cập nhật
+        $category = Category::findOrFail($id);
+
+        // Validate input data
+        $validatedData = $request->validate([
+            'title' => 'required',
+            'status' => 'required'
+        ]);
+
+        // Kiểm tra xem có file ảnh mới được upload không
+        if ($request->hasFile('image')) {
+            // Validate file ảnh mới
+            $validatedData = $request->validate([
+                'image' => 'image|max:2048'
+            ]);
+
+            // Xóa ảnh cũ
+            $oldImagePath = public_path('/frontend/img/category/') . $category->image;
+            if (file_exists($oldImagePath)) {
+                unlink($oldImagePath);
+            }
+
+            // Lưu ảnh mới
+            $image = $request->file('image');
+            $imageName = time() . '-' . $image->getClientOriginalName();
+            $destinationPath = public_path('/frontend/img/category/');
+            $image->move($destinationPath, $imageName);
+            $validatedData['image'] = $imageName;
+        } else {
+            // Sử dụng lại ảnh cũ
+            $validatedData['image'] = $category->image;
+        }
+
+        // Cập nhật thông tin category
+        $category->update($validatedData);
+
+        // Trả về phản hồi hoặc chuyển hướng như cần thiết
+        return redirect()->route('categories.index')
+            ->with('success', 'Cập nhật chủ đề thành công.');
     }
 
     /**

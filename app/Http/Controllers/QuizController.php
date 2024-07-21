@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Question;
 use Illuminate\Http\Request;
 use App\Models\Quiz;
@@ -24,7 +25,8 @@ class QuizController extends Controller
      */
     public function create()
     {
-        return view('backend.quizs.create');
+        $categories = Category::where('status', '!=', 0)->get();
+        return view('backend.quizs.create', compact('categories'));
     }
 
     /**
@@ -35,6 +37,7 @@ class QuizController extends Controller
         // dd($request->all());
         $quizValidate = $request->validate([
             'title' => 'required',
+            'category_id' => 'required',
             'duration' => 'required',
             'description' => 'required'
         ]);
@@ -70,7 +73,9 @@ class QuizController extends Controller
      */
     public function edit(Quiz $quiz)
     {
-        return view('backend.quizs.edit', compact('quizs'));
+        $categories = Category::all();
+        $questions = Question::where('quiz_id', $quiz->id)->get();
+        return view('backend.quizs.edit', compact('quiz', 'categories', 'questions'));
     }
 
     /**

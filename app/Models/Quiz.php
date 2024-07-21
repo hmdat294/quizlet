@@ -16,10 +16,10 @@ class Quiz extends Model
         'description'
     ];
 
-    // public function Category()
-    // {
-    //     return $this->belongsTo(Category::class);
-    // }
+    public function Category()
+    {
+        return $this->belongsTo(Category::class);
+    }
     public function Questions()
     {
         return $this->hasMany(Question::class);
