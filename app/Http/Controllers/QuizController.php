@@ -35,7 +35,9 @@ class QuizController extends Controller
         // dd($request->all());
         $quizValidate = $request->validate([
             'title' => 'required',
+
         ]);
+
         $quiz = Quiz::create($quizValidate);
 
         foreach ($request->input('questions') as $key => $question) {

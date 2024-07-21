@@ -50,8 +50,9 @@
                                     <td>
                                         <form action="{{ route('quizs.destroy', $quiz->id) }}" method="POST">
 
-                                            <a class="btn btn-sm btn-primary" href="{{ route('quizs.edit', $quiz->id) }}"><i
-                                                    class="lni lni-pencil-alt"></i></a>
+                                            <a class="btn btn-sm btn-primary" href="{{ route('quizs.edit', $quiz->id) }}">
+                                                <i class="lni lni-pencil-alt"></i>
+                                            </a>
 
                                             @csrf
                                             @method('DELETE')
@@ -66,14 +67,6 @@
                             @endforeach
 
                         </tbody>
-                        <tfoot>
-                            <tr>
-                                <th>#</th>
-                                <th>Title</th>
-                                <th>Duration(min)</th>
-                                <th>Actions</th>
-                            </tr>
-                        </tfoot>
                     </table>
                 </div>
             </div>

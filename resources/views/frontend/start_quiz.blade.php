@@ -58,7 +58,9 @@
                     $i = 1;
                     @endphp
                     @foreach ($questions as $q)
-                    <div class="mb-3 appear-animation animated bounceInRight appear-animation-visible q-{{ $i }}" data-appear-animation="bounceInRight" data-appear-animation-delay="0" data-appear-animation-duration="1s" style="animation-duration: 1s; animation-delay: 0ms; display:none;">
+                    <div class="mb-3 appear-animation animated bounceInRight appear-animation-visible q-{{ $i }}"
+                    data-appear-animation="bounceInRight" data-appear-animation-delay="0"
+                    data-appear-animation-duration="1s" style="animation-duration: 1s; animation-delay: 0ms; display:none;">
 
                         <div class="card border-radius-0 bg-color-light border-0 box-shadow-1 text-left">
                             <div class="card-body">
@@ -69,7 +71,6 @@
 
                                     <li class="d-flex">
                                         <label>
-
                                             <input type="radio" name="answers[{{ $q->id }}]" style="" value="1">
                                             @if ($q->is_image)
                                             <img src="{{ asset('question_images/' . $q->option_1) }}" class="img-fluid img-thumbnail" alt="">
@@ -129,12 +130,10 @@
 
                         <div class="form-group mt-3">
                             <button type="button" class="btn btn-modern btn-rounded btn-tertiary mb-2 next">Next<i class="icon-arrow-right icons ml-2"></i><i class="icon-arrow-right icons"></i></button>
-
                         </div>
 
                     </div>
                     @endforeach
-
                 </form>
             </div>
         </div>

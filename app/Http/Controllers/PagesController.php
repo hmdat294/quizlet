@@ -85,20 +85,21 @@ class PagesController extends Controller
 
             $quiz = Quiz::find($id);
 
-            $data = Result::where([['quiz_id', $id], ['user_id', Auth::user()->id]])
-                ->whereMonth('created_at', date('m'))
-                ->count();
-            $counter = Result::where('user_id', Auth::user()->id)
-                ->whereMonth('created_at', date('m'))
-                ->count();
+            // $data = Result::where([['quiz_id', $id], ['user_id', Auth::user()->id]])
+            //     ->whereMonth('created_at', date('m'))
+            //     ->count();
 
-            if ($data) {
-                return redirect()->back()->withSuccess('You already have given this test. Please try again next month.');
-            }
-            // dd($counter);
-            if ($counter >= 3) {
-                return redirect()->back()->withSuccess('You already have given 3 tests for this month. Please try again next month.');
-            }
+            // $counter = Result::where('user_id', Auth::user()->id)
+            //     ->whereMonth('created_at', date('m'))
+            //     ->count();
+
+            // if ($data) {
+            //     return redirect()->back()->withSuccess('You already have given this test. Please try again next month.');
+            // }
+            // // dd($counter);
+            // if ($counter >= 3) {
+            //     return redirect()->back()->withSuccess('You already have given 3 tests for this month. Please try again next month.');
+            // }
 
             $questions = Question::where('quiz_id', $id)
                 ->inRandomOrder()
@@ -113,11 +114,11 @@ class PagesController extends Controller
 
     public function result(Request $request)
     {
-        dd($request);
+        // dd($request);
         $quiz = Quiz::find($request->quiz_id);
         $user = Auth::user()->id;
         $score = 0;
-        
+
 
         // dd($request->answers);
 
