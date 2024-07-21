@@ -58,7 +58,7 @@ class PagesController extends Controller
             'password' => Hash::make($request->password)
         ]);
 
-        return redirect()->route('home')->with('success', 'Profile updated successfully');
+        return redirect()->route('home')->with('success', 'Cập nhật thông tin thành công.');
         // return view('frontend.profile', compact('user'));
     }
 
@@ -118,7 +118,7 @@ class PagesController extends Controller
 
             return view('frontend.start_quiz', compact('quiz', 'questions', 'limit'));
         } else {
-            return redirect("login")->withSuccess('Please Login to Start Test');
+            return redirect("login")->withSuccess('Vui lòng đăng nhập để làm bài.');
         }
     }
 

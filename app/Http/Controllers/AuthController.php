@@ -49,13 +49,13 @@ class AuthController extends Controller
         if (Auth::attempt($credentials)) {
             // dd(Auth::user()->is_admin);
             if (Auth::user()->is_admin) {
-                return redirect()->route('dashboard')->withSuccess('You have Successfully loggedin');
+                return redirect()->route('dashboard')->withSuccess('Đăng nhập thành công.');
             } else {
-                return redirect()->route('home')->withSuccess('You have Successfully loggedin');
+                return redirect()->route('home')->withSuccess('Đăng nhập thành công.');
             }
         }
 
-        return redirect("login")->withSuccess('Oppes! You have entered invalid credentials');
+        return redirect()->route('login')->withSuccess('Đăng nhập thất bại.');
     }
 
     /**
@@ -82,12 +82,12 @@ class AuthController extends Controller
             $credentials = $request->only('email', 'password');
 
             if (Auth::attempt($credentials)) {
-                return redirect()->route('home')->withSuccess('You have Registered Successfully.');
+                return redirect()->route('home')->withSuccess('Đăng ký thành công.');
             }
 
-            // return redirect()->route('home')->withSuccess('Great! You have Registered Successfully.');
+            // return redirect()->route('home')->withSuccess('Tốt! Đăng ký thành công.');
         } else {
-            return redirect('login')->withSuccess('Password does not match.');
+            return redirect('login')->withSuccess('Mật khẩu không khớp.');
         }
     }
 

@@ -47,9 +47,9 @@ class UserController extends Controller
                 'password' => Hash::make($request->password)
             ]);
 
-            return redirect()->route('users.index')->with('success', 'User created successfully.');
+            return redirect()->route('users.index')->with('success', 'Người dùng đã được thêm.');
         } else {
-            return redirect()->route('users.index')->with('danger', 'Password does not match.');
+            return redirect()->route('users.index')->with('danger', 'Mật khẩu không khớp.');
         }
     }
 
@@ -81,7 +81,7 @@ class UserController extends Controller
 
         $user->update($request->all());
 
-        return redirect()->route('users.index')->with('success', 'User updated successfully');
+        return redirect()->route('users.index')->with('success', 'Cập nhật người dùng thành công.');
     }
 
     /**
@@ -91,6 +91,6 @@ class UserController extends Controller
     {
         $user->delete();
 
-        return redirect()->route('users.index')->with('success', 'User deleted successfully');
+        return redirect()->route('users.index')->with('success', 'Người dùng đã được xóa.');
     }
 }

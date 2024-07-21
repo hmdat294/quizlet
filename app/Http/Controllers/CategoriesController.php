@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class CategoriesController extends Controller
@@ -12,7 +13,8 @@ class CategoriesController extends Controller
     public function index()
     {
         //
-        return view('backend.categories.index');
+        $categories = Category::all();
+        return view('backend.categories.index', compact('categories'));
     }
 
     /**
@@ -21,6 +23,7 @@ class CategoriesController extends Controller
     public function create()
     {
         //
+        return view('backend.categories.create');
     }
 
     /**
@@ -28,17 +31,50 @@ class CategoriesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // Validate input data
+        $validatedData = $request->validate([
+            'title' => 'required',
+            'image' => 'required|image|max:2048',
+            'status' => 'required'
+        ]);
+
+        // Handle the image upload
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $imageName = time() . '-' . $image->getClientOriginalName();
+            $destinationPath = public_path('/frontend/img/category/');
+            $image->move($destinationPath, $imageName);
+            $validatedData['image'] = $imageName;
+        }
+
+        // Create the new record
+        Category::create($validatedData);
+
+        // Return a response or redirect as needed
+        return redirect()->route('categories.index')
+            ->with('success', 'Category created successfully.');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function updateStatus($id, Request $request)
     {
-        //
-    }
+        $category = Category::findOrFail($id);
+        $category->status = $request->input('status');
 
+        if ($category->save()) {
+            $statusText = $category->status == 1 ? 'Hiện' : 'Ẩn';
+            return response()->json([
+                'message' => 'Trạng thái danh mục đã được cập nhật thành công.',
+                'statusText' => $statusText
+            ], 200);
+        } else {
+            return response()->json([
+                'message' => 'Có lỗi xảy ra khi cập nhật trạng thái danh mục.'
+            ], 500);
+        }
+    }
     /**
      * Show the form for editing the specified resource.
      */

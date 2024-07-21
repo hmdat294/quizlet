@@ -57,11 +57,11 @@
                             <td>
                                 <form action="{{ route('users.destroy', $user->id) }}" method="POST">
 
-                                    <a class="btn btn-sm btn-primary" href="{{ route('users.edit', $user->id) }}"><i class="lni lni-pencil-alt"></i></a>
+                                    <a class="btn btn-sm btn-primary" href="{{ route('users.edit', $user->id) }}"><i class="bi bi-pencil-square"></i></a>
 
                                     @csrf
                                     @method('DELETE')
-                                    <button type="button" id="delete-user" class="btn btn-sm btn-danger show_confirm"><i class="lni lni-trash"></i></button>
+                                    <button type="button" id="delete-user" class="btn btn-sm btn-danger show_confirm"><i class="bi bi-trash"></i></button>
 
 
 

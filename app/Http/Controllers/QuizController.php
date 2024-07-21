@@ -36,7 +36,9 @@ class QuizController extends Controller
         $quizValidate = $request->validate([
             'title' => 'required',
             'duration' => 'required',
+            'description' => 'required'
         ]);
+
         $quiz = Quiz::create($quizValidate);
 
         foreach ($request->input('questions') as $key => $question) {
@@ -50,7 +52,7 @@ class QuizController extends Controller
                 'answer'    => $question['correct_answer'],
             ]);
         }
-        return redirect()->route('quizs.index')->with('success', 'quiz created successfully.');
+        return redirect()->route('quizs.index')->with('success', 'Thêm mới câu hỏi thành công.');
     }
 
     /**
@@ -83,7 +85,7 @@ class QuizController extends Controller
 
         $quiz->update($request->all());
 
-        return redirect()->route('quizs.index')->with('success', 'Quiz updated successfully');
+        return redirect()->route('quizs.index')->with('success', 'Cập nhật câu hỏi thành công.');
     }
 
     /**
@@ -93,6 +95,6 @@ class QuizController extends Controller
     {
         $quiz->delete();
 
-        return redirect()->route('quizs.index')->with('success', 'Quiz deleted successfully');
+        return redirect()->route('quizs.index')->with('success', 'Đã xóa câu hỏi');
     }
 }

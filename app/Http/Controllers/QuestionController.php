@@ -115,7 +115,7 @@ class QuestionController extends Controller
             'is_image'    => $is_image,
         ]);
 
-        return redirect()->route('questions.index')->with('success', 'Question updated successfully');
+        return redirect()->route('questions.index');
     }
 
     /**
@@ -125,6 +125,6 @@ class QuestionController extends Controller
     {
         $question->delete();
 
-        return redirect()->route('questions.index')->with('success', 'Question deleted successfully');
+        return redirect()->route('questions.index');
     }
 }
