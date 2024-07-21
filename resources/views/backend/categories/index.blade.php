@@ -77,7 +77,7 @@
 @section('custom_script')
 <script>
     function changeLabel(cate_id) {
-        document.querySelector('.status' + cate_id).innerHTML = 
+        document.querySelector('.status' + cate_id).innerHTML =
             (document.querySelector('.status' + cate_id).innerHTML == 'Hiện') ? 'Ẩn' : 'Hiện';
     }
 
@@ -95,8 +95,16 @@
                     status: status
                 },
                 success: function(response) {
-                    var statusText = response.statusText;
-                    $("#switch-" + categoryId).closest(".form-check-label").text(statusText);
+                    // Cập nhật trạng thái của checkbox dựa trên kết quả AJAX
+                    if (response.status === 'success') {
+                        $("#switch-" + categoryId).prop("checked", response.data.status ===
+                            1);
+                        $("label[for='switch-" + categoryId + "']").text(response.data
+                            .status === 1 ? "Hiện" : "Ẩn");
+                    } else {
+                        // Xử lý lỗi nếu có
+                        console.log(response.message);
+                    }
                 },
                 error: function(xhr, status, error) {
 

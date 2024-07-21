@@ -24,8 +24,8 @@
 
 <body>
 
-    <div class="limiter">
 
+    <div class="limiter">
         <div class="container container-login100">
 
             <div class="d-flex justify-content-between align-items-center w-100">
@@ -104,7 +104,7 @@
     <script src="{{ asset('frontend/vendor/select2/select2.min.js') }}"></script>
 
     <script src="{{ asset('frontend/js/main.js') }}"></script>
-
+    @include('sweetalert::alert')
 </body>
 
 </html>

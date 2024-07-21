@@ -62,18 +62,11 @@ class CategoriesController extends Controller
     {
         $category = Category::findOrFail($id);
         $category->status = $request->input('status');
+        $category->save();
 
-        if ($category->save()) {
-            $statusText = $category->status == 1 ? 'Hiện' : 'Ẩn';
-            return response()->json([
-                'message' => 'Trạng thái danh mục đã được cập nhật thành công.',
-                'statusText' => $statusText
-            ], 200);
-        } else {
-            return response()->json([
-                'message' => 'Có lỗi xảy ra khi cập nhật trạng thái danh mục.'
-            ], 500);
-        }
+        return response()->json([
+            'message' => 'Trạng thái danh mục đã được cập nhật thành công.'
+        ]);
     }
     /**
      * Show the form for editing the specified resource.
@@ -81,6 +74,8 @@ class CategoriesController extends Controller
     public function edit(string $id)
     {
         //
+        $category = Category::findOrFail($id);
+        return view('backend.categories.edit', compact('category'));
     }
 
     /**
