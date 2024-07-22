@@ -11,16 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('questions', function (Blueprint $table) {
+        Schema::create('essays', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('quiz_id');
             $table->foreign('quiz_id')->references('id')->on('quizs')->onDelete('cascade');
             $table->text('question');
-            $table->text('option_1');
-            $table->text('option_2');
-            $table->text('option_3');
-            $table->text('option_4');
-            $table->tinyInteger('answer');
+            $table->string('blanks')->nullable(); // Chứa chuỗi blanks phân tách bởi dấu phẩy
             $table->timestamps();
         });
     }
@@ -30,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('questions');
+        Schema::dropIfExists('essays');
     }
 };
