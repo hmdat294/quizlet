@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Essay;
 use Illuminate\Http\Request;
 use App\Models\Question;
 use App\Models\Quiz;
@@ -15,8 +16,9 @@ class QuestionController extends Controller
     {
         $quiz = Quiz::find($id);
         $questions = Question::with('quiz')->latest()->get();
+        $essays = Essay::with('quiz')->latest()->get();
 
-        return view('backend.quizs.questions', compact('questions', 'quiz'));
+        return view('backend.quizs.questions', compact('questions', 'essays', 'quiz'));
     }
 
     /**
@@ -112,6 +114,6 @@ class QuestionController extends Controller
     {
         $question->delete();
 
-        return redirect()->back();
+        return redirect()->back()->with('success', 'Xoá câu hỏi thàn công');
     }
 }
