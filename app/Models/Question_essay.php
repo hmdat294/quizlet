@@ -17,8 +17,4 @@ class Question_essay extends Model
     {
         return $this->belongsTo(Category::class);
     }
-    public function Qs_answer()
-    {
-        return $this->hasMany(Question::class);
-    }
 }

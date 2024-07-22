@@ -7,6 +7,8 @@ use App\Models\Question;
 use Illuminate\Http\Request;
 use App\Models\Quiz;
 use App\Models\Result;
+use Illuminate\Support\Str;
+
 
 class QuizController extends Controller
 {
@@ -35,30 +37,50 @@ class QuizController extends Controller
     {
         // dd($request->all());
 
-        $quizValidate = $request->validate([
-            'title' => 'required',
-            'category_id' => 'required',
-            'duration' => 'required',
-            'type' => 'required',
-            'description' => 'required'
-        ]);
+        // $quiz_Validate = $request->validate([
+        //     'title' => 'required',
+        //     'category_id' => 'required',
+        //     'duration' => 'required',
+        //     'type' => 'required',
+        //     'description' => 'required'
+        // ]);
 
 
-        $quiz = Quiz::create($quizValidate);
+        // $quiz = Quiz::create($quizValidate);
 
-        foreach ($request->input('questions') as $key => $question) {
-            Question::create([
-                'quiz_id'  => $quiz->id,
-                'question'  => $question['question'],
-                'option_1'  => $question['options'][0],
-                'option_2'  => $question['options'][1],
-                'option_3'  => $question['options'][2],
-                'option_4'  => $question['options'][3],
-                'answer'    => $question['correct_answer'],
-            ]);
+
+        // foreach ($request->questions as $key => $question) {
+        //     Question::create([
+        //         'quiz_id'  => $quiz->id,
+        //         'question'  => $question['question'],
+        //         'option_1'  => $question['options'][0],
+        //         'option_2'  => $question['options'][1],
+        //         'option_3'  => $question['options'][2],
+        //         'option_4'  => $question['options'][3],
+        //         'answer'    => $question['correct_answer'],
+        //     ]);
+        // }
+
+
+        
+        $quiz_essay = [];
+        foreach ($request->essays as $i) {
+
+            $text = $i['essay'];
+
+            foreach ($i['blanks'] as $index => $keyword) {
+                $text = Str::replace($keyword, '[blank_' . ($index + 1) . ']', $text);
+            }
+
+            array_push($quiz_essay, ['essay' => $text, 'blanks' => $i['blanks']]);
         }
-        return redirect()->route('quizs.index')->with('success', 'Thêm mới câu hỏi thành công.');
+
+
+        dd($request->questions, $quiz_essay);
+
+        // return redirect()->route('quizs.index')->with('success', 'Thêm mới câu hỏi thành công.');
     }
+
 
     /**
      * Display the specified resource.

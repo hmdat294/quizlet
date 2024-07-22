@@ -27,17 +27,10 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('quiz_id');
             $table->foreign('quiz_id')->references('id')->on('quizs')->onDelete('cascade');
+            $table->text('essay');
+            $table->text('blanks');
             $table->timestamps();
         });
-        Schema::create('qs_answer', function (Blueprint $table) {
-            $table->id();
-            $table->unsignedBigInteger('qe_id');
-            $table->foreign('qe_id')->references('id')->on('questions_essay')->onDelete('cascade');
-            $table->text('question');
-            $table->text('answer');
-            $table->timestamps();
-        });
-        //treui [blank] dsgadg [blank]
     }
 
     /**
