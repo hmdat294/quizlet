@@ -112,6 +112,6 @@ class QuestionController extends Controller
     {
         $question->delete();
 
-        return redirect()->route('questions.index');
+        return redirect()->back()->with('success','Xoá câu hỏi thàn công');
     }
 }
