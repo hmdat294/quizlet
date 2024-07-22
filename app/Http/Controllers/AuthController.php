@@ -55,7 +55,7 @@ class AuthController extends Controller
             }
         }
 
-        return redirect()->route('login')->withSuccess('Đăng nhập thất bại.');
+        return redirect()->route('login')->withErrors('Đăng nhập thất bại.');
     }
 
     /**
