@@ -19,7 +19,6 @@ class QuizController extends Controller
 
         return view('backend.quizs.index', compact('quizs'));
     }
-
     /**
      * Show the form for creating a new resource.
      */
@@ -100,6 +99,6 @@ class QuizController extends Controller
     {
         $quiz->delete();
 
-        return redirect()->route('quizs.index')->with('success', 'Quiz deleted successfully');
+        return redirect()->route('quizs.index')->with('success', 'Xoá dữ liệu bài Quiz thành công');
     }
 }

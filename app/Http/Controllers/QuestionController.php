@@ -4,19 +4,19 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Question;
-use App\Models\Test;
-use Intervention\Image\ImageManagerStatic as Image;
+use App\Models\Quiz;
 
 class QuestionController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index($id)
     {
-        $questions = Question::with('test')->latest()->get();
+        $quiz = Quiz::find($id);
+        $questions = Question::with('quiz')->latest()->get();
 
-        return view('backend.questions.index', compact('questions'));
+        return view('backend.quizs.questions', compact('questions', 'quiz'));
     }
 
     /**
@@ -25,7 +25,7 @@ class QuestionController extends Controller
     public function create()
     {
         // $tests = Test::all();
-        return view('backend.questions.create', compact('tests'));
+        // return view('backend.questions.create',);
     }
 
     /**
@@ -35,25 +35,25 @@ class QuestionController extends Controller
     {
 
         // dd($request->all());
-        $request->validate([
-            'test_id' => 'required|exists:tests,id',
-            'questions.*.question' => 'required',
-            'questions.*.options.*' => 'required',
-            'questions.*.correct_answer' => 'required|integer|min:0|max:3',
-        ]);
+        // $request->validate([
+        //     'test_id' => 'required|exists:tests,id',
+        //     'questions.*.question' => 'required',
+        //     'questions.*.options.*' => 'required',
+        //     'questions.*.correct_answer' => 'required|integer|min:0|max:3',
+        // ]);
 
 
-        foreach ($request->input('questions') as $key => $question) {
-            Question::create([
-                'test_id'  => $request->test_id,
-                'question'  => $question['question'],
-                'option_1'  => $question['options'][0],
-                'option_2'  => $question['options'][1],
-                'option_3'  => $question['options'][2],
-                'option_4'  => $question['options'][3],
-                'answer'    => $question['correct_answer'],
-            ]);
-        }
+        // foreach ($request->input('questions') as $key => $question) {
+        //     Question::create([
+        //         'test_id'  => $request->test_id,
+        //         'question'  => $question['question'],
+        //         'option_1'  => $question['options'][0],
+        //         'option_2'  => $question['options'][1],
+        //         'option_3'  => $question['options'][2],
+        //         'option_4'  => $question['options'][3],
+        //         'answer'    => $question['correct_answer'],
+        //     ]);
+        // }
 
         // return redirect()->route('questions.index')->with('success', 'Question created successfully.');
     }
@@ -66,56 +66,31 @@ class QuestionController extends Controller
     {
         // $tests = Test::all();
 
-        return view('backend.questions.edit', compact('question', 'tests'));
+
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Question $question)
+    public function update(Request $request, $id)
     {
-
+        // Lấy dữ liệu từ request
+        // dd($request->all());
         $request->validate([
-            'test_id' => 'required|exists:tests,id',
-            'questions.*.question' => 'required',
-            'questions.*.options.*' => 'required',
-            'questions.*.correct_answer' => 'required|integer|min:0|max:3',
+            'quiz_id' => 'required',
+            'question' => 'required',
+            'option_1' => 'required',
+            'option_2' => 'required',
+            'option_3' => 'required',
+            'option_4' => 'required',
+            'answer' => 'required',
         ]);
-
-        $is_image = $request->is_image;
-
-        if ($request->file()) {
-            $imgs = [];
-            $is_image = true;
-
-            foreach ($request->file() as $filename => $image) {
-                // $image = $request->file('image');
-                $imagename = time() . '-' . $filename . '.' . $image->extension();
-
-                $destinationPath = public_path('/question_images');
-                $img = Image::make($image->path());
-                $img->resize(400, 400, function ($constraint) {
-                    $constraint->aspectRatio();
-                })->save($destinationPath . '/' . $imagename);
-
-                $imgs[$filename] = $imagename;
-                // $destinationPath = public_path('/question_images');
-                // $image->move($destinationPath, $input['imagename']);
-            }
+        $question = Question::findOrFail($id);
+        $flag = $question->update($request->all());
+        if (!$flag) {
+            return redirect()->back()->with('error', 'Sửa thông tin thất bại');
         }
-        // dd($request);
-        $question->update([
-            'test_id'  => $request->test_id,
-            'question'  => $request->question,
-            'option_1'  => isset($imgs['option_1']) ? $imgs['option_1'] : $request->option_1,
-            'option_2'  => isset($imgs['option_2']) ? $imgs['option_2'] : $request->option_2,
-            'option_3'  => isset($imgs['option_3']) ? $imgs['option_3'] : $request->option_3,
-            'option_4'  => isset($imgs['option_4']) ? $imgs['option_4'] : $request->option_4,
-            'answer'    => $request->answer,
-            'is_image'    => $is_image,
-        ]);
-
-        return redirect()->route('questions.index')->with('success', 'Question updated successfully');
+        return redirect()->back()->with('success', 'Sửa thông tin thành công');
     }
 
     /**
@@ -125,6 +100,6 @@ class QuestionController extends Controller
     {
         $question->delete();
 
-        return redirect()->route('questions.index')->with('success', 'Question deleted successfully');
+        return redirect()->route('quizs.index')->with('success', 'Question deleted successfully');
     }
 }

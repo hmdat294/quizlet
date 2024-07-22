@@ -54,6 +54,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
     Route::post('/categories/{id}/update-status', [CategoriesController::class, 'updateStatus'])->name('categories.update_status');
     Route::resource('users', UserController::class);
     Route::resource('quizs', QuizController::class);
+    Route::get('/quiz-questions/{id}',[QuestionController::class, "index"])->name('quizs.questions');
     Route::resource('questions', QuestionController::class);
 
 });
