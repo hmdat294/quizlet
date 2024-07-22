@@ -161,8 +161,10 @@
                                             <div class="mt-2 d-flex justify-content-between">
                                                 <label class="block text-gray-700 font-bold mt-2">Danh sách chỗ
                                                     trống:</label>
-                                                <button type="button" id="add-blank" class="btn btn-primary px-4">Thêm
-                                                    chỗ trống</button>
+                                                <button type="button" class="btn btn-primary px-4 add-blank">Thêm chỗ
+                                                    trống</button>
+                                                <button type="button" class="btn btn-danger px-4 delete-blank">Xóa chỗ
+                                                    trống</button>
                                             </div>
 
                                             <div id="blanks-container">
@@ -222,96 +224,108 @@
             questionsContainer.appendChild(newQuestionContainer);
         });
 
-        const addBlankButton = document.getElementById('add-blank');
-        const blankContainer = document.getElementById('blanks-container');
+        const addBlankButton = document.querySelector('#questions-container .add-blank');
+        const deleteBlankButton = document.querySelector('#questions-container .delete-blank');
+        const questionsContainer = document.getElementById('questions-container');
         let essayCounter = 0;
-        let blankCounter = [0]; // Sử dụng mảng để lưu trữ số chỗ trống cho mỗi câu hỏi
+        let blankCounter = [0];
 
         addBlankButton.addEventListener('click', () => {
-            const newBlank = document.createElement('div');
-            newBlank.classList.add('row', 'my-2', 'border', 'p-2');
-            newBlank.style.borderRadius = '10px';
+            const newBlank = createBlankInput(essayCounter, blankCounter[essayCounter]);
+            const blanksContainer = questionsContainer.querySelector('.blanks-container');
+            blanksContainer.appendChild(newBlank);
+            blankCounter[essayCounter]++;
+        });
 
-            const currentEssayCounter = essayCounter; // Lưu trữ số câu hỏi hiện tại
-
-            newBlank.innerHTML = `
-        <div class="col-md-8">
-            <div class="input-group">
-                <input type="text" class="form-control rounded" id="essays[${currentEssayCounter}][blanks][${blankCounter[currentEssayCounter] || 0}]" name="essays[${currentEssayCounter}][blanks][${blankCounter[currentEssayCounter] || 0}]" data-blank-counter="${blankCounter[currentEssayCounter] || 0}" placeholder="Chỗ trống ${blankCounter[currentEssayCounter] || 1}">
-                <div class="invalid-feedback">Hãy nhập chỗ trống hợp lệ.</div>
-            </div>
-        </div>
-    `;
-            blankContainer.appendChild(newBlank);
-            if (!blankCounter[currentEssayCounter]) {
-                blankCounter[currentEssayCounter] = 1; // Nếu chưa có chỗ trống nào cho câu hỏi này, khởi tạo là 1
-            } else {
-                blankCounter[currentEssayCounter]++; // Nếu đã có, tăng lên
+        deleteBlankButton.addEventListener('click', () => {
+            const blanksContainer = questionsContainer.querySelector('.blanks-container');
+            const blanks = blanksContainer.querySelectorAll('.row');
+            if (blanks.length > 1) {
+                blanks[blanks.length - 1].remove();
+                blankCounter[essayCounter]--;
             }
         });
 
         const addEssayButton = document.getElementById('add-essay');
-        const questionsContainer = document.getElementById('questions-container');
-
         addEssayButton.addEventListener('click', () => {
-            const newEssay = document.createElement('div');
-            newEssay.classList.add('mb-6', 'question-container-essay', 'question-c', 'mt-3');
-            newEssay.setAttribute('data-question-counter', essayCounter);
+            const newEssay = createEssayElement(essayCounter);
+            questionsContainer.appendChild(newEssay);
+            blankCounter[essayCounter] = 1;
+            essayCounter++;
+        });
 
-            newEssay.innerHTML = `
-        <div class="col-12">
-            <label for="essays" class="form-label">Câu hỏi ${essayCounter + 1}: </label>
-            <div class="input-group">
-                <textarea class="form-control rounded" name="essays[${essayCounter}][essay]" id="essay" cols="10" rows="3" placeholder="Nhập câu hỏi"></textarea>
-                <div class="invalid-feedback">Hãy nhập câu hỏi của bạn.</div>
-            </div>
-        </div>
+        function createBlankInput(currentEssayCounter, currentBlankCounter) {
+            const newBlank = document.createElement('div');
+            newBlank.classList.add('row', 'my-2', 'border', 'p-2');
+            newBlank.style.borderRadius = '10px';
 
-        <div class="mt-2 d-flex justify-content-between">
-            <label class="block text-gray-700 font-bold mt-2">Danh sách chỗ trống:</label>
-            <button type="button" class="btn btn-primary px-4 add-blank">Thêm chỗ trống</button>
-        </div>
-
-        <div class="blanks-container">
-            <div class="row my-2 border p-2" style="border-radius:10px;">
+            newBlank.innerHTML = `
                 <div class="col-md-8">
                     <div class="input-group">
-                        <input type="text" class="form-control rounded" id="essays[${essayCounter}][blanks][0]" name="essays[${essayCounter}][blanks][0]" data-blank-counter="0" placeholder="Chỗ trống 1">
+                        <input type="text" class="form-control rounded" id="essays[${currentEssayCounter}][blanks][${currentBlankCounter}]" name="essays[${currentEssayCounter}][blanks][${currentBlankCounter}]" data-blank-counter="${currentBlankCounter}" placeholder="Chỗ trống ${currentBlankCounter + 1}">
                         <div class="invalid-feedback">Hãy nhập chỗ trống hợp lệ.</div>
                     </div>
                 </div>
-            </div>
-        </div>
-    `;
+                `;
 
-            questionsContainer.appendChild(newEssay);
+            return newBlank;
+        }
 
-            // Reset blank counter for the new essay
-            blankCounter[essayCounter] = 1;
-            essayCounter++;
+        function createEssayElement(currentEssayCounter) {
+            const newEssay = document.createElement('div');
+            newEssay.classList.add('mb-6', 'question-container-essay', 'question-c', 'mt-3');
+            newEssay.setAttribute('data-question-counter', currentEssayCounter);
 
-            // Add event listener for the new add blank button
-            const newAddBlankButton = newEssay.querySelector('.add-blank');
-            newAddBlankButton.addEventListener('click', () => {
-                const newBlank = document.createElement('div');
-                newBlank.classList.add('row', 'my-2', 'border', 'p-2');
-                newBlank.style.borderRadius = '10px';
+            newEssay.innerHTML = `
+                    <div class="col-12">
+                        <label for="essays" class="form-label">Câu hỏi ${currentEssayCounter + 1}: </label>
+                        <div class="input-group">
+                            <textarea class="form-control rounded" name="essays[${currentEssayCounter}][essay]" id="essay" cols="10" rows="3" placeholder="Nhập câu hỏi"></textarea>
+                            <div class="invalid-feedback">Hãy nhập câu hỏi của bạn.</div>
+                        </div>
+                    </div>
 
-                const currentEssayCounter = essayCounter - 1; // Lấy số câu hỏi hiện tại
+                    <div class="mt-2 d-flex justify-content-between align-items-center">
+                        <label class="block text-gray-700 font-bold mt-2">Danh sách chỗ trống:</label>
+                        <div class="d-flex gap-3">
+                            <button type="button" class="btn btn-primary px-4 add-blank">Thêm chỗ trống</button>
+                            <button type="button" class="btn btn-danger px-4 delete-blank">Xóa chỗ trống</button>
+                        </div>
+                    </div>
 
-                newBlank.innerHTML = `
-            <div class="col-md-8">
-                <div class="input-group">
-                    <input type="text" class="form-control rounded" id="essays[${currentEssayCounter}][blanks][${blankCounter[currentEssayCounter]}]" name="essays[${currentEssayCounter}][blanks][${blankCounter[currentEssayCounter]}]" data-blank-counter="${blankCounter[currentEssayCounter]}" placeholder="Chỗ trống ${blankCounter[currentEssayCounter] + 1}">
-                    <div class="invalid-feedback">Hãy nhập chỗ trống hợp lệ.</div>
-                </div>
-            </div>
-        `;
+                    <div class="blanks-container">
+                        <div class="row my-2 border p-2" style="border-radius:10px;">
+                            <div class="col-md-8">
+                                <div class="input-group">
+                                    <input type="text" class="form-control rounded" id="essays[${currentEssayCounter}][blanks][0]" name="essays[${currentEssayCounter}][blanks][0]" data-blank-counter="0" placeholder="Chỗ trống 1">
+                                    <div class="invalid-feedback">Hãy nhập chỗ trống hợp lệ.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+            const addBlankBtn = newEssay.querySelector('.add-blank');
+            addBlankBtn.addEventListener('click', () => {
+                const newBlank = createBlankInput(currentEssayCounter, blankCounter[currentEssayCounter]);
                 const blanksContainer = newEssay.querySelector('.blanks-container');
                 blanksContainer.appendChild(newBlank);
                 blankCounter[currentEssayCounter]++;
             });
-        });
+
+            const deleteBlankBtn = newEssay.querySelector('.delete-blank');
+            deleteBlankBtn.addEventListener('click', () => {
+                const blanksContainer = newEssay.querySelector('.blanks-container');
+                const blanks = blanksContainer.querySelectorAll('.row');
+                if (blanks.length > 1) {
+                    blanks[blanks.length - 1].remove();
+                    blankCounter[currentEssayCounter]--;
+                }
+            });
+
+            return newEssay;
+        }
+
 
 
 
@@ -327,5 +341,4 @@
             }
         });
     </script>
-    </div>
 @endsection
