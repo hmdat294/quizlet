@@ -11,6 +11,7 @@ use App\Http\Controllers\QuestionController;
 // Frontend Controllers
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\EssayController;
 
 /*
 |--------------------------------------------------------------------------
@@ -56,6 +57,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
     Route::resource('quizs', QuizController::class);
     Route::get('/quiz-questions/{id}',[QuestionController::class, "index"])->name('quizs.questions');
     Route::resource('questions', QuestionController::class);
+    Route::resource('essays', EssayController::class);
 });
 
 //Đăng đã ở đây

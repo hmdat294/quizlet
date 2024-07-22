@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Support\Str;
 use App\Models\Category;
 use App\Models\Essay;
@@ -8,6 +9,7 @@ use App\Models\Question;
 use Illuminate\Http\Request;
 use App\Models\Quiz;
 use App\Models\Result;
+
 
 class QuizController extends Controller
 {
@@ -97,6 +99,7 @@ class QuizController extends Controller
 
         return redirect()->route('quizs.index')->with('success', 'Thêm mới câu hỏi thành công.');
     }
+
 
     /**
      * Display the specified resource.

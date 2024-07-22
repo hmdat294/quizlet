@@ -44,11 +44,11 @@
 
                         <div class="row mb-4">
                             <label for="type" class="form-label">Chọn loại câu hỏi:</label>
-                            <select class="form-select" id="type" name="type">
+                            <select class="form-select" id="type" name="type" onchange="disableOpt(value)">
                                 <option selected disabled value="">Chọn loại câu hỏi</option>
                                 <option value="0">Trắc nghiệm</option>
                                 <option value="1">Điền vào chỗ trống</option>
-                                <option value="3">Cả 2</option>
+                                <option value="2">Cả 2</option>
                             </select>
                             <div class="invalid-feedback">Vui lòng chọn loại câu hỏi.</div>
                         </div>
@@ -186,9 +186,10 @@
                         </div>
 
                         <div class="col-12 d-flex gap-3 my-4">
-                            <button type="button" id="add-question" class="btn btn-primary px-4">Thêm Quiz trắc
+                            <button type="button" id="add-question" class="btn btn-primary px-4" disabled>Thêm Quiz trắc
                                 nghiệm</button>
-                            <button type="button" id="add-essay" class="btn btn-primary px-4">Thêm Quiz điền vào chỗ
+                            <button type="button" id="add-essay" class="btn btn-primary px-4" disabled>Thêm Quiz điền
+                                vào chỗ
                                 trống</button>
                             <button type="button" id="remove-question" class="btn btn-danger px-4">Xóa</button>
                         </div>
@@ -200,6 +201,25 @@
         </form>
     </div>
     <script>
+        function disableOpt(value) {
+            let add_question = document.getElementById('add-question');
+            let add_essay = document.getElementById('add-essay');
+
+            if (value == 0) {
+                add_essay.disabled = true;
+                add_question.disabled = false;
+            } else if (value == 1) {
+                add_essay.disabled = false;
+                add_question.disabled = true;
+            } else if (value == 2) {
+                add_essay.disabled = false;
+                add_question.disabled = false;
+            } else {
+                add_essay.disabled = true;
+                add_question.disabled = true;
+            }
+        }
+
         let questionCounter = 1;
 
         document.getElementById('add-question').addEventListener('click', function() {
