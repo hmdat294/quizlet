@@ -23,6 +23,21 @@ return new class extends Migration
             $table->tinyInteger('answer');
             $table->timestamps();
         });
+        Schema::create('questions_essay', function (Blueprint $table) {
+            $table->id();
+            $table->unsignedBigInteger('quiz_id');
+            $table->foreign('quiz_id')->references('id')->on('quizs')->onDelete('cascade');
+            $table->timestamps();
+        });
+        Schema::create('qs_answer', function (Blueprint $table) {
+            $table->id();
+            $table->unsignedBigInteger('qe_id');
+            $table->foreign('qe_id')->references('id')->on('questions_essay')->onDelete('cascade');
+            $table->text('question');
+            $table->text('answer');
+            $table->timestamps();
+        });
+        //treui [blank] dsgadg [blank]
     }
 
     /**
