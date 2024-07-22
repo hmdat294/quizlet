@@ -49,13 +49,13 @@ class AuthController extends Controller
         if (Auth::attempt($credentials)) {
             // dd(Auth::user()->is_admin);
             if (Auth::user()->is_admin) {
-                return redirect()->route('dashboard')->withSuccess('Đăng nhập thành công.');
+                return redirect()->route('dashboard')->with('success', 'Đăng nhập thành công!');
             } else {
-                return redirect()->route('home')->withSuccess('Đăng nhập thành công.');
+                return redirect()->route('home')->with('success', 'Đăng nhập thành công!');
             }
+        }else{
+            return redirect()->route('login')->with('errors', 'Đăng nhập thất bại');
         }
-
-        return redirect()->route('login')->withErrors('Đăng nhập thất bại.');
     }
 
     /**

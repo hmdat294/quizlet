@@ -15,12 +15,6 @@
                 </ol>
             </nav>
         </div>
-        <div class="ms-auto">
-            <div class="btn-group">
-                <a class="btn btn-primary" href="{{ route('quizs.create') }}">
-                    <i class="bx bxs-plus-square"></i>Add New Quiz</a>
-            </div>
-        </div>
     </div>
     <!--end breadcrumb-->
 
@@ -36,6 +30,7 @@
                             <th>#</th>
                             <th>Title</th>
                             <th>Duration(min)</th>
+                            <th>Câu hỏi</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
@@ -46,38 +41,31 @@
                             <td>{{ ++$i }}</td>
                             <td>{{ $quiz->title }}</td>
                             <td>{{ $quiz->duration }}</td>
-
+                            <td><a class="btn btn-sm btn-warning" href="{{ route('quizs.questions', $quiz->id) }}" title="Danh sách câu hỏi">
+                                    <i class="bi bi-list"></i> Câu hỏi
+                                </a></td>
                             <td>
                                 <form action="{{ route('quizs.destroy', $quiz->id) }}" method="POST">
 
                                     <a class="btn btn-sm btn-primary" href="{{ route('quizs.edit', $quiz->id) }}">
-                                        <i class="bi bi-pencil-square"></i>
+                                        <i class="bi bi-pencil"></i>
                                     </a>
 
                                     @csrf
                                     @method('DELETE')
-                                    <button type="button" id="delete-quiz" class="btn btn-sm btn-danger show_confirm">
-                                        <i class="bi bi-trash"></i>
-                                    </button>
-
-
+                                    <button type="button" id="delete-quiz" class="btn btn-sm btn-danger show_confirm"><i class="bi bi-trash"></i></button>
                                 </form>
                             </td>
                         </tr>
                         @endforeach
 
                     </tbody>
-                    <tfoot>
-                        <tr>
-                            <th>#</th>
-                            <th>Title</th>
-                            <th>Duration(min)</th>
-                            <th>Actions</th>
-                        </tr>
-                    </tfoot>
                 </table>
             </div>
         </div>
     </div>
+    <!--end breadcrumb-->
+
+
 </div>
 @endsection

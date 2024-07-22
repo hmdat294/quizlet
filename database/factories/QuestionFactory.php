@@ -3,7 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Question;
-use App\Models\Test;
+use App\Models\Quiz;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class QuestionFactory extends Factory
@@ -23,7 +23,7 @@ class QuestionFactory extends Factory
     public function definition(): array
     {
         return [
-            'test_id'   => Test::get()->random()->id,
+            'quiz_id'   => Quiz::get()->random()->id,
             'question'  => $this->faker->sentence,
             'option_1'  => $this->faker->sentence,
             'option_2'  => $this->faker->sentence,
