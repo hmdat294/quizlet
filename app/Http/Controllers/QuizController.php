@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Support\Str;
 use App\Models\Category;
 use App\Models\Essay;
@@ -8,7 +9,6 @@ use App\Models\Question;
 use Illuminate\Http\Request;
 use App\Models\Quiz;
 use App\Models\Result;
-use Illuminate\Support\Str;
 
 
 class QuizController extends Controller
@@ -64,8 +64,7 @@ class QuizController extends Controller
         // ]);
 
 
-        // $quiz = Quiz::create($quizValidate);
-
+        $quiz = Quiz::create($quizValidate);
 
         foreach ($request->input('questions') as $key => $question) {
             Question::create([

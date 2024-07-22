@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Question_essay;
+use App\Models\Essay;
 use Illuminate\Http\Request;
 
-class QuestionEssayController extends Controller
+class EssayController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +34,7 @@ class QuestionEssayController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Question_essay $question_essay)
+    public function show(Essay $Essay)
     {
         //
     }
@@ -42,7 +42,7 @@ class QuestionEssayController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Question_essay $question_essay)
+    public function edit(Essay $Essay)
     {
         //
     }
@@ -50,16 +50,28 @@ class QuestionEssayController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Question_essay $question_essay)
+    public function update(Request $request, $id)
     {
-        //
+        $blanks = implode(',', $request->dapan);
+
+        // $data = [];
+
+        $essay = Essay::findOrFail($id);
+        $flag = $essay->update(['blanks'=>$blanks]);
+        if (!$flag) {
+            return redirect()->back()->with('error', 'Sửa thông tin thất bại');
+        }
+
+        return redirect()->back()->with('success', 'Sửa thông tin thành công');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Question_essay $question_essay)
+    public function destroy(Essay $Essay)
     {
-        //
+        $Essay->delete();
+
+        return redirect()->back()->with('success', 'Xoá dữ liệu câu hỏi thành công');
     }
 }

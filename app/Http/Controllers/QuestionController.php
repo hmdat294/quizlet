@@ -79,7 +79,6 @@ class QuestionController extends Controller
         // Lấy dữ liệu từ request
         // dd($request->all());
         $request->validate([
-            'quiz_id' => 'required',
             'question' => 'required',
             'option_1' => 'required',
             'option_2' => 'required',
@@ -87,24 +86,15 @@ class QuestionController extends Controller
             'option_4' => 'required',
             'answer' => 'required',
         ]);
+
+
         $question = Question::findOrFail($id);
         $flag = $question->update($request->all());
         if (!$flag) {
             return redirect()->back()->with('error', 'Sửa thông tin thất bại');
         }
-        // dd($request);
-        // $question->update([
-        //     'test_id'  => $request->test_id,
-        //     'question'  => $request->question,
-        //     'option_1'  => isset($imgs['option_1']) ? $imgs['option_1'] : $request->option_1,
-        //     'option_2'  => isset($imgs['option_2']) ? $imgs['option_2'] : $request->option_2,
-        //     'option_3'  => isset($imgs['option_3']) ? $imgs['option_3'] : $request->option_3,
-        //     'option_4'  => isset($imgs['option_4']) ? $imgs['option_4'] : $request->option_4,
-        //     'answer'    => $request->answer,
-        //     'is_image'    => $is_image,
-        // ]);
 
-        return redirect()->route('questions.index');
+        return redirect()->back()->with('success', 'Sửa thông tin thành công');
     }
 
     /**
