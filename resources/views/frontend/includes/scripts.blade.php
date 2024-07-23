@@ -42,7 +42,6 @@
             $('#text_form').submit();
         }
     })
-
 </script>
 
 <script>
@@ -80,7 +79,48 @@
                 // alert('submit')
             }
 
+            if (i === 1) {
+                $(".back").hide();
+            } else {
+                $(".back").show();
+            }
+
+        });
+        
+        $(".back").hide();
+        $(".back").click(function() {
+
+            $(str).hide();
+
+            i = i - 1;
+            str = '.q-' + i;
+
+            $(str).show();
+            console.log(i);
+            if (i < total) {
+
+                $(".next").html('Next<i class="icon-arrow-right icons ml-2"></i><i class="icon-arrow-right icons"></i>');
+                $(".next").removeClass('btn-success');
+                $(".next").addClass('btn-tertiary');
+
+            }
+
+            if (i > total) {
+                this.type = 'submit';
+            }
+
+            if (i === total) {
+
+                this.value = 'Submit Answer';
+                // alert('submit')
+            }
+
+            if (i === 1) {
+                $(".back").hide();
+            } else {
+                $(".back").show();
+            }
+
         });
     });
-
 </script>

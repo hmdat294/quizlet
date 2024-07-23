@@ -42,7 +42,7 @@
                     @foreach ($quizs as $quiz)
                     <tr class="">
                         <td>{{ $quiz->title }}</td>
-                        <td>{{ $quiz->duration }} phút</td>
+                        <td>{{ $quiz->duration }} phút</td> 
                         <td>
                             {{
                                 ($quiz->type == 0)?'Trắc nghiệm':

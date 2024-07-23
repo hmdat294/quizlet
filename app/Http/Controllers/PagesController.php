@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Essay;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Quiz;
@@ -76,8 +77,6 @@ class PagesController extends Controller
     {
         $quizs = Quiz::where('category_id', $id)->get();
 
-        // dd($quizs);
-
         return view('frontend.view_quiz', compact('quizs'));
     }
 
@@ -111,20 +110,53 @@ class PagesController extends Controller
             // dd($id, $type);
 
             $quiz = Quiz::where('type', $type)->find($id);
-            $limit = Question::where('quiz_id', $id)->count();
+            $limit_qs = Question::where('quiz_id', $id)->count();
+            $limit_es = Essay::where('quiz_id', $id)->count();
 
-            if ($type == 0) {
+            $limit = $limit_qs + $limit_es;
 
-                $questions = Question::where('quiz_id', $id)
-                    ->inRandomOrder()
-                    ->limit($limit)
-                    ->get();
 
-                return view('frontend.start_quiz_choice', compact('quiz', 'questions', 'limit'));
-            } else if ($type == 1) {
+            $questions = Question::where('quiz_id', $id)
+                ->inRandomOrder()
+                ->limit($limit)
+                ->get();
 
-                return view('frontend.start_quiz_essay');
+            $essays = Essay::where('quiz_id', $id)
+                ->inRandomOrder()
+                ->limit($limit)
+                ->get();
+
+
+            $ques = [];
+            $ess = [];
+
+            foreach ($questions as $item) {
+                array_push($ques, [
+                    "id" => $item->id,
+                    "quiz_id" => $item->quiz_id,
+                    "question" => $item->question,
+                    "option_1" => $item->option_1,
+                    "option_2" => $item->option_2,
+                    "option_3" => $item->option_3,
+                    "option_4" => $item->option_4,
+                    "answer" => $item->answer
+                ]);
             }
+
+            foreach ($essays as $item) {
+                array_push($ess, [
+                    "id" => $item->id,
+                    "quiz_id" => $item->quiz_id,
+                    "question" => $item->question,
+                    "blanks" => $item->blanks
+                ]);
+            }
+
+            $allQuestions = array_merge($ques, $ess);
+
+            // dd($allQuestions);
+
+            return view('frontend.start_quiz', compact('quiz', 'allQuestions', 'limit'));
         } else {
             return redirect("login")->withSuccess('Vui lòng đăng nhập để làm bài.');
         }
@@ -141,7 +173,7 @@ class PagesController extends Controller
         $score = 0;
 
 
-        // dd($request->answers);
+        dd($request->all());
 
         foreach ($request->answers as $q => $answer) {
 
@@ -151,7 +183,9 @@ class PagesController extends Controller
                 ++$score;
             }
         }
-        // dd($score);
+
+        $blanks = explode(',',$request->blanks);
+        dd($blanks);
 
         Result::create([
             'user_id' => $user,
