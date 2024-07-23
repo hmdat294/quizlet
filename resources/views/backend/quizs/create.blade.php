@@ -47,7 +47,7 @@
                             <option selected disabled value="">Chọn loại câu hỏi</option>
                             <option value="0">Trắc nghiệm</option>
                             <option value="1">Điền vào chỗ trống</option>
-                            <option value="2">Cả 2</option>
+                            <option value="2">Kết hợp</option>
                         </select>
                         <div class="invalid-feedback">Vui lòng chọn loại câu hỏi.</div>
                     </div>
@@ -99,7 +99,7 @@
                         </div>
                         <hr>
                         <div id="questions-container">
-                            <div class="mb-6 question-container question-c mt-3" data-question-counter="0">
+                            <div class="mb-6 question-container question-c mt-3" data-question-counter="0" style="display: none;">
                                 <div class="col-12">
                                     <label for="questions" class="form-label">Câu hỏi 1: </label>
                                     <div class="input-group">
@@ -134,8 +134,8 @@
                     </div>
 
                     <div>
-                        <div id="questions-container" style="display: none;">
-                            <div class="mb-6 question-container-essay question-c mt-3" data-question-counter="0">
+                        <div id="questions-container">
+                            <div class="mb-6 question-container-essay question-c mt-3" data-question-counter="0" style="display: none;">
 
                                 <div class="col-12">
                                     <label for="essays" class="form-label">Câu hỏi 1: </label>
@@ -148,15 +148,17 @@
                                 <div class="mt-2 d-flex justify-content-between">
                                     <label class="block text-gray-700 font-bold mt-2">Danh sách chỗ
                                         trống:</label>
-                                    <button type="button" class="btn btn-primary px-4 add-blank">Thêm chỗ
-                                        trống</button>
-                                    <button type="button" class="btn btn-danger px-4 delete-blank">Xóa chỗ
-                                        trống</button>
+                                    <div>
+                                        <button type="button" class="btn btn-primary px-4 add-blank">Thêm chỗ
+                                            trống</button>
+                                        <button type="button" class="btn btn-danger px-4 delete-blank">Xóa chỗ
+                                            trống</button>
+                                    </div>
                                 </div>
 
                                 <div id="blanks-container">
                                     <div class="row row my-2 border p-2" style="border-radius:10px;">
-                                        <div class="col-md-8">
+                                        <div class="col-md-12">
                                             <div class="input-group">
                                                 <input type="text" class="form-control rounded" id="essays[0][blanks][0]" name="essays[0][blanks][0]" data-blank-counter="0" placeholder="Chỗ trống 1">
                                                 <div class="invalid-feedback">Hãy nhập chỗ trống hợp lệ.</div>
@@ -171,14 +173,14 @@
             </div>
 
             <div class="col-12 d-flex gap-3 my-4">
-                <button type="button" id="add-question" class="btn btn-primary px-4" disabled>Thêm Quiz trắc
+                <button type="button" id="add-question" class="btn btn-primary px-4" style="display: none;">Thêm Quiz trắc
                     nghiệm</button>
-                <button type="button" id="add-essay" class="btn btn-primary px-4" disabled>Thêm Quiz điền vào chỗ
+                <button type="button" id="add-essay" class="btn btn-primary px-4" style="display: none;">Thêm Quiz điền vào chỗ
                     trống</button>
-                <button type="button" id="remove-question" class="btn btn-danger px-4">Xóa</button>
+                <button type="button" id="remove-question" class="btn btn-danger px-4" style="display: none;">Xóa</button>
             </div>
             <div class="col-12 submit-container mb-4">
-                <button type="submit" class="btn btn-success px-5 rounded">Tạo quiz</button>
+                <button type="submit" id="create-quiz" class="btn btn-success px-5 rounded" style="display: none;">Tạo quiz</button>
             </div>
 
         </div>
@@ -188,19 +190,45 @@
     function disableOpt(value) {
         let add_question = document.getElementById('add-question');
         let add_essay = document.getElementById('add-essay');
+        let question = document.querySelector('.question-container');
+        let essay = document.querySelector('.question-container-essay');
+        let remove_question = document.getElementById('remove-question');
+        let create_quiz = document.getElementById('create-quiz');
 
-        if (value == 0) {
-            add_essay.disabled = true;
-            add_question.disabled = false;
-        } else if (value == 1) {
-            add_essay.disabled = false;
-            add_question.disabled = true;
-        } else if (value == 2) {
-            add_essay.disabled = false;
-            add_question.disabled = false;
+        if (value) {
+            remove_question.style.display = 'block';
+            create_quiz.style.display = 'block';
+
         } else {
-            add_essay.disabled = true;
-            add_question.disabled = true;
+            remove_question.style.display = 'none';
+            create_quiz.style.display = 'none';
+            
+        } 
+        
+        if (value == 0) {
+            add_question.style.display = 'block';
+            add_essay.style.display = 'none';
+
+            question.style.display = 'block';
+            essay.style.display = 'none';
+        } else if (value == 1) {
+            add_question.style.display = 'none';
+            add_essay.style.display = 'block';
+
+            question.style.display = 'none';
+            essay.style.display = 'block';
+        } else if (value == 2) {
+            add_question.style.display = 'block';
+            add_essay.style.display = 'block';
+
+            question.style.display = 'block';
+            essay.style.display = 'block';
+        } else {
+            add_question.style.display = 'none';
+            add_essay.style.display = 'none';
+
+            question.style.display = 'none';
+            essay.style.display = 'none';
         }
     }
 
@@ -265,7 +293,7 @@
         newBlank.style.borderRadius = '10px';
 
         newBlank.innerHTML = `
-                <div class="col-md-8">
+                <div class="col-md-12">
                     <div class="input-group">
                         <input type="text" class="form-control rounded" id="essays[${currentEssayCounter}][blanks][${currentBlankCounter}]" name="essays[${currentEssayCounter}][blanks][${currentBlankCounter}]" data-blank-counter="${currentBlankCounter}" placeholder="Chỗ trống ${currentBlankCounter + 1}">
                         <div class="invalid-feedback">Hãy nhập chỗ trống hợp lệ.</div>

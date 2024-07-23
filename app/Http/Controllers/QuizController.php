@@ -41,6 +41,8 @@ class QuizController extends Controller
             'title' => 'required|string|max:255',
             'duration' => 'required|integer',
             'description' => 'nullable|string',
+            'type' => 'required',
+            'category_id' => 'required'
         ]);
         $questionValidate = $request->validate([
             'questions.*.question' => 'required|string|max:255',
@@ -129,11 +131,12 @@ class QuizController extends Controller
         $request->validate([
             'title' => 'required',
             'duration' => 'required',
+            'description' => 'required'
         ]);
 
         $quiz->update($request->all());
 
-        return redirect()->route('quizs.index')->with('success', 'Cập nhật câu hỏi thành công.');
+        return redirect()->back()->with('success', 'Cập nhật câu hỏi thành công.');
     }
 
     /**
@@ -143,6 +146,6 @@ class QuizController extends Controller
     {
         $quiz->delete();
 
-        return redirect()->route('quizs.index')->with('success', 'Xoá dữ liệu bài Quiz thành công');
+        return redirect()->back()->with('success', 'Xoá dữ liệu bài Quiz thành công');
     }
 }

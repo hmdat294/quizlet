@@ -72,115 +72,12 @@
                         </div>
                         <div class="col-12">
                             <label for="description" class="form-label">Mô tả bài quiz</label>
-                            <textarea class="form-control" id="description" name="description" placeholder="Description..." rows="3">{{$quiz->description}}</textarea>
+                            <textarea class="form-control" id="description" name="description" placeholder="Mô tả" rows="3">{{$quiz->description}}</textarea>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card border-top border-0 border-4 border-primary">
-                <div class="card-body p-5">
-                    <div class="card-title d-flex align-items-center">
-                        <div><i class="bx bxs-book me-1 font-22 text-primary"></i>
-                        </div>
-                        <h5 class="mb-0 text-primary">Danh sách câu hỏi</h5>
-                    </div>
-                    <hr>
-                    {{-- <div id="questions-container">
-                        <div class="mb-6 question-container mt-3" data-question-counter="0">
-                            <div class="col-12">
-                                <label for="questions" class="form-label">Câu hỏi: </label>
-                                <div class="input-group">
-                                    <input type="text" class="form-control border-start-0" id="question"
-                                        name="questions[0][question]" placeholder="Enter Name" required>
-                                    <div class="invalid-feedback">Hãy nhập câu hỏi của bạn.</div>
-                                </div>
-                            </div>
-
-                            <label class="block text-gray-700 font-bold mt-2">Danh sách câu trả lời:</label>
-                            @for ($i = 0; $i < 2; $i++)
-                                <div class="row row my-2 border p-2" style="border-radius:10px;">
-                                    @for ($j = 0; $j < 2; $j++)
-                                        <div class="col-6 ">
-                                            <label for="questions[0][options][{{ $i * 2 + $j }}]" class="form-label">Câu
-                                                trả lời {{ $i * 2 + $j + 1 }}</label>
-                                            <div class="input-group">
-                                                <input type="text" class="form-control border-start-0"
-                                                    id="questions[0][options][{{ $i * 2 + $j }}]"
-                                                    name="questions[0][options][{{ $i * 2 + $j }}]"
-                                                    placeholder="Câu trả lời {{ $i * 2 + $j + 1 }}">
-                                                <div class="invalid-feedback">Hãy nhập câu trả lời hợp lệ.</div>
-                                            </div>
-                                        </div>
-                                    @endfor
-                                </div>
-                            @endfor
-                            <div class="col-4">
-                                <label for="correct_answer" class="form-label">Chọn câu trả lời đúng</label>
-                                <select name="questions[0][correct_answer]" class="form-select p-2 border rounded"
-                                    id="answer" name="answer" required>
-                                    <option selected disabled value="">Chọn câu trả lời đúng</option>
-                                    @for ($i = 1; $i <= 4; $i++)
-                                        <option value="{{ $i }}">Câu trả lời {{ $i }}</option>
-                                    @endfor
-                                </select>
-                                <div class="invalid-feedback">Please Enter a Valid Answer.</div>
-                            </div>
-                        </div>
-                    </div> --}}
-                    <div id="questions-container">
-                        @foreach($questions as $key => $question)
-                        <div class="mb-6 question-container mt-3" data-question-counter="{{ $key }}">
-                            <div class="col-12">
-                                <label for="questions" class="form-label">Câu hỏi {{$key+1}}: </label>
-                                <div class="input-group">
-                                    <input type="text" class="form-control border-start-0" id="question"
-                                        name="questions[{{ $key }}][question]" value="{{ $question->question }}" required>
-                                    <div class="invalid-feedback">Hãy nhập câu hỏi của bạn.</div>
-                                </div>
-                            </div>
-
-                            <label class="block text-gray-700 font-bold mt-2">Danh sách câu trả lời:</label>
-                            @for ($i = 0; $i < 2; $i++)
-                            <div class="row row my-2 border p-2" style="border-radius:10px;">
-                                @for ($j = 0; $j < 2; $j++)
-                                <div class="col-6 ">
-                                    <label for="questions[{{ $key }}][options][{{ $i * 2 + $j }}]" class="form-label">Câu
-                                        trả lời {{ $i * 2 + $j + 1 }}</label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control border-start-0"
-                                            id="questions[{{ $key }}][options][{{ $i * 2 + $j }}]"
-                                            name="questions[{{ $key }}][options][{{ $i * 2 + $j }}]"
-                                            value="{{ $question->{'option_' . ($i * 2 + $j + 1)} }}"
-                                            placeholder="Câu trả lời {{ $i * 2 + $j + 1 }}">
-                                        <div class="invalid-feedback">Hãy nhập câu trả lời hợp lệ.</div>
-                                    </div>
-                                </div>
-                                @endfor
-                            </div>
-                            @endfor
-                            <div class="col-4">
-                                <label for="correct_answer" class="form-label">Chọn câu trả lời đúng</label>
-                                <select name="questions[{{ $key }}][correct_answer]" class="form-select p-2 border rounded"
-                                    id="answer" required>
-                                    <option selected disabled value="">Chọn câu trả lời đúng</option>
-                                    @for ($i = 1; $i <= 4; $i++)
-                                    <option value="{{ $i }}" {{ $question->answer == $i ? 'selected' : '' }}>Câu trả lời {{ $i }}</option>
-                                    @endfor
-                                </select>
-                                <div class="invalid-feedback">Hãy chọn câu trả lời đúng.</div>
-                            </div>
-                        </div>
-                        @endforeach
-                    </div>
-                    <div class="col-12 flex justify-between mb-3 mt-3">
-                        <button type="button" id="add-question" class="btn btn-primary px-5">Add Question</button>
-                        <button type="button" id="remove-question" class="btn btn-danger px-5">Remove Question</button>
-                    </div>
-                    <div class="col-12 submit-container mb-4">
-                        <button type="submit" class="btn btn-danger px-5 rounded">Cập nhật Quiz</button>
-                    </div>
-                </div>
-            </div>
+            
         </form>
         <script>
             let questionCounter = 1;
