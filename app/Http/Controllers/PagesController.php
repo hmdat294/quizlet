@@ -76,6 +76,8 @@ class PagesController extends Controller
     {
         $quizs = Quiz::where('category_id', $id)->get();
 
+        // dd($quizs);
+
         return view('frontend.view_quiz', compact('quizs'));
     }
 

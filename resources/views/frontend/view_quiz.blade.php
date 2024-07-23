@@ -43,7 +43,13 @@
                     <tr class="">
                         <td>{{ $quiz->title }}</td>
                         <td>{{ $quiz->duration }} phút</td>
-                        <td>{{ ($quiz->type == 0)?'Trắc nghiệm':(($quiz->type == 1)?'Điền vào chỗ trống':'') }}</td>
+                        <td>
+                            {{
+                                ($quiz->type == 0)?'Trắc nghiệm':
+                                (($quiz->type == 1)?'Điền vào chỗ trống':
+                                (($quiz->type == 2)?'Kết hợp':''))
+                            }}
+                        </td> 
                         <td>{{ $quiz->description }}</td>
                         <td>
                             <a href="{{ route('quiz.start', [$quiz->id, $quiz->type]) }}" class="button px-4 py-1 fs-10">Bắt đầu</a>
