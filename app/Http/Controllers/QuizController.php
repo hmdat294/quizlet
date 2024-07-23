@@ -41,65 +41,59 @@ class QuizController extends Controller
             'title' => 'required|string|max:255',
             'duration' => 'required|integer',
             'description' => 'nullable|string',
-            'type' => 'required',
+            'type' => 'required|integer|in:0,1,2',
             'category_id' => 'required'
         ]);
-        $questionValidate = $request->validate([
-            'questions.*.question' => 'required|string|max:255',
-            'questions.*.options.*' => 'required|string|max:255',
-            'questions.*.correct_answer' => 'required|integer|min:1|max:4',
-        ]);
-        $essayValidate = $request->validate([
-            'essays.*.essay' => 'required|string',
-            'essays.*.blanks.*' => 'required|string|max:255',
-        ]);
-        // $quiz_choice = $request->questions;
-        // $quiz_essay = $request->essays;
-        // dd($quiz_choice, $quiz_essay);
-
-        // $quizValidate = $request->validate([
-        //     'title' => 'required',
-        //     'category_id' => 'required',
-        //     'duration' => 'required',
-        //     'type' => 'required',
-        //     'description' => 'required'
-        // ]);
+        $quiz_type = $request->input('type');
 
 
         $quiz = Quiz::create($quizValidate);
-
-        foreach ($request->input('questions') as $key => $question) {
-            Question::create([
-                'quiz_id'  => $quiz->id,
-                'question'  => $question['question'],
-                'option_1'  => $question['options'][0],
-                'option_2'  => $question['options'][1],
-                'option_3'  => $question['options'][2],
-                'option_4'  => $question['options'][3],
-                'answer'    => $question['correct_answer'],
+        if ($quiz_type == 0 || $quiz_type == 2) {
+            $questionValidate = $request->validate([
+                'questions.*.question' => 'string|max:255',
+                'questions.*.options.*' => 'string|max:255',
+                'questions.*.correct_answer' => 'integer|min:1|max:4',
             ]);
-        }
-
-        $quiz_essay = [];
-        foreach ($request->essays as $i) {
-
-            $question = $i['essay'];
-
-            foreach ($i['blanks'] as $index => $keyword) {
-                $question = Str::replace($keyword, '[blank_' . ($index + 1) . ']', $question);
+            foreach ($request->input('questions') as $key => $question) {
+                Question::create([
+                    'quiz_id'  => $quiz->id,
+                    'question'  => $question['question'],
+                    'option_1'  => $question['options'][0],
+                    'option_2'  => $question['options'][1],
+                    'option_3'  => $question['options'][2],
+                    'option_4'  => $question['options'][3],
+                    'answer'    => $question['correct_answer'],
+                ]);
             }
-
-            array_push($quiz_essay, ['essay' => $question, 'blanks' => $i['blanks']]);
         }
-        foreach ($quiz_essay as $key => $essay) {
-            Essay::create([
-                'quiz_id'  => $quiz->id,
-                'question'  => $essay['essay'],
-                'blanks' => implode(',', $essay['blanks'])
+
+
+        if ($quiz_type == 1 || $quiz_type == 2) {
+            $essayValidate = $request->validate([
+                'essays.*.essay' => 'string',
+                'essays.*.blanks.*' => 'string|max:255',
             ]);
+            $quiz_essay = [];
+            foreach ($request->essays as $i) {
+
+                $question = $i['essay'];
+
+                foreach ($i['blanks'] as $index => $keyword) {
+                    $question = Str::replace($keyword, '[blank_' . ($index + 1) . ']', $question);
+                }
+
+                array_push($quiz_essay, ['essay' => $question, 'blanks' => $i['blanks']]);
+            }
+            foreach ($quiz_essay as $key => $essay) {
+                Essay::create([
+                    'quiz_id'  => $quiz->id,
+                    'question'  => $essay['essay'],
+                    'blanks' => implode(',', $essay['blanks'])
+                ]);
+            }
         }
 
-        return redirect()->route('quizs.index')->with('success', 'Thêm mới câu hỏi thành công.');
+        // return redirect()->route('quizs.index')->with('success', 'Thêm mới câu hỏi thành công.');
     }
 
 
