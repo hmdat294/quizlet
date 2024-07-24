@@ -90,29 +90,9 @@ class PagesController extends Controller
     public function startQuiz($id, $type)
     {
         if (Auth::check()) {
-
-            // $data = Result::where([['quiz_id', $id], ['user_id', Auth::user()->id]])
-            //     ->whereMonth('created_at', date('m'))
-            //     ->count();
-            // $counter = Result::where('user_id', Auth::user()->id)
-            //     ->whereMonth('created_at', date('m'))
-            //     ->count();
-
-            // if ($data) {
-            //     return redirect()->back()->withSuccess('You already have given this test. Please try again next month.');
-            // }
-            // // dd($counter);
-            // if ($counter >= 3) {
-            //     return redirect()->back()->withSuccess('You already have given 3 tests for this month. Please try again next month.');
-            // }
-
-
-            // dd($id, $type);
-
             $quiz = Quiz::where('type', $type)->find($id);
             $limit_qs = Question::where('quiz_id', $id)->count();
             $limit_es = Essay::where('quiz_id', $id)->count();
-
             $limit = $limit_qs + $limit_es;
 
 
@@ -126,13 +106,11 @@ class PagesController extends Controller
                 ->limit($limit)
                 ->get();
 
-
-            $ques = [];
-            $ess = [];
-
-            foreach ($questions as $item) {
-                array_push($ques, [
+            // Chuyển đổi câu hỏi trắc nghiệm thành mảng
+            $ques = $questions->map(function ($item) {
+                return [
                     "id" => $item->id,
+                    "q_type" => "question",
                     "quiz_id" => $item->quiz_id,
                     "question" => $item->question,
                     "option_1" => $item->option_1,
@@ -140,23 +118,58 @@ class PagesController extends Controller
                     "option_3" => $item->option_3,
                     "option_4" => $item->option_4,
                     "answer" => $item->answer
-                ]);
-            }
+                ];
+            })->toArray();
 
-            foreach ($essays as $item) {
-                array_push($ess, [
+            // Chuyển đổi bài luận thành mảng
+            $ess = $essays->map(function ($item) {
+                return [
                     "id" => $item->id,
+                    "q_type" => "essay",
                     "quiz_id" => $item->quiz_id,
                     "question" => $item->question,
                     "blanks" => $item->blanks
-                ]);
-            }
+                ];
+            })->toArray();
 
+            // Kết hợp câu hỏi trắc nghiệm và bài luận
             $allQuestions = array_merge($ques, $ess);
-
             // dd($allQuestions);
 
+            // Xáo trộn các câu hỏi
+            $random = shuffle($allQuestions);
+
+            // Trả về view với dữ liệu
             return view('frontend.start_quiz', compact('quiz', 'allQuestions', 'limit'));
+            // $ques = [];
+            // $ess = [];
+
+            // foreach ($questions as $item) {
+            //     array_push($ques, [
+            //         "id" => $item->id,
+            //         "quiz_id" => $item->quiz_id,
+            //         "question" => $item->question,
+            //         "option_1" => $item->option_1,
+            //         "option_2" => $item->option_2,
+            //         "option_3" => $item->option_3,
+            //         "option_4" => $item->option_4,
+            //         "answer" => $item->answer
+            //     ]);
+            // }
+
+            // foreach ($essays as $item) {
+            //     array_push($ess, [
+            //         "id" => $item->id,
+            //         "quiz_id" => $item->quiz_id,
+            //         "question" => $item->question,
+            //         "blanks" => $item->blanks
+            //     ]);
+            // }
+
+            // $allQuestions = array_merge($ques, $ess);
+
+
+            // return view('frontend.start_quiz', compact('quiz', 'allQuestions', 'limit'));
         } else {
             return redirect("login")->withSuccess('Vui lòng đăng nhập để làm bài.');
         }
@@ -165,35 +178,90 @@ class PagesController extends Controller
 
     public function result(Request $request)
     {
-        // dd($request);
+        $data = $request->all();
+        // dd($data);
         $quiz = Quiz::find($request->quiz_id);
-        $countQuiz = Question::where('quiz_id', $request->quiz_id)->count();
+        $countQuiz = Question::where('quiz_id', $quiz->id)->count();
+        $countEssay = Essay::where('quiz_id', $quiz->id)->count();
+
+        $numberQuestion = $countQuiz + $countEssay;
 
         $user = Auth::user()->id;
         $score = 0;
 
+        $questions = Question::where('quiz_id', $request->quiz_id)->get();
 
-        dd($request->all());
+        $results = [];
 
-        foreach ($request->answers as $q => $answer) {
 
-            $question = Question::find($q);
+        foreach ($questions as $q) {
+            $option = $data['options'][$q->id] ?? null;
 
-            if ($question->answer == $answer) {
-                ++$score;
+            if ($option && $option == $q->answer) {
+                $score += 1;
             }
+            $results[] = [
+                'type' => 'question',
+                'id' => $q->id,
+                'question' => $q->question,
+                'selected' => $option,
+                'isCorrect' => $option == $q->answer ? 1 : 0,
+                // 'score' => $score,
+            ];
         }
 
-        $blanks = explode(',',$request->blanks);
-        dd($blanks);
+        $essays = Essay::where('quiz_id', $request->quiz_id)->get();
+        $essaysData = [];
+
+        foreach ($essays as $index => $q) {
+            $correctBlanks = explode(',', $q->blanks); // Đáp án đúng từ cơ sở dữ liệu
+            $userAnswers = [];
+            $compare = [];
+            $isCorrect = 1;
+
+            foreach ($correctBlanks as $i => $correctAnswer) {
+                $userAnswer = $data['essays'][$q->id]['blank_' . ($i + 1)] ?? null;
+                $userAnswers['blank_' . ($i + 1)] = $userAnswer;
+                // if($userAnswer == $correctAnswer) {
+                //     $isCorrect = 1;
+                // }
+                $compare['blank_' . ($i + 1)] = [
+                    'correct' => $correctAnswer,
+                    'user' => $userAnswer,
+                    'isCorrect' => strtolower(trim($userAnswer)) === strtolower(trim($correctAnswer))
+                ];
+                if ($userAnswer === null || strtolower(trim($userAnswer)) != strtolower(trim($correctAnswer))) {
+                    $isCorrect = 0;
+                }
+            }
+
+            if ($isCorrect) {
+                $score += 1;
+            }
+
+            if (!empty($userAnswers)) {
+                $essaysData[] = [
+                    'type' => 'essay',
+                    'id' => $q->id,
+                    'question' => $q->question,
+                    'correctBlanks' => implode(',', $correctBlanks),
+                    'blanks' => $userAnswers,
+                    'userAnswers' => implode(',', $userAnswers),
+                    'compare' => $compare,
+                    'isCorrect' => $isCorrect,
+                    // 'score' => $score,
+                ];
+            }
+        }
+        $results = array_merge($results, $essaysData);
+        // dd($results);
 
         Result::create([
             'user_id' => $user,
             'quiz_id' => $quiz->id,
-            'score'   => $score,
-            'count_quiz'   => $countQuiz,
+            'score' => $score,
+            'count_quiz' => $numberQuestion
         ]);
-
-        return view('frontend.quiz_result', compact('quiz', 'score'));
+        return view('frontend.quiz_result', compact('quiz', 'score', 'numberQuestion'));
     }
 }
