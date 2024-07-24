@@ -33,6 +33,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/quiz-result', [PagesController::class, "result"])->name('quiz.result');
     Route::get('/about-us', [PagesController::class, "aboutUs"])->name('about_us');
     Route::get('/profile', [PagesController::class, "profile"])->name('profile');
+    Route::post('/feedback', [PagesController::class, "feedback"])->name('feedback');
     Route::post('/profile-update/{id}', [PagesController::class, "profileUpdate"])->name('profile.update');
 });
 

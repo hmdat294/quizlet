@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Essay;
+use App\Models\Feedback;
+use App\Mail\Feedback as MailFeedback;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Quiz;
@@ -12,6 +14,7 @@ use App\Models\Result;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use BayAreaWebPro\MultiStepForms\MultiStepForm;
+use Illuminate\Support\Facades\Mail;
 
 class PagesController extends Controller
 {
@@ -37,7 +40,7 @@ class PagesController extends Controller
         $user = Auth::user();
         $results = Result::where('user_id', $user->id)->latest()->get();
 
-        
+
 
         return view('frontend.profile', compact('user', 'results'));
     }
@@ -265,5 +268,44 @@ class PagesController extends Controller
             'count_quiz' => $numberQuestion
         ]);
         return view('frontend.quiz_result', compact('quiz', 'score', 'numberQuestion'));
+    }
+
+
+    public function feedback(Request $request)
+    {
+        $feedback = $request->validate([
+            'user_id' => 'required',
+            'quiz_id' => 'required',
+            'star' => 'required|min:1',
+            'content' => 'required',
+        ]);
+
+        $flag = Feedback::create($feedback);
+
+        if ($flag) {
+
+            $results = Result::where('quiz_id', $request->quiz_id)->latest()->first();
+
+            Mail::to(Auth::user()->email)->send(
+                new MailFeedback(
+                    [
+                        "name" => Auth::user()->name,
+                        "score" => $results->score,
+                        "count_quiz" => $results->count_quiz,
+                        "category" => Category::find($results->quiz->category_id)->title,
+                        "title" => $results->quiz->title,
+                        "description" => $results->quiz->description,
+                        "duration" => $results->quiz->duration,
+                        "type" => ($results->quiz->type == 0) ? 'Trắc nghiệm' : (($results->quiz->type == 1) ? 'Điền vào chỗ trống' : (($results->quiz->type == 2) ? 'Kết hợp' : '')),
+                        "star" => $request->star,
+                        "content" => $request->content
+                    ]
+                )
+            );
+
+            return redirect()->route('home')->with('success', 'Gửi đánh giá thành công!');
+        } else {
+            return redirect()->back()->with('errors', 'Gửi đánh giá không thành công!');
+        }
     }
 }
