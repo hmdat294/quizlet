@@ -116,7 +116,8 @@
                                 <td>{{ $result->quiz->title }}</td>
                                 <td>{{ $result->score }} / {{ $result->count_quiz }}</td>
                                 <td>{{ round(($result->score/$result->count_quiz)*10, 2)}}</td>
-                                <td>{{ date('d F Y', strtotime($result->created_at)) }}</td>
+
+                                <td>{{ date('d-m-Y', strtotime($result->created_at)) }}</td>
 
                             </tr>
 
