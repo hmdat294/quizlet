@@ -37,6 +37,8 @@ class PagesController extends Controller
         $user = Auth::user();
         $results = Result::where('user_id', $user->id)->latest()->get();
 
+        
+
         return view('frontend.profile', compact('user', 'results'));
     }
 
@@ -173,7 +175,7 @@ class PagesController extends Controller
         $score = 0;
 
 
-        dd($request->all());
+        // dd($request->all());
 
         foreach ($request->answers as $q => $answer) {
 
@@ -185,7 +187,7 @@ class PagesController extends Controller
         }
 
         $blanks = explode(',',$request->blanks);
-        dd($blanks);
+        // dd($blanks);
 
         Result::create([
             'user_id' => $user,
