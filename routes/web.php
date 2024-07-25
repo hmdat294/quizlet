@@ -1,4 +1,5 @@
 <?php
+
 use Illuminate\Support\Facades\Route;
 // use App\Http\Middleware\Admin;
 use BayAreaWebPro\MultiStepForms\MultiStepForm;
@@ -25,6 +26,8 @@ Route::get('register', [AuthController::class, 'register'])->name('register');
 Route::post('post-login', [AuthController::class, 'postLogin'])->name('login.post');
 Route::post('post-registration', [AuthController::class, 'postRegistration'])->name('register.post');
 Route::get('logout', [AuthController::class, 'logout'])->name('logout');
+
+Route::get('/confirmation/{token}', [AuthController::class, 'confirmRegistration'])->name('confirmation');
 
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/quizzes', [PagesController::class, "quizzes"])->name('home');
@@ -56,7 +59,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
     Route::post('/categories/{id}/update-status', [CategoriesController::class, 'updateStatus'])->name('categories.update_status');
     Route::resource('users', UserController::class);
     Route::resource('quizs', QuizController::class);
-    Route::get('/quiz-questions/{id}',[QuestionController::class, "index"])->name('quizs.questions');
+    Route::get('/quiz-questions/{id}', [QuestionController::class, "index"])->name('quizs.questions');
     Route::resource('questions', QuestionController::class);
     Route::resource('essays', EssayController::class);
 });

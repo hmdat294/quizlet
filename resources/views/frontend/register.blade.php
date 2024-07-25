@@ -125,7 +125,7 @@
         })
     </script>
     <script src="{{ asset('frontend/js/main.js') }}"></script>
-
+    @include('sweetalert::alert')
 </body>
 
 </html>

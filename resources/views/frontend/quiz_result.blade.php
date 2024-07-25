@@ -62,40 +62,6 @@
                             </ul>
 
 
-
-                            <form action="{{ route('feedback') }}" method="POST" class="text-left mt-5 row align-items-center">
-                                @csrf
-
-                                <h4 class="col-4">Đánh giá:</h4>
-
-                                <div class="d-flex justify-content-end align-items-center col-8">
-                                    <span id="rating-value" class=" mx-3">Chưa đánh giá</span>
-                                    <div class="star-rating">
-                                        <span class="star" data-value="1">&#9733;</span>
-                                        <span class="star" data-value="2">&#9733;</span>
-                                        <span class="star" data-value="3">&#9733;</span>
-                                        <span class="star" data-value="4">&#9733;</span>
-                                        <span class="star" data-value="5">&#9733;</span>
-                                    </div>
-                                    <input type="hidden" id="rating-input" name="star" value="0">
-                                    <input type="hidden" name="user_id" value="{{ Auth::id() }}">
-                                    <input type="hidden" name="quiz_id" value="{{ $quiz->id }}">
-                                </div>
-
-                                <div class="col-10">
-                                    <label for="content" class="form-label">Nội dung</label>
-                                    <textarea class="form-control" id="content" name="content"></textarea>
-                                </div>
-
-                                <div class="col-2 text-center mt-3">
-                                    <button type="submit" class="button border-0 px-4 py-2 w-100 mt-3">Gửi</button>
-                                </div>
-
-                            </form>
-
-
-
-
                         </div>
                     </div>
                 </div>
@@ -105,55 +71,4 @@
     </div>
 </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const stars = document.querySelectorAll('.star');
-        const ratingValue = document.getElementById('rating-value');
-        const ratingInput = document.getElementById('rating-input');
-
-        stars.forEach(star => {
-            star.addEventListener('click', () => {
-                const value = star.getAttribute('data-value');
-
-                ratingValue.textContent =
-                    (value == 1) ? 'Rất tệ' :
-                    (value == 2) ? 'Tệ' :
-                    (value == 3) ? 'Trung bình' :
-                    (value == 4) ? 'Tốt' :
-                    (value == 5) ? 'Rất tốt' : '';
-
-                ratingInput.value = value; // Cập nhật giá trị của input ẩn
-                stars.forEach(s => s.classList.remove('selected'));
-                star.classList.add('selected');
-                let previous = star.previousElementSibling;
-                while (previous) {
-                    previous.classList.add('selected');
-                    previous = previous.previousElementSibling;
-                }
-            });
-
-            star.addEventListener('mouseover', () => {
-                stars.forEach(s => s.classList.remove('selected'));
-                star.classList.add('selected');
-                let previous = star.previousElementSibling;
-                while (previous) {
-                    previous.classList.add('selected');
-                    previous = previous.previousElementSibling;
-                }
-            });
-
-            star.addEventListener('mouseout', () => {
-                stars.forEach(s => s.classList.remove('selected'));
-                const value = ratingInput.value;
-                if (value) {
-                    stars.forEach(s => {
-                        if (s.getAttribute('data-value') <= value) {
-                            s.classList.add('selected');
-                        }
-                    });
-                }
-            });
-        });
-    });
-</script>
 @endsection

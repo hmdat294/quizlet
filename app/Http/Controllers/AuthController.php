@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Mail\ConfirmRegister;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
 
 class AuthController extends Controller
@@ -44,17 +46,24 @@ class AuthController extends Controller
             'password' => 'required',
         ]);
 
-        $credentials = $request->only('email', 'password');
+        $user = User::where('email', $request->email)->first();
 
-        if (Auth::attempt($credentials)) {
-            // dd(Auth::user()->is_admin);
-            if (Auth::user()->is_admin) {
-                return redirect()->route('dashboard')->with('success', 'Đăng nhập thành công!');
+        if (isset($user->remember_token) && $user->remember_token != null) {
+            return redirect()->route('login')->with('errors', 'Tài khoản chưa được xác nhận');
+        } else {
+
+            $credentials = $request->only('email', 'password');
+
+            if (Auth::attempt($credentials)) {
+
+                if (Auth::user()->is_admin) {
+                    return redirect()->route('dashboard')->with('success', 'Đăng nhập thành công!');
+                } else {
+                    return redirect()->route('home')->with('success', 'Đăng nhập thành công!');
+                }
             } else {
-                return redirect()->route('home')->with('success', 'Đăng nhập thành công!');
+                return redirect()->route('login')->with('errors', 'Đăng nhập thất bại');
             }
-        }else{
-            return redirect()->route('login')->with('errors', 'Đăng nhập thất bại');
         }
     }
 
@@ -65,30 +74,43 @@ class AuthController extends Controller
      */
     public function postRegistration(Request $request)
     {
-        $request->validate([
-            'name' => 'required',
-            'email' => 'required|email|unique:users',
-            'password' => 'required|min:6',
-        ]);
+        // dd($request->all());
 
         if ($request->password == $request->repassword) {
 
-            User::create([
+            $user = User::create([
                 'name' => $request->name,
                 'email' => $request->email,
-                'password' => Hash::make($request->password)
+                'password' => Hash::make($request->password),
+                'remember_token' => $request->_token,
+                'email_verified_at' => now()
             ]);
 
-            $credentials = $request->only('email', 'password');
+            $confirmationUrl = route('confirmation', ['token' => $user->remember_token]);
 
-            if (Auth::attempt($credentials)) {
-                return redirect()->route('home')->withSuccess('Đăng ký thành công.');
-            }
+            Mail::to($user->email)->send(new ConfirmRegister($confirmationUrl));
 
-            // return redirect()->route('home')->withSuccess('Tốt! Đăng ký thành công.');
+            // $credentials = $request->only('email', 'password');
+
+            // if (Auth::attempt($credentials)) {
+            //     return redirect()->route('home')->withSuccess('Đăng ký thành công.');
+            // }
+
+            return redirect()->back()->withSuccess('Vui lòng kiểm tra Email của bạn để xác nhận đăng ký.');
         } else {
-            return redirect('login')->withSuccess('Mật khẩu không khớp.');
+            return redirect()->back()->with('errors', 'Mật khẩu không khớp.');
         }
+    }
+
+
+    public function confirmRegistration($token)
+    {
+        $user = User::where('remember_token', $token)->firstOrFail();
+        $user->remember_token = null;
+        $user->email_verified_at = now();
+        $user->save();
+
+        return redirect()->route('login')->withSuccess('Tài khoản đã được xác nhận, hãy đăng nhập.');
     }
 
 
