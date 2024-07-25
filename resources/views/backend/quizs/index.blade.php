@@ -30,6 +30,7 @@
                             <th>#</th>
                             <th>Tiêu đề</th>
                             <th>Thời gian</th>
+                            <th>Cấp độ</th>
                             <th>Mô tả</th>
                             <th>Câu hỏi</th>
                             <th>Hành động</th>
@@ -41,6 +42,11 @@
                             <td>{{ $i+1 }}</td>
                             <td>{{ $quiz->title }}</td>
                             <td>{{ $quiz->duration }}</td>
+                            <td>{{
+                                ($quiz->level == 0)?'Cơ bản':
+                                (($quiz->level == 1)?'Trung bình':
+                                (($quiz->level == 2)?'Nâng cao':''))
+                            }}</td>
                             <td>{{ $quiz->description }}</td>
                             <td><a class="btn btn-sm btn-warning" href="{{ route('quizs.questions', $quiz->id) }}" title="Danh sách câu hỏi">
                                     <i class="bi bi-list"></i> Câu hỏi
@@ -64,19 +70,29 @@
                                                 <div class="modal-body">
                                                     <div class="row my-2">
 
-                                                        <div class="form-group col-8">
+                                                        <div class="form-group col-6">
                                                             <label class="form-label my-2">Tiêu đề</label>
                                                             <input type="text" class="form-control" name="title" placeholder="Tiêu đề" value="{{$quiz->title}}">
                                                         </div>
 
-                                                        <div class="form-group col-4">
+                                                        <div class="col-4">
+                                                            <label for="level" class="form-label my-2">Chọn loại cấp độ:</label>
+                                                            <select class="form-select" id="level" name="level">
+                                                                <option value="0" {{($quiz->level == 0)?'selected':''}}>Cơ bản</option>
+                                                                <option value="1" {{($quiz->level == 1)?'selected':''}}>Trung bình</option>
+                                                                <option value="2" {{($quiz->level == 2)?'selected':''}}>Nâng cao</option>
+                                                            </select>
+                                                            <div class="invalid-feedback">Vui lòng chọn loại cấp độ.</div>
+                                                        </div>
+
+                                                        <div class="form-group col-2">
                                                             <label class="form-label my-2">Thời gian</label>
                                                             <input type="text" class="form-control" name="duration" placeholder="Thời gian" value="{{$quiz->duration}}">
                                                         </div>
 
                                                     </div>
-                                                    
-                                                    
+
+
                                                     <div class="row my-2">
 
                                                         <div class="form-group col-6">
@@ -86,8 +102,7 @@
 
                                                         <div class="form-group col-6">
                                                             <label class="form-label my-2">Loại câu hỏi</label>
-                                                            <input type="text" class="form-control" 
-                                                            value="{{
+                                                            <input type="text" class="form-control" value="{{
                                                                 ($quiz->type == 0)?'Trắc nghiệm':
                                                                 (($quiz->type == 1)?'Điền vào chỗ trống':
                                                                 (($quiz->type == 2)?'Kết hợp':''))

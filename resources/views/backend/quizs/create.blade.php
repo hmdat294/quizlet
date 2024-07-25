@@ -54,6 +54,17 @@
                             <input type="hidden" id="type" name="type" value="">
                             <div class="invalid-feedback">Vui lòng chọn loại câu hỏi.</div>
                         </div>
+
+                        <div class="row">
+                            <label for="level" class="form-label">Chọn loại cấp độ:</label>
+                            <select class="form-select" id="level" name="level">
+                                <option selected disabled value="">Chọn loại cấp độ</option>
+                                <option value="0">Cơ bản</option>
+                                <option value="1">Trung bình</option>
+                                <option value="2">Nâng cao</option>
+                            </select>
+                            <div class="invalid-feedback">Vui lòng chọn loại cấp độ.</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -81,7 +92,7 @@
                                 <label for="duration" class="form-label">Thời gian</label>
                                 <div class="input-group">
                                     <input type="text" class="form-control rounded" id="duration" name="duration"
-                                        value="35">
+                                        value="30">
                                     <div class="invalid-feedback">Vui lòng nhập thời gian của bài quiz.</div>
                                 </div>
                             </div>

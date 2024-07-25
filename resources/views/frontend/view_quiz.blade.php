@@ -16,7 +16,6 @@
             <div class="col p-static">
                 <span class="page-header-title-border visible" style="width: 145.509px;"></span>
                 <h1 data-title-border="">Quizzes</h1>
-
             </div>
         </div>
     </div>
@@ -26,9 +25,30 @@
     <div class="row">
         <div class="col-11 mx-auto">
 
-            <div class="blog-posts text-center">
+            <div class="blog-posts mt-3">
 
-                <h2 class="font-weight-bold mb-4 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1500" style="animation-delay: 1500ms;">Coding Skill Quizzes</h2>
+                <div class="d-flex justify-content-between align-items-center my-3">
+                    <h3 class="m-0">Danh sách bài kiểm tra</h3>
+
+                    <div class="w-25">
+                        <select class="form-select p-2 w-100" id="quiz-level" name="quiz-level">
+                            <option value="0" {{($level == 0)?'selected':''}}>Cơ bản</option>
+                            <option value="1" {{($level == 1)?'selected':''}}>Trung bình</option>
+                            <option value="2" {{($level == 2)?'selected':''}}>Nâng cao</option>
+                        </select>
+                    </div>
+                </div>
+
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $('#quiz-level').change(function() {
+
+                            window.location.href = "{{ route('quiz.view', [$id, ':level']) }}".replace(':level', $(this).val());
+
+                        });
+                    });
+                </script>
 
                 <table class="table appear-animation animated fadeInUpShorter appear-animation-visible text-center profile-tabs " data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400" style="animation-delay: 400ms;">
                     <tr>
@@ -42,14 +62,14 @@
                     @foreach ($quizs as $quiz)
                     <tr class="">
                         <td>{{ $quiz->title }}</td>
-                        <td>{{ $quiz->duration }} phút</td> 
+                        <td>{{ $quiz->duration }} phút</td>
                         <td>
                             {{
                                 ($quiz->type == 0)?'Trắc nghiệm':
                                 (($quiz->type == 1)?'Điền vào chỗ trống':
                                 (($quiz->type == 2)?'Kết hợp':''))
                             }}
-                        </td> 
+                        </td>
                         <td>{{ $quiz->description }}</td>
                         <td>
                             <a href="{{ route('quiz.start', [$quiz->id, $quiz->type]) }}" class="button px-4 py-1 fs-10">Bắt đầu</a>

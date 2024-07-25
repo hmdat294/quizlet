@@ -88,8 +88,7 @@
             var status = $(this).is(":checked") ? 1 : 0;
 
             $.ajax({
-                url: "{{ route('categories.update_status', ':id') }}".replace(':id',
-                    categoryId),
+                url: "{{ route('categories.update_status', ':id') }}".replace(':id', categoryId),
                 type: "POST",
                 data: {
                     _token: "{{ csrf_token() }}",

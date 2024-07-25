@@ -15,7 +15,6 @@
             <div class="col p-static">
                 <span class="page-header-title-border visible" style="width: 145.509px;"></span>
                 <h1 data-title-border="">View Test</h1>
-
             </div>
         </div>
     </div>

@@ -37,7 +37,7 @@
                         <div class="card border-0 profile-tabs">
                             <div class="card-body text-center d-flex flex-column justify-content-between align-items-center" style="height: 250px;">
                                 <img src="{{ asset('frontend/img/category/'.$category->image) }}" alt="{{ $category->title }}" class="" width="100px">
-                                <a href="{{ route('quiz.view', $category->id) }}" class="button px-4 py-2 mt-3">View {{ $category->title }}</a>
+                                <a href="{{ route('quiz.view', [$category->id, 0]) }}" class="button px-4 py-2 mt-3">View {{ $category->title }}</a>
                             </div>
                         </div>
                     </div>

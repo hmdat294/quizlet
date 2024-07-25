@@ -14,6 +14,7 @@ class Quiz extends Model
         'title',
         'duration',
         'type',
+        'level',
         'description'
     ];
 

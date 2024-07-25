@@ -22,7 +22,7 @@ class Feedback extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Feedback',
+            subject: 'THÔNG TIN BÀI KIỂM TRA',
         );
     }
 
