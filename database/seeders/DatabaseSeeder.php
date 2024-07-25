@@ -28,14 +28,9 @@ class DatabaseSeeder extends Seeder
             'remember_token' => null,
         ]);
 
-        Category::insert([
-            ['title' => 'HTML', 'image' => 'html.png', 'status' => 1],
-            ['title' => 'CSS', 'image' => 'css.png', 'status' => 1],
-            ['title' => 'JavaScript', 'image' => 'js.png', 'status' => 1],
-            ['title' => 'PHP', 'image' => 'php.png', 'status' => 1],
-            ['title' => 'Angular', 'image' => 'angular.png', 'status' => 1],
-            ['title' => 'Laravel', 'image' => 'laravel.png', 'status' => 1],
-            ['title' => 'React', 'image' => 'react.png', 'status' => 1],
-        ]);
+        $this->call(CategorySeeder::class);
+        $this->call(QuizSeeder::class);
+        $this->call(QuestionSeeder::class);
+        $this->call(EssaySeeder::class);
     }
 }
