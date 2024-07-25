@@ -117,7 +117,8 @@
                                                     $outputString = preg_replace_callback(
                                                         '/\[blank_(\d+)\]/',
                                                         function ($matches) use ($id){
-                                                            return '<input class="border-bottom border-0 border-2" type="text" name="essays['.$id.'][blank_' . $matches[1] . ']">';
+                                                            return '<input class="border-bottom border-0 border-2" type="text" name="essays['.$id.'][blank_' . $matches[1] . ']" required>
+                                                                ';
                                                         },
                                                         $q['question'],
                                                     );

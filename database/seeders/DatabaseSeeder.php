@@ -23,19 +23,14 @@ class DatabaseSeeder extends Seeder
             'name' => 'Admin',
             'email' => 'admin@admin.com',
             'email_verified_at' => now(),
-            'password' => password_hash('123456',PASSWORD_BCRYPT), // password
+            'password' => password_hash('123456', PASSWORD_BCRYPT), // password
             'is_admin' => 1,
             'remember_token' => Str::random(10),
         ]);
 
-        Category::insert([
-            ['title' => 'HTML', 'image' => 'html.png', 'status' => 1],
-            ['title' => 'CSS', 'image' => 'css.png', 'status' => 1],
-            ['title' => 'JavaScript', 'image' => 'js.png', 'status' => 1],
-            ['title' => 'PHP', 'image' => 'php.png', 'status' => 1],
-            ['title' => 'Angular', 'image' => 'angular.png', 'status' => 1],
-            ['title' => 'Laravel', 'image' => 'laravel.png', 'status' => 1],
-            ['title' => 'React', 'image' => 'react.png', 'status' => 1],
-        ]);
+        $this->call(CategorySeeder::class);
+        $this->call(QuizSeeder::class);
+        $this->call(QuestionSeeder::class);
+        $this->call(EssaySeeder::class);
     }
 }

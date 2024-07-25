@@ -63,7 +63,7 @@
 
 
 
-                            <form action="{{ route('feedback') }}" method="POST" class="text-left mt-5 row align-items-center">
+                            <form  id="feedbackForm"  action="{{ route('result.feedback') }}" method="POST" class="text-left mt-5 row align-items-center">
                                 @csrf
 
                                 <h4 class="col-4">Đánh giá:</h4>
@@ -85,17 +85,14 @@
                                 <div class="col-10">
                                     <label for="content" class="form-label">Nội dung</label>
                                     <textarea class="form-control" id="content" name="content"></textarea>
+                                    <div class="invalid-feedback">Vui lòng nhập feedback.</div>
                                 </div>
 
                                 <div class="col-2 text-center mt-3">
+                                    <a href="{{route('home')}}"> Về trang chủ</a>
                                     <button type="submit" class="button border-0 px-4 py-2 w-100 mt-3">Gửi</button>
                                 </div>
-
                             </form>
-
-
-
-
                         </div>
                     </div>
                 </div>
@@ -104,6 +101,8 @@
         </div>
     </div>
 </div>
+
+
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {

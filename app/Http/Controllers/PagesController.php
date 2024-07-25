@@ -81,7 +81,7 @@ class PagesController extends Controller
     public function viewQuiz($id, $level = 0)
     {
         // dd($level);
-        
+
         $quizs = Quiz::where('category_id', $id)->where('level', $level)->get();
 
         return view('frontend.view_quiz', compact('quizs', 'id', 'level'));
@@ -307,7 +307,7 @@ class PagesController extends Controller
 
             return redirect()->route('home')->with('success', 'Gửi đánh giá thành công!');
         } else {
-            return redirect()->back()->with('errors', 'Gửi đánh giá không thành công!');
+            return back()->with('errors', 'Gửi đánh giá không thành công!');
         }
     }
 }
