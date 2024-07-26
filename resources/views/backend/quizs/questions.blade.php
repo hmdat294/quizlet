@@ -26,6 +26,10 @@
 <h6 class="mb-0 text-uppercase">Danh sách câu hỏi thuộc: {{ $quiz->title }}</h6>
 <hr />
 
+
+
+@if (isset($questions) && $questions->count() > 0)
+
 <div class="card">
     <div class="card-header">
         <h1>Danh sách câu hỏi trắc nghiệm</h1>
@@ -46,12 +50,12 @@
                 </thead>
                 <tbody>
                     @php
-                    $i = 0;
+                    $index = 0;
                     @endphp
                     @foreach ($questions as $question)
                     @php $ans = 'option_' . $question->answer; @endphp
                     <tr>
-                        <td>{{ ++$i }}</td>
+                        <td>{{ ++$index }}</td>
                         <td>{{ $question->question }}</td>
                         <td class="{{ $question->answer == 1 ? 'fw-bold' : '' }}">{{ $question->option_1 }}
                         </td>
@@ -133,6 +137,11 @@
         </div>
     </div>
 </div>
+
+@endif
+
+@if (isset($essays) && $essays->count() > 0)
+
 <div class="card">
     <div class="card-header">
         <h1>Danh sách câu hỏi điền vào chỗ trống</h1>
@@ -150,12 +159,12 @@
                 </thead>
                 <tbody>
                     @php
-                    $i = 0;
+                    $index = 0;
                     @endphp
                     @foreach ($essays as $essay)
                     {{-- @php $ans = 'option_' . $question->answer; @endphp --}}
                     <tr>
-                        <td>{{ ++$i }}</td>
+                        <td>{{ ++$index }}</td>
                         <td>{{ $essay->question }}</td>
                         <td>{{ $essay->blanks }}
                         </td>
@@ -222,7 +231,9 @@
         </div>
     </div>
 </div>
-</div>
+
+@endif
+
 @endsection
 @section('custom_script')
 <script>

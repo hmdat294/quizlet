@@ -42,7 +42,6 @@ class QuizController extends Controller
             'duration' => 'required|integer',
             'description' => 'nullable|string',
             'type' => 'required|integer|in:0,1,2',
-            'level' => 'required|integer|in:0,1,2',
             'category_id' => 'required'
         ]);
         $quiz_type = $request->input('type');

@@ -32,15 +32,19 @@ class QuizSeeder extends Seeder
             $categoryId = $index + 1;
 
             foreach ($quizTypes as $type => $typeLabel) {
-                $quizzes[] = [
-                    'category_id' => $categoryId,
-                    'title' => "{$category['title']} Quiz - {$typeLabel} ",
-                    'description' => "Đây là bài quiz {$typeLabel} về chủ đề: {$category->title}.",
-                    'duration' => Arr::random([15, 20, 25, 30, 35, 40, 45]),
-                    'type' => $type,
-                    'created_at' => now(),
-                    'updated_at' => now(),
-                ];
+
+                for ($i = 0; $i < 5; $i++) {
+                    $bai = $i + 1;
+                    $quizzes[] = [
+                        'category_id' => $categoryId,
+                        'title' => "Bài {$bai} - {$category['title']} Quiz - {$typeLabel}",
+                        'description' => "Đây là bài quiz {$typeLabel} về chủ đề: {$category->title}.",
+                        'duration' => Arr::random([15, 20, 25, 30, 35, 40, 45]),
+                        'type' => $type,
+                        'created_at' => now(),
+                        'updated_at' => now(),
+                    ];
+                }
             }
         }
 

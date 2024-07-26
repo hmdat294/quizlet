@@ -15,8 +15,8 @@ class QuestionController extends Controller
     public function index($id)
     {
         $quiz = Quiz::find($id);
-        $questions = Question::with('quiz')->latest()->get();
-        $essays = Essay::with('quiz')->latest()->get();
+        $questions = Question::where('quiz_id', $id)->latest()->get();
+        $essays = Essay::where('quiz_id', $id)->latest()->get();
 
         return view('backend.quizs.questions', compact('questions', 'essays', 'quiz'));
     }
