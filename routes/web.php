@@ -23,11 +23,15 @@ use App\Http\Controllers\EssayController;
 // Login Routes
 Route::get('/', [AuthController::class, 'index'])->name('login');
 Route::get('register', [AuthController::class, 'register'])->name('register');
+Route::get('forgot', [AuthController::class, 'forgot'])->name('forgot');
 Route::post('post-login', [AuthController::class, 'postLogin'])->name('login.post');
 Route::post('post-registration', [AuthController::class, 'postRegistration'])->name('register.post');
+Route::post('post-forgot', [AuthController::class, 'postForgot'])->name('forgot.post');
 Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::get('/confirmation/{token}', [AuthController::class, 'confirmRegistration'])->name('confirmation');
+Route::get('/resetpassword/{token}', [AuthController::class, 'resetPassword'])->name('resetpassword');
+Route::post('/resetpassword/{token}', [AuthController::class, 'postResetPassword'])->name('resetpassword.post');
 
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/quizzes', [PagesController::class, "quizzes"])->name('home');
