@@ -30,25 +30,8 @@
                 <div class="d-flex justify-content-between align-items-center my-3">
                     <h3 class="m-0">Danh sách bài kiểm tra</h3>
 
-                    <div class="w-25">
-                        <select class="form-select p-2 w-100" id="quiz-level" name="quiz-level">
-                            <option value="0" {{($level == 0)?'selected':''}}>Cơ bản</option>
-                            <option value="1" {{($level == 1)?'selected':''}}>Trung bình</option>
-                            <option value="2" {{($level == 2)?'selected':''}}>Nâng cao</option>
-                        </select>
-                    </div>
                 </div>
 
-                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                <script>
-                    $(document).ready(function() {
-                        $('#quiz-level').change(function() {
-
-                            window.location.href = "{{ route('quiz.view', [$id, ':level']) }}".replace(':level', $(this).val());
-
-                        });
-                    });
-                </script>
 
                 <table class="table appear-animation animated fadeInUpShorter appear-animation-visible text-center profile-tabs " data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400" style="animation-delay: 400ms;">
                     <tr>

@@ -78,13 +78,13 @@ class PagesController extends Controller
     /**
      * Display the specified resource.
      */
-    public function viewQuiz($id, $level = 0)
+    public function viewQuiz($id)
     {
         // dd($level);
 
-        $quizs = Quiz::where('category_id', $id)->where('level', $level)->get();
+        $quizs = Quiz::where('category_id', $id)->get();
 
-        return view('frontend.view_quiz', compact('quizs', 'id', 'level'));
+        return view('frontend.view_quiz', compact('quizs', 'id'));
     }
 
 
