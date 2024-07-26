@@ -15,13 +15,13 @@ class CategorySeeder extends Seeder
     {
         //
         Category::insert([
-            ['title' => 'HTML', 'image' => 'html.png', 'status' => 1],
-            ['title' => 'CSS', 'image' => 'css.png', 'status' => 1],
-            ['title' => 'JavaScript', 'image' => 'js.png', 'status' => 1],
-            ['title' => 'PHP', 'image' => 'php.png', 'status' => 1],
-            ['title' => 'Angular', 'image' => 'angular.png', 'status' => 1],
-            ['title' => 'Laravel', 'image' => 'laravel.png', 'status' => 1],
-            ['title' => 'React', 'image' => 'react.png', 'status' => 1],
+            ['title' => 'HTML', 'image' => 'html.png', 'status' => 1, 'created_at' => now()->format('Y-m-d H:i:s')],
+            ['title' => 'CSS', 'image' => 'css.png', 'status' => 1, 'created_at' => now()->format('Y-m-d H:i:s')],
+            ['title' => 'JavaScript', 'image' => 'js.png', 'status' => 1, 'created_at' => now()->format('Y-m-d H:i:s')],
+            ['title' => 'PHP', 'image' => 'php.png', 'status' => 1, 'created_at' => now()->format('Y-m-d H:i:s')],
+            ['title' => 'Angular', 'image' => 'angular.png', 'status' => 1, 'created_at' => now()->format('Y-m-d H:i:s')],
+            ['title' => 'Laravel', 'image' => 'laravel.png', 'status' => 1, 'created_at' => now()->format('Y-m-d H:i:s')],
+            ['title' => 'React', 'image' => 'react.png', 'status' => 1, 'created_at' => now()->format('Y-m-d H:i:s')],
         ]);
     }
 }

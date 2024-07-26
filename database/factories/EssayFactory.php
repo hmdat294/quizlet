@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Question;
-use App\Models\Quiz;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class QuestionFactory extends Factory
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Essay>
+ */
+class EssayFactory extends Factory
 {
-
     /**
      * Define the model's default state.
      *
-     * @return array
+     * @return array<string, mixed>
      */
     public function definition(): array
     {

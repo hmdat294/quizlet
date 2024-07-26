@@ -17,6 +17,7 @@ return new class extends Migration
             $table->foreign('quiz_id')->references('id')->on('quizs')->onDelete('cascade');
             $table->text('question');
             $table->string('blanks')->nullable(); // Chứa chuỗi blanks phân tách bởi dấu phẩy
+            $table->unsignedTinyInteger('level')->default(0);
             $table->timestamps();
         });
     }
