@@ -20,17 +20,16 @@ class DatabaseSeeder extends Seeder
         // Question::factory()->count(300)->create();
 
         User::factory()->create([
-            'name' => 'Admin',
-            'email' => 'admin@admin.com',
+            'name' => 'Thạch Thế Đăng',
+            'email' => 'dangthach1307@gmail.com',
             'email_verified_at' => now(),
-            'password' => password_hash('123456',PASSWORD_BCRYPT),
+            'password' => password_hash('123456', PASSWORD_BCRYPT),
             'is_admin' => 1,
             'remember_token' => null,
         ]);
 
         $this->call(CategorySeeder::class);
         $this->call(QuizSeeder::class);
-        $this->call(QuestionSeeder::class);
-        $this->call(EssaySeeder::class);
+        $this->call(QuestionAndEssaySeeder::class);
     }
 }

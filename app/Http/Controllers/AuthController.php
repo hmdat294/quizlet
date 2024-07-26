@@ -79,7 +79,7 @@ class AuthController extends Controller
      */
     public function postRegistration(Request $request)
     {
-        // dd($request->all());
+        dd($request->all());
 
         if ($request->password === $request->repassword) {
 
@@ -87,7 +87,7 @@ class AuthController extends Controller
                 'name' => $request->name,
                 'email' => $request->email,
                 'password' => Hash::make($request->password),
-                'remember_token' => $request->_token,
+                'remember_token' => $request->_token ?? null,
                 'email_verified_at' => now()
             ]);
 

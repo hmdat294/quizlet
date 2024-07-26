@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('essays', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('quiz_id');
+            $table->unsignedBigInteger('quiz_id')->nullable();
             $table->foreign('quiz_id')->references('id')->on('quizs')->onDelete('cascade');
             $table->text('question');
             $table->string('blanks')->nullable(); // Chứa chuỗi blanks phân tách bởi dấu phẩy
