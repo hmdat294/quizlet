@@ -32,44 +32,30 @@
 
                 <img src="{{ asset('frontend/img/logos/logoquizlet.png') }}" alt="LOGO" class="" width="150px">
 
-                <a class="dangky px-3 py-2 d-flex align-items-center fs-16" href="{{ route('register') }}">
-                    <i class="bi bi-person fs-25"></i>
-                    <span class="px-2">
-                        Đăng ký
-                    </span>
-                </a>
+                <div></div>
 
             </div>
 
             <div class="wrap-login100">
 
-                <div class="login100-pic p-5">
-
-                    <div class="d-flex justify-content-center align-items-center">
-                        <img src="{{ asset('frontend/img/logos/logoquizlet.png') }}" alt="LOGO" class="" height="300px;">
-                    </div>
-                    <div class="text-center text-white" style="font-family: Poppins;transform: translateY(-50px);">
-                        <h1>Let's start the Quiz</h1>
-                    </div>
-
-                </div>
-
-                <form action="{{ route('login.post') }}" method="post" class="login100-form validate-form p-5 bg-form">
+                <form action="{{ route('resetpassword.post', $token) }}" method="post" class="login100-form validate-form p-5 bg-form m-auto">
                     @csrf
                     <span class="login100-form-title" style="color: 00f7ff;">
-                        Đăng nhập
+                        Đặt mật khẩu mới
                     </span>
 
-                    <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                        <input class="input100" type="text" name="email" placeholder="Email">
+                    <div class="wrap-input100 validate-input" data-validate="Password is required">
+                        <input class="input100" type="password" name="password" placeholder="Mật khẩu">
+
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <i class="fa fa-lock" aria-hidden="true"></i>
                         </span>
                     </div>
 
                     <div class="wrap-input100 validate-input" data-validate="Password is required">
-                        <input class="input100" type="password" name="password" placeholder="Mật khẩu">
+                        <input class="input100" type="password" name="repassword" placeholder="Nhập lại mật khẩu">
+
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
                             <i class="fa fa-lock" aria-hidden="true"></i>
@@ -78,20 +64,10 @@
 
                     <div class="container-login100-form-btn">
                         <button class="dangky px-4 py-2">
-                            Đăng nhập
+                            Đặt mật khẩu mới
                         </button>
                     </div>
 
-                    <div class="text-center pt-4">
-                        <a href="{{ route('forgot') }}">
-                            <span class="txt1">
-                                Quên
-                            </span>
-                            <span class="txt2">
-                                mật khẩu?
-                            </span>
-                        </a>
-                    </div>
 
                 </form>
             </div>

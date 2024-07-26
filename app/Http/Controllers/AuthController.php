@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Mail\ConfirmRegister;
+use App\Mail\ForgotPassword;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
@@ -21,7 +22,6 @@ class AuthController extends Controller
     public function index()
     {
         if (Auth::check()) {
-
             return redirect()->route("home");
         }
         return view('frontend.login');
@@ -30,6 +30,11 @@ class AuthController extends Controller
     public function register()
     {
         return view('frontend.register');
+    }
+
+    public function forgot()
+    {
+        return view('frontend.forgot');
     }
 
 
@@ -76,7 +81,7 @@ class AuthController extends Controller
     {
         dd($request->all());
 
-        if ($request->password == $request->repassword) {
+        if ($request->password === $request->repassword) {
 
             $user = User::create([
                 'name' => $request->name,
@@ -103,6 +108,25 @@ class AuthController extends Controller
     }
 
 
+    public function postForgot(Request $request)
+    {
+
+        $user = User::where('email', $request->email)->firstOrFail();
+
+        if (isset($user)) {
+
+            $user->update(['remember_token' => $request->_token]);
+
+            $resetPasswordUrl = route('resetpassword', ['token' => $user->remember_token]);
+            Mail::to($request->email)->send(new ForgotPassword($resetPasswordUrl));
+
+            return redirect()->back()->withSuccess('Vui lòng kiểm tra Email của bạn để đặt lại mật khẩu.');
+        } else {
+            return redirect()->back()->with('errors', 'Tài khoản không tồn tại.');
+        }
+    }
+
+
     public function confirmRegistration($token)
     {
         $user = User::where('remember_token', $token)->firstOrFail();
@@ -113,12 +137,34 @@ class AuthController extends Controller
         return redirect()->route('login')->withSuccess('Tài khoản đã được xác nhận, hãy đăng nhập.');
     }
 
+    public function resetPassword($token)
+    {
+        $user = User::where('remember_token', $token)->firstOrFail();
 
-    /**
-     * Write code on Method
-     *
-     *
-     */
+        if (isset($user)) {
+            return view('frontend.resetPassword', compact('token'));
+        }
+    }
+
+    public function postResetPassword(Request $request, $token)
+    {
+        
+        if ($request->password === $request->repassword) {
+            
+            $user = User::where('remember_token', $token)->firstOrFail();
+    
+            $user->update([
+                'password' => Hash::make($request->password),
+                'remember_token' => null,
+                'email_verified_at' => now()
+            ]);
+
+            return redirect()->route('login')->withSuccess('Đổi mật khẩu thành công, hãy đăng nhập.');
+        } else {
+            return redirect()->back()->with('errors', 'Mật khẩu không khớp.');
+        }
+    }
+    
     public function logout()
     {
         Session::flush();
