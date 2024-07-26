@@ -30,7 +30,6 @@ class DatabaseSeeder extends Seeder
 
         $this->call(CategorySeeder::class);
         $this->call(QuizSeeder::class);
-        $this->call(QuestionSeeder::class);
-        $this->call(EssaySeeder::class);
+        $this->call(QuestionAndEssaySeeder::class);
     }
 }

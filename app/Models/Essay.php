@@ -9,12 +9,10 @@ class Essay extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['quiz_id', 'question', 'blanks'];
+    protected $fillable = ['quiz_id', 'question', 'blanks', 'level'];
 
-    public function quiz()
+    public function Quiz()
     {
         return $this->belongsTo(Quiz::class);
     }
-
-
 }

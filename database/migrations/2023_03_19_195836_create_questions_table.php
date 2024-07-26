@@ -13,9 +13,8 @@ return new class extends Migration
     {
         Schema::create('questions', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('category_id');
-            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
-            $table->unsignedTinyInteger('level')->default(0);
+            $table->unsignedBigInteger('quiz_id')->nullable();
+            $table->foreign('quiz_id')->references('id')->on('quizs')->onDelete('cascade');
             $table->text('question');
             $table->text('option_1');
             $table->text('option_2');
