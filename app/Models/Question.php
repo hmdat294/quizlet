@@ -10,14 +10,13 @@ class Question extends Model
     use HasFactory;
     protected $table = 'questions';
     protected $fillable = [
+        'quiz_id',
         'question',
         'option_1',
         'option_2',
         'option_3',
         'option_4',
         'answer',
-        'quiz_id',
-        'level',
     ];
 
     public function Quiz()
