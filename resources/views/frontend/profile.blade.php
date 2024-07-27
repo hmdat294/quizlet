@@ -125,7 +125,7 @@
 
                                     <div class="modal fade" id="Feedback{{$result->quiz->id}}" tabindex="-1" aria-labelledby="FeedbackLabel{{$result->quiz->id}}" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered modal-lg">
-                                            <form action="{{ route('feedback') }}" method="post" class="modal-content">
+                                            <form action="{{ route('submitfeedback') }}" method="post" class="modal-content">
                                                 @csrf
                                                 <div class="modal-header">
                                                     <h3 class="modal-title fs-5" id="FeedbackLabel{{$result->quiz->id}}">Đánh giá</h3>
