@@ -45,13 +45,10 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @php
-                    $i = 0;
-                    @endphp
-                    @foreach ($questions as $question)
+                    @foreach ($questions as $index=> $question)
                     @php $ans = 'option_' . $question->answer; @endphp
                     <tr>
-                        <td>{{ ++$i }}</td>
+                        <td>{{ $index+1 }}</td>
                         <td>{{ $question->question }}</td>
                         <td class="{{ $question->answer == 1 ? 'fw-bold' : '' }}">{{ $question->option_1 }}
                         </td>
@@ -63,7 +60,6 @@
                         </td>
 
                         <td class="d-flex gap-2">
-
                             <div>
                                 <a class="btn btn-sm btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#Choice{{$question->id}}">
                                     <i class="bi bi-pencil"></i>
@@ -81,10 +77,10 @@
                                             <div class="modal-body">
                                                 <div class="form-group">
                                                     <label class="form-label my-2">Câu hỏi</label>
-                                                    <input type="text" class="form-control" name="question" placeholder="Câu hỏi" value="{{$question->question}}">
+                                                    {{-- <input type="text" class="form-control" name="question" placeholder="Câu hỏi" value="{{$question->question}}"> --}}
+                                                    <textarea class="form-controlr" name="question" cols="10" rows="3" placeholder="Câu hỏi">{{$question->question}}</textarea>
                                                 </div>
                                                 <div class="row my-2">
-
                                                     <div class="form-group col-6">
                                                         <label class="form-label my-2">Đáp án 1</label>
                                                         <input type="text" class="form-control" name="option_1" placeholder="Đáp án 1" value="{{$question->option_1}}">
