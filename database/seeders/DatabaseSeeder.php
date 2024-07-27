@@ -20,8 +20,8 @@ class DatabaseSeeder extends Seeder
         // Question::factory()->count(300)->create();
 
         User::factory()->create([
-            'name' => 'Thạch Thế Đăng',
-            'email' => 'dangthach1307@gmail.com',
+            'name' => 'Hồ Minh Đạt',
+            'email' => 'hodat2092004@gmail.com',
             'email_verified_at' => now(),
             'password' => password_hash('123456', PASSWORD_BCRYPT),
             'is_admin' => 1,

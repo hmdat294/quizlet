@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Feedback;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Quiz;
@@ -24,12 +25,15 @@ class DashboardController extends Controller
                 'quizs' => Quiz::count(),
                 'questions' => Question::count(),
                 'results' => Result::count(),
+                'feedbacks' => Feedback::count(),
+                'stars' => Feedback::sum('star')/Feedback::count(),
             ];
 
             // Thống kê category
             $categories = Category::withCount('quizs')->get();
             $categoryNames = $categories->pluck('title');
             $quizCounts = $categories->pluck('quizs_count');
+            $feedbacks = Feedback::all();
 
             // Thống kê số lượt làm bài theo loại quiz
             $quizTypes = [0 => 'trắc nghiệm', 1 => 'điền vào chỗ trống', 2 => 'kết hợp'];
@@ -48,7 +52,8 @@ class DashboardController extends Controller
                 ];
             }
 
-            return view('backend.dashboard', compact('data', 'categoryNames', 'quizCounts', 'results'));
+            
+            return view('backend.dashboard', compact('data', 'categoryNames', 'quizCounts', 'results', 'feedbacks'));
         }
 
 

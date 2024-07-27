@@ -9,9 +9,6 @@
         <div class="ps-3">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb mb-0 p-0">
-                    <li class="breadcrumb-item"><a href="{{ route('tests.index') }}"><i class="bx bx-category"></i></a>
-
-                    </li>
                     <li class="breadcrumb-item active" aria-current="page">Test Results</li>
                 </ol>
             </nav>
@@ -30,11 +27,10 @@
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>User</th>
-                            <th>Test Title</th>
-                            <th>Score</th>
-                            <th>Result</th>
-                            <th>Date</th>
+                            <th>Tên</th>
+                            <th>Tiêu đề</th>
+                            <th>Điểm</th>
+                            <th>Ngày</th>
                         </tr>
                     </thead>
                     @php
@@ -46,13 +42,9 @@
                         <tr>
                             <td>{{ $i++ }}</td>
                             <td>{{ $result->user->name }}</td>
-                            <td>{{ $result->test->title }}</td>
+                            <td>{{ $result->quiz->title }}</td>
                             <td>{{ $result->score }}</td>
-                            <td>
-                                <h6 class="text-success">{{ $result->is_pass ? 'PASS' : 'FAIL' }}</h6>
-                            </td>
-
-                            <td>{{ date('d F Y', strtotime($result->created_at)) }}</td>
+                            <td>{{ date('d-m-Y', strtotime($result->created_at)) }}</td>
                         </tr>
                     </tbody>
 
