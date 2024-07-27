@@ -16,4 +16,8 @@ class Feedback extends Model
         'content',
         'star'
     ];
+    public function User()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

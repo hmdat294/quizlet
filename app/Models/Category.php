@@ -18,12 +18,4 @@ class Category extends Model
     {
         return $this->hasMany(Quiz::class);
     }
-    // public function Questions()
-    // {
-    //     return $this->hasMany(Question::class);
-    // }
-    // public function Essays()
-    // {
-    //     return $this->hasMany(Essay::class);
-    // }
 }
