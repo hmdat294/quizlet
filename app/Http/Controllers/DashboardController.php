@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Quiz;
@@ -25,57 +26,32 @@ class DashboardController extends Controller
                 'results' => Result::count(),
             ];
 
-            return view('backend.dashboard', compact('data'));
+            // Thống kê category
+            $categories = Category::withCount('quizs')->get();
+            $categoryNames = $categories->pluck('title');
+            $quizCounts = $categories->pluck('quizs_count');
+
+            // Thống kê số lượt làm bài theo loại quiz
+            $quizTypes = [0 => 'trắc nghiệm', 1 => 'điền vào chỗ trống', 2 => 'kết hợp'];
+
+            $results = [];
+            foreach ($quizTypes as $type => $typeName) {
+                $totalQuizzes = Quiz::where('type', $type)->count();
+                $completedQuizzes = Result::whereHas('quiz', function ($query) use ($type) {
+                    $query->where('type', $type);
+                })->count();
+
+                $results[$typeName] = [
+                    'completed' => $completedQuizzes,
+                    'total' => $totalQuizzes,
+                    'percentage' => $totalQuizzes > 0 ? ($completedQuizzes / $totalQuizzes) * 100 : 0,
+                ];
+            }
+
+            return view('backend.dashboard', compact('data', 'categoryNames', 'quizCounts', 'results'));
         }
 
+
         return redirect("login")->withSuccess('Opps! You do not have access');
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
     }
 }

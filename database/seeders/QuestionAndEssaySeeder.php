@@ -104,6 +104,7 @@ class QuestionAndEssaySeeder extends Seeder
 
     function renderQuestion($quizs, $questions)
     {
+        shuffle($questions);
         foreach ($quizs as $i => $quiz) {
             for ($j = 0; $j < 10; $j++) {
                 $index = $i * 10 + $j;
@@ -129,6 +130,7 @@ class QuestionAndEssaySeeder extends Seeder
 
     function renderEssay($quizs, $essays)
     {
+        shuffle($essays);
         foreach ($quizs as $i => $quiz) {
             for ($j = 0; $j < 5; $j++) {
                 $index = $i * 5 + $j;
@@ -150,6 +152,8 @@ class QuestionAndEssaySeeder extends Seeder
 
     function renderQuestionAndEssay($quizs, $questions, $essays)
     {
+        shuffle($questions);
+        shuffle($essays);
         foreach ($quizs as $i => $quiz) {
             for ($j = 0; $j < 7; $j++) {
                 $index = $i * 7 + $j;

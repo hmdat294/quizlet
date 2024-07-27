@@ -9,7 +9,7 @@
  <script src="{{ asset('backend/plugins/peity/jquery.peity.min.js') }}"></script>
  <script src="{{ asset('backend/plugins/datatable/js/jquery.dataTables.min.js') }}"></script>
  <script src="{{ asset('backend/plugins/datatable/js/dataTables.bootstrap5.min.js') }}"></script>
- <script src="{{ asset('backend/js/dashboard-eCommerce.js') }}"></script>
+ <script src="{{ asset('backend/js/dashboard-analytics.js') }}"></script>
  <!--app JS-->
  <script src="{{ asset('backend/js/app.js') }}"></script>
 

@@ -33,7 +33,7 @@
                 <div class="row">
 
                     @foreach ($categories as $category)
-                    <div class="col-md-3 col-lg-3 mb-3 p-3 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400" style="animation-delay: 400ms;">
+                    <div class="col-md-3 col-lg-3 mb-3 p-3 appear-animation animated bounce appear-animation-visible" data-appear-animation="bounce" data-appear-animation-delay="400" style="animation-delay: 400ms;">
                         <div class="card border-0 profile-tabs">
                             <div class="card-body text-center d-flex flex-column justify-content-between align-items-center" style="height: 250px;">
                                 <img src="{{ asset('frontend/img/category/'.$category->image) }}" alt="{{ $category->title }}" class="" width="100px">
