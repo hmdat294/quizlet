@@ -7,6 +7,7 @@ use Faker\Factory as Faker;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Category;
+use App\Models\Essay;
 use App\Models\Quiz;
 use App\Models\Question;
 

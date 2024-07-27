@@ -29,6 +29,7 @@
             <div class="d-flex justify-content-between align-items-center my-3">
                 <h3 class="m-0">Danh sách bài kiểm tra</h3>
 
+<<<<<<< HEAD
             </div>
 
 
@@ -43,6 +44,11 @@
 
                 @foreach ($quizs as $quiz)
                 @if ( App\Models\Question::where('quiz_id', $quiz->id)->count()>0 || App\Models\Essay::where('quiz_id', $quiz->id)->count()>0 )
+=======
+
+                </div>
+
+>>>>>>> TheDang
 
                 <tr>
                     <td class="text-left" style="width: 32%; padding-left: 30px;">{{ $quiz->title }}</td>
@@ -53,12 +59,22 @@
                                 (($quiz->type == 1)?'Điền vào chỗ trống':
                                 (($quiz->type == 2)?'Kết hợp':''))
                             }}
+<<<<<<< HEAD
                     </td>
                     <td class="text-left" style="width: 18%;">{{ $quiz->description }}</td>
                     <td style="width: 150px;" class="d-flex justify-content-center align-items-center">
                         <a href="{{ route('quiz.start', [$quiz->id, $quiz->type]) }}" class="button px-4 py-2 fs-10">Bắt đầu</a>
                     </td>
                 </tr>
+=======
+                        </td>
+                        <td>{{ $quiz->description }}</td>
+                        <td>
+                            <a href="{{ route('quiz.start', [$quiz->id, $quiz->type]) }}" class="button btn-info px-5 py-1 fs-10">Bắt đầu</a>
+                        </td>
+                    </tr>
+                    @endforeach
+>>>>>>> TheDang
 
                 @endif
                 @endforeach

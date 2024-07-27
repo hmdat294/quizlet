@@ -9,7 +9,11 @@ class Essay extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['quiz_id', 'question', 'blanks', 'level'];
+    protected $fillable = [
+        'quiz_id',
+        'question',
+        'blanks'
+    ];
 
     public function Quiz()
     {
