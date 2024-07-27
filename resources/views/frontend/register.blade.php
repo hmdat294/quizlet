@@ -54,7 +54,7 @@
                 <div class="login100-pic p-5">
 
                     <div class="d-flex justify-content-center align-items-center">
-                        <img src="{{ asset('frontend/img/logos/banner-register.png') }}" alt="LOGO" class="" height="400px;">
+                        <img src="{{ asset('frontend/img/logos/banner-register.gif') }}" alt="LOGO" class="" height="400px;">
                     </div>
 
                 </div>

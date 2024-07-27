@@ -35,7 +35,7 @@ Route::post('/resetpassword/{token}', [AuthController::class, 'postResetPassword
 
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/quizzes', [PagesController::class, "quizzes"])->name('home');
-    Route::get('/quiz/{id}', [PagesController::class, "viewQuiz"])->name('quiz.view');
+    Route::get('/quiz/{id}/{type}', [PagesController::class, "viewQuiz"])->name('quiz.view');
     Route::get('/start-quiz/{id}/{type}', [PagesController::class, "startQuiz"])->name('quiz.start');
     Route::post('/quiz-result', [PagesController::class, "result"])->name('quiz.result');
     Route::post('/feedback', [PagesController::class, "feedback"])->name('feedback');

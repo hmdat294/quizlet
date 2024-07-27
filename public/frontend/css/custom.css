@@ -84,7 +84,7 @@ section.section {
     box-shadow: 0 0 15px #00f7ff;
 }
 
-.table th{
+.table th {
     text-align: center;
 }
 
@@ -101,4 +101,41 @@ section.section {
 .star:hover,
 .star.selected {
     color: #f5b301;
+}
+
+.category {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.category>div {
+    height: 180px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(200, 200, 200) inset;
+    display: grid;
+    place-items: center;
+}
+
+.category>div:hover {
+    box-shadow: 0 0 15px rgb(200, 200, 200);
+}
+
+
+.quiz>a {
+    text-decoration: none;
+    color: #120a30;
+}
+
+.quiz>a>div {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(200, 200, 200) inset;
+    min-height: 270px;
+}
+
+.quiz>a>div:hover {
+    box-shadow: 0 0 15px rgb(200, 200, 200);
 }

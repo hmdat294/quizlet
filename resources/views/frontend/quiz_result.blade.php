@@ -31,7 +31,9 @@
 
                     <div class="card card-background-image-hover border-0" style="background-image: url({{ asset('frontend/img/blog/square/blog-1.jpg') }});">
                         <div class="card-body text-center p-5">
-                            <i class="icon-layers icons text-color-primary text-10"></i>
+                            
+                            <img src="{{ asset('frontend/img/logos/logoquizlet2.png') }}" alt="LOGO" class="" width="100px">
+
                             <h4 class="card-title mt-2 mb-3 text-5 text-tertiary font-weight-bold">
 
                             </h4>
@@ -60,6 +62,8 @@
                                 </li>
 
                             </ul>
+
+                            <img src="{{ asset('frontend/img/logos/yeah.gif') }}" alt="LOGO" class="" width="250px">
 
 
                         </div>
