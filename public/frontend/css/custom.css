@@ -92,14 +92,14 @@ section.section {
     cursor: pointer;
 }
 
-.star {
+.star-rating>span {
     font-size: 40px;
     color: #ddd;
     transition: color 0.2s;
 }
 
-.star:hover,
-.star.selected {
+.star-rating>span:hover,
+.star-rating>span.selected {
     color: #f5b301;
 }
 

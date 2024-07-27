@@ -119,16 +119,22 @@
                                 <td>{{ round(($result->score/$result->count_quiz)*10, 2)}}</td>
                                 <td>{{ date('d-m-Y', strtotime($result->created_at)) }}</td>
                                 <td>
-                                    <a class="btn btn-sm btn-success" href="#" data-toggle="modal" data-target="#Feedback{{$result->quiz->id}}">
+                                    @if (App\Models\Feedback::where('result_id', $result->id)->count()>0)
+                                    <a class="btn btn-sm btn-success" href="#">
+                                        <i class="bi bi-check2-square"></i>
+                                    </a>
+                                    @else
+                                    <a class="btn btn-sm btn-success" href="#" data-toggle="modal" data-target="#Feedback{{$result->id}}">
                                         <i class="bi bi-send-check"></i>
                                     </a>
+                                    @endif
 
-                                    <div class="modal fade" id="Feedback{{$result->quiz->id}}" tabindex="-1" aria-labelledby="FeedbackLabel{{$result->quiz->id}}" aria-hidden="true">
+                                    <div class="modal fade" id="Feedback{{$result->id}}" tabindex="-1" aria-labelledby="FeedbackLabel{{$result->id}}" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered modal-lg">
-                                            <form action="{{ route('feedback') }}" method="post" class="modal-content">
+                                            <form action="{{ route('feedback', $result->id) }}" method="post" class="modal-content">
                                                 @csrf
                                                 <div class="modal-header">
-                                                    <h3 class="modal-title fs-5" id="FeedbackLabel{{$result->quiz->id}}">Đánh giá</h3>
+                                                    <h3 class="modal-title fs-5" id="FeedbackLabel{{$result->id}}">Đánh giá</h3>
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
@@ -140,15 +146,15 @@
                                                         <h4 class="col-4">Đánh giá:</h4>
 
                                                         <div class="d-flex justify-content-end align-items-center col-8">
-                                                            <span id="rating-value" class="mx-3">Chưa đánh giá</span>
+                                                            <span id="rating-value{{$result->id}}" class="mx-3">Chưa đánh giá</span>
                                                             <div class="star-rating">
-                                                                <span class="star" data-value="1">&#9733;</span>
-                                                                <span class="star" data-value="2">&#9733;</span>
-                                                                <span class="star" data-value="3">&#9733;</span>
-                                                                <span class="star" data-value="4">&#9733;</span>
-                                                                <span class="star" data-value="5">&#9733;</span>
+                                                                <span class="star{{$result->id}}" data-value="1">&#9733;</span>
+                                                                <span class="star{{$result->id}}" data-value="2">&#9733;</span>
+                                                                <span class="star{{$result->id}}" data-value="3">&#9733;</span>
+                                                                <span class="star{{$result->id}}" data-value="4">&#9733;</span>
+                                                                <span class="star{{$result->id}}" data-value="5">&#9733;</span>
                                                             </div>
-                                                            <input type="hidden" id="rating-input" name="star" value="">
+                                                            <input type="hidden" id="rating-input{{$result->id}}" name="star" value="">
                                                             <input type="hidden" name="user_id" value="{{ Auth::id() }}">
                                                             <input type="hidden" name="quiz_id" value="{{ $result->quiz->id }}">
                                                         </div>
@@ -173,6 +179,59 @@
 
                         </tbody>
 
+
+                        <script>
+                            document.addEventListener('DOMContentLoaded', () => {
+                                const stars = document.querySelectorAll('.star{{$result->id}}');
+                                const ratingValue = document.getElementById('rating-value{{$result->id}}');
+                                const ratingInput = document.getElementById('rating-input{{$result->id}}');
+
+                                stars.forEach(star => {
+                                    star.addEventListener('click', () => {
+                                        const value = star.getAttribute('data-value');
+
+                                        ratingValue.textContent =
+                                            (value == 1) ? 'Rất tệ' :
+                                            (value == 2) ? 'Tệ' :
+                                            (value == 3) ? 'Trung bình' :
+                                            (value == 4) ? 'Tốt' :
+                                            (value == 5) ? 'Rất tốt' : '';
+
+                                        ratingInput.value = value; // Cập nhật giá trị của input ẩn
+                                        stars.forEach(s => s.classList.remove('selected'));
+                                        star.classList.add('selected');
+                                        let previous = star.previousElementSibling;
+                                        while (previous) {
+                                            previous.classList.add('selected');
+                                            previous = previous.previousElementSibling;
+                                        }
+                                    });
+
+                                    star.addEventListener('mouseover', () => {
+                                        stars.forEach(s => s.classList.remove('selected'));
+                                        star.classList.add('selected');
+                                        let previous = star.previousElementSibling;
+                                        while (previous) {
+                                            previous.classList.add('selected');
+                                            previous = previous.previousElementSibling;
+                                        }
+                                    });
+
+                                    star.addEventListener('mouseout', () => {
+                                        stars.forEach(s => s.classList.remove('selected'));
+                                        const value = ratingInput.value;
+                                        if (value) {
+                                            stars.forEach(s => {
+                                                if (s.getAttribute('data-value') <= value) {
+                                                    s.classList.add('selected');
+                                                }
+                                            });
+                                        }
+                                    });
+                                });
+                            });
+                        </script>
+
                         @endforeach
 
                     </table>
@@ -186,57 +245,7 @@
     </div>
 
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const stars = document.querySelectorAll('.star');
-            const ratingValue = document.getElementById('rating-value');
-            const ratingInput = document.getElementById('rating-input');
 
-            stars.forEach(star => {
-                star.addEventListener('click', () => {
-                    const value = star.getAttribute('data-value');
-
-                    ratingValue.textContent =
-                        (value == 1) ? 'Rất tệ' :
-                        (value == 2) ? 'Tệ' :
-                        (value == 3) ? 'Trung bình' :
-                        (value == 4) ? 'Tốt' :
-                        (value == 5) ? 'Rất tốt' : '';
-
-                    ratingInput.value = value; // Cập nhật giá trị của input ẩn
-                    stars.forEach(s => s.classList.remove('selected'));
-                    star.classList.add('selected');
-                    let previous = star.previousElementSibling;
-                    while (previous) {
-                        previous.classList.add('selected');
-                        previous = previous.previousElementSibling;
-                    }
-                });
-
-                star.addEventListener('mouseover', () => {
-                    stars.forEach(s => s.classList.remove('selected'));
-                    star.classList.add('selected');
-                    let previous = star.previousElementSibling;
-                    while (previous) {
-                        previous.classList.add('selected');
-                        previous = previous.previousElementSibling;
-                    }
-                });
-
-                star.addEventListener('mouseout', () => {
-                    stars.forEach(s => s.classList.remove('selected'));
-                    const value = ratingInput.value;
-                    if (value) {
-                        stars.forEach(s => {
-                            if (s.getAttribute('data-value') <= value) {
-                                s.classList.add('selected');
-                            }
-                        });
-                    }
-                });
-            });
-        });
-    </script>
 
 </section>
 
