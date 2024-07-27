@@ -28,7 +28,7 @@
 
             <div class="blog-posts text-center">
 
-                <h2 class="font-weight-bold mb-4 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1500" style="animation-delay: 1500ms;">Coding Skill Quizzes</h2>
+                <h2 class="font-weight-bold mb-4 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1500" style="animation-delay: 1500ms;">Danh sách danh mục</h2>
                 <hr>
                 <div class="row">
 

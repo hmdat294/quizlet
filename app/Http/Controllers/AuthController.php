@@ -79,7 +79,7 @@ class AuthController extends Controller
      */
     public function postRegistration(Request $request)
     {
-        dd($request->all());
+        // dd($request->all());
 
         if ($request->password === $request->repassword) {
 

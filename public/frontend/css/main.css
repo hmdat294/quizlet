@@ -293,6 +293,7 @@ iframe {
   margin-bottom: 20px;
 }
 
+
 .input100 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
@@ -303,7 +304,7 @@ iframe {
   box-shadow: 0 0 10px #00f7ff;
   background: rgba(0, 0, 0, 0.5);
   height: 50px;
-  border-radius: 25px;
+  border-radius: 8px;
   padding: 0 30px 0 68px;
 }
 
@@ -313,7 +314,7 @@ iframe {
 .focus-input100 {
   display: block;
   position: absolute;
-  border-radius: 25px;
+  border-radius: 10px;
   bottom: 0;
   left: 0;
   z-index: -1;
@@ -536,7 +537,7 @@ iframe {
 .dangky {
   background-color: #5ce1e6;
   color: #120a30;
-  border-radius: 100px;
+  border-radius: 7px;
   box-shadow: 0 0 15px #5ce1e6;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
