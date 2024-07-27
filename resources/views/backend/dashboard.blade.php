@@ -87,6 +87,26 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Thống Kê Lượt Làm Bài</h3>
+                </div>
+                <div class="card-body">
+                    <table>
+                        <thead>
+                            <th>#</th>
+                            <th>Tên</th>
+                            <th>Email</th>
+                            <th>Bài quiz</th>
+                            <th>Star</th>
+                            <th>Ngày feedback</th>
+                            <th>button -> view modal</th>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 @endsection
 @section('custom_script')
