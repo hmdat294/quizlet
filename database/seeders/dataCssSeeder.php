@@ -2951,803 +2951,843 @@ class dataCssSeeder extends Seeder
         $this->essays_css =
             [
                 [
-                    'question' => 'Thẻ [blank_1] được sử dụng để thiết lập màu nền của phần tử. Ví dụ: [code]background-color: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] được sử dụng để thiết lập màu nền của phần tử. <br>Ví dụ: <br>background-color: [blank_2];',
                     'blanks' => 'background-color,red',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi kích thước chữ trong phần tử. Ví dụ: [code]font-size: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi kích thước chữ trong phần tử. <br>Ví dụ: <br>font-size: [blank_2];',
                     'blanks' => 'font-size,16px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] thay đổi màu chữ của phần tử. Ví dụ: [code]color: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] thay đổi màu chữ của phần tử. <br>Ví dụ: <br>color: [blank_2];',
                     'blanks' => 'color,blue',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] được sử dụng để định dạng kiểu chữ cho phần tử. Ví dụ: [code]font-family: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] được sử dụng để định dạng kiểu chữ cho phần tử. <br>Ví dụ: <br>font-family: [blank_2];',
                     'blanks' => 'font-family,sans-serif',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thêm khoảng cách giữa các chữ cái. Ví dụ: [code]letter-spacing: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thêm khoảng cách giữa các chữ cái. <br>Ví dụ: <br>letter-spacing: [blank_2];',
                     'blanks' => 'letter-spacing,2px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] dùng để định dạng chiều rộng của phần tử. Ví dụ: [code]width: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để định dạng chiều rộng của phần tử. <br>Ví dụ: <br>width: [blank_2];',
                     'blanks' => 'width,100px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] xác định chiều cao của phần tử. Ví dụ: [code]height: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] xác định chiều cao của phần tử. <br>Ví dụ: <br>height: [blank_2];',
                     'blanks' => 'height,200px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] được sử dụng để căn chỉnh văn bản trong phần tử. Ví dụ: [code]text-align: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] được sử dụng để căn chỉnh văn bản trong phần tử. <br>Ví dụ: <br>text-align: [blank_2];',
                     'blanks' => 'text-align,center',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] điều chỉnh khoảng cách giữa các dòng văn bản. Ví dụ: [code]line-height: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] điều chỉnh khoảng cách giữa các dòng văn bản. <br>Ví dụ: <br>line-height: [blank_2];',
                     'blanks' => 'line-height,1.5',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] được sử dụng để tạo viền cho phần tử. Ví dụ: [code]border: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] được sử dụng để tạo viền cho phần tử. <br>Ví dụ: <br>border: [blank_2];',
                     'blanks' => 'border,1px solid black',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] xác định khoảng cách giữa các phần tử. Ví dụ: [code]margin: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] xác định khoảng cách giữa các phần tử. <br>Ví dụ: <br>margin: [blank_2];',
                     'blanks' => 'margin,10px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] dùng để thiết lập khoảng cách bên trong của phần tử. Ví dụ: [code]padding: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập khoảng cách bên trong của phần tử. <br>Ví dụ: <br>padding: [blank_2];',
                     'blanks' => 'padding,15px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] định dạng kiểu chữ cho phần tử. Ví dụ: [code]font-weight: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] định dạng kiểu chữ cho phần tử. <br>Ví dụ: <br>font-weight: [blank_2];',
                     'blanks' => 'font-weight,bold',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thay đổi màu nền của phần tử. Ví dụ: [code]background: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi màu nền của phần tử. <br>Ví dụ: <br>background: [blank_2];',
                     'blanks' => 'background,green',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để xác định cách các phần tử con được căn chỉnh. Ví dụ: [code]display: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để xác định cách các phần tử con được căn chỉnh. <br>Ví dụ: <br>display: [blank_2];',
                     'blanks' => 'display,flex',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] được sử dụng để điều chỉnh độ trong suốt của phần tử. Ví dụ: [code]opacity: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] được sử dụng để điều chỉnh độ trong suốt của phần tử. <br>Ví dụ: <br>opacity: [blank_2];',
                     'blanks' => 'opacity,0.5',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] xác định cách phần tử có thể cuộn. Ví dụ: [code]overflow: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] xác định cách phần tử có thể cuộn. <br>Ví dụ: <br>overflow: [blank_2];',
                     'blanks' => 'overflow,auto',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để định dạng kiểu dáng của phần tử. Ví dụ: [code]border-radius: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để định dạng kiểu dáng của phần tử. <br>Ví dụ: <br>border-radius: [blank_2];',
                     'blanks' => 'border-radius,10px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] điều chỉnh độ rộng của phần tử. Ví dụ: [code]max-width: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] điều chỉnh độ rộng của phần tử. <br>Ví dụ: <br>max-width: [blank_2];',
                     'blanks' => 'max-width,500px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập kiểu nền cho phần tử. Ví dụ: [code]background-image: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu nền cho phần tử. <br>Ví dụ: <br>background-image: [blank_2];',
                     'blanks' => 'background-image,url(image.jpg)',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] định nghĩa các kiểu dáng khác nhau cho phần tử. Ví dụ: [code]border-style: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] định nghĩa các kiểu dáng khác nhau cho phần tử. <br>Ví dụ: <br>border-style: [blank_2];',
                     'blanks' => 'border-style,dotted',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] dùng để căn chỉnh văn bản trong phần tử. Ví dụ: [code]text-align: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để căn chỉnh văn bản trong phần tử. <br>Ví dụ: <br>text-align: [blank_2];',
                     'blanks' => 'text-align,right',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] xác định khoảng cách giữa các phần tử con. Ví dụ: [code]padding-top: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] xác định khoảng cách giữa các phần tử con. <br>Ví dụ: <br>padding-top: [blank_2];',
                     'blanks' => 'padding-top,20px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thay đổi màu nền của phần tử. Ví dụ: [code]background-color: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi màu nền của phần tử. <br>Ví dụ: <br>background-color: [blank_2];',
                     'blanks' => 'background-color,yellow',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu chữ cho phần tử. Ví dụ: [code]font-family: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu chữ cho phần tử. <br>Ví dụ: <br>font-family: [blank_2];',
                     'blanks' => 'font-family,Arial',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để xác định khoảng cách giữa các dòng văn bản. Ví dụ: [code]line-height: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để xác định khoảng cách giữa các dòng văn bản. <br>Ví dụ: <br>line-height: [blank_2];',
                     'blanks' => 'line-height,1.2',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] xác định cách phần tử sẽ được cuộn. Ví dụ: [code]overflow-x: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] xác định cách phần tử sẽ được cuộn. <br>Ví dụ: <br>overflow-x: [blank_2];',
                     'blanks' => 'overflow-x,scroll',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] dùng để tạo một viền cho phần tử. Ví dụ: [code]border: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để tạo một viền cho phần tử. <br>Ví dụ: <br>border: [blank_2];',
                     'blanks' => 'border,2px dashed red',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập màu sắc của viền. Ví dụ: [code]border-color: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập màu sắc của viền. <br>Ví dụ: <br>border-color: [blank_2];',
                     'blanks' => 'border-color,purple',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để xác định chiều cao của phần tử. Ví dụ: [code]height: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để xác định chiều cao của phần tử. <br>Ví dụ: <br>height: [blank_2];',
                     'blanks' => 'height,300px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập khoảng cách bên ngoài phần tử. Ví dụ: [code]margin-top: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập khoảng cách bên ngoài phần tử. <br>Ví dụ: <br>margin-top: [blank_2];',
                     'blanks' => 'margin-top,25px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] xác định kiểu hiển thị của phần tử. Ví dụ: [code]display: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] xác định kiểu hiển thị của phần tử. <br>Ví dụ: <br>display: [blank_2];',
                     'blanks' => 'display,block',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập khoảng cách giữa các phần tử con. Ví dụ: [code]margin-left: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập khoảng cách giữa các phần tử con. <br>Ví dụ: <br>margin-left: [blank_2];',
                     'blanks' => 'margin-left,15px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] dùng để xác định kiểu chữ của phần tử. Ví dụ: [code]font-style: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để xác định kiểu chữ của phần tử. <br>Ví dụ: <br>font-style: [blank_2];',
                     'blanks' => 'font-style,italic',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để xác định kiểu hiển thị của phần tử. Ví dụ: [code]display: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để xác định kiểu hiển thị của phần tử. <br>Ví dụ: <br>display: [blank_2];',
                     'blanks' => 'display,inline',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để tạo khoảng cách giữa các phần tử con. Ví dụ: [code]padding-bottom: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để tạo khoảng cách giữa các phần tử con. <br>Ví dụ: <br>padding-bottom: [blank_2];',
                     'blanks' => 'padding-bottom,10px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập màu chữ cho phần tử. Ví dụ: [code]color: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập màu chữ cho phần tử. <br>Ví dụ: <br>color: [blank_2];',
                     'blanks' => 'color,orange',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để tạo khoảng cách giữa các phần tử. Ví dụ: [code]margin-right: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để tạo khoảng cách giữa các phần tử. <br>Ví dụ: <br>margin-right: [blank_2];',
                     'blanks' => 'margin-right,5px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu chữ cho phần tử. Ví dụ: [code]font-weight: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu chữ cho phần tử. <br>Ví dụ: <br>font-weight: [blank_2];',
                     'blanks' => 'font-weight,normal',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để xác định kiểu nền cho phần tử. Ví dụ: [code]background: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để xác định kiểu nền cho phần tử. <br>Ví dụ: <br>background: [blank_2];',
                     'blanks' => 'background,linear-gradient(to right, red, blue)',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập cách các phần tử con được hiển thị. Ví dụ: [code]display: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập cách các phần tử con được hiển thị. <br>Ví dụ: <br>display: [blank_2];',
                     'blanks' => 'display,flex',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để tạo một khoảng cách bên trong phần tử. Ví dụ: [code]padding-left: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để tạo một khoảng cách bên trong phần tử. <br>Ví dụ: <br>padding-left: [blank_2];',
                     'blanks' => 'padding-left,20px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để xác định màu nền cho phần tử. Ví dụ: [code]background-color: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để xác định màu nền cho phần tử. <br>Ví dụ: <br>background-color: [blank_2];',
                     'blanks' => 'background-color,pink',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thay đổi màu sắc của viền phần tử. Ví dụ: [code]border-color: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi màu sắc của viền phần tử. <br>Ví dụ: <br>border-color: [blank_2];',
                     'blanks' => 'border-color,black',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để điều chỉnh độ rộng của phần tử. Ví dụ: [code]width: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để điều chỉnh độ rộng của phần tử. <br>Ví dụ: <br>width: [blank_2];',
                     'blanks' => 'width,150px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để xác định khoảng cách giữa các dòng. Ví dụ: [code]line-height: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để xác định khoảng cách giữa các dòng. <br>Ví dụ: <br>line-height: [blank_2];',
                     'blanks' => 'line-height,1.8',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu nền cho phần tử. Ví dụ: [code]background-repeat: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu nền cho phần tử. <br>Ví dụ: <br>background-repeat: [blank_2];',
                     'blanks' => 'background-repeat,no-repeat',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để điều chỉnh kiểu chữ của phần tử. Ví dụ: [code]font-style: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để điều chỉnh kiểu chữ của phần tử. <br>Ví dụ: <br>font-style: [blank_2];',
                     'blanks' => 'font-style,normal',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập độ rộng của viền. Ví dụ: [code]border-width: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập độ rộng của viền. <br>Ví dụ: <br>border-width: [blank_2];',
                     'blanks' => 'border-width,3px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để tạo viền cho phần tử. Ví dụ: [code]border-style: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để tạo viền cho phần tử. <br>Ví dụ: <br>border-style: [blank_2];',
                     'blanks' => 'border-style,solid',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi màu chữ của phần tử. Ví dụ: [code]color: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi màu chữ của phần tử. <br>Ví dụ: <br>color: [blank_2];',
                     'blanks' => 'color,purple',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập kiểu chữ cho phần tử. Ví dụ: [code]font-family: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu chữ cho phần tử. <br>Ví dụ: <br>font-family: [blank_2];',
                     'blanks' => 'font-family,Georgia',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu chữ cho phần tử. Ví dụ: [code]font-size: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu chữ cho phần tử. <br>Ví dụ: <br>font-size: [blank_2];',
                     'blanks' => 'font-size,12px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để tạo khoảng cách bên trong phần tử. Ví dụ: [code]padding-top: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để tạo khoảng cách bên trong phần tử. <br>Ví dụ: <br>padding-top: [blank_2];',
                     'blanks' => 'padding-top,30px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để xác định chiều cao của phần tử. Ví dụ: [code]height: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để xác định chiều cao của phần tử. <br>Ví dụ: <br>height: [blank_2];',
                     'blanks' => 'height,250px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập màu nền cho phần tử. Ví dụ: [code]background-color: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập màu nền cho phần tử. <br>Ví dụ: <br>background-color: [blank_2];',
                     'blanks' => 'background-color,gray',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để điều chỉnh kiểu chữ của phần tử. Ví dụ: [code]font-weight: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để điều chỉnh kiểu chữ của phần tử. <br>Ví dụ: <br>font-weight: [blank_2];',
                     'blanks' => 'font-weight,light',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để xác định màu nền cho phần tử. Ví dụ: [code]background-color: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để xác định màu nền cho phần tử. <br>Ví dụ: <br>background-color: [blank_2];',
                     'blanks' => 'background-color,teal',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập viền cho phần tử. Ví dụ: [code]border-radius: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập viền cho phần tử. <br>Ví dụ: <br>border-radius: [blank_2];',
                     'blanks' => 'border-radius,15px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] dùng để thiết lập màu nền cho phần tử. Ví dụ: [code]background-color: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập màu nền cho phần tử. <br>Ví dụ: <br>background-color: [blank_2];',
                     'blanks' => 'background-color,cyan',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để tạo một phần tử có kiểu chữ nghiêng. Ví dụ: [code]font-style: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để tạo một phần tử có kiểu chữ nghiêng. <br>Ví dụ: <br>font-style: [blank_2];',
                     'blanks' => 'font-style,italic',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thay đổi kiểu chữ của phần tử. Ví dụ: [code]font-weight: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi kiểu chữ của phần tử. <br>Ví dụ: <br>font-weight: [blank_2];',
                     'blanks' => 'font-weight,bold',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập chiều rộng của phần tử. Ví dụ: [code]width: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập chiều rộng của phần tử. <br>Ví dụ: <br>width: [blank_2];',
                     'blanks' => 'width,200px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập kiểu chữ cho phần tử. Ví dụ: [code]font-size: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu chữ cho phần tử. <br>Ví dụ: <br>font-size: [blank_2];',
                     'blanks' => 'font-size,20px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để điều chỉnh cách phần tử được căn chỉnh. Ví dụ: [code]text-align: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để điều chỉnh cách phần tử được căn chỉnh. <br>Ví dụ: <br>text-align: [blank_2];',
                     'blanks' => 'text-align,justify',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để tạo khoảng cách bên ngoài phần tử. Ví dụ: [code]margin-bottom: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để tạo khoảng cách bên ngoài phần tử. <br>Ví dụ: <br>margin-bottom: [blank_2];',
                     'blanks' => 'margin-bottom,25px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập màu viền của phần tử. Ví dụ: [code]border-color: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập màu viền của phần tử. <br>Ví dụ: <br>border-color: [blank_2];',
                     'blanks' => 'border-color,maroon',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thay đổi kích thước của phần tử. Ví dụ: [code]width: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi kích thước của phần tử. <br>Ví dụ: <br>width: [blank_2];',
                     'blanks' => 'width,400px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập kiểu chữ cho phần tử. Ví dụ: [code]font-family: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu chữ cho phần tử. <br>Ví dụ: <br>font-family: [blank_2];',
                     'blanks' => 'font-family,Times New Roman',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thay đổi màu nền của phần tử. Ví dụ: [code]background-color: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi màu nền của phần tử. <br>Ví dụ: <br>background-color: [blank_2];',
                     'blanks' => 'background-color,magenta',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu chữ cho phần tử. Ví dụ: [code]font-weight: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu chữ cho phần tử. <br>Ví dụ: <br>font-weight: [blank_2];',
                     'blanks' => 'font-weight,bold',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để xác định cách phần tử cuộn. Ví dụ: [code]overflow: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để xác định cách phần tử cuộn. <br>Ví dụ: <br>overflow: [blank_2];',
                     'blanks' => 'overflow,hidden',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để điều chỉnh khoảng cách giữa các phần tử con. Ví dụ: [code]padding-right: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để điều chỉnh khoảng cách giữa các phần tử con. <br>Ví dụ: <br>padding-right: [blank_2];',
                     'blanks' => 'padding-right,5px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để xác định màu nền của phần tử. Ví dụ: [code]background-color: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để xác định màu nền của phần tử. <br>Ví dụ: <br>background-color: [blank_2];',
                     'blanks' => 'background-color,black',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập kiểu chữ cho phần tử. Ví dụ: [code]font-style: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu chữ cho phần tử. <br>Ví dụ: <br>font-style: [blank_2];',
                     'blanks' => 'font-style,normal',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thay đổi chiều rộng của phần tử. Ví dụ: [code]width: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi chiều rộng của phần tử. <br>Ví dụ: <br>width: [blank_2];',
                     'blanks' => 'width,500px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập màu chữ của phần tử. Ví dụ: [code]color: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập màu chữ của phần tử. <br>Ví dụ: <br>color: [blank_2];',
                     'blanks' => 'color,teal',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để xác định chiều cao của phần tử. Ví dụ: [code]height: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để xác định chiều cao của phần tử. <br>Ví dụ: <br>height: [blank_2];',
                     'blanks' => 'height,350px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu chữ cho phần tử. Ví dụ: [code]font-size: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu chữ cho phần tử. <br>Ví dụ: <br>font-size: [blank_2];',
                     'blanks' => 'font-size,18px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập khoảng cách giữa các phần tử. Ví dụ: [code]margin-left: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập khoảng cách giữa các phần tử. <br>Ví dụ: <br>margin-left: [blank_2];',
                     'blanks' => 'margin-left,30px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để điều chỉnh cách phần tử được căn chỉnh. Ví dụ: [code]text-align: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để điều chỉnh cách phần tử được căn chỉnh. <br>Ví dụ: <br>text-align: [blank_2];',
                     'blanks' => 'text-align,left',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để tạo khoảng cách giữa các phần tử con. Ví dụ: [code]padding-top: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để tạo khoảng cách giữa các phần tử con. <br>Ví dụ: <br>padding-top: [blank_2];',
                     'blanks' => 'padding-top,10px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi màu nền của phần tử. Ví dụ: [code]background-color: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi màu nền của phần tử. <br>Ví dụ: <br>background-color: [blank_2];',
                     'blanks' => 'background-color,orange',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để điều chỉnh kích thước của phần tử. Ví dụ: [code]height: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để điều chỉnh kích thước của phần tử. <br>Ví dụ: <br>height: [blank_2];',
                     'blanks' => 'height,450px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để tạo viền cho phần tử. Ví dụ: [code]border: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để tạo viền cho phần tử. <br>Ví dụ: <br>border: [blank_2];',
                     'blanks' => 'border,3px solid gray',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập khoảng cách giữa các phần tử. Ví dụ: [code]margin-top: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập khoảng cách giữa các phần tử. <br>Ví dụ: <br>margin-top: [blank_2];',
                     'blanks' => 'margin-top,20px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi màu sắc của phần tử. Ví dụ: [code]background-color: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi màu sắc của phần tử. <br>Ví dụ: <br>background-color: [blank_2];',
                     'blanks' => 'background-color,maroon',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để xác định kiểu chữ cho phần tử. Ví dụ: [code]font-family: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để xác định kiểu chữ cho phần tử. <br>Ví dụ: <br>font-family: [blank_2];',
                     'blanks' => 'font-family,Comic Sans MS',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập chiều rộng của phần tử. Ví dụ: [code]width: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập chiều rộng của phần tử. <br>Ví dụ: <br>width: [blank_2];',
                     'blanks' => 'width,600px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để tạo một khoảng cách bên trong phần tử. Ví dụ: [code]padding-bottom: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để tạo một khoảng cách bên trong phần tử. <br>Ví dụ: <br>padding-bottom: [blank_2];',
                     'blanks' => 'padding-bottom,35px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập màu viền cho phần tử. Ví dụ: [code]border-color: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập màu viền cho phần tử. <br>Ví dụ: <br>border-color: [blank_2];',
                     'blanks' => 'border-color,green',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để điều chỉnh cách phần tử được hiển thị. Ví dụ: [code]display: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để điều chỉnh cách phần tử được hiển thị. <br>Ví dụ: <br>display: [blank_2];',
                     'blanks' => 'display,inline-block',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để áp dụng hiệu ứng chuyển tiếp khi thay đổi thuộc tính. Ví dụ: [code]transition: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để áp dụng hiệu ứng chuyển tiếp khi thay đổi thuộc tính. <br>Ví dụ: <br>transition: [blank_2];',
                     'blanks' => 'transition,all 0.5s ease',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để xác định kiểu hiển thị của phần tử. Ví dụ: [code]display: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để xác định kiểu hiển thị của phần tử. <br>Ví dụ: <br>display: [blank_2];',
                     'blanks' => 'display,grid',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập kiểu nền cho phần tử. Ví dụ: [code]background: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu nền cho phần tử. <br>Ví dụ: <br>background: [blank_2];',
                     'blanks' => 'background,linear-gradient(to bottom, red, blue)',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để tạo các lớp phủ cho phần tử. Ví dụ: [code]box-shadow: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để tạo các lớp phủ cho phần tử. <br>Ví dụ: <br>box-shadow: [blank_2];',
                     'blanks' => 'box-shadow,0 4px 8px rgba(0,0,0,0.3)',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để áp dụng các kiểu cho phần tử. Ví dụ: [code]transform: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để áp dụng các kiểu cho phần tử. <br>Ví dụ: <br>transform: [blank_2];',
                     'blanks' => 'transform,rotate(45deg)',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập tỷ lệ phần tử theo tỷ lệ phần trăm. Ví dụ: [code]aspect-ratio: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập tỷ lệ phần tử theo tỷ lệ phần trăm. <br>Ví dụ: <br>aspect-ratio: [blank_2];',
                     'blanks' => 'aspect-ratio,16/9',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để tạo hiệu ứng chuyển động cho phần tử. Ví dụ: [code]animation: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để tạo hiệu ứng chuyển động cho phần tử. <br>Ví dụ: <br>animation: [blank_2];',
                     'blanks' => 'animation,bounce 2s infinite',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập vị trí của phần tử. Ví dụ: [code]position: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập vị trí của phần tử. <br>Ví dụ: <br>position: [blank_2];',
                     'blanks' => 'position,absolute',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thay đổi kiểu viền của phần tử. Ví dụ: [code]border-radius: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi kiểu viền của phần tử. <br>Ví dụ: <br>border-radius: [blank_2];',
                     'blanks' => 'border-radius,10px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi màu sắc của viền. Ví dụ: [code]border-color: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi màu sắc của viền. <br>Ví dụ: <br>border-color: [blank_2];',
                     'blanks' => 'border-color,orange',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập chiều cao cho phần tử. Ví dụ: [code]height: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập chiều cao cho phần tử. <br>Ví dụ: <br>height: [blank_2];',
                     'blanks' => 'height,400px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập độ dày của viền. Ví dụ: [code]border-width: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập độ dày của viền. <br>Ví dụ: <br>border-width: [blank_2];',
                     'blanks' => 'border-width,3px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để áp dụng các hiệu ứng chuyển tiếp cho phần tử. Ví dụ: [code]transition: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để áp dụng các hiệu ứng chuyển tiếp cho phần tử. <br>Ví dụ: <br>transition: [blank_2];',
                     'blanks' => 'transition,opacity 0.3s ease',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để điều chỉnh khoảng cách giữa các phần tử. Ví dụ: [code]gap: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để điều chỉnh khoảng cách giữa các phần tử. <br>Ví dụ: <br>gap: [blank_2];',
                     'blanks' => 'gap,20px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập màu nền cho phần tử. Ví dụ: [code]background-image: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập màu nền cho phần tử. <br>Ví dụ: <br>background-image: [blank_2];',
                     'blanks' => 'background-image,url(image.png)',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để điều chỉnh kiểu chữ của phần tử. Ví dụ: [code]font-variant: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để điều chỉnh kiểu chữ của phần tử. <br>Ví dụ: <br>font-variant: [blank_2];',
                     'blanks' => 'font-variant,small-caps',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để tạo viền cho phần tử. Ví dụ: [code]border-style: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để tạo viền cho phần tử. <br>Ví dụ: <br>border-style: [blank_2];',
                     'blanks' => 'border-style,double',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập màu sắc cho nền. Ví dụ: [code]background-color: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập màu sắc cho nền. <br>Ví dụ: <br>background-color: [blank_2];',
                     'blanks' => 'background-color,lightblue',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thay đổi chiều rộng của phần tử. Ví dụ: [code]width: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi chiều rộng của phần tử. <br>Ví dụ: <br>width: [blank_2];',
                     'blanks' => 'width,500px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để tạo khoảng cách giữa các phần tử con. Ví dụ: [code]grid-gap: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để tạo khoảng cách giữa các phần tử con. <br>Ví dụ: <br>grid-gap: [blank_2];',
                     'blanks' => 'grid-gap,15px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để áp dụng kiểu chữ cho phần tử. Ví dụ: [code]font-size: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để áp dụng kiểu chữ cho phần tử. <br>Ví dụ: <br>font-size: [blank_2];',
                     'blanks' => 'font-size,28px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập khoảng cách giữa các phần tử. Ví dụ: [code]margin: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập khoảng cách giữa các phần tử. <br>Ví dụ: <br>margin: [blank_2];',
                     'blanks' => 'margin,30px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để điều chỉnh kiểu chữ cho phần tử. Ví dụ: [code]font-weight: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để điều chỉnh kiểu chữ cho phần tử. <br>Ví dụ: <br>font-weight: [blank_2];',
                     'blanks' => 'font-weight,600',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu nền cho phần tử. Ví dụ: [code]background: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu nền cho phần tử. <br>Ví dụ: <br>background: [blank_2];',
                     'blanks' => 'background,radial-gradient(circle, red, yellow)',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để tạo bóng cho phần tử. Ví dụ: [code]box-shadow: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để tạo bóng cho phần tử. <br>Ví dụ: <br>box-shadow: [blank_2];',
                     'blanks' => 'box-shadow,5px 5px 10px rgba(0,0,0,0.5)',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu viền cho phần tử. Ví dụ: [code]border: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu viền cho phần tử. <br>Ví dụ: <br>border: [blank_2];',
                     'blanks' => 'border,4px solid black',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thay đổi màu chữ. Ví dụ: [code]color: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi màu chữ. <br>Ví dụ: <br>color: [blank_2];',
                     'blanks' => 'color,green',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập chiều rộng và chiều cao của phần tử. Ví dụ: [code]size: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập chiều rộng và chiều cao của phần tử. <br>Ví dụ: <br>size: [blank_2];',
                     'blanks' => 'size,100px 200px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để tạo hiệu ứng chuyển động. Ví dụ: [code]animation: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để tạo hiệu ứng chuyển động. <br>Ví dụ: <br>animation: [blank_2];',
                     'blanks' => 'animation,pulse 1s infinite',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi kiểu hiển thị của phần tử. Ví dụ: [code]display: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi kiểu hiển thị của phần tử. <br>Ví dụ: <br>display: [blank_2];',
                     'blanks' => 'display,fixed',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập hiệu ứng khi phần tử được hover. Ví dụ: [code]:hover { [blank_3]: [blank_4]; }[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập hiệu ứng khi phần tử được hover. <br>Ví dụ: <br>:hover { [blank_2]: [blank_4]; }',
                     'blanks' => 'background-color,lightcoral',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thay đổi khoảng cách giữa các phần tử. Ví dụ: [code]padding: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi khoảng cách giữa các phần tử. <br>Ví dụ: <br>padding: [blank_2];',
                     'blanks' => 'padding,35px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập kiểu nền cho phần tử. Ví dụ: [code]background-image: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu nền cho phần tử. <br>Ví dụ: <br>background-image: [blank_2];',
                     'blanks' => 'background-image,url(image.jpg)',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để điều chỉnh chiều rộng của phần tử. Ví dụ: [code]width: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để điều chỉnh chiều rộng của phần tử. <br>Ví dụ: <br>width: [blank_2];',
                     'blanks' => 'width,600px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để tạo khoảng cách giữa các phần tử con. Ví dụ: [code]grid-template-columns: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để tạo khoảng cách giữa các phần tử con. <br>Ví dụ: <br>grid-template-columns: [blank_2];',
                     'blanks' => 'grid-template-columns,1fr 2fr 1fr',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập màu nền cho phần tử. Ví dụ: [code]background-color: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập màu nền cho phần tử. <br>Ví dụ: <br>background-color: [blank_2];',
                     'blanks' => 'background-color,lightgray',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thay đổi kiểu viền của phần tử. Ví dụ: [code]border-style: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi kiểu viền của phần tử. <br>Ví dụ: <br>border-style: [blank_2];',
                     'blanks' => 'border-style,dotted',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập chiều cao của phần tử. Ví dụ: [code]height: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập chiều cao của phần tử. <br>Ví dụ: <br>height: [blank_2];',
                     'blanks' => 'height,500px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập kích thước chữ. Ví dụ: [code]font-size: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kích thước chữ. <br>Ví dụ: <br>font-size: [blank_2];',
                     'blanks' => 'font-size,24px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để tạo hiệu ứng chuyển động. Ví dụ: [code]animation: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để tạo hiệu ứng chuyển động. <br>Ví dụ: <br>animation: [blank_2];',
                     'blanks' => 'animation,fade 2s ease',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập độ dày của viền. Ví dụ: [code]border-width: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập độ dày của viền. <br>Ví dụ: <br>border-width: [blank_2];',
                     'blanks' => 'border-width,6px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập màu nền của phần tử. Ví dụ: [code]background-color: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập màu nền của phần tử. <br>Ví dụ: <br>background-color: [blank_2];',
                     'blanks' => 'background-color,lavender',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để điều chỉnh khoảng cách giữa các phần tử con. Ví dụ: [code]gap: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để điều chỉnh khoảng cách giữa các phần tử con. <br>Ví dụ: <br>gap: [blank_2];',
                     'blanks' => 'gap,25px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để áp dụng hiệu ứng chuyển tiếp. Ví dụ: [code]transition: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để áp dụng hiệu ứng chuyển tiếp. <br>Ví dụ: <br>transition: [blank_2];',
                     'blanks' => 'transition,background-color 0.4s ease',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thay đổi kiểu hiển thị của phần tử. Ví dụ: [code]display: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi kiểu hiển thị của phần tử. <br>Ví dụ: <br>display: [blank_2];',
                     'blanks' => 'display,flex',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu chữ cho phần tử. Ví dụ: [code]font-family: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu chữ cho phần tử. <br>Ví dụ: <br>font-family: [blank_2];',
                     'blanks' => 'font-family,Courier New',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để tạo khoảng cách giữa các phần tử. Ví dụ: [code]margin-top: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để tạo khoảng cách giữa các phần tử. <br>Ví dụ: <br>margin-top: [blank_2];',
                     'blanks' => 'margin-top,5px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập màu sắc cho phần tử. Ví dụ: [code]color: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập màu sắc cho phần tử. <br>Ví dụ: <br>color: [blank_2];',
                     'blanks' => 'color,maroon',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để áp dụng kiểu chữ cho phần tử. Ví dụ: [code]font-style: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để áp dụng kiểu chữ cho phần tử. <br>Ví dụ: <br>font-style: [blank_2];',
                     'blanks' => 'font-style,italic',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] dùng để tạo khoảng cách giữa các phần tử. Ví dụ: [code]margin: [blank_2];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để tạo khoảng cách giữa các phần tử. <br>Ví dụ: <br>margin: [blank_2];',
                     'blanks' => 'margin,45px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để điều chỉnh màu nền cho phần tử. Ví dụ: [code]background: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để điều chỉnh màu nền cho phần tử. <br>Ví dụ: <br>background: [blank_2];',
                     'blanks' => 'background,repeat-x',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập hiệu ứng khi người dùng hover. Ví dụ: [code]hover { [blank_3]: [blank_4]; }[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập hiệu ứng khi người dùng hover. <br>Ví dụ: <br>hover { [blank_2]: [blank_4]; }',
                     'blanks' => 'background-color,lightyellow',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập hiệu ứng hover cho phần tử. Ví dụ: [code]hover { [blank_3]: [blank_4]; }[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập hiệu ứng hover cho phần tử. <br>Ví dụ: <br>hover { [blank_2]: [blank_4]; }',
                     'blanks' => 'hover,background-color,blue',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để tạo hiệu ứng chuyển động cho phần tử. Ví dụ: [code]animation: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để tạo hiệu ứng chuyển động cho phần tử. <br>Ví dụ: <br>animation: [blank_2];',
                     'blanks' => 'animation,shake 1s ease-in-out',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] được sử dụng để tạo các lớp phủ cho phần tử. Ví dụ: [code]box-shadow: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] được sử dụng để tạo các lớp phủ cho phần tử. <br>Ví dụ: <br>box-shadow: [blank_2];',
                     'blanks' => 'box-shadow,0 0 15px rgba(0,0,0,0.5)',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để áp dụng hiệu ứng gradient cho nền. Ví dụ: [code]background: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để áp dụng hiệu ứng gradient cho nền. <br>Ví dụ: <br>background: [blank_2];',
                     'blanks' => 'background,linear-gradient(to right, red, yellow)',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập kiểu hiển thị của phần tử trong Flexbox. Ví dụ: [code]flex-direction: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu hiển thị của phần tử trong Flexbox. <br>Ví dụ: <br>flex-direction: [blank_2];',
                     'blanks' => 'flex-direction,row-reverse',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập kích thước của phần tử con trong Grid. Ví dụ: [code]grid-template-columns: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kích thước của phần tử con trong Grid. <br>Ví dụ: <br>grid-template-columns: [blank_2];',
                     'blanks' => 'grid-template-columns,1fr 2fr',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] được sử dụng để tạo hiệu ứng nổi bật cho phần tử. Ví dụ: [code]filter: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] được sử dụng để tạo hiệu ứng nổi bật cho phần tử. <br>Ví dụ: <br>filter: [blank_2];',
                     'blanks' => 'filter,blur(5px)',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập các giá trị cho thuộc tính animation. Ví dụ: [code]animation-name: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập các giá trị cho thuộc tính animation. <br>Ví dụ: <br>animation-name: [blank_2];',
                     'blanks' => 'animation-name,fadeIn',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để điều chỉnh kiểu viền cho phần tử. Ví dụ: [code]border: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để điều chỉnh kiểu viền cho phần tử. <br>Ví dụ: <br>border: [blank_2];',
                     'blanks' => 'border,2px dashed green',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thay đổi kiểu hiển thị của phần tử. Ví dụ: [code]display: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi kiểu hiển thị của phần tử. <br>Ví dụ: <br>display: [blank_2];',
                     'blanks' => 'display,grid',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập khoảng cách giữa các phần tử. Ví dụ: [code]gap: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập khoảng cách giữa các phần tử. <br>Ví dụ: <br>gap: [blank_2];',
                     'blanks' => 'gap,20px',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập độ dày của viền. Ví dụ: [code]border-width: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập độ dày của viền. <br>Ví dụ: <br>border-width: [blank_2];',
                     'blanks' => 'border-width,4px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] được sử dụng để tạo các lớp phủ cho phần tử. Ví dụ: [code]box-shadow: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] được sử dụng để tạo các lớp phủ cho phần tử. <br>Ví dụ: <br>box-shadow: [blank_2];',
                     'blanks' => 'box-shadow,0 0 20px rgba(0,0,0,0.7)',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập hiệu ứng khi phần tử được hover. Ví dụ: [code]hover { [blank_3]: [blank_4]; }[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập hiệu ứng khi phần tử được hover. <br>Ví dụ: <br>hover { [blank_2]: [blank_4]; }',
                     'blanks' => 'box-shadow,5px 5px 15px rgba(0,0,0,0.3)',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] được sử dụng để thiết lập kiểu chữ cho phần tử. Ví dụ: [code]font-family: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] được sử dụng để thiết lập kiểu chữ cho phần tử. <br>Ví dụ: <br>font-family: [blank_2];',
                     'blanks' => 'font-family,"Times New Roman", serif',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập các hiệu ứng chuyển động cho phần tử. Ví dụ: [code]transition: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập các hiệu ứng chuyển động cho phần tử. <br>Ví dụ: <br>transition: [blank_2];',
                     'blanks' => 'transition,transform 0.3s ease',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập khoảng cách giữa các phần tử. Ví dụ: [code]margin: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập khoảng cách giữa các phần tử. <br>Ví dụ: <br>margin: [blank_2];',
                     'blanks' => 'margin,auto',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để tạo hiệu ứng gradient cho nền. Ví dụ: [code]background: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để tạo hiệu ứng gradient cho nền. <br>Ví dụ: <br>background: [blank_2];',
                     'blanks' => 'background,radial-gradient(circle, pink, white)',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập kích thước và kiểu cho phần tử. Ví dụ: [code]width: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kích thước và kiểu cho phần tử. <br>Ví dụ: <br>width: [blank_2];',
                     'blanks' => 'width,80%',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập kiểu hiển thị của phần tử trong Flexbox. Ví dụ: [code]flex-wrap: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu hiển thị của phần tử trong Flexbox. <br>Ví dụ: <br>flex-wrap: [blank_2];',
                     'blanks' => 'flex-wrap,wrap-reverse',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thay đổi kiểu chữ của phần tử. Ví dụ: [code]text-transform: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi kiểu chữ của phần tử. <br>Ví dụ: <br>text-transform: [blank_2];',
                     'blanks' => 'text-transform,uppercase',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập màu nền cho phần tử. Ví dụ: [code]background-color: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập màu nền cho phần tử. <br>Ví dụ: <br>background-color: [blank_2];',
                     'blanks' => 'background-color,lightgrey',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập kiểu viền cho phần tử. Ví dụ: [code]border-style: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu viền cho phần tử. <br>Ví dụ: <br>border-style: [blank_2];',
                     'blanks' => 'border-style,solid',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để tạo hiệu ứng cho phần tử. Ví dụ: [code]transform: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để tạo hiệu ứng cho phần tử. <br>Ví dụ: <br>transform: [blank_2];',
                     'blanks' => 'transform,scale(1.1)',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập kiểu nền cho phần tử. Ví dụ: [code]background: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu nền cho phần tử. <br>Ví dụ: <br>background: [blank_2];',
                     'blanks' => 'background,conic-gradient(red, yellow, green)',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập khoảng cách giữa các phần tử con trong Grid. Ví dụ: [code]grid-gap: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập khoảng cách giữa các phần tử con trong Grid. <br>Ví dụ: <br>grid-gap: [blank_2];',
                     'blanks' => 'grid-gap,10px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thay đổi kiểu chữ của phần tử. Ví dụ: [code]font-weight: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi kiểu chữ của phần tử. <br>Ví dụ: <br>font-weight: [blank_2];',
                     'blanks' => 'font-weight,900',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập chiều cao cho phần tử. Ví dụ: [code]height: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập chiều cao cho phần tử. <br>Ví dụ: <br>height: [blank_2];',
                     'blanks' => 'height,100vh',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để áp dụng kiểu chữ cho phần tử. Ví dụ: [code]font-variant: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để áp dụng kiểu chữ cho phần tử. <br>Ví dụ: <br>font-variant: [blank_2];',
                     'blanks' => 'font-variant,small-caps',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập độ dày viền cho phần tử. Ví dụ: [code]border-width: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập độ dày viền cho phần tử. <br>Ví dụ: <br>border-width: [blank_2];',
                     'blanks' => 'border-width,3px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập màu sắc của phần tử. Ví dụ: [code]color: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập màu sắc của phần tử. <br>Ví dụ: <br>color: [blank_2];',
                     'blanks' => 'color,blue',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thay đổi độ sáng của phần tử. Ví dụ: [code]filter: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi độ sáng của phần tử. <br>Ví dụ: <br>filter: [blank_2];',
                     'blanks' => 'filter,brightness(120%)',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập các thuộc tính của phần tử trong Flexbox. Ví dụ: [code]align-items: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập các thuộc tính của phần tử trong Flexbox. <br>Ví dụ: <br>align-items: [blank_2];',
                     'blanks' => 'align-items,center',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để áp dụng hiệu ứng cho phần tử. Ví dụ: [code]transition-property: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để áp dụng hiệu ứng cho phần tử. <br>Ví dụ: <br>transition-property: [blank_2];',
                     'blanks' => 'transition-property,opacity',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập các phần tử của Grid. Ví dụ: [code]grid-template-rows: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập các phần tử của Grid. <br>Ví dụ: <br>grid-template-rows: [blank_2];',
                     'blanks' => 'grid-template-rows,repeat(3, 1fr)',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thay đổi kích thước văn bản. Ví dụ: [code]font-size: [blank_3];[/code]',
-                    'blanks' => 'font-size,20px',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập khoảng cách giữa các phần tử con trong Flexbox. <br>Ví dụ: <br>column-gap: [blank_2];',
+                    'blanks' => 'column-gap,15px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] được sử dụng để thiết lập hiệu ứng cho phần tử. Ví dụ: [code]transform-origin: [blank_3];[/code]',
-                    'blanks' => 'transform-origin,center',
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi kiểu hiển thị của phần tử. <br>Ví dụ: <br>display: [blank_2];',
+                    'blanks' => 'display,inline-block',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập độ rộng của viền. Ví dụ: [code]border-width: [blank_3];[/code]',
-                    'blanks' => 'border-width,8px',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập khoảng cách giữa các phần tử. <br>Ví dụ: <br>padding: [blank_2];',
+                    'blanks' => 'padding,10px 20px',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập các hiệu ứng chuyển tiếp cho phần tử. Ví dụ: [code]transition-duration: [blank_3];[/code]',
-                    'blanks' => 'transition-duration,0.5s',
-                ],
-                [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thay đổi màu nền của phần tử. Ví dụ: [code]background-color: [blank_3];[/code]',
-                    'blanks' => 'background-color,coral',
-                ],
-                [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập màu sắc của văn bản. Ví dụ: [code]color: [blank_3];[/code]',
-                    'blanks' => 'color,darkblue',
-                ],
-                [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập các thuộc tính cho các phần tử con trong Grid. Ví dụ: [code]grid-auto-flow: [blank_3];[/code]',
-                    'blanks' => 'grid-auto-flow,dense',
-                ],
-                [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập hiệu ứng hình ảnh cho phần tử. Ví dụ: [code]filter: [blank_3];[/code]',
-                    'blanks' => 'filter,saturate(150%)',
-                ],
-                [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập độ dài của hiệu ứng chuyển tiếp. Ví dụ: [code]transition-delay: [blank_3];[/code]',
-                    'blanks' => 'transition-delay,0.2s',
-                ],
-                [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập độ phân giải của hình ảnh. Ví dụ: [code]image-rendering: [blank_3];[/code]',
-                    'blanks' => 'image-rendering,optimizeQuality',
-                ],
-                [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập kiểu viền cho phần tử. Ví dụ: [code]border-radius: [blank_3];[/code]',
-                    'blanks' => 'border-radius,10px',
-                ],
-                [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập kiểu hiển thị của các phần tử con. Ví dụ: [code]flex-direction: [blank_3];[/code]',
-                    'blanks' => 'flex-direction,column',
-                ],
-                [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thay đổi kiểu chữ cho văn bản. Ví dụ: [code]font-style: [blank_3];[/code]',
-                    'blanks' => 'font-style,italic',
-                ],
-                [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để tạo khoảng cách giữa các phần tử trong Flexbox. Ví dụ: [code]justify-content: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập các thuộc tính của phần tử trong Flexbox. <br>Ví dụ: <br>justify-content: [blank_2];',
                     'blanks' => 'justify-content,space-around',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập màu nền cho phần tử. Ví dụ: [code]background-repeat: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi kiểu hiển thị của phần tử. <br>Ví dụ: <br>display: [blank_2];',
+                    'blanks' => 'display,block',
+                ],
+                [
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập khoảng cách giữa các phần tử con trong Flexbox. <br>Ví dụ: <br>row-gap: [blank_2];',
+                    'blanks' => 'row-gap,20px',
+                ],
+                [
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập độ trong suốt của phần tử. <br>Ví dụ: <br>opacity: [blank_2];',
+                    'blanks' => 'opacity,0.5',
+                ],
+                [
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu nền cho phần tử. <br>Ví dụ: <br>background: [blank_2];',
+                    'blanks' => 'background,linear-gradient(to right, red, orange)',
+                ],
+                [
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập khoảng cách giữa các phần tử con trong Grid. <br>Ví dụ: <br>gap: [blank_2];',
+                    'blanks' => 'gap,10px 20px',
+                ],
+                [
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập các thuộc tính của phần tử trong Flexbox. <br>Ví dụ: <br>align-content: [blank_2];',
+                    'blanks' => 'align-content,stretch',
+                ],
+                [
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi màu nền của phần tử. <br>Ví dụ: <br>background-color: [blank_2];',
+                    'blanks' => 'background-color,lightblue',
+                ],
+                [
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập độ dày của viền cho phần tử. <br>Ví dụ: <br>border-width: [blank_2];',
+                    'blanks' => 'border-width,1px',
+                ],
+                [
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu hiển thị của phần tử. <br>Ví dụ: <br>display: [blank_2];',
+                    'blanks' => 'display,flex',
+                ],
+                [
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập các hiệu ứng chuyển tiếp cho phần tử. <br>Ví dụ: <br>transition-duration: [blank_2];',
+                    'blanks' => 'transition-duration,0.5s',
+                ],
+                [
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi màu nền của phần tử. <br>Ví dụ: <br>background-color: [blank_2];',
+                    'blanks' => 'background-color,coral',
+                ],
+                [
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập màu sắc của văn bản. <br>Ví dụ: <br>color: [blank_2];',
+                    'blanks' => 'color,darkblue',
+                ],
+                [
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập các thuộc tính cho các phần tử con trong Grid. <br>Ví dụ: <br>grid-auto-flow: [blank_2];',
+                    'blanks' => 'grid-auto-flow,dense',
+                ],
+                [
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập hiệu ứng hình ảnh cho phần tử. <br>Ví dụ: <br>filter: [blank_2];',
+                    'blanks' => 'filter,saturate(150%)',
+                ],
+                [
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập độ dài của hiệu ứng chuyển tiếp. <br>Ví dụ: <br>transition-delay: [blank_2];',
+                    'blanks' => 'transition-delay,0.2s',
+                ],
+                [
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập độ phân giải của hình ảnh. <br>Ví dụ: <br>image-rendering: [blank_2];',
+                    'blanks' => 'image-rendering,optimizeQuality',
+                ],
+                [
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu viền cho phần tử. <br>Ví dụ: <br>border-radius: [blank_2];',
+                    'blanks' => 'border-radius,10px',
+                ],
+                [
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu hiển thị của các phần tử con. <br>Ví dụ: <br>flex-direction: [blank_2];',
+                    'blanks' => 'flex-direction,column',
+                ],
+                [
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi kiểu chữ cho văn bản. <br>Ví dụ: <br>font-style: [blank_2];',
+                    'blanks' => 'font-style,italic',
+                ],
+                [
+                    'question' => 'Thuộc tính [blank_1] dùng để tạo khoảng cách giữa các phần tử trong Flexbox. <br>Ví dụ: <br>justify-content: [blank_2];',
+                    'blanks' => 'justify-content,space-around',
+                ],
+                [
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập màu nền cho phần tử. <br>Ví dụ: <br>background-repeat: [blank_2];',
                     'blanks' => 'background-repeat,no-repeat',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập các thuộc tính của phần tử trong Grid. Ví dụ: [code]grid-template-areas: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập các thuộc tính của phần tử trong Grid. <br>Ví dụ: <br>grid-template-areas: [blank_2];',
                     'blanks' => 'grid-template-areas,"header header" "sidebar main"',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập kiểu hiển thị cho phần tử. Ví dụ: [code]display: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kiểu hiển thị cho phần tử. <br>Ví dụ: <br>display: [blank_2];',
                     'blanks' => 'display,fixed',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập các hiệu ứng cho phần tử. Ví dụ: [code]transform: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập các hiệu ứng cho phần tử. <br>Ví dụ: <br>transform: [blank_2];',
                     'blanks' => 'transform,rotate(45deg)',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thay đổi màu nền của phần tử. Ví dụ: [code]background-color: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thay đổi màu nền của phần tử. <br>Ví dụ: <br>background-color: [blank_2];',
                     'blanks' => 'background-color,lightgreen',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và thuộc tính [blank_2] dùng để thiết lập hiệu ứng chuyển tiếp cho phần tử. Ví dụ: [code]transition-timing-function: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập hiệu ứng chuyển tiếp cho phần tử. <br>Ví dụ: <br>transition-timing-function: [blank_2];',
                     'blanks' => 'transition-timing-function,ease-in-out',
                 ],
                 [
-                    'question' => 'Thuộc tính [blank_1] và [blank_2] dùng để thiết lập kích thước của phần tử. Ví dụ: [code]max-width: [blank_3];[/code]',
+                    'question' => 'Thuộc tính [blank_1] dùng để thiết lập kích thước của phần tử. <br>Ví dụ: <br>max-width: [blank_2];',
                     'blanks' => 'max-width,1200px',
                 ],
             ];

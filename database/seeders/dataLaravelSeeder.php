@@ -1368,896 +1368,484 @@ class dataLaravelSeeder extends Seeder
         $this->essays_laravel =
             [
                 [
-                    'question' => 'Để tạo một route cơ bản trong Laravel, bạn có thể sử dụng phương thức [blank_1] trong file routes/web.php. Ví dụ: [code]Route::[blank_2]("/", function () { return "Hello World!"; });[/code]',
+                    'question' => 'Để tạo một route cơ bản trong Laravel, bạn có thể sử dụng phương thức [blank_1] trong file routes/web.php.<br>Ví dụ:<br>Route::[blank_2]("/", function () { return "Hello World!"; });',
                     'blanks' => 'get, get',
                 ],
                 [
-                    'question' => 'Để kết nối với cơ sở dữ liệu trong Laravel, bạn cần cấu hình thông tin trong file [blank_1]. Ví dụ: [code]DB::connection("[blank_2]")->getPdo();[/code]',
-                    'blanks' => 'config/database.php, mysql',
+                    'question' => 'Phương thức [blank_1] được sử dụng để xác thực người dùng trong Laravel.',
+                    'blanks' => 'auth',
                 ],
                 [
-                    'question' => 'Để tạo một controller mới trong Laravel, bạn có thể sử dụng lệnh Artisan [blank_1]. Ví dụ: [code]php artisan [blank_2] MyController[/code]',
-                    'blanks' => 'make:controller, make:controller',
+                    'question' => 'Để khởi tạo một dự án Laravel mới, bạn có thể sử dụng câu lệnh [blank_1] trong terminal.',
+                    'blanks' => 'composer create-project',
                 ],
                 [
-                    'question' => 'Khi bạn cần truyền dữ liệu từ controller đến view, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]return view("home", ["[blank_2]" => $data]);[/code]',
-                    'blanks' => 'view, data',
+                    'question' => 'Trong Laravel, để tạo một middleware mới, bạn có thể sử dụng câu lệnh [blank_1] trong terminal.',
+                    'blanks' => 'php artisan make:middleware',
                 ],
                 [
-                    'question' => 'Để thực hiện một truy vấn cơ sở dữ liệu đơn giản trong Eloquent, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]User::[blank_2]()->get();[/code]',
-                    'blanks' => 'all, all',
+                    'question' => 'Blade là công cụ [blank_1] template mặc định trong Laravel.',
+                    'blanks' => 'template',
                 ],
                 [
-                    'question' => 'Để tạo một migration mới trong Laravel, bạn có thể sử dụng lệnh Artisan [blank_1]. Ví dụ: [code]php artisan [blank_2] create_users_table[/code]',
-                    'blanks' => 'make:migration, make:migration',
+                    'question' => 'Để chạy một migration trong Laravel, bạn sử dụng câu lệnh [blank_1].',
+                    'blanks' => 'php artisan migrate',
                 ],
                 [
-                    'question' => 'Khi bạn cần xác thực dữ liệu nhập vào trong một form, bạn có thể sử dụng class [blank_1]. Ví dụ: [code]use Illuminate\\Http\\Request;[/code]',
-                    'blanks' => 'Request',
+                    'question' => 'Phương thức [blank_1] được sử dụng để upload file trong Laravel.',
+                    'blanks' => 'store',
                 ],
                 [
-                    'question' => 'Để định nghĩa một route có tham số trong Laravel, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::get("/user/{id}", [blank_2]::class, "show");[/code]',
-                    'blanks' => 'controllerName, controllerName',
+                    'question' => 'Để tạo một model mới trong Laravel, bạn sử dụng câu lệnh [blank_1] trong terminal.',
+                    'blanks' => 'php artisan make:model',
                 ],
                 [
-                    'question' => 'Để lấy toàn bộ dữ liệu từ một bảng trong Laravel, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]DB::table("users")->[blank_2]();[/code]',
-                    'blanks' => 'get, get',
+                    'question' => 'Phương thức [blank_1] được sử dụng để gửi email trong Laravel.',
+                    'blanks' => 'Mail::send',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một route nhóm với middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::group(["middleware" => "[blank_2]"], function () { /* ... */ });[/code]',
-                    'blanks' => 'auth, auth',
+                    'question' => 'Để tạo một controller mới trong Laravel, bạn sử dụng câu lệnh [blank_1].',
+                    'blanks' => 'php artisan make:controller',
                 ],
                 [
-                    'question' => 'Để sử dụng Eloquent model trong Laravel, bạn cần khai báo tên bảng bằng cách sử dụng thuộc tính [blank_1] trong model. Ví dụ: [code]protected $table = "[blank_2]";[/code]',
-                    'blanks' => 'table, users',
+                    'question' => 'Phương thức [blank_1] được sử dụng để bảo mật CSRF trong Laravel.',
+                    'blanks' => 'csrf_token',
                 ],
                 [
-                    'question' => 'Để tạo một form với method POST trong Laravel, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]<form action="[blank_2]" method="post">[/code]',
-                    'blanks' => 'url, url',
+                    'question' => 'Để chạy một seeder trong Laravel, bạn sử dụng câu lệnh [blank_1].',
+                    'blanks' => 'php artisan db:seed',
                 ],
                 [
-                    'question' => 'Khi bạn cần định nghĩa một route chỉ cho phương thức POST, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]Route::[blank_2]("/submit", function () { /* ... */ });[/code]',
-                    'blanks' => 'post, post',
+                    'question' => 'Laravel sử dụng [blank_1] để quản lý các phiên làm việc của người dùng.',
+                    'blanks' => 'session',
                 ],
                 [
-                    'question' => 'Để tạo một view mới trong Laravel, bạn cần tạo một file trong thư mục [blank_1]. Ví dụ: [code]resources/views/[blank_2].blade.php[/code]',
-                    'blanks' => 'resources/views, welcome',
+                    'question' => 'Phương thức [blank_1] được sử dụng để gọi một view trong Laravel.',
+                    'blanks' => 'view',
                 ],
                 [
-                    'question' => 'Để sử dụng các biến môi trường trong Laravel, bạn có thể truy cập chúng bằng cách sử dụng hàm [blank_1]. Ví dụ: [code]env("[blank_2]")[/code]',
-                    'blanks' => 'env, APP_NAME',
+                    'question' => 'Để tạo một factory mới trong Laravel, bạn sử dụng câu lệnh [blank_1].',
+                    'blanks' => 'php artisan make:factory',
                 ],
                 [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn cơ sở dữ liệu với điều kiện, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]DB::table("users")->where("[blank_2]", "value")->get();[/code]',
-                    'blanks' => 'where, columnName',
+                    'question' => 'Để thiết lập cấu hình ứng dụng trong Laravel, bạn chỉnh sửa file [blank_1].',
+                    'blanks' => 'config/app.php',
                 ],
                 [
-                    'question' => 'Để sử dụng middleware trong Laravel, bạn có thể định nghĩa chúng trong file [blank_1]. Ví dụ: [code]protected $middleware = ["[blank_2]"];[/code]',
-                    'blanks' => 'app/Http/Kernel.php, auth',
+                    'question' => 'Phương thức [blank_1] được sử dụng để đăng xuất người dùng trong Laravel.',
+                    'blanks' => 'Auth::logout',
                 ],
                 [
-                    'question' => 'Để định nghĩa một route cho phương thức GET và POST, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::match(["[blank_2]", "post"], "/submit", function () { /* ... */ });[/code]',
-                    'blanks' => 'match, get',
+                    'question' => 'Để tạo một event mới trong Laravel, bạn sử dụng câu lệnh [blank_1].',
+                    'blanks' => 'php artisan make:event',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một seed để nhập dữ liệu mẫu vào cơ sở dữ liệu, bạn có thể sử dụng lệnh Artisan [blank_1]. Ví dụ: [code]php artisan [blank_2] UserSeeder[/code]',
-                    'blanks' => 'db:seed, db:seed',
+                    'question' => 'Phương thức [blank_1] được sử dụng để mã hóa mật khẩu trong Laravel.',
+                    'blanks' => 'Hash::make',
                 ],
                 [
-                    'question' => 'Để khai báo một thuộc tính protected trong một model, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]protected $[blank_2];[/code]',
-                    'blanks' => 'protected, property',
+                    'question' => 'Để tạo một job mới trong Laravel, bạn sử dụng câu lệnh [blank_1].',
+                    'blanks' => 'php artisan make:job',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một route với prefix, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::prefix("[blank_2]")->group(function () { /* ... */ });[/code]',
-                    'blanks' => 'prefix, admin',
+                    'question' => 'Phương thức [blank_1] được sử dụng để đăng ký một service provider trong Laravel.',
+                    'blanks' => 'App::register',
                 ],
                 [
-                    'question' => 'Để sử dụng các helper function trong Laravel, bạn cần bao gồm file [blank_1]. Ví dụ: [code]include "[blank_2]";[/code]',
-                    'blanks' => 'bootstrap/app.php, helpers.php',
+                    'question' => 'Để tạo một notification mới trong Laravel, bạn sử dụng câu lệnh [blank_1].',
+                    'blanks' => 'php artisan make:notification',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một custom validation rule, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Validator::make($data, ["field" => "[blank_2]"]);[/code]',
-                    'blanks' => 'Validator, ruleName',
+                    'question' => 'Phương thức [blank_1] được sử dụng để truy vấn cơ sở dữ liệu trong Laravel.',
+                    'blanks' => 'DB::table',
                 ],
                 [
-                    'question' => 'Để tạo một controller với resource methods, bạn có thể sử dụng lệnh Artisan [blank_1]. Ví dụ: [code]php artisan [blank_2] MyController --resource[/code]',
-                    'blanks' => 'make:controller, make:controller',
+                    'question' => 'Để tạo một policy mới trong Laravel, bạn sử dụng câu lệnh [blank_1].',
+                    'blanks' => 'php artisan make:policy',
                 ],
                 [
-                    'question' => 'Để lấy toàn bộ dữ liệu từ một bảng bằng Eloquent, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]User::[blank_2]();[/code]',
-                    'blanks' => 'all, all',
+                    'question' => 'Phương thức [blank_1] được sử dụng để điều hướng người dùng trong Laravel.',
+                    'blanks' => 'redirect',
                 ],
                 [
-                    'question' => 'Để tạo một route với tên, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::get("/home", [blank_2]::class, "index")->name("home");[/code]',
-                    'blanks' => 'name, controllerName',
+                    'question' => 'Để tạo một queue mới trong Laravel, bạn sử dụng câu lệnh [blank_1].',
+                    'blanks' => 'php artisan queue:work',
                 ],
                 [
-                    'question' => 'Để tạo một form với CSRF token trong Laravel, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]@csrf[/code]',
-                    'blanks' => 'csrf',
+                    'question' => 'Phương thức [blank_1] được sử dụng để kiểm tra dữ liệu đầu vào trong Laravel.',
+                    'blanks' => 'Validator::make',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một request class để xử lý xác thực, bạn có thể sử dụng lệnh Artisan [blank_1]. Ví dụ: [code]php artisan [blank_2] CreateRequest[/code]',
-                    'blanks' => 'make:request, make:request',
+                    'question' => 'Để chạy các lệnh Artisan trong Laravel, bạn sử dụng file [blank_1].',
+                    'blanks' => 'artisan',
                 ],
                 [
-                    'question' => 'Để lấy giá trị của một biến môi trường trong Laravel, bạn có thể sử dụng hàm [blank_1]. Ví dụ: [code]config("[blank_2]")[/code]',
-                    'blanks' => 'config, app.name',
+                    'question' => 'Phương thức [blank_1] được sử dụng để gửi thông báo qua email trong Laravel.',
+                    'blanks' => 'Notification::send',
                 ],
                 [
-                    'question' => 'Khi bạn cần định nghĩa một route với name và middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::get("/admin", [blank_2]::class)->name("admin")->middleware("auth");[/code]',
-                    'blanks' => 'middleware, controllerName',
+                    'question' => 'Để tạo một resource controller mới trong Laravel, bạn sử dụng câu lệnh [blank_1].',
+                    'blanks' => 'php artisan make:controller --resource',
                 ],
                 [
-                    'question' => 'Để tạo một migration để thêm cột mới vào bảng, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Schema::table("[blank_2]", function (Blueprint $table) { $table->string("new_column"); });[/code]',
-                    'blanks' => 'Schema::table, users',
+                    'question' => 'Phương thức [blank_1] được sử dụng để xác thực các yêu cầu HTTP trong Laravel.',
+                    'blanks' => 'Request::validate',
                 ],
                 [
-                    'question' => 'Để xác thực người dùng với Laravel Auth, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]Auth::[blank_2]("email", "password");[/code]',
-                    'blanks' => 'attempt, attempt',
+                    'question' => 'Để tạo một observer mới trong Laravel, bạn sử dụng câu lệnh [blank_1].',
+                    'blanks' => 'php artisan make:observer',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một route cho phương thức PUT, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::[blank_2]("/update", [blank_3]::class);[/code]',
-                    'blanks' => 'put, put, controllerName',
+                    'question' => 'Phương thức [blank_1] được sử dụng để tải một view trong Laravel.',
+                    'blanks' => 'view',
                 ],
                 [
-                    'question' => 'Để lấy giá trị của tất cả các thuộc tính từ một đối tượng trong Laravel, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]$obj->getAttributes();[/code]',
-                    'blanks' => 'getAttributes',
+                    'question' => 'Để tạo một package mới trong Laravel, bạn sử dụng câu lệnh [blank_1].',
+                    'blanks' => 'composer create-project',
                 ],
                 [
-                    'question' => 'Khi bạn cần thêm một trường vào bảng trong một migration, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]Schema::table("[blank_2]", function (Blueprint $table) { $table->string("new_field"); });[/code]',
-                    'blanks' => 'table, users',
+                    'question' => 'Phương thức [blank_1] được sử dụng để đăng ký các route trong Laravel.',
+                    'blanks' => 'Route::group',
                 ],
                 [
-                    'question' => 'Để tạo một route cho phương thức PATCH, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::[blank_2]("/edit", [blank_3]::class);[/code]',
-                    'blanks' => 'patch, patch, controllerName',
+                    'question' => 'Để tạo một test mới trong Laravel, bạn sử dụng câu lệnh [blank_1].',
+                    'blanks' => 'php artisan make:test',
                 ],
                 [
-                    'question' => 'Để sử dụng phương thức Eloquent để lấy bản ghi đầu tiên từ cơ sở dữ liệu, bạn có thể sử dụng [blank_1]. Ví dụ: [code]User::[blank_2]();[/code]',
-                    'blanks' => 'first, first',
+                    'question' => 'Phương thức [blank_1] được sử dụng để làm việc với các tệp tin trong Laravel.',
+                    'blanks' => 'Storage',
                 ],
                 [
-                    'question' => 'Để tạo một model mới trong Laravel, bạn có thể sử dụng lệnh Artisan [blank_1]. Ví dụ: [code]php artisan [blank_2] User[/code]',
-                    'blanks' => 'make:model, make:model',
+                    'question' => 'Để chạy các migration mới nhất trong Laravel, bạn sử dụng câu lệnh [blank_1].',
+                    'blanks' => 'php artisan migrate',
                 ],
                 [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để tìm một bản ghi theo ID, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]User::find([blank_2]);[/code]',
-                    'blanks' => 'find, id',
+                    'question' => 'Phương thức [blank_1] được sử dụng để quản lý các thông báo trong Laravel.',
+                    'blanks' => 'Notification',
                 ],
                 [
-                    'question' => 'Để lấy toàn bộ dữ liệu từ một bảng bằng Eloquent, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]User::[blank_2]();[/code]',
-                    'blanks' => 'all, all',
+                    'question' => 'Để tạo một command mới trong Laravel, bạn sử dụng câu lệnh [blank_1].',
+                    'blanks' => 'php artisan make:command',
                 ],
                 [
-                    'question' => 'Để tạo một route cho phương thức DELETE, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::[blank_2]("/delete", [blank_3]::class);[/code]',
-                    'blanks' => 'delete, delete, controllerName',
+                    'question' => 'Để tạo một service provider mới trong Laravel, bạn sử dụng câu lệnh [blank_1].',
+                    'blanks' => 'php artisan make:provider',
                 ],
                 [
-                    'question' => 'Khi bạn cần chuyển hướng người dùng đến một route khác, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]return [blank_2]("home");[/code]',
-                    'blanks' => 'redirect, redirect',
+                    'question' => 'Phương thức [blank_1] được sử dụng để đăng ký một middleware toàn cục trong Laravel.',
+                    'blanks' => 'app/Http/Kernel.php',
                 ],
                 [
-                    'question' => 'Để tạo một route nhóm với prefix và middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::group(["prefix" => "[blank_2]", "middleware" => "auth"], function () { /* ... */ });[/code]',
-                    'blanks' => 'group, admin',
+                    'question' => 'Để tạo một custom validation rule trong Laravel, bạn sử dụng câu lệnh [blank_1].',
+                    'blanks' => 'php artisan make:rule',
                 ],
                 [
-                    'question' => 'Khi bạn cần xác thực người dùng với email và password, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]Auth::[blank_2]("email", "password");[/code]',
-                    'blanks' => 'attempt, attempt',
+                    'question' => 'Phương thức [blank_1] trong model Eloquent được sử dụng để tạo một quan hệ nhiều-nhiều.',
+                    'blanks' => 'belongsToMany',
                 ],
                 [
-                    'question' => 'Để tạo một route với tên cụ thể, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::get("/profile", [blank_2]::class)->name("profile");[/code]',
-                    'blanks' => 'name, controllerName',
+                    'question' => 'Để sử dụng queue trong Laravel, bạn cần cài đặt driver queue trong file [blank_1].',
+                    'blanks' => 'config/queue.php',
                 ],
                 [
-                    'question' => 'Khi bạn cần chạy một truy vấn để cập nhật dữ liệu trong cơ sở dữ liệu, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]DB::table("users")->where("id", $id)->[blank_2]("name", "newName");[/code]',
-                    'blanks' => 'update, update',
+                    'question' => 'Phương thức [blank_1] được sử dụng để tạo một job mới trong Laravel.',
+                    'blanks' => 'dispatch',
                 ],
                 [
-                    'question' => 'Để tạo một model với tên bảng cụ thể, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]protected $table = "[blank_2]";[/code]',
-                    'blanks' => 'protected, users',
+                    'question' => 'Để tạo một policy để quản lý quyền truy cập trong Laravel, bạn sử dụng câu lệnh [blank_1].',
+                    'blanks' => 'php artisan make:policy',
                 ],
                 [
-                    'question' => 'Để tạo một route với phương thức GET và POST, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::[blank_2](["get", "post"], "/action", [blank_3]::class);[/code]',
-                    'blanks' => 'match, match, controllerName',
+                    'question' => 'Phương thức [blank_1] trong Eloquent Model được sử dụng để xác định một quan hệ một-một.',
+                    'blanks' => 'hasOne',
                 ],
                 [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để xóa một bản ghi, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]DB::table("users")->where("id", $id)->[blank_2]();[/code]',
-                    'blanks' => 'delete, delete',
+                    'question' => 'Để tạo một event listener mới trong Laravel, bạn sử dụng câu lệnh [blank_1].',
+                    'blanks' => 'php artisan make:listener',
                 ],
                 [
-                    'question' => 'Để tạo một controller với các phương thức resource, bạn có thể sử dụng lệnh Artisan [blank_1]. Ví dụ: [code]php artisan [blank_2] MyController --resource[/code]',
-                    'blanks' => 'make:controller, make:controller',
+                    'question' => 'Phương thức [blank_1] được sử dụng để tải một cấu hình tùy chỉnh trong Laravel.',
+                    'blanks' => 'config',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một route với middleware và prefix, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::prefix("[blank_2]")->middleware("auth")->group(function () { /* ... */ });[/code]',
-                    'blanks' => 'middleware, admin',
+                    'question' => 'Để tạo một custom artisan command trong Laravel, bạn sử dụng câu lệnh [blank_1].',
+                    'blanks' => 'php artisan make:command',
                 ],
                 [
-                    'question' => 'Để tạo một request class với xác thực, bạn có thể sử dụng lệnh Artisan [blank_1]. Ví dụ: [code]php artisan [blank_2] CreateRequest[/code]',
-                    'blanks' => 'make:request, make:request',
+                    'question' => 'Phương thức [blank_1] trong model Eloquent được sử dụng để định nghĩa một quan hệ một-nhiều.',
+                    'blanks' => 'hasMany',
                 ],
                 [
-                    'question' => 'Khi bạn cần lấy tất cả dữ liệu từ một bảng trong Eloquent, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]User::[blank_2]();[/code]',
-                    'blanks' => 'all, all',
+                    'question' => 'Để sử dụng Redis làm cache store trong Laravel, bạn cần cài đặt cấu hình trong file [blank_1].',
+                    'blanks' => 'config/cache.php',
                 ],
                 [
-                    'question' => 'Để tạo một route nhóm với middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::group(["middleware" => "[blank_2]"], function () { /* ... */ });[/code]',
-                    'blanks' => 'group, auth',
+                    'question' => 'Phương thức [blank_1] được sử dụng để tạo một custom log channel trong Laravel.',
+                    'blanks' => 'Logger::channel',
                 ],
                 [
-                    'question' => 'Để tạo một migration mới cho bảng, bạn có thể sử dụng lệnh Artisan [blank_1]. Ví dụ: [code]php artisan [blank_2] create_users_table[/code]',
-                    'blanks' => 'make:migration, make:migration',
+                    'question' => 'Để sử dụng dependency injection trong Laravel, bạn cần khai báo trong phương thức [blank_1] của class.',
+                    'blanks' => '__construct',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một model với thuộc tính fillable, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]protected $fillable = ["[blank_2]"];[/code]',
-                    'blanks' => 'fillable, field1',
+                    'question' => 'Phương thức [blank_1] trong Eloquent Model được sử dụng để định nghĩa một quan hệ nhiều-nhiều.',
+                    'blanks' => 'belongsToMany',
                 ],
                 [
-                    'question' => 'Để định nghĩa một route với phương thức POST, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::[blank_2]("/post", [blank_3]::class);[/code]',
-                    'blanks' => 'post, post, controllerName',
+                    'question' => 'Để tạo một custom exception handler trong Laravel, bạn cần mở rộng class [blank_1].',
+                    'blanks' => 'Handler',
                 ],
                 [
-                    'question' => 'Khi bạn cần truy cập biến môi trường trong Laravel, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]env("[blank_2]")[/code]',
-                    'blanks' => 'env, APP_ENV',
+                    'question' => 'Phương thức [blank_1] được sử dụng để ghi log trong Laravel.',
+                    'blanks' => 'Log::info',
                 ],
                 [
-                    'question' => 'Để kiểm tra xem một người dùng đã xác thực hay chưa, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]Auth::[blank_2]();[/code]',
-                    'blanks' => 'check, check',
+                    'question' => 'Để tạo một custom blade directive trong Laravel, bạn cần sử dụng phương thức [blank_1] trong ServiceProvider.',
+                    'blanks' => 'Blade::directive',
                 ],
                 [
-                    'question' => 'Để lấy dữ liệu từ một model Eloquent, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]User::[blank_2]();[/code]',
-                    'blanks' => 'all, all',
+                    'question' => 'Phương thức [blank_1] được sử dụng để gửi thông báo đến người dùng qua email trong Laravel.',
+                    'blanks' => 'Notification::route',
                 ],
                 [
-                    'question' => 'Khi bạn cần truyền dữ liệu từ controller đến view, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]return view("[blank_2]", ["data" => $data]);[/code]',
-                    'blanks' => 'view, home',
+                    'question' => 'Để tạo một custom HTTP client trong Laravel, bạn cần sử dụng class [blank_1].',
+                    'blanks' => 'Http::withOptions',
                 ],
                 [
-                    'question' => 'Để tạo một migration để xóa một cột khỏi bảng, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Schema::table("[blank_2]", function (Blueprint $table) { $table->dropColumn("old_column"); });[/code]',
-                    'blanks' => 'Schema::table, users',
+                    'question' => 'Phương thức [blank_1] trong Eloquent Model được sử dụng để định nghĩa một quan hệ ngược lại của quan hệ một-nhiều.',
+                    'blanks' => 'belongsTo',
                 ],
                 [
-                    'question' => 'Để tạo một controller mới trong Laravel, bạn có thể sử dụng lệnh Artisan [blank_1]. Ví dụ: [code]php artisan [blank_2] MyController[/code]',
-                    'blanks' => 'make:controller, make:controller',
+                    'question' => 'Để tạo một custom validation rule trong Laravel, bạn cần mở rộng class [blank_1].',
+                    'blanks' => 'Rule',
                 ],
                 [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để lọc dữ liệu theo điều kiện, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]DB::table("users")->where("[blank_2]", "value")->get();[/code]',
-                    'blanks' => 'where, column',
+                    'question' => 'Phương thức [blank_1] được sử dụng để làm tròn số thập phân trong Laravel.',
+                    'blanks' => 'round',
                 ],
                 [
-                    'question' => 'Để tạo một form với method PUT trong Laravel, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]<form action="[blank_2]" method="put">[/code]',
-                    'blanks' => 'url, url',
+                    'question' => 'Để tạo một custom cache driver trong Laravel, bạn cần mở rộng class [blank_1].',
+                    'blanks' => 'CacheManager',
                 ],
                 [
-                    'question' => 'Khi bạn cần xác thực dữ liệu nhập vào với Laravel, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Validator::make($request->all(), ["field" => "[blank_2]"]);[/code]',
-                    'blanks' => 'Validator, required',
+                    'question' => 'Phương thức [blank_1] được sử dụng để gửi thông báo đến người dùng qua database trong Laravel.',
+                    'blanks' => 'Notification::send',
                 ],
                 [
-                    'question' => 'Để lấy giá trị của một thuộc tính trong model, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]$model->[blank_2];[/code]',
-                    'blanks' => 'propertyName, propertyName',
+                    'question' => 'Để tạo một custom filesystem driver trong Laravel, bạn cần mở rộng class [blank_1].',
+                    'blanks' => 'FilesystemManager',
                 ],
                 [
-                    'question' => 'Để tạo một route nhóm với middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::middleware("[blank_2]")->group(function () { /* ... */ });[/code]',
-                    'blanks' => 'middleware, auth',
+                    'question' => 'Phương thức [blank_1] trong model Eloquent được sử dụng để tạo một global scope.',
+                    'blanks' => 'boot',
                 ],
                 [
-                    'question' => 'Khi bạn cần lấy tất cả dữ liệu từ một bảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->get();[/code]',
-                    'blanks' => 'get, users',
+                    'question' => 'Để tạo một custom middleware trong Laravel, bạn sử dụng câu lệnh [blank_1].',
+                    'blanks' => 'php artisan make:middleware',
                 ],
                 [
-                    'question' => 'Để tạo một view mới trong Laravel, bạn cần tạo một file trong thư mục [blank_1]. Ví dụ: [code]resources/views/[blank_2].blade.php[/code]',
-                    'blanks' => 'resources/views, welcome',
+                    'question' => 'Phương thức [blank_1] được sử dụng để gửi thông báo đến người dùng qua Slack trong Laravel.',
+                    'blanks' => 'Notification::route',
                 ],
                 [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để xóa dữ liệu trong cơ sở dữ liệu, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->delete();[/code]',
-                    'blanks' => 'delete, users',
+                    'question' => 'Để sử dụng Passport cho API Authentication trong Laravel, bạn cần cài đặt package [blank_1].',
+                    'blanks' => 'laravel/passport',
                 ],
                 [
-                    'question' => 'Để tạo một migration mới cho một bảng, bạn có thể sử dụng lệnh Artisan [blank_1]. Ví dụ: [code]php artisan [blank_2] create_table_name[/code]',
-                    'blanks' => 'make:migration, make:migration',
+                    'question' => 'Phương thức [blank_1] trong Eloquent Model được sử dụng để định nghĩa một quan hệ một-một ngược lại.',
+                    'blanks' => 'belongsTo',
                 ],
                 [
-                    'question' => 'Để sử dụng phương thức Eloquent để lấy bản ghi đầu tiên từ cơ sở dữ liệu, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]Model::[blank_2]();[/code]',
-                    'blanks' => 'first, first',
+                    'question' => 'Để tạo một custom queue driver trong Laravel, bạn cần mở rộng class [blank_1].',
+                    'blanks' => 'QueueManager',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một route cho phương thức PUT, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::[blank_2]("/update", [blank_3]::class);[/code]',
-                    'blanks' => 'put, put, controllerName',
+                    'question' => 'Phương thức [blank_1] được sử dụng để gửi thông báo đến người dùng qua SMS trong Laravel.',
+                    'blanks' => 'Notification::route',
                 ],
                 [
-                    'question' => 'Để tạo một form với method POST trong Laravel, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]<form action="[blank_2]" method="post">[/code]',
-                    'blanks' => 'url, url',
+                    'question' => 'Để sử dụng Telescope trong Laravel, bạn cần cài đặt package [blank_1].',
+                    'blanks' => 'laravel/telescope',
                 ],
                 [
-                    'question' => 'Khi bạn cần định nghĩa một route với middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::middleware("[blank_2]")->group(function () { /* ... */ });[/code]',
-                    'blanks' => 'middleware, auth',
+                    'question' => 'Phương thức [blank_1] trong Eloquent Model được sử dụng để xác định một quan hệ đa hình.',
+                    'blanks' => 'morphTo',
                 ],
                 [
-                    'question' => 'Để tạo một model mới trong Laravel, bạn có thể sử dụng lệnh Artisan [blank_1]. Ví dụ: [code]php artisan [blank_2] ModelName[/code]',
-                    'blanks' => 'make:model, make:model',
+                    'question' => 'Để tạo một custom event trong Laravel, bạn sử dụng câu lệnh [blank_1].',
+                    'blanks' => 'php artisan make:event',
                 ],
                 [
-                    'question' => 'Khi bạn cần xác thực dữ liệu trong Laravel, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Validator::make($request->all(), ["[blank_2]" => "required"]);[/code]',
-                    'blanks' => 'Validator, fieldName',
+                    'question' => 'Phương thức [blank_1] được sử dụng để gửi thông báo đến người dùng qua broadcast trong Laravel.',
+                    'blanks' => 'Notification::send',
                 ],
                 [
-                    'question' => 'Để lấy giá trị của một thuộc tính trong Laravel, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]$model->[blank_2];[/code]',
-                    'blanks' => 'propertyName, propertyName',
+                    'question' => 'Để sử dụng Horizon trong Laravel, bạn cần cài đặt package [blank_1].',
+                    'blanks' => 'laravel/horizon',
                 ],
                 [
-                    'question' => 'Để tạo một route nhóm với prefix và middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::prefix("[blank_2]")->middleware("[blank_3]")->group(function () { /* ... */ });[/code]',
-                    'blanks' => 'prefix, admin, auth',
+                    'question' => 'Phương thức [blank_1] trong Eloquent Model được sử dụng để xác định một quan hệ nhiều-nhiều đa hình.',
+                    'blanks' => 'morphToMany',
                 ],
                 [
-                    'question' => 'Để định nghĩa một route với tên cụ thể, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::get("/dashboard", [blank_2]::class)->name("dashboard");[/code]',
-                    'blanks' => 'name, controllerName',
+                    'question' => 'Để đăng ký một policy trong Laravel, bạn sử dụng phương thức [blank_1] trong file [blank_2].',
+                    'blanks' => 'Gate::policy, AuthServiceProvider',
                 ],
                 [
-                    'question' => 'Khi bạn cần truy cập biến môi trường trong Laravel, bạn có thể sử dụng hàm [blank_1]. Ví dụ: [code]config("[blank_2]")[/code]',
-                    'blanks' => 'config, app.name',
+                    'question' => 'Phương thức [blank_1] được sử dụng để tải một middleware nhóm trong file [blank_2].',
+                    'blanks' => 'Route::middlewareGroup, routes/web.php',
                 ],
                 [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để lấy bản ghi đầu tiên hoặc tạo mới nếu không tồn tại, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]Model::[blank_2]OrCreate(["field" => "[blank_3]"]);[/code]',
-                    'blanks' => 'firstOrCreate, firstOrCreate, value',
+                    'question' => 'Để tạo một event trong Laravel, bạn sử dụng câu lệnh [blank_1] và đặt file trong thư mục [blank_2].',
+                    'blanks' => 'php artisan make:event, app/Events',
                 ],
                 [
-                    'question' => 'Để định nghĩa một route nhóm với middleware và tên nhóm, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::middleware("[blank_2]")->name("[blank_3]")->group(function () { /* ... */ });[/code]',
-                    'blanks' => 'middleware, auth, admin',
+                    'question' => 'Phương thức [blank_1] trong class [blank_2] được sử dụng để định nghĩa một job có thể xếp hàng.',
+                    'blanks' => 'dispatch, Job',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một route với phương thức PATCH và middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::patch("/update", [blank_2]::class)->middleware("[blank_3]");[/code]',
-                    'blanks' => 'patch, controllerName, auth',
+                    'question' => 'Để sử dụng cache trong Laravel, bạn cần cấu hình driver cache trong file [blank_1] và sử dụng phương thức [blank_2].',
+                    'blanks' => 'config/cache.php, Cache::put',
                 ],
                 [
-                    'question' => 'Để tạo một request class với xác thực và middleware, bạn có thể sử dụng lệnh Artisan [blank_1]. Ví dụ: [code]php artisan [blank_2] RequestName --middleware="[blank_3]"[/code]',
-                    'blanks' => 'make:request, make:request, auth',
+                    'question' => 'Phương thức [blank_1] trong class [blank_2] được sử dụng để xác định một quan hệ nhiều-nhiều với dữ liệu bổ sung.',
+                    'blanks' => 'belongsToMany, Eloquent',
                 ],
                 [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để xóa nhiều bản ghi theo điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->delete();[/code]',
-                    'blanks' => 'delete, users, field, value',
+                    'question' => 'Để tạo một command artisan trong Laravel, bạn sử dụng câu lệnh [blank_1] và khai báo trong file [blank_2].',
+                    'blanks' => 'php artisan make:command, app/Console/Kernel.php',
                 ],
                 [
-                    'question' => 'Để sử dụng phương thức Eloquent để cập nhật bản ghi với nhiều điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->where("[blank_4]", "[blank_5]")->update(["[blank_6]" => "[blank_7]"]);[/code]',
-                    'blanks' => 'update, field1, value1, field2, value2, fieldToUpdate, newValue',
+                    'question' => 'Phương thức [blank_1] trong class [blank_2] được sử dụng để tạo một notification qua nhiều kênh.',
+                    'blanks' => 'Notification::send, Notification',
                 ],
                 [
-                    'question' => 'Khi bạn cần định nghĩa một route nhóm với prefix và middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::prefix("[blank_2]")->middleware("[blank_3]")->group(function () { /* ... */ });[/code]',
-                    'blanks' => 'prefix, admin, auth',
+                    'question' => 'Để sử dụng session trong Laravel, bạn cần cấu hình driver session trong file [blank_1] và sử dụng phương thức [blank_2].',
+                    'blanks' => 'config/session.php, Session::put',
                 ],
                 [
-                    'question' => 'Để tạo một controller với các phương thức resource và tên cụ thể, bạn có thể sử dụng lệnh Artisan [blank_1]. Ví dụ: [code]php artisan [blank_2] ResourceController --resource[/code]',
-                    'blanks' => 'make:controller, make:controller',
+                    'question' => 'Phương thức [blank_1] trong class [blank_2] được sử dụng để định nghĩa một global scope trong model Eloquent.',
+                    'blanks' => 'boot, Model',
                 ],
                 [
-                    'question' => 'Khi bạn cần sử dụng phương thức Eloquent để tìm bản ghi theo nhiều điều kiện và sắp xếp, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->where("[blank_4]", "[blank_5]")->orderBy("[blank_6]")->get();[/code]',
-                    'blanks' => 'where, field1, value1, field2, value2, orderField',
+                    'question' => 'Để tạo một form request validation trong Laravel, bạn sử dụng câu lệnh [blank_1] và khai báo rules trong phương thức [blank_2].',
+                    'blanks' => 'php artisan make:request, rules',
                 ],
                 [
-                    'question' => 'Để tạo một route với phương thức GET và middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::get("/dashboard", [blank_2]::class)->middleware("[blank_3]");[/code]',
-                    'blanks' => 'get, controllerName, auth',
+                    'question' => 'Phương thức [blank_1] trong class [blank_2] được sử dụng để tải một cấu hình tùy chỉnh.',
+                    'blanks' => 'config, Config',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một migration mới với tên cụ thể, bạn có thể sử dụng lệnh Artisan [blank_1]. Ví dụ: [code]php artisan [blank_2] create_table_name[/code]',
-                    'blanks' => 'make:migration, make:migration',
+                    'question' => 'Để gửi email trong Laravel, bạn cần cấu hình driver mail trong file [blank_1] và sử dụng phương thức [blank_2].',
+                    'blanks' => 'config/mail.php, Mail::send',
                 ],
                 [
-                    'question' => 'Để thực hiện một truy vấn để lấy dữ liệu từ một model theo điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->get();[/code]',
-                    'blanks' => 'where, field, value',
+                    'question' => 'Phương thức [blank_1] trong class [blank_2] được sử dụng để tạo một middleware.',
+                    'blanks' => 'handle, Middleware',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một route nhóm với middleware và prefix, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::middleware("[blank_2]")->prefix("[blank_3]")->group(function () { /* ... */ });[/code]',
-                    'blanks' => 'middleware, auth, admin',
+                    'question' => 'Để tạo một file migration trong Laravel, bạn sử dụng câu lệnh [blank_1] và định nghĩa schema trong phương thức [blank_2].',
+                    'blanks' => 'php artisan make:migration, up',
                 ],
                 [
-                    'question' => 'Để tạo một route với tên cụ thể và phương thức POST, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::post("/submit", [blank_2]::class)->name("[blank_3]");[/code]',
-                    'blanks' => 'name, controllerName, submit',
+                    'question' => 'Phương thức [blank_1] trong class [blank_2] được sử dụng để xử lý một job trong hàng đợi.',
+                    'blanks' => 'handle, Job',
                 ],
                 [
-                    'question' => 'Khi bạn cần sử dụng phương thức Eloquent để tìm bản ghi đầu tiên hoặc tạo mới nếu không tồn tại, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::[blank_2]OrCreate(["field" => "[blank_3]"]);[/code]',
-                    'blanks' => 'firstOrCreate, firstOrCreate, value',
+                    'question' => 'Để tạo một service container binding trong Laravel, bạn sử dụng phương thức [blank_1] trong file [blank_2].',
+                    'blanks' => 'bind, AppServiceProvider',
                 ],
                 [
-                    'question' => 'Để tạo một middleware tùy chỉnh, bạn có thể sử dụng lệnh Artisan [blank_1]. Ví dụ: [code]php artisan [blank_2] CustomMiddleware[/code]',
-                    'blanks' => 'make:middleware, make:middleware',
+                    'question' => 'Phương thức [blank_1] trong class [blank_2] được sử dụng để định nghĩa một accessor trong model Eloquent.',
+                    'blanks' => 'get, Model',
                 ],
                 [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để cập nhật dữ liệu trong cơ sở dữ liệu, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", $id)->update(["[blank_4]" => "[blank_5]"]);[/code]',
-                    'blanks' => 'update, users, id, field, value',
+                    'question' => 'Để tạo một test case trong Laravel, bạn sử dụng câu lệnh [blank_1] và đặt file trong thư mục [blank_2].',
+                    'blanks' => 'php artisan make:test, tests/Feature',
                 ],
                 [
-                    'question' => 'Để tạo một route nhóm với middleware và prefix, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::prefix("[blank_2]")->middleware("[blank_3]")->group(function () { /* ... */ });[/code]',
-                    'blanks' => 'prefix, admin, auth',
+                    'question' => 'Phương thức [blank_1] trong class [blank_2] được sử dụng để xác định một mutator trong model Eloquent.',
+                    'blanks' => 'set, Model',
                 ],
                 [
-                    'question' => 'Khi bạn cần định nghĩa một route với phương thức DELETE và middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::delete("/delete", [blank_2]::class)->middleware("[blank_3]");[/code]',
-                    'blanks' => 'delete, controllerName, auth',
+                    'question' => 'Để tạo một custom Blade directive trong Laravel, bạn sử dụng phương thức [blank_1] trong class [blank_2].',
+                    'blanks' => 'directive, Blade',
                 ],
                 [
-                    'question' => 'Để thực hiện một truy vấn để xóa dữ liệu theo nhiều điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->where("[blank_5]", "[blank_6]")->delete();[/code]',
-                    'blanks' => 'delete, users, field1, value1, field2, value2',
+                    'question' => 'Phương thức [blank_1] trong class [blank_2] được sử dụng để đăng ký một provider trong Laravel.',
+                    'blanks' => 'register, ServiceProvider',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một request class với xác thực, bạn có thể sử dụng lệnh Artisan [blank_1]. Ví dụ: [code]php artisan [blank_2] RequestName[/code]',
-                    'blanks' => 'make:request, make:request',
+                    'question' => 'Để tạo một custom auth guard trong Laravel, bạn cần mở rộng class [blank_1] và khai báo trong file [blank_2].',
+                    'blanks' => 'Guard, config/auth.php',
                 ],
                 [
-                    'question' => 'Để thực hiện một truy vấn với Eloquent để lấy dữ liệu theo điều kiện và sắp xếp, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->orderBy("[blank_4]")->get();[/code]',
-                    'blanks' => 'where, field, value, orderField',
+                    'question' => 'Phương thức [blank_1] trong class [blank_2] được sử dụng để tạo một observer trong Eloquent.',
+                    'blanks' => 'observe, Model',
                 ],
                 [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để cập nhật dữ liệu với nhiều điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->where("[blank_5]", "[blank_6]")->update(["[blank_7]" => "[blank_8]"]);[/code]',
-                    'blanks' => 'update, users, field1, value1, field2, value2, fieldToUpdate, newValue',
+                    'question' => 'Để tạo một custom filesystem trong Laravel, bạn cần mở rộng class [blank_1] và khai báo trong file [blank_2].',
+                    'blanks' => 'Filesystem, config/filesystems.php',
                 ],
                 [
-                    'question' => 'Để tạo một controller với các phương thức resource, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]php artisan [blank_2] ResourceController --resource[/code]',
-                    'blanks' => 'make:controller, make:controller',
+                    'question' => 'Phương thức [blank_1] trong class [blank_2] được sử dụng để định nghĩa một cast trong model Eloquent.',
+                    'blanks' => 'casts, Model',
                 ],
                 [
-                    'question' => 'Khi bạn cần sử dụng phương thức Eloquent để lấy dữ liệu từ một bảng với điều kiện và sắp xếp, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->orderBy("[blank_4]")->get();[/code]',
-                    'blanks' => 'where, field, value, orderField',
+                    'question' => 'Để tạo một custom event trong Laravel, bạn sử dụng câu lệnh [blank_1] và đặt file trong thư mục [blank_2].',
+                    'blanks' => 'php artisan make:event, app/Events',
                 ],
                 [
-                    'question' => 'Để tạo một route với phương thức PUT và middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::put("/update", [blank_2]::class)->middleware("[blank_3]");[/code]',
-                    'blanks' => 'put, controllerName, auth',
+                    'question' => 'Phương thức [blank_1] trong class [blank_2] được sử dụng để xác định một scope trong model Eloquent.',
+                    'blanks' => 'scope, Model',
                 ],
                 [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để lấy bản ghi đầu tiên hoặc tạo mới nếu không tồn tại, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::[blank_2]OrCreate(["field" => "[blank_3]"]);[/code]',
-                    'blanks' => 'firstOrCreate, firstOrCreate, value',
+                    'question' => 'Để tạo một custom broadcast channel trong Laravel, bạn cần mở rộng class [blank_1] và khai báo trong file [blank_2].',
+                    'blanks' => 'Broadcast, routes/channels.php',
                 ],
                 [
-                    'question' => 'Để tạo một middleware tùy chỉnh, bạn có thể sử dụng lệnh Artisan [blank_1]. Ví dụ: [code]php artisan [blank_2] CustomMiddleware[/code]',
-                    'blanks' => 'make:middleware, make:middleware',
+                    'question' => 'Phương thức [blank_1] trong class [blank_2] được sử dụng để gửi thông báo qua nhiều kênh trong Laravel.',
+                    'blanks' => 'notify, Notifiable',
                 ],
                 [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để cập nhật dữ liệu trong cơ sở dữ liệu, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", $id)->update(["[blank_4]" => "[blank_5]"]);[/code]',
-                    'blanks' => 'update, users, id, field, value',
+                    'question' => 'Để tạo một custom API resource trong Laravel, bạn sử dụng câu lệnh [blank_1] và đặt file trong thư mục [blank_2].',
+                    'blanks' => 'php artisan make:resource, app/Http/Resources',
                 ],
                 [
-                    'question' => 'Để tạo một route nhóm với middleware và prefix, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::prefix("[blank_2]")->middleware("[blank_3]")->group(function () { /* ... */ });[/code]',
-                    'blanks' => 'prefix, admin, auth',
+                    'question' => 'Phương thức [blank_1] trong class [blank_2] được sử dụng để gửi thông báo qua Slack trong Laravel.',
+                    'blanks' => 'route, Notification',
                 ],
                 [
-                    'question' => 'Khi bạn cần định nghĩa một route với phương thức DELETE và middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::delete("/delete", [blank_2]::class)->middleware("[blank_3]");[/code]',
-                    'blanks' => 'delete, controllerName, auth',
+                    'question' => 'Để tạo một custom mail driver trong Laravel, bạn cần mở rộng class [blank_1] và khai báo trong file [blank_2].',
+                    'blanks' => 'MailManager, config/mail.php',
                 ],
                 [
-                    'question' => 'Để thực hiện một truy vấn để xóa dữ liệu theo nhiều điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->where("[blank_5]", "[blank_6]")->delete();[/code]',
-                    'blanks' => 'delete, users, field1, value1, field2, value2',
+                    'question' => 'Phương thức [blank_1] trong class [blank_2] được sử dụng để định nghĩa một global scope trong model Eloquent.',
+                    'blanks' => 'addGlobalScope, Model',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một request class với xác thực, bạn có thể sử dụng lệnh Artisan [blank_1]. Ví dụ: [code]php artisan [blank_2] RequestName[/code]',
-                    'blanks' => 'make:request, make:request',
+                    'question' => 'Để tạo một custom validation rule trong Laravel, bạn sử dụng câu lệnh [blank_1] và đặt file trong thư mục [blank_2].',
+                    'blanks' => 'php artisan make:rule, app/Rules',
                 ],
                 [
-                    'question' => 'Để thực hiện một truy vấn với Eloquent để lấy dữ liệu theo điều kiện và sắp xếp, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->orderBy("[blank_4]")->get();[/code]',
-                    'blanks' => 'where, field, value, orderField',
+                    'question' => 'Phương thức [blank_1] trong class [blank_2] được sử dụng để định nghĩa một macro trong Laravel.',
+                    'blanks' => 'macro, Macroable',
                 ],
                 [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để cập nhật dữ liệu với nhiều điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->where("[blank_5]", "[blank_6]")->update(["[blank_7]" => "[blank_8]"]);[/code]',
-                    'blanks' => 'update, users, field1, value1, field2, value2, fieldToUpdate, newValue',
+                    'question' => 'Để tạo một custom middleware trong Laravel, bạn sử dụng câu lệnh [blank_1] và khai báo trong file [blank_2].',
+                    'blanks' => 'php artisan make:middleware, app/Http/Kernel.php',
                 ],
                 [
-                    'question' => 'Để tạo một controller với các phương thức resource, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]php artisan [blank_2] ResourceController --resource[/code]',
-                    'blanks' => 'make:controller, make:controller',
+                    'question' => 'Phương thức [blank_1] trong class [blank_2] được sử dụng để định nghĩa một mutator trong model Eloquent.',
+                    'blanks' => 'set, Model',
                 ],
                 [
-                    'question' => 'Khi bạn cần sử dụng phương thức Eloquent để lấy dữ liệu từ một bảng với điều kiện và sắp xếp, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->orderBy("[blank_4]")->get();[/code]',
-                    'blanks' => 'where, field, value, orderField',
+                    'question' => 'Để tạo một custom notification channel trong Laravel, bạn cần mở rộng class [blank_1] và khai báo trong file [blank_2].',
+                    'blanks' => 'NotificationChannel, config/services.php',
                 ],
                 [
-                    'question' => 'Để tạo một route với phương thức PUT và middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::put("/update", [blank_2]::class)->middleware("[blank_3]");[/code]',
-                    'blanks' => 'put, controllerName, auth',
-                ],
-                [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để lấy bản ghi đầu tiên hoặc tạo mới nếu không tồn tại, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::[blank_2]OrCreate(["field" => "[blank_3]"]);[/code]',
-                    'blanks' => 'firstOrCreate, firstOrCreate, value',
-                ],
-                [
-                    'question' => 'Để tạo một middleware tùy chỉnh, bạn có thể sử dụng lệnh Artisan [blank_1]. Ví dụ: [code]php artisan [blank_2] CustomMiddleware[/code]',
-                    'blanks' => 'make:middleware, make:middleware',
-                ],
-                [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để cập nhật dữ liệu trong cơ sở dữ liệu, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", $id)->update(["[blank_4]" => "[blank_5]"]);[/code]',
-                    'blanks' => 'update, users, id, field, value',
-                ],
-                [
-                    'question' => 'Để tạo một route nhóm với middleware và prefix, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::prefix("[blank_2]")->middleware("[blank_3]")->group(function () { /* ... */ });[/code]',
-                    'blanks' => 'prefix, admin, auth',
-                ],
-                [
-                    'question' => 'Khi bạn cần định nghĩa một route với phương thức DELETE và middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::delete("/delete", [blank_2]::class)->middleware("[blank_3]");[/code]',
-                    'blanks' => 'delete, controllerName, auth',
-                ],
-                [
-                    'question' => 'Để thực hiện một truy vấn để xóa dữ liệu theo nhiều điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->where("[blank_5]", "[blank_6]")->delete();[/code]',
-                    'blanks' => 'delete, users, field1, value1, field2, value2',
-                ],
-                [
-                    'question' => 'Khi bạn cần tạo một request class với xác thực, bạn có thể sử dụng lệnh Artisan [blank_1]. Ví dụ: [code]php artisan [blank_2] RequestName[/code]',
-                    'blanks' => 'make:request, make:request',
-                ],
-                [
-                    'question' => 'Để thực hiện một truy vấn với Eloquent để lấy dữ liệu theo điều kiện và sắp xếp, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->orderBy("[blank_4]")->get();[/code]',
-                    'blanks' => 'where, field, value, orderField',
-                ],
-                [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để cập nhật dữ liệu với nhiều điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->where("[blank_5]", "[blank_6]")->update(["[blank_7]" => "[blank_8]"]);[/code]',
-                    'blanks' => 'update, users, field1, value1, field2, value2, fieldToUpdate, newValue',
-                ],
-                [
-                    'question' => 'Để tạo một controller với các phương thức resource, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]php artisan [blank_2] ResourceController --resource[/code]',
-                    'blanks' => 'make:controller, make:controller',
-                ],
-                [
-                    'question' => 'Khi bạn cần sử dụng phương thức Eloquent để lấy dữ liệu từ một bảng với điều kiện và sắp xếp, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->orderBy("[blank_4]")->get();[/code]',
-                    'blanks' => 'where, field, value, orderField',
-                ],
-                [
-                    'question' => 'Để tạo một route với phương thức PUT và middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::put("/update", [blank_2]::class)->middleware("[blank_3]");[/code]',
-                    'blanks' => 'put, controllerName, auth',
-                ],
-                [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để lấy bản ghi đầu tiên hoặc tạo mới nếu không tồn tại, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::[blank_2]OrCreate(["field" => "[blank_3]"]);[/code]',
-                    'blanks' => 'firstOrCreate, firstOrCreate, value',
-                ],
-                [
-                    'question' => 'Để tạo một middleware tùy chỉnh, bạn có thể sử dụng lệnh Artisan [blank_1]. Ví dụ: [code]php artisan [blank_2] CustomMiddleware[/code]',
-                    'blanks' => 'make:middleware, make:middleware',
-                ],
-                [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để cập nhật dữ liệu trong cơ sở dữ liệu, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", $id)->update(["[blank_4]" => "[blank_5]"]);[/code]',
-                    'blanks' => 'update, users, id, field, value',
-                ],
-                [
-                    'question' => 'Để tạo một route nhóm với middleware và prefix, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::prefix("[blank_2]")->middleware("[blank_3]")->group(function () { /* ... */ });[/code]',
-                    'blanks' => 'prefix, admin, auth',
-                ],
-                [
-                    'question' => 'Khi bạn cần định nghĩa một route với phương thức DELETE và middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::delete("/delete", [blank_2]::class)->middleware("[blank_3]");[/code]',
-                    'blanks' => 'delete, controllerName, auth',
-                ],
-                [
-                    'question' => 'Để thực hiện một truy vấn để xóa dữ liệu theo nhiều điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->where("[blank_5]", "[blank_6]")->delete();[/code]',
-                    'blanks' => 'delete, users, field1, value1, field2, value2',
-                ],
-                [
-                    'question' => 'Khi bạn cần tạo một request class với xác thực, bạn có thể sử dụng lệnh Artisan [blank_1]. Ví dụ: [code]php artisan [blank_2] RequestName[/code]',
-                    'blanks' => 'make:request, make:request',
-                ],
-                [
-                    'question' => 'Để thực hiện một truy vấn với Eloquent để lấy dữ liệu theo điều kiện và sắp xếp, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->orderBy("[blank_4]")->get();[/code]',
-                    'blanks' => 'where, field, value, orderField',
-                ],
-                [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để cập nhật dữ liệu với nhiều điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->where("[blank_5]", "[blank_6]")->update(["[blank_7]" => "[blank_8]"]);[/code]',
-                    'blanks' => 'update, users, field1, value1, field2, value2, fieldToUpdate, newValue',
-                ],
-                [
-                    'question' => 'Để tạo một controller với các phương thức resource, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]php artisan [blank_2] ResourceController --resource[/code]',
-                    'blanks' => 'make:controller, make:controller',
-                ],
-                [
-                    'question' => 'Khi bạn cần sử dụng phương thức Eloquent để lấy dữ liệu từ một bảng với điều kiện và sắp xếp, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->orderBy("[blank_4]")->get();[/code]',
-                    'blanks' => 'where, field, value, orderField',
-                ],
-                [
-                    'question' => 'Để tạo một route với phương thức PUT và middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::put("/update", [blank_2]::class)->middleware("[blank_3]");[/code]',
-                    'blanks' => 'put, controllerName, auth',
-                ],
-                [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để lấy bản ghi đầu tiên hoặc tạo mới nếu không tồn tại, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::[blank_2]OrCreate(["field" => "[blank_3]"]);[/code]',
-                    'blanks' => 'firstOrCreate, firstOrCreate, value',
-                ],
-                [
-                    'question' => 'Để tạo một middleware tùy chỉnh, bạn có thể sử dụng lệnh Artisan [blank_1]. Ví dụ: [code]php artisan [blank_2] CustomMiddleware[/code]',
-                    'blanks' => 'make:middleware, make:middleware',
-                ],
-                [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để cập nhật dữ liệu trong cơ sở dữ liệu, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", $id)->update(["[blank_4]" => "[blank_5]"]);[/code]',
-                    'blanks' => 'update, users, id, field, value',
-                ],
-                [
-                    'question' => 'Để tạo một route nhóm với middleware và prefix, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::prefix("[blank_2]")->middleware("[blank_3]")->group(function () { /* ... */ });[/code]',
-                    'blanks' => 'prefix, admin, auth',
-                ],
-                [
-                    'question' => 'Khi bạn cần định nghĩa một route với phương thức DELETE và middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::delete("/delete", [blank_2]::class)->middleware("[blank_3]");[/code]',
-                    'blanks' => 'delete, controllerName, auth',
-                ],
-                [
-                    'question' => 'Để thực hiện một truy vấn để xóa dữ liệu theo nhiều điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->where("[blank_5]", "[blank_6]")->delete();[/code]',
-                    'blanks' => 'delete, users, field1, value1, field2, value2',
-                ],
-                [
-                    'question' => 'Khi bạn cần tạo một request class với xác thực, bạn có thể sử dụng lệnh Artisan [blank_1]. Ví dụ: [code]php artisan [blank_2] RequestName[/code]',
-                    'blanks' => 'make:request, make:request',
-                ],
-                [
-                    'question' => 'Để thực hiện một truy vấn với Eloquent để lấy dữ liệu theo điều kiện và sắp xếp, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->orderBy("[blank_4]")->get();[/code]',
-                    'blanks' => 'where, field, value, orderField',
-                ],
-                [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để cập nhật dữ liệu với nhiều điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->where("[blank_5]", "[blank_6]")->update(["[blank_7]" => "[blank_8]"]);[/code]',
-                    'blanks' => 'update, users, field1, value1, field2, value2, fieldToUpdate, newValue',
-                ],
-                [
-                    'question' => 'Để tạo một controller với các phương thức resource, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]php artisan [blank_2] ResourceController --resource[/code]',
-                    'blanks' => 'make:controller, make:controller',
-                ],
-                [
-                    'question' => 'Để tạo một route với phương thức POST và middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::post("/submit", [blank_2]::class)->middleware("[blank_3]");[/code]',
-                    'blanks' => 'post, controllerName, auth',
-                ],
-                [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để lấy dữ liệu với điều kiện và phân trang, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->paginate([blank_4]);[/code]',
-                    'blanks' => 'where, field, value, 10',
-                ],
-                [
-                    'question' => 'Để thực hiện một truy vấn để lấy bản ghi đầu tiên hoặc tạo mới nếu không tồn tại, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::[blank_2]OrCreate(["field" => "[blank_3]"]);[/code]',
-                    'blanks' => 'firstOrCreate, firstOrCreate, value',
-                ],
-                [
-                    'question' => 'Khi bạn cần tạo một custom request class, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]php artisan [blank_2] CustomRequest[/code]',
-                    'blanks' => 'make:request, make:request',
-                ],
-                [
-                    'question' => 'Để cập nhật một bản ghi bằng phương thức Eloquent, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->update(["[blank_4]" => "[blank_5]"]);[/code]',
-                    'blanks' => 'update, field, value, column, newValue',
-                ],
-                [
-                    'question' => 'Để tạo một controller với các phương thức resource, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]php artisan [blank_2] ResourceController --resource[/code]',
-                    'blanks' => 'make:controller, make:controller',
-                ],
-                [
-                    'question' => 'Khi bạn cần sử dụng phương thức Eloquent để lấy dữ liệu với điều kiện và sắp xếp, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->orderBy("[blank_4]")->get();[/code]',
-                    'blanks' => 'where, field, value, orderField',
-                ],
-                [
-                    'question' => 'Để định nghĩa một route với phương thức PATCH, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::patch("/update/{id}", [blank_2]::class);[/code]',
-                    'blanks' => 'patch, controllerName',
-                ],
-                [
-                    'question' => 'Để thực hiện một truy vấn để xóa bản ghi dựa trên một điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->delete();[/code]',
-                    'blanks' => 'delete, tableName, field, value',
-                ],
-                [
-                    'question' => 'Khi bạn cần định nghĩa một route nhóm với prefix và middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::prefix("[blank_2]")->middleware("[blank_3]")->group(function () { /* ... */ });[/code]',
-                    'blanks' => 'prefix, admin, auth',
-                ],
-                [
-                    'question' => 'Để thực hiện một truy vấn để lấy dữ liệu và phân trang, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->paginate([blank_4]);[/code]',
-                    'blanks' => 'paginate, field, value, 10',
-                ],
-                [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để cập nhật dữ liệu với nhiều điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->where("[blank_5]", "[blank_6]")->update(["[blank_7]" => "[blank_8]"]);[/code]',
-                    'blanks' => 'update, users, field1, value1, field2, value2, fieldToUpdate, newValue',
-                ],
-                [
-                    'question' => 'Để thực hiện một truy vấn với Eloquent và sắp xếp dữ liệu, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::orderBy("[blank_2]")->get();[/code]',
-                    'blanks' => 'orderBy, column',
-                ],
-                [
-                    'question' => 'Khi bạn cần tạo một middleware tùy chỉnh, bạn có thể sử dụng lệnh Artisan [blank_1]. Ví dụ: [code]php artisan [blank_2] CustomMiddleware[/code]',
-                    'blanks' => 'make:middleware, make:middleware',
-                ],
-                [
-                    'question' => 'Để thực hiện một truy vấn để lấy dữ liệu theo nhiều điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->where("[blank_5]", "[blank_6]")->get();[/code]',
-                    'blanks' => 'where, users, field1, value1, field2, value2',
-                ],
-                [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để xóa dữ liệu với nhiều điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->where("[blank_5]", "[blank_6]")->delete();[/code]',
-                    'blanks' => 'delete, users, field1, value1, field2, value2',
-                ],
-                [
-                    'question' => 'Để thực hiện một truy vấn để tạo một bản ghi mới nếu không tồn tại, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::[blank_2]OrCreate(["field" => "[blank_3]"]);[/code]',
-                    'blanks' => 'firstOrCreate, firstOrCreate, value',
-                ],
-                [
-                    'question' => 'Khi bạn cần tạo một controller với phương thức API, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]php artisan [blank_2] ApiController[/code]',
-                    'blanks' => 'make:controller, make:controller',
-                ],
-                [
-                    'question' => 'Để định nghĩa một route nhóm với prefix và namespace, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::namespace("[blank_2]")->prefix("[blank_3]")->group(function () { /* ... */ });[/code]',
-                    'blanks' => 'namespace, Admin, admin',
-                ],
-                [
-                    'question' => 'Để thực hiện một truy vấn với Eloquent và sử dụng eager loading, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::with("[blank_2]")->get();[/code]',
-                    'blanks' => 'with, relationName',
-                ],
-                [
-                    'question' => 'Khi bạn cần sử dụng phương thức Eloquent để lấy dữ liệu với điều kiện và phân trang, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->paginate([blank_4]);[/code]',
-                    'blanks' => 'where, field, value, 10',
-                ],
-                [
-                    'question' => 'Để tạo một route với phương thức DELETE và middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::delete("/delete/{id}", [blank_2]::class)->middleware("[blank_3]");[/code]',
-                    'blanks' => 'delete, controllerName, auth',
-                ],
-                [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để cập nhật dữ liệu trong cơ sở dữ liệu với nhiều điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->where("[blank_5]", "[blank_6]")->update(["[blank_7]" => "[blank_8]"]);[/code]',
-                    'blanks' => 'update, users, field1, value1, field2, value2, fieldToUpdate, newValue',
-                ],
-                [
-                    'question' => 'Để định nghĩa một route với phương thức GET và nhóm middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::get("/home", [blank_2]::class)->middleware("[blank_3]");[/code]',
-                    'blanks' => 'get, HomeController, auth',
-                ],
-                [
-                    'question' => 'Khi bạn cần tạo một migration để thêm cột vào bảng, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]php artisan [blank_2] add_column_to_table[/code]',
-                    'blanks' => 'make:migration, make:migration',
-                ],
-                [
-                    'question' => 'Để sử dụng phương thức Eloquent để xóa bản ghi, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->delete();[/code]',
-                    'blanks' => 'delete, field, value',
-                ],
-                [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn với điều kiện phức tạp trong Laravel, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where(function ($query) { $query->where("[blank_3]", "[blank_4]")->orWhere("[blank_5]", "[blank_6]"); })->get();[/code]',
-                    'blanks' => 'where, users, field1, value1, field2, value2',
-                ],
-                [
-                    'question' => 'Để tạo một service provider mới, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]php artisan [blank_2] MyServiceProvider[/code]',
-                    'blanks' => 'make:provider, make:provider',
-                ],
-                [
-                    'question' => 'Khi bạn cần định nghĩa một route với phương thức PUT và middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::put("/update/{id}", [blank_2]::class)->middleware("[blank_3]");[/code]',
-                    'blanks' => 'put, controllerName, auth',
-                ],
-                [
-                    'question' => 'Để sử dụng phương thức Eloquent để tạo mới một bản ghi, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::create(["[blank_2]" => "[blank_3]"]);[/code]',
-                    'blanks' => 'create, field, value',
-                ],
-                [
-                    'question' => 'Khi bạn cần sử dụng phương thức Eloquent để tìm kiếm bản ghi với điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->first();[/code]',
-                    'blanks' => 'where, field, value',
-                ],
-                [
-                    'question' => 'Để thực hiện một truy vấn với điều kiện phức tạp và phân trang, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->orWhere("[blank_5]", "[blank_6]")->paginate([blank_7]);[/code]',
-                    'blanks' => 'paginate, users, field1, value1, field2, value2, 10',
-                ],
-                [
-                    'question' => 'Khi bạn cần tạo một middleware tùy chỉnh và đăng ký nó trong Laravel, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]php artisan [blank_2] CustomMiddleware[/code]',
-                    'blanks' => 'make:middleware, make:middleware',
-                ],
-                [
-                    'question' => 'Để tạo một migration để xóa cột từ bảng, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]php artisan [blank_2] remove_column_from_table[/code]',
-                    'blanks' => 'make:migration, make:migration',
-                ],
-                [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn với điều kiện và sắp xếp theo nhiều cột, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->orderBy("[blank_5]", "[blank_6]")->orderBy("[blank_7]")->get();[/code]',
-                    'blanks' => 'orderBy, users, field1, value1, column1, asc, column2',
-                ],
-                [
-                    'question' => 'Để sử dụng phương thức Eloquent để cập nhật dữ liệu với nhiều điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->where("[blank_4]", "[blank_5]")->update(["[blank_6]" => "[blank_7]"]);[/code]',
-                    'blanks' => 'update, field1, value1, field2, value2, column, newValue',
-                ],
-                [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để lấy dữ liệu và phân trang với nhiều điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->where("[blank_5]", "[blank_6]")->paginate([blank_7]);[/code]',
-                    'blanks' => 'paginate, users, field1, value1, field2, value2, 10',
-                ],
-                [
-                    'question' => 'Để tạo một route với phương thức PUT và nhóm middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::put("/update/{id}", [blank_2]::class)->middleware("[blank_3]");[/code]',
-                    'blanks' => 'put, UpdateController, auth',
-                ],
-                [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để lấy dữ liệu với điều kiện và phân trang, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->paginate([blank_4]);[/code]',
-                    'blanks' => 'paginate, field, value, 15',
-                ],
-                [
-                    'question' => 'Để định nghĩa một route với phương thức POST và middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::post("/create", [blank_2]::class)->middleware("[blank_3]");[/code]',
-                    'blanks' => 'post, CreateController, auth',
-                ],
-                [
-                    'question' => 'Khi bạn cần tạo một route với middleware và nhóm route, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::middleware("[blank_2]")->group(function () { Route::get("/dashboard", [blank_3]::class); });[/code]',
-                    'blanks' => 'middleware, auth, DashboardController',
-                ],
-                [
-                    'question' => 'Để thực hiện một truy vấn với điều kiện phức tạp và phân trang, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->where("[blank_5]", "[blank_6]")->paginate([blank_7]);[/code]',
-                    'blanks' => 'paginate, users, field1, value1, field2, value2, 20',
-                ],
-                [
-                    'question' => 'Để tạo một command mới trong Laravel, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]php artisan [blank_2] CustomCommand[/code]',
-                    'blanks' => 'make:command, make:command',
-                ],
-                [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để xóa dữ liệu với nhiều điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->where("[blank_5]", "[blank_6]")->delete();[/code]',
-                    'blanks' => 'delete, users, field1, value1, field2, value2',
-                ],
-                [
-                    'question' => 'Để sử dụng phương thức Eloquent để lấy dữ liệu và phân trang, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->paginate([blank_4]);[/code]',
-                    'blanks' => 'where, field, value, 25',
-                ],
-                [
-                    'question' => 'Khi bạn cần tạo một migration để thêm bảng mới, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]php artisan [blank_2] create_users_table[/code]',
-                    'blanks' => 'make:migration, make:migration',
-                ],
-                [
-                    'question' => 'Để định nghĩa một route với phương thức PATCH và middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::patch("/update/{id}", [blank_2]::class)->middleware("[blank_3]");[/code]',
-                    'blanks' => 'patch, UpdateController, auth',
-                ],
-                [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn với Eloquent để tìm kiếm bản ghi theo nhiều điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->where("[blank_4]", "[blank_5]")->get();[/code]',
-                    'blanks' => 'where, field1, value1, field2, value2',
-                ],
-                [
-                    'question' => 'Để tạo một service provider và đăng ký nó, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]php artisan [blank_2] ServiceProvider[/code]',
-                    'blanks' => 'make:provider, make:provider',
-                ],
-                [
-                    'question' => 'Khi bạn cần sử dụng phương thức Eloquent để cập nhật dữ liệu với nhiều điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->where("[blank_4]", "[blank_5]")->update(["[blank_6]" => "[blank_7]"]);[/code]',
-                    'blanks' => 'update, field1, value1, field2, value2, column, newValue',
-                ],
-                [
-                    'question' => 'Để thực hiện một truy vấn để lấy dữ liệu với nhiều điều kiện và phân trang, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->where("[blank_5]", "[blank_6]")->paginate([blank_7]);[/code]',
-                    'blanks' => 'paginate, orders, field1, value1, field2, value2, 30',
-                ],
-                [
-                    'question' => 'Khi bạn cần tạo một migration để xóa bảng, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]php artisan [blank_2] drop_table[/code]',
-                    'blanks' => 'make:migration, make:migration',
-                ],
-                [
-                    'question' => 'Để định nghĩa một route với phương thức GET và nhóm middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::middleware("[blank_2]")->group(function () { Route::get("/profile", [blank_3]::class); });[/code]',
-                    'blanks' => 'middleware, auth, ProfileController',
-                ],
-                [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn với Eloquent để tìm kiếm bản ghi theo nhiều điều kiện và phân trang, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->where("[blank_4]", "[blank_5]")->paginate([blank_6]);[/code]',
-                    'blanks' => 'paginate, field1, value1, field2, value2, 40',
-                ],
-                [
-                    'question' => 'Để tạo một middleware và đăng ký nó trong Laravel, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]php artisan [blank_2] MiddlewareName[/code]',
-                    'blanks' => 'make:middleware, make:middleware',
-                ],
-                [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn với điều kiện phức tạp và sắp xếp, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->orderBy("[blank_5]", "[blank_6]")->get();[/code]',
-                    'blanks' => 'orderBy, posts, field, value, column, desc',
-                ],
-                [
-                    'question' => 'Để tạo một route với middleware và nhóm route với prefix, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::prefix("[blank_2]")->middleware("[blank_3]")->group(function () { Route::get("/settings", [blank_4]::class); });[/code]',
-                    'blanks' => 'prefix, admin, auth, SettingsController',
-                ],
-                [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để lấy dữ liệu và phân trang với nhiều điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->where("[blank_5]", "[blank_6]")->paginate([blank_7]);[/code]',
-                    'blanks' => 'paginate, products, field1, value1, field2, value2, 50',
-                ],
-                [
-                    'question' => 'Để tạo một controller với phương thức API và resource, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]php artisan [blank_2] ApiController --api --resource[/code]',
-                    'blanks' => 'make:controller, make:controller',
-                ],
-                [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để cập nhật dữ liệu với nhiều điều kiện và phân trang, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->where("[blank_5]", "[blank_6]")->update(["[blank_7]" => "[blank_8]"]);[/code]',
-                    'blanks' => 'update, orders, field1, value1, field2, value2, column, newValue',
-                ],
-                [
-                    'question' => 'Để định nghĩa một route với phương thức DELETE và middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::delete("/remove/{id}", [blank_2]::class)->middleware("[blank_3]");[/code]',
-                    'blanks' => 'delete, RemoveController, auth',
-                ],
-                [
-                    'question' => 'Khi bạn cần sử dụng phương thức Eloquent để lấy dữ liệu và sắp xếp theo nhiều cột, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::orderBy("[blank_2]", "[blank_3]")->orderBy("[blank_4]")->get();[/code]',
-                    'blanks' => 'orderBy, field1, asc, field2',
-                ],
-                [
-                    'question' => 'Để tạo một middleware và áp dụng cho route, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::middleware("[blank_2]")->group(function () { Route::get("/dashboard", [blank_3]::class); });[/code]',
-                    'blanks' => 'middleware, auth, DashboardController',
-                ],
-                [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để lấy dữ liệu với điều kiện và phân trang với nhiều điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->where("[blank_4]", "[blank_5]")->paginate([blank_6]);[/code]',
-                    'blanks' => 'paginate, field1, value1, field2, value2, 60',
-                ],
-                [
-                    'question' => 'Để tạo một migration để sửa đổi bảng, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]php artisan [blank_2] modify_table[/code]',
-                    'blanks' => 'make:migration, make:migration',
-                ],
-                [
-                    'question' => 'Khi bạn cần thực hiện một truy vấn để xóa dữ liệu với nhiều điều kiện và sắp xếp, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->orderBy("[blank_5]", "[blank_6]")->delete();[/code]',
-                    'blanks' => 'delete, products, field1, value1, column, asc',
-                ],
-                [
-                    'question' => 'Để thực hiện một truy vấn với nhiều điều kiện và phân trang với nhiều điều kiện, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]DB::table("[blank_2]")->where("[blank_3]", "[blank_4]")->where("[blank_5]", "[blank_6]")->paginate([blank_7]);[/code]',
-                    'blanks' => 'paginate, orders, field1, value1, field2, value2, 70',
-                ],
-                [
-                    'question' => 'Khi bạn cần sử dụng phương thức Eloquent để tìm kiếm và phân trang, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Model::where("[blank_2]", "[blank_3]")->paginate([blank_4]);[/code]',
-                    'blanks' => 'paginate, field, value, 80',
-                ],
-                [
-                    'question' => 'Để định nghĩa một route với phương thức GET và nhóm middleware, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Route::middleware("[blank_2]")->group(function () { Route::get("/home", [blank_3]::class); });[/code]',
-                    'blanks' => 'middleware, auth, HomeController',
+                    'question' => 'Phương thức [blank_1] trong class [blank_2] được sử dụng để tạo một queued job trong Laravel.',
+                    'blanks' => 'dispatch, Job',
                 ],
             ];
     }

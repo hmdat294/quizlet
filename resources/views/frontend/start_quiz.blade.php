@@ -102,18 +102,18 @@
                                 <h4 class="card-title mb-3 text-4 font-weight-bold">{{ $i }}. Điền
                                     vào chỗ trống </h4>
 
-                                <div class="mx-5 d-inline">
-                                    <!-- Tính điểm quiz điền vào chỗ trống -->
-                                    @php
-                                    $id = $q['id'];
-                                    $outputString = preg_replace_callback(
-                                    '/\[blank_(\d+)\]/',
-                                    function ($matches) use ($id){
-                                    return '<input class="border-bottom border-0 border-2" type="text" name="essays['.$id.'][blank_' . $matches[1] . ']" required>
-                                    ';
-                                    },
-                                    $q['question'],
-                                    );
+                                            <div class="mx-5 d-inline">
+                                                <!-- Tính điểm quiz điền vào chỗ trống -->
+                                                @php
+                                                    $id = $q['id'];
+                                                    $outputString = preg_replace_callback(
+                                                        '/\[blank_(\d+)\]/',
+                                                        function ($matches) use ($id){
+                                                            return '<input class="border-bottom border-0 border-2" type="text" name="essays['.$id.'][blank_' . $matches[1] . ']">
+                                                                ';
+                                                        },
+                                                        $q['question'],
+                                                    );
 
                                     @endphp
                                     <input type="hidden" name="blanks{{$i}}" value="{{$q['blanks']}}">
@@ -140,8 +140,25 @@
     </div>
 </section>
 
+    <script>
+        var quiz = @json($limit);
+        var total = quiz;
+    </script>
 <script>
-    var quiz = @json($limit);
-    var total = quiz;
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('text_form');
+
+        form.addEventListener('submit', function(event) {
+            // Lấy tất cả các input thuộc type text trong form
+            const essayInputs = form.querySelectorAll('input[type="text"]');
+
+            // Điền giá trị mặc định cho các ô trống
+            essayInputs.forEach(input => {
+                if (input.value.trim() === '') {
+                    input.value = ''; // Điền chuỗi rỗng nếu ô trống
+                }
+            });
+        });
+    });
 </script>
 @endsection

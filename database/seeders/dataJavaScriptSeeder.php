@@ -1789,1043 +1789,1043 @@ class dataJavaScriptSeeder extends Seeder
         $this->essays_javascript =
             [
                 [
-                    'question' => 'Để khai báo một biến trong JavaScript, bạn có thể sử dụng từ khóa [blank_1]. Ví dụ: [code]let name = "John";[/code]',
+                    'question' => 'Để khai báo một biến trong JavaScript, bạn có thể sử dụng từ khóa [blank_1].<br>Ví dụ:<br>let name = "John";',
                     'blanks' => 'let',
                 ],
                 [
-                    'question' => 'Để định nghĩa một hàm trong JavaScript, bạn có thể sử dụng từ khóa [blank_1]. Ví dụ: [code]function greet() { return "Hello"; }[/code]',
+                    'question' => 'Để định nghĩa một hàm trong JavaScript, bạn có thể sử dụng từ khóa [blank_1].<br>Ví dụ:<br>function greet() { return "Hello"; }',
                     'blanks' => 'function',
                 ],
                 [
-                    'question' => 'Khi bạn muốn khai báo một hằng số trong JavaScript, bạn có thể sử dụng từ khóa [blank_1]. Ví dụ: [code]const PI = 3.14;[/code]',
+                    'question' => 'Khi bạn muốn khai báo một hằng số trong JavaScript, bạn có thể sử dụng từ khóa [blank_1].<br>Ví dụ:<br>const PI = 3.14;',
                     'blanks' => 'const',
                 ],
                 [
-                    'question' => 'Để kiểm tra điều kiện trong JavaScript, bạn có thể sử dụng cấu trúc [blank_1]. Ví dụ: [code]if (x > 10) { console.log("x is greater than 10"); }[/code]',
+                    'question' => 'Để kiểm tra điều kiện trong JavaScript, bạn có thể sử dụng cấu trúc [blank_1].<br>Ví dụ:<br>if (x > 10) { console.log("x is greater than 10"); }',
                     'blanks' => 'if',
                 ],
                 [
-                    'question' => 'Khi bạn muốn lặp qua một mảng trong JavaScript, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]arr.forEach(item => console.log(item));[/code]',
+                    'question' => 'Khi bạn muốn lặp qua một mảng trong JavaScript, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>arr.forEach(item => console.log(item));',
                     'blanks' => 'forEach',
                 ],
                 [
-                    'question' => 'Để kết hợp hai chuỗi trong JavaScript, bạn có thể sử dụng toán tử [blank_1]. Ví dụ: [code]let fullName = firstName + " " + lastName;[/code]',
+                    'question' => 'Để kết hợp hai chuỗi trong JavaScript, bạn có thể sử dụng toán tử [blank_1].<br>Ví dụ:<br>let fullName = firstName + " " + lastName;',
                     'blanks' => ' + ',
                 ],
                 [
-                    'question' => 'Để chuyển đổi một chuỗi thành số nguyên trong JavaScript, bạn có thể sử dụng hàm [blank_1]. Ví dụ: [code]let num = parseInt("42");[/code]',
+                    'question' => 'Để chuyển đổi một chuỗi thành số nguyên trong JavaScript, bạn có thể sử dụng hàm [blank_1].<br>Ví dụ:<br>let num = parseInt("42");',
                     'blanks' => 'parseInt',
                 ],
                 [
-                    'question' => 'Để tạo một đối tượng trong JavaScript, bạn có thể sử dụng [blank_1]. Ví dụ: [code]let person = { name: "Alice", age: 25 };[/code]',
+                    'question' => 'Để tạo một đối tượng trong JavaScript, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>let person = { name: "Alice", age: 25 };',
                     'blanks' => 'object literal',
                 ],
                 [
-                    'question' => 'Khi bạn cần lấy giá trị của thuộc tính của một đối tượng, bạn có thể sử dụng [blank_1]. Ví dụ: [code]let name = person.name;[/code]',
+                    'question' => 'Khi bạn cần lấy giá trị của thuộc tính của một đối tượng, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>let name = person.name;',
                     'blanks' => 'dot notation',
                 ],
                 [
-                    'question' => 'Để kiểm tra xem một đối tượng có chứa thuộc tính hay không, bạn có thể sử dụng toán tử [blank_1]. Ví dụ: [code]if ("name" in person) { console.log("Name exists"); }[/code]',
+                    'question' => 'Để kiểm tra xem một đối tượng có chứa thuộc tính hay không, bạn có thể sử dụng toán tử [blank_1].<br>Ví dụ:<br>if ("name" in person) { console.log("Name exists"); }',
                     'blanks' => 'in',
                 ],
                 [
-                    'question' => 'Để xử lý lỗi trong JavaScript, bạn có thể sử dụng [blank_1]. Ví dụ: [code]try { throw new Error("Oops!"); } catch (e) { console.log(e.message); }[/code]',
+                    'question' => 'Để xử lý lỗi trong JavaScript, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>try { throw new Error("Oops!"); } catch (e) { console.log(e.message); }',
                     'blanks' => 'try...catch',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một mảng mới từ một mảng hiện tại, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let newArray = oldArray.slice();[/code]',
+                    'question' => 'Khi bạn cần tạo một mảng mới từ một mảng hiện tại, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let newArray = oldArray.slice();',
                     'blanks' => 'slice',
                 ],
                 [
-                    'question' => 'Để chuyển đổi một số thành chuỗi trong JavaScript, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let str = num.toString();[/code]',
+                    'question' => 'Để chuyển đổi một số thành chuỗi trong JavaScript, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let str = num.toString();',
                     'blanks' => 'toString',
                 ],
                 [
-                    'question' => 'Để kiểm tra kiểu dữ liệu của một biến, bạn có thể sử dụng hàm [blank_1]. Ví dụ: [code]console.log(typeof name);[/code]',
+                    'question' => 'Để kiểm tra kiểu dữ liệu của một biến, bạn có thể sử dụng hàm [blank_1].<br>Ví dụ:<br>console.log(typeof name);',
                     'blanks' => 'typeof',
                 ],
                 [
-                    'question' => 'Để gọi một hàm mà không quan tâm đến giá trị trả về, bạn có thể sử dụng [blank_1]. Ví dụ: [code]console.log("Hello");[/code]',
+                    'question' => 'Để gọi một hàm mà không quan tâm đến giá trị trả về, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>console.log("Hello");',
                     'blanks' => 'console.log',
                 ],
                 [
-                    'question' => 'Khi bạn muốn thực hiện một hành động sau một khoảng thời gian, bạn có thể sử dụng [blank_1]. Ví dụ: [code]setTimeout(() => { console.log("Hello"); }, 1000);[/code]',
+                    'question' => 'Khi bạn muốn thực hiện một hành động sau một khoảng thời gian, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>setTimeout(() => { console.log("Hello"); }, 1000);',
                     'blanks' => 'setTimeout',
                 ],
                 [
-                    'question' => 'Để tạo một mảng mới từ các giá trị đã cho, bạn có thể sử dụng [blank_1]. Ví dụ: [code]let numbers = [1, 2, 3, 4];[/code]',
+                    'question' => 'Để tạo một mảng mới từ các giá trị đã cho, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>let numbers = [1, 2, 3, 4];',
                     'blanks' => 'array literal',
                 ],
                 [
-                    'question' => 'Khi bạn cần kiểm tra điều kiện nhiều lựa chọn, bạn có thể sử dụng [blank_1]. Ví dụ: [code]switch (day) { case "Monday": console.log("Start of the week"); break; }[/code]',
+                    'question' => 'Khi bạn cần kiểm tra điều kiện nhiều lựa chọn, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>switch (day) { case "Monday": console.log("Start of the week"); break; }',
                     'blanks' => 'switch',
                 ],
                 [
-                    'question' => 'Để lấy số lượng phần tử trong một mảng, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]let length = array.length;[/code]',
+                    'question' => 'Để lấy số lượng phần tử trong một mảng, bạn có thể sử dụng thuộc tính [blank_1].<br>Ví dụ:<br>let length = array.length;',
                     'blanks' => 'length',
                 ],
                 [
-                    'question' => 'Khi bạn cần thêm một phần tử vào cuối mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]array.push(5);[/code]',
+                    'question' => 'Khi bạn cần thêm một phần tử vào cuối mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>array.push(5);',
                     'blanks' => 'push',
                 ],
                 [
-                    'question' => 'Để loại bỏ phần tử cuối cùng khỏi mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]array.pop();[/code]',
+                    'question' => 'Để loại bỏ phần tử cuối cùng khỏi mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>array.pop();',
                     'blanks' => 'pop',
                 ],
                 [
-                    'question' => 'Khi bạn cần lặp qua các phần tử của một mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]array.forEach(item => console.log(item));[/code]',
+                    'question' => 'Khi bạn cần lặp qua các phần tử của một mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>array.forEach(item => console.log(item));',
                     'blanks' => 'forEach',
                 ],
                 [
-                    'question' => 'Để loại bỏ phần tử đầu tiên khỏi mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]array.shift();[/code]',
+                    'question' => 'Để loại bỏ phần tử đầu tiên khỏi mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>array.shift();',
                     'blanks' => 'shift',
                 ],
                 [
-                    'question' => 'Khi bạn cần thêm một phần tử vào đầu mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]array.unshift(0);[/code]',
+                    'question' => 'Khi bạn cần thêm một phần tử vào đầu mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>array.unshift(0);',
                     'blanks' => 'unshift',
                 ],
                 [
-                    'question' => 'Để lấy một phần của một mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let subArray = array.slice(1, 3);[/code]',
+                    'question' => 'Để lấy một phần của một mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let subArray = array.slice(1, 3);',
                     'blanks' => 'slice',
                 ],
                 [
-                    'question' => 'Khi bạn cần thay đổi phần tử trong mảng tại một chỉ số cụ thể, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]array.splice(2, 1, "newItem");[/code]',
+                    'question' => 'Khi bạn cần thay đổi phần tử trong mảng tại một chỉ số cụ thể, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>array.splice(2, 1, "newItem");',
                     'blanks' => 'splice',
                 ],
                 [
-                    'question' => 'Để so sánh hai giá trị trong JavaScript, bạn có thể sử dụng toán tử [blank_1]. Ví dụ: [code]if (a === b) { console.log("Equal"); }[/code]',
+                    'question' => 'Để so sánh hai giá trị trong JavaScript, bạn có thể sử dụng toán tử [blank_1].<br>Ví dụ:<br>if (a === b) { console.log("Equal"); }',
                     'blanks' => '===',
                 ],
                 [
-                    'question' => 'Khi bạn cần kiểm tra xem một giá trị có phải là số không, bạn có thể sử dụng hàm [blank_1]. Ví dụ: [code]isNaN(value);[/code]',
+                    'question' => 'Khi bạn cần kiểm tra xem một giá trị có phải là số không, bạn có thể sử dụng hàm [blank_1].<br>Ví dụ:<br>isNaN(value);',
                     'blanks' => 'isNaN',
                 ],
                 [
-                    'question' => 'Để lấy một phần của chuỗi trong JavaScript, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let substring = str.substring(0, 5);[/code]',
+                    'question' => 'Để lấy một phần của chuỗi trong JavaScript, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let substring = str.substring(0, 5);',
                     'blanks' => 'substring',
                 ],
                 [
-                    'question' => 'Khi bạn muốn thay thế một phần của chuỗi bằng một giá trị khác, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let newStr = str.replace("old", "new");[/code]',
+                    'question' => 'Khi bạn muốn thay thế một phần của chuỗi bằng một giá trị khác, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let newStr = str.replace("old", "new");',
                     'blanks' => 'replace',
                 ],
                 [
-                    'question' => 'Để tách một chuỗi thành mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let parts = str.split(" ");[/code]',
+                    'question' => 'Để tách một chuỗi thành mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let parts = str.split(" ");',
                     'blanks' => 'split',
                 ],
                 [
-                    'question' => 'Khi bạn cần chuyển một chuỗi thành chữ hoa, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let upperStr = str.toUpperCase();[/code]',
+                    'question' => 'Khi bạn cần chuyển một chuỗi thành chữ hoa, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let upperStr = str.toUpperCase();',
                     'blanks' => 'toUpperCase',
                 ],
                 [
-                    'question' => 'Để kiểm tra xem một chuỗi có chứa một đoạn văn bản cụ thể hay không, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]str.includes("text");[/code]',
+                    'question' => 'Để kiểm tra xem một chuỗi có chứa một đoạn văn bản cụ thể hay không, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>str.includes("text");',
                     'blanks' => 'includes',
                 ],
                 [
-                    'question' => 'Khi bạn cần loại bỏ khoảng trắng từ đầu và cuối chuỗi, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let trimmedStr = str.trim();[/code]',
+                    'question' => 'Khi bạn cần loại bỏ khoảng trắng từ đầu và cuối chuỗi, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let trimmedStr = str.trim();',
                     'blanks' => 'trim',
                 ],
                 [
-                    'question' => 'Để tạo một Promise trong JavaScript, bạn có thể sử dụng từ khóa [blank_1]. Ví dụ: [code]let promise = new Promise((resolve, reject) => { resolve("Done"); });[/code]',
+                    'question' => 'Để tạo một Promise trong JavaScript, bạn có thể sử dụng từ khóa [blank_1].<br>Ví dụ:<br>let promise = new Promise((resolve, reject) => { resolve("Done"); });',
                     'blanks' => 'Promise',
                 ],
                 [
-                    'question' => 'Để thực hiện một hành động sau khi một Promise hoàn thành, bạn có thể sử dụng [blank_1]. Ví dụ: [code]promise.then(result => console.log(result));[/code]',
+                    'question' => 'Để thực hiện một hành động sau khi một Promise hoàn thành, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>promise.then(result => console.log(result));',
                     'blanks' => 'then',
                 ],
                 [
-                    'question' => 'Khi bạn cần thực hiện hành động nếu một Promise bị từ chối, bạn có thể sử dụng [blank_1]. Ví dụ: [code]promise.catch(error => console.log(error));[/code]',
+                    'question' => 'Khi bạn cần thực hiện hành động nếu một Promise bị từ chối, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>promise.catch(error => console.log(error));',
                     'blanks' => 'catch',
                 ],
                 [
-                    'question' => 'Để khởi tạo một đối tượng Date trong JavaScript, bạn có thể sử dụng [blank_1]. Ví dụ: [code]let today = new Date();[/code]',
+                    'question' => 'Để khởi tạo một đối tượng Date trong JavaScript, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>let today = new Date();',
                     'blanks' => 'Date',
                 ],
                 [
-                    'question' => 'Khi bạn muốn lấy ngày của tháng từ một đối tượng Date, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let day = today.getDate();[/code]',
+                    'question' => 'Khi bạn muốn lấy ngày của tháng từ một đối tượng Date, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let day = today.getDate();',
                     'blanks' => 'getDate',
                 ],
                 [
-                    'question' => 'Để lấy tháng từ đối tượng Date, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let month = today.getMonth();[/code]',
+                    'question' => 'Để lấy tháng từ đối tượng Date, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let month = today.getMonth();',
                     'blanks' => 'getMonth',
                 ],
                 [
-                    'question' => 'Để tính toán thời gian hiện tại từ một đối tượng Date, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let time = today.getTime();[/code]',
+                    'question' => 'Để tính toán thời gian hiện tại từ một đối tượng Date, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let time = today.getTime();',
                     'blanks' => 'getTime',
                 ],
                 [
-                    'question' => 'Để định dạng một chuỗi ngày giờ trong JavaScript, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let formattedDate = today.toLocaleDateString();[/code]',
+                    'question' => 'Để định dạng một chuỗi ngày giờ trong JavaScript, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let formattedDate = today.toLocaleDateString();',
                     'blanks' => 'toLocaleDateString',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một mảng từ một số giá trị, bạn có thể sử dụng [blank_1]. Ví dụ: [code]let numbers = Array(5).fill(0);[/code]',
+                    'question' => 'Khi bạn cần tạo một mảng từ một số giá trị, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>let numbers = Array(5).fill(0);',
                     'blanks' => 'Array.fill',
                 ],
                 [
-                    'question' => 'Để tìm chỉ số của phần tử trong mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let index = array.indexOf("value");[/code]',
+                    'question' => 'Để tìm chỉ số của phần tử trong mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let index = array.indexOf("value");',
                     'blanks' => 'indexOf',
                 ],
                 [
-                    'question' => 'Khi bạn cần lấy giá trị của một biến toàn cục trong một hàm, bạn có thể sử dụng từ khóa [blank_1]. Ví dụ: [code]console.log(globalVar);[/code]',
+                    'question' => 'Khi bạn cần lấy giá trị của một biến toàn cục trong một hàm, bạn có thể sử dụng từ khóa [blank_1].<br>Ví dụ:<br>console.log(globalVar);',
                     'blanks' => 'global',
                 ],
                 [
-                    'question' => 'Để xác định kiểu của một đối tượng trong JavaScript, bạn có thể sử dụng hàm [blank_1]. Ví dụ: [code]console.log(typeof obj);[/code]',
+                    'question' => 'Để xác định kiểu của một đối tượng trong JavaScript, bạn có thể sử dụng hàm [blank_1].<br>Ví dụ:<br>console.log(typeof obj);',
                     'blanks' => 'typeof',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một đối tượng Array với các giá trị cụ thể, bạn có thể sử dụng [blank_1]. Ví dụ: [code]let colors = new Array("red", "green", "blue");[/code]',
+                    'question' => 'Khi bạn cần tạo một đối tượng Array với các giá trị cụ thể, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>let colors = new Array("red", "green", "blue");',
                     'blanks' => 'Array constructor',
                 ],
                 [
-                    'question' => 'Để gán giá trị cho thuộc tính của một đối tượng, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]obj.property = "value";[/code]',
+                    'question' => 'Để gán giá trị cho thuộc tính của một đối tượng, bạn có thể sử dụng cú pháp [blank_1].<br>Ví dụ:<br>obj.property = "value";',
                     'blanks' => 'dot notation',
                 ],
                 [
-                    'question' => 'Để gọi một phương thức của đối tượng trong JavaScript, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]obj.method();[/code]',
+                    'question' => 'Để gọi một phương thức của đối tượng trong JavaScript, bạn sử dụng cú pháp [blank_1].<br>Ví dụ:<br>obj.method();',
                     'blanks' => 'method call',
                 ],
                 [
-                    'question' => 'Khi bạn cần sử dụng giá trị mặc định trong hàm, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]function greet(name = "Guest") { return "Hello, " + name; }[/code]',
+                    'question' => 'Khi bạn cần sử dụng giá trị mặc định trong hàm, bạn có thể sử dụng cú pháp [blank_1].<br>Ví dụ:<br>function greet(name = "Guest") { return "Hello, " + name; }',
                     'blanks' => 'default parameters',
                 ],
                 [
-                    'question' => 'Để tạo một hàm có thể chấp nhận số lượng đối số không xác định, bạn có thể sử dụng [blank_1]. Ví dụ: [code]function sum(...numbers) { return numbers.reduce((a, b) => a + b, 0); }[/code]',
+                    'question' => 'Để tạo một hàm có thể chấp nhận số lượng đối số không xác định, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>function sum(...numbers) { return numbers.reduce((a, b) => a + b, 0); }',
                     'blanks' => 'rest parameters',
                 ],
                 [
-                    'question' => 'Để khai báo một hàm mũi tên trong JavaScript, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]const add = (a, b) => a + b;[/code]',
+                    'question' => 'Để khai báo một hàm mũi tên trong JavaScript, bạn sử dụng cú pháp [blank_1].<br>Ví dụ:<br>const add = (a, b) => a + b;',
                     'blanks' => 'arrow function',
                 ],
                 [
-                    'question' => 'Khi bạn muốn định nghĩa một hàm async trong JavaScript, bạn sử dụng từ khóa [blank_1]. Ví dụ: [code]async function fetchData() { let response = await fetch("api/data"); }[/code]',
+                    'question' => 'Khi bạn muốn định nghĩa một hàm async trong JavaScript, bạn sử dụng từ khóa [blank_1].<br>Ví dụ:<br>async function fetchData() { let response = await fetch("api/data"); }',
                     'blanks' => 'async',
                 ],
                 [
-                    'question' => 'Để chờ một Promise trong JavaScript, bạn sử dụng từ khóa [blank_1]. Ví dụ: [code]let result = await promise;[/code]',
+                    'question' => 'Để chờ một Promise trong JavaScript, bạn sử dụng từ khóa [blank_1].<br>Ví dụ:<br>let result = await promise;',
                     'blanks' => 'await',
                 ],
                 [
-                    'question' => 'Để tạo một hàm callback trong JavaScript, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]function processCallback(callback) { callback(); }[/code]',
+                    'question' => 'Để tạo một hàm callback trong JavaScript, bạn có thể sử dụng cú pháp [blank_1].<br>Ví dụ:<br>function processCallback(callback) { callback(); }',
                     'blanks' => 'callback',
                 ],
                 [
-                    'question' => 'Khi bạn muốn gọi một hàm sau một khoảng thời gian nhất định, bạn có thể sử dụng [blank_1]. Ví dụ: [code]setInterval(() => { console.log("Repeat"); }, 1000);[/code]',
+                    'question' => 'Khi bạn muốn gọi một hàm sau một khoảng thời gian nhất định, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>setInterval(() => { console.log("Repeat"); }, 1000);',
                     'blanks' => 'setInterval',
                 ],
                 [
-                    'question' => 'Để kiểm tra xem một biến có phải là một đối tượng Date không, bạn có thể sử dụng [blank_1]. Ví dụ: [code]console.log(date instanceof Date);[/code]',
+                    'question' => 'Để kiểm tra xem một biến có phải là một đối tượng Date không, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>console.log(date instanceof Date);',
                     'blanks' => 'instanceof',
                 ],
                 [
-                    'question' => 'Khi bạn muốn chuyển một đối tượng thành JSON, bạn có thể sử dụng [blank_1]. Ví dụ: [code]let json = JSON.stringify(obj);[/code]',
+                    'question' => 'Khi bạn muốn chuyển một đối tượng thành JSON, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>let json = JSON.stringify(obj);',
                     'blanks' => 'JSON.stringify',
                 ],
                 [
-                    'question' => 'Để chuyển đổi một chuỗi JSON thành đối tượng JavaScript, bạn sử dụng [blank_1]. Ví dụ: [code]let obj = JSON.parse(json);[/code]',
+                    'question' => 'Để chuyển đổi một chuỗi JSON thành đối tượng JavaScript, bạn sử dụng [blank_1].<br>Ví dụ:<br>let obj = JSON.parse(json);',
                     'blanks' => 'JSON.parse',
                 ],
                 [
-                    'question' => 'Khi bạn cần lấy giá trị của một tham số trong URL, bạn có thể sử dụng [blank_1]. Ví dụ: [code]let params = new URLSearchParams(window.location.search); let id = params.get("id");[/code]',
+                    'question' => 'Khi bạn cần lấy giá trị của một tham số trong URL, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>let params = new URLSearchParams(window.location.search); let id = params.get("id");',
                     'blanks' => 'URLSearchParams',
                 ],
                 [
-                    'question' => 'Để kiểm tra một đối tượng có phải là mảng hay không, bạn có thể sử dụng [blank_1]. Ví dụ: [code]Array.isArray(arr);[/code]',
+                    'question' => 'Để kiểm tra một đối tượng có phải là mảng hay không, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>Array.isArray(arr);',
                     'blanks' => 'Array.isArray',
                 ],
                 [
-                    'question' => 'Để xử lý các lỗi xảy ra trong ứng dụng, bạn có thể sử dụng [blank_1]. Ví dụ: [code]try { /* code */ } catch (error) { /* handle error */ }[/code]',
+                    'question' => 'Để xử lý các lỗi xảy ra trong ứng dụng, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>try { /* code */ } catch (error) { /* handle error */ }',
                     'blanks' => 'try...catch',
                 ],
                 [
-                    'question' => 'Để sử dụng một giá trị từ một Promise, bạn có thể sử dụng [blank_1]. Ví dụ: [code]promise.then(value => console.log(value));[/code]',
+                    'question' => 'Để sử dụng một giá trị từ một Promise, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>promise.then(value => console.log(value));',
                     'blanks' => 'then',
                 ],
                 [
-                    'question' => 'Khi bạn cần thực hiện một hành động khi trang được tải xong, bạn có thể sử dụng sự kiện [blank_1]. Ví dụ: [code]window.onload = () => { console.log("Page loaded"); };[/code]',
+                    'question' => 'Khi bạn cần thực hiện một hành động khi trang được tải xong, bạn có thể sử dụng sự kiện [blank_1].<br>Ví dụ:<br>window.onload = () => { console.log("Page loaded"); };',
                     'blanks' => 'onload',
                 ],
                 [
-                    'question' => 'Để lấy giá trị của một thuộc tính CSS của một phần tử, bạn có thể sử dụng [blank_1]. Ví dụ: [code]let color = window.getComputedStyle(element).color;[/code]',
+                    'question' => 'Để lấy giá trị của một thuộc tính CSS của một phần tử, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>let color = window.getComputedStyle(element).color;',
                     'blanks' => 'getComputedStyle',
                 ],
                 [
-                    'question' => 'Khi bạn cần lấy thông tin về phần tử DOM, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]let nodeName = element.nodeName;[/code]',
+                    'question' => 'Khi bạn cần lấy thông tin về phần tử DOM, bạn có thể sử dụng thuộc tính [blank_1].<br>Ví dụ:<br>let nodeName = element.nodeName;',
                     'blanks' => 'nodeName',
                 ],
                 [
-                    'question' => 'Để thêm một lớp CSS vào một phần tử, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]element.classList.add("newClass");[/code]',
+                    'question' => 'Để thêm một lớp CSS vào một phần tử, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>element.classList.add("newClass");',
                     'blanks' => 'classList.add',
                 ],
                 [
-                    'question' => 'Để loại bỏ một lớp CSS khỏi một phần tử, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]element.classList.remove("oldClass");[/code]',
+                    'question' => 'Để loại bỏ một lớp CSS khỏi một phần tử, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>element.classList.remove("oldClass");',
                     'blanks' => 'classList.remove',
                 ],
                 [
-                    'question' => 'Khi bạn cần chuyển đổi các thuộc tính CSS của phần tử thành một chuỗi, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let cssText = element.style.cssText;[/code]',
+                    'question' => 'Khi bạn cần chuyển đổi các thuộc tính CSS của phần tử thành một chuỗi, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let cssText = element.style.cssText;',
                     'blanks' => 'cssText',
                 ],
                 [
-                    'question' => 'Để thay đổi giá trị của thuộc tính CSS, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]element.style.backgroundColor = "blue";[/code]',
+                    'question' => 'Để thay đổi giá trị của thuộc tính CSS, bạn có thể sử dụng cú pháp [blank_1].<br>Ví dụ:<br>element.style.backgroundColor = "blue";',
                     'blanks' => 'style.property',
                 ],
                 [
-                    'question' => 'Khi bạn muốn thay đổi kích thước của phần tử, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]element.style.width = "100px";[/code]',
+                    'question' => 'Khi bạn muốn thay đổi kích thước của phần tử, bạn có thể sử dụng thuộc tính [blank_1].<br>Ví dụ:<br>element.style.width = "100px";',
                     'blanks' => 'width',
                 ],
                 [
-                    'question' => 'Để ẩn một phần tử trong JavaScript, bạn có thể thiết lập thuộc tính [blank_1]. Ví dụ: [code]element.style.display = "none";[/code]',
+                    'question' => 'Để ẩn một phần tử trong JavaScript, bạn có thể thiết lập thuộc tính [blank_1].<br>Ví dụ:<br>element.style.display = "none";',
                     'blanks' => 'display',
                 ],
                 [
-                    'question' => 'Khi bạn cần lấy thuộc tính của một phần tử, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let attribute = element.getAttribute("id");[/code]',
+                    'question' => 'Khi bạn cần lấy thuộc tính của một phần tử, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let attribute = element.getAttribute("id");',
                     'blanks' => 'getAttribute',
                 ],
                 [
-                    'question' => 'Để đặt giá trị cho thuộc tính của một phần tử, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]element.setAttribute("data-value", "123");[/code]',
+                    'question' => 'Để đặt giá trị cho thuộc tính của một phần tử, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>element.setAttribute("data-value", "123");',
                     'blanks' => 'setAttribute',
                 ],
                 [
-                    'question' => 'Để lấy nội dung HTML của một phần tử, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]let htmlContent = element.innerHTML;[/code]',
+                    'question' => 'Để lấy nội dung HTML của một phần tử, bạn có thể sử dụng thuộc tính [blank_1].<br>Ví dụ:<br>let htmlContent = element.innerHTML;',
                     'blanks' => 'innerHTML',
                 ],
                 [
-                    'question' => 'Để thay đổi nội dung văn bản của một phần tử, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]element.textContent = "New text";[/code]',
+                    'question' => 'Để thay đổi nội dung văn bản của một phần tử, bạn có thể sử dụng thuộc tính [blank_1].<br>Ví dụ:<br>element.textContent = "New text";',
                     'blanks' => 'textContent',
                 ],
                 [
-                    'question' => 'Khi bạn cần loại bỏ một phần tử khỏi DOM, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]element.remove();[/code]',
+                    'question' => 'Khi bạn cần loại bỏ một phần tử khỏi DOM, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>element.remove();',
                     'blanks' => 'remove',
                 ],
                 [
-                    'question' => 'Để thêm một phần tử con vào phần tử hiện tại, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]parentElement.appendChild(childElement);[/code]',
+                    'question' => 'Để thêm một phần tử con vào phần tử hiện tại, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>parentElement.appendChild(childElement);',
                     'blanks' => 'appendChild',
                 ],
                 [
-                    'question' => 'Khi bạn muốn tạo một phần tử mới trong DOM, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let newElement = document.createElement("div");[/code]',
+                    'question' => 'Khi bạn muốn tạo một phần tử mới trong DOM, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let newElement = document.createElement("div");',
                     'blanks' => 'createElement',
                 ],
                 [
-                    'question' => 'Để thay đổi thuộc tính của phần tử trong DOM, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]element.style.color = "red";[/code]',
+                    'question' => 'Để thay đổi thuộc tính của phần tử trong DOM, bạn có thể sử dụng cú pháp [blank_1].<br>Ví dụ:<br>element.style.color = "red";',
                     'blanks' => 'element.style.property',
                 ],
                 [
-                    'question' => 'Để thêm một sự kiện vào phần tử, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]element.addEventListener("click", function() { console.log("Clicked"); });[/code]',
+                    'question' => 'Để thêm một sự kiện vào phần tử, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>element.addEventListener("click", function() { console.log("Clicked"); });',
                     'blanks' => 'addEventListener',
                 ],
                 [
-                    'question' => 'Khi bạn muốn lấy giá trị của một ô nhập liệu, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]let value = inputElement.value;[/code]',
+                    'question' => 'Khi bạn muốn lấy giá trị của một ô nhập liệu, bạn có thể sử dụng thuộc tính [blank_1].<br>Ví dụ:<br>let value = inputElement.value;',
                     'blanks' => 'value',
                 ],
                 [
-                    'question' => 'Để thiết lập giá trị cho ô nhập liệu, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]inputElement.value = "new value";[/code]',
+                    'question' => 'Để thiết lập giá trị cho ô nhập liệu, bạn có thể sử dụng thuộc tính [blank_1].<br>Ví dụ:<br>inputElement.value = "new value";',
                     'blanks' => 'value',
                 ],
                 [
-                    'question' => 'Khi bạn cần kiểm tra xem một ô nhập liệu có được chọn hay không, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]let isChecked = checkboxElement.checked;[/code]',
+                    'question' => 'Khi bạn cần kiểm tra xem một ô nhập liệu có được chọn hay không, bạn có thể sử dụng thuộc tính [blank_1].<br>Ví dụ:<br>let isChecked = checkboxElement.checked;',
                     'blanks' => 'checked',
                 ],
                 [
-                    'question' => 'Để xử lý sự kiện khi nhấn phím trong ô nhập liệu, bạn có thể sử dụng sự kiện [blank_1]. Ví dụ: [code]inputElement.addEventListener("keydown", function(event) { console.log(event.key); });[/code]',
+                    'question' => 'Để xử lý sự kiện khi nhấn phím trong ô nhập liệu, bạn có thể sử dụng sự kiện [blank_1].<br>Ví dụ:<br>inputElement.addEventListener("keydown", function(event) { console.log(event.key); });',
                     'blanks' => 'keydown',
                 ],
                 [
-                    'question' => 'Để tạo một Promise và thực hiện hành động sau khi Promise hoàn thành, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]new Promise((resolve, reject) => { resolve("Done"); }).then(result => console.log(result));[/code]',
+                    'question' => 'Để tạo một Promise và thực hiện hành động sau khi Promise hoàn thành, bạn có thể sử dụng cú pháp [blank_1].<br>Ví dụ:<br>new Promise((resolve, reject) => { resolve("Done"); }).then(result => console.log(result));',
                     'blanks' => 'Promise.then',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một đối tượng mới từ một lớp trong JavaScript, bạn sử dụng từ khóa [blank_1]. Ví dụ: [code]let obj = new MyClass();[/code]',
+                    'question' => 'Khi bạn cần tạo một đối tượng mới từ một lớp trong JavaScript, bạn sử dụng từ khóa [blank_1].<br>Ví dụ:<br>let obj = new MyClass();',
                     'blanks' => 'new',
                 ],
                 [
-                    'question' => 'Để tạo một mảng với các giá trị từ 1 đến 5, bạn có thể sử dụng [blank_1]. Ví dụ: [code]let numbers = [1, 2, 3, 4, 5];[/code]',
+                    'question' => 'Để tạo một mảng với các giá trị từ 1 đến 5, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>let numbers = [1, 2, 3, 4, 5];',
                     'blanks' => 'array literal',
                 ],
                 [
-                    'question' => 'Khi bạn cần lặp qua một chuỗi, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]for (let char of str) { console.log(char); }[/code]',
+                    'question' => 'Khi bạn cần lặp qua một chuỗi, bạn có thể sử dụng cú pháp [blank_1].<br>Ví dụ:<br>for (let char of str) { console.log(char); }',
                     'blanks' => 'for...of',
                 ],
                 [
-                    'question' => 'Để khai báo một biến với phạm vi khối trong JavaScript, bạn sử dụng từ khóa [blank_1]. Ví dụ: [code]if (true) { let blockVar = 1; }[/code]',
+                    'question' => 'Để khai báo một biến với phạm vi khối trong JavaScript, bạn sử dụng từ khóa [blank_1].<br>Ví dụ:<br>if (true) { let blockVar = 1; }',
                     'blanks' => 'let',
                 ],
                 [
-                    'question' => 'Để kiểm tra xem một giá trị có phải là NaN hay không, bạn có thể sử dụng hàm [blank_1]. Ví dụ: [code]isNaN(value);[/code]',
+                    'question' => 'Để kiểm tra xem một giá trị có phải là NaN hay không, bạn có thể sử dụng hàm [blank_1].<br>Ví dụ:<br>isNaN(value);',
                     'blanks' => 'isNaN',
                 ],
                 [
-                    'question' => 'Để lấy giá trị của tham số truy vấn trong URL, bạn có thể sử dụng đối tượng [blank_1]. Ví dụ: [code]let query = new URLSearchParams(window.location.search); let id = query.get("id");[/code]',
+                    'question' => 'Để lấy giá trị của tham số truy vấn trong URL, bạn có thể sử dụng đối tượng [blank_1].<br>Ví dụ:<br>let query = new URLSearchParams(window.location.search); let id = query.get("id");',
                     'blanks' => 'URLSearchParams',
                 ],
                 [
-                    'question' => 'Để chuyển đổi một số thành chuỗi, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let str = num.toString();[/code]',
+                    'question' => 'Để chuyển đổi một số thành chuỗi, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let str = num.toString();',
                     'blanks' => 'toString',
                 ],
                 [
-                    'question' => 'Khi bạn muốn xác định một giá trị trong một mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let index = array.indexOf("value");[/code]',
+                    'question' => 'Khi bạn muốn xác định một giá trị trong một mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let index = array.indexOf("value");',
                     'blanks' => 'indexOf',
                 ],
                 [
-                    'question' => 'Để thêm một phần tử vào cuối mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]array.push("newItem");[/code]',
+                    'question' => 'Để thêm một phần tử vào cuối mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>array.push("newItem");',
                     'blanks' => 'push',
                 ],
                 [
-                    'question' => 'Khi bạn muốn loại bỏ một phần tử từ cuối mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]array.pop();[/code]',
+                    'question' => 'Khi bạn muốn loại bỏ một phần tử từ cuối mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>array.pop();',
                     'blanks' => 'pop',
                 ],
                 [
-                    'question' => 'Để lặp qua các phần tử của một mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]array.forEach(item => console.log(item));[/code]',
+                    'question' => 'Để lặp qua các phần tử của một mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>array.forEach(item => console.log(item));',
                     'blanks' => 'forEach',
                 ],
                 [
-                    'question' => 'Để chuyển đổi một chuỗi thành số, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let num = parseInt(str);[/code]',
+                    'question' => 'Để chuyển đổi một chuỗi thành số, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let num = parseInt(str);',
                     'blanks' => 'parseInt',
                 ],
                 [
-                    'question' => 'Khi bạn cần lấy giá trị của thuộc tính từ một đối tượng, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]let value = obj["property"];[/code]',
+                    'question' => 'Khi bạn cần lấy giá trị của thuộc tính từ một đối tượng, bạn có thể sử dụng cú pháp [blank_1].<br>Ví dụ:<br>let value = obj["property"];',
                     'blanks' => 'bracket notation',
                 ],
                 [
-                    'question' => 'Để tạo một đối tượng từ một lớp trong JavaScript, bạn có thể sử dụng từ khóa [blank_1]. Ví dụ: [code]let instance = new MyClass();[/code]',
+                    'question' => 'Để tạo một đối tượng từ một lớp trong JavaScript, bạn có thể sử dụng từ khóa [blank_1].<br>Ví dụ:<br>let instance = new MyClass();',
                     'blanks' => 'new',
                 ],
                 [
-                    'question' => 'Khi bạn cần loại bỏ khoảng trắng đầu và cuối của chuỗi, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let trimmedStr = str.trim();[/code]',
+                    'question' => 'Khi bạn cần loại bỏ khoảng trắng đầu và cuối của chuỗi, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let trimmedStr = str.trim();',
                     'blanks' => 'trim',
                 ],
                 [
-                    'question' => 'Để kiểm tra xem một biến có phải là số hay không, bạn có thể sử dụng hàm [blank_1]. Ví dụ: [code]Number.isFinite(value);[/code]',
+                    'question' => 'Để kiểm tra xem một biến có phải là số hay không, bạn có thể sử dụng hàm [blank_1].<br>Ví dụ:<br>Number.isFinite(value);',
                     'blanks' => 'Number.isFinite',
                 ],
                 [
-                    'question' => 'Khi bạn cần lấy giá trị của một thuộc tính CSS của phần tử, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let color = getComputedStyle(element).color;[/code]',
+                    'question' => 'Khi bạn cần lấy giá trị của một thuộc tính CSS của phần tử, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let color = getComputedStyle(element).color;',
                     'blanks' => 'getComputedStyle',
                 ],
                 [
-                    'question' => 'Để kiểm tra xem một giá trị có phải là đối tượng hay không, bạn có thể sử dụng [blank_1]. Ví dụ: [code]typeof value === "object";[/code]',
+                    'question' => 'Để kiểm tra xem một giá trị có phải là đối tượng hay không, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>typeof value === "object";',
                     'blanks' => 'typeof',
                 ],
                 [
-                    'question' => 'Để làm tròn một số thập phân, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let roundedNum = Math.round(num);[/code]',
+                    'question' => 'Để làm tròn một số thập phân, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let roundedNum = Math.round(num);',
                     'blanks' => 'Math.round',
                 ],
                 [
-                    'question' => 'Khi bạn cần kiểm tra kiểu dữ liệu của một biến, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]typeof variable;[/code]',
+                    'question' => 'Khi bạn cần kiểm tra kiểu dữ liệu của một biến, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>typeof variable;',
                     'blanks' => 'typeof',
                 ],
                 [
-                    'question' => 'Để chuyển đổi một chuỗi thành số thập phân, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let num = parseFloat(str);[/code]',
+                    'question' => 'Để chuyển đổi một chuỗi thành số thập phân, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let num = parseFloat(str);',
                     'blanks' => 'parseFloat',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một Promise mới và thực hiện hành động sau khi Promise hoàn thành, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]new Promise((resolve, reject) => { resolve("Done"); }).then(result => console.log(result));[/code]',
+                    'question' => 'Khi bạn cần tạo một Promise mới và thực hiện hành động sau khi Promise hoàn thành, bạn có thể sử dụng cú pháp [blank_1].<br>Ví dụ:<br>new Promise((resolve, reject) => { resolve("Done"); }).then(result => console.log(result));',
                     'blanks' => 'Promise.then',
                 ],
                 [
-                    'question' => 'Để thêm một phần tử vào mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]array.push(item);[/code]',
+                    'question' => 'Để thêm một phần tử vào mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>array.push(item);',
                     'blanks' => 'push',
                 ],
                 [
-                    'question' => 'Khi bạn cần loại bỏ phần tử đầu tiên của mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]array.shift();[/code]',
+                    'question' => 'Khi bạn cần loại bỏ phần tử đầu tiên của mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>array.shift();',
                     'blanks' => 'shift',
                 ],
                 [
-                    'question' => 'Để tìm kiếm một phần tử trong mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]array.find(item => item === "value");[/code]',
+                    'question' => 'Để tìm kiếm một phần tử trong mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>array.find(item => item === "value");',
                     'blanks' => 'find',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một mảng mới với các phần tử đã được ánh xạ từ mảng gốc, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let mappedArray = array.map(item => item * 2);[/code]',
+                    'question' => 'Khi bạn cần tạo một mảng mới với các phần tử đã được ánh xạ từ mảng gốc, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let mappedArray = array.map(item => item * 2);',
                     'blanks' => 'map',
                 ],
                 [
-                    'question' => 'Để sắp xếp các phần tử trong mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]array.sort();[/code]',
+                    'question' => 'Để sắp xếp các phần tử trong mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>array.sort();',
                     'blanks' => 'sort',
                 ],
                 [
-                    'question' => 'Để thực hiện một hành động cho mỗi phần tử trong mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]array.forEach(item => console.log(item));[/code]',
+                    'question' => 'Để thực hiện một hành động cho mỗi phần tử trong mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>array.forEach(item => console.log(item));',
                     'blanks' => 'forEach',
                 ],
                 [
-                    'question' => 'Để loại bỏ phần tử khỏi cuối mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]array.pop();[/code]',
+                    'question' => 'Để loại bỏ phần tử khỏi cuối mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>array.pop();',
                     'blanks' => 'pop',
                 ],
                 [
-                    'question' => 'Khi bạn cần tìm phần tử trong mảng thỏa mãn điều kiện, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let foundItem = array.find(item => item === "value");[/code]',
+                    'question' => 'Khi bạn cần tìm phần tử trong mảng thỏa mãn điều kiện, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let foundItem = array.find(item => item === "value");',
                     'blanks' => 'find',
                 ],
                 [
-                    'question' => 'Để kiểm tra nếu một mảng có chứa một giá trị, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let contains = array.includes("value");[/code]',
+                    'question' => 'Để kiểm tra nếu một mảng có chứa một giá trị, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let contains = array.includes("value");',
                     'blanks' => 'includes',
                 ],
                 [
-                    'question' => 'Để chuyển đổi một mảng thành chuỗi, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let str = array.join(", ");[/code]',
+                    'question' => 'Để chuyển đổi một mảng thành chuỗi, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let str = array.join(", ");',
                     'blanks' => 'join',
                 ],
                 [
-                    'question' => 'Khi bạn cần thực hiện một hành động cho mỗi phần tử trong mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]array.forEach(item => console.log(item));[/code]',
+                    'question' => 'Khi bạn cần thực hiện một hành động cho mỗi phần tử trong mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>array.forEach(item => console.log(item));',
                     'blanks' => 'forEach',
                 ],
                 [
-                    'question' => 'Để chuyển đổi số thành chuỗi, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let str = num.toString();[/code]',
+                    'question' => 'Để chuyển đổi số thành chuỗi, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let str = num.toString();',
                     'blanks' => 'toString',
                 ],
                 [
-                    'question' => 'Khi bạn cần tìm phần tử đầu tiên trong mảng thỏa mãn điều kiện, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let firstItem = array.find(item => item === "value");[/code]',
+                    'question' => 'Khi bạn cần tìm phần tử đầu tiên trong mảng thỏa mãn điều kiện, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let firstItem = array.find(item => item === "value");',
                     'blanks' => 'find',
                 ],
                 [
-                    'question' => 'Để lấy phần tử đầu tiên của mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let firstItem = array[0];[/code]',
+                    'question' => 'Để lấy phần tử đầu tiên của mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let firstItem = array[0];',
                     'blanks' => 'index 0',
                 ],
                 [
-                    'question' => 'Khi bạn cần xóa phần tử đầu tiên của mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]array.shift();[/code]',
+                    'question' => 'Khi bạn cần xóa phần tử đầu tiên của mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>array.shift();',
                     'blanks' => 'shift',
                 ],
                 [
-                    'question' => 'Để nối hai mảng thành một, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let combinedArray = array1.concat(array2);[/code]',
+                    'question' => 'Để nối hai mảng thành một, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let combinedArray = array1.concat(array2);',
                     'blanks' => 'concat',
                 ],
                 [
-                    'question' => 'Khi bạn cần lấy độ dài của mảng, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]let length = array.length;[/code]',
+                    'question' => 'Khi bạn cần lấy độ dài của mảng, bạn có thể sử dụng thuộc tính [blank_1].<br>Ví dụ:<br>let length = array.length;',
                     'blanks' => 'length',
                 ],
                 [
-                    'question' => 'Để tạo một mảng mới chỉ chứa các phần tử thỏa mãn điều kiện, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let filteredArray = array.filter(item => item > 2);[/code]',
+                    'question' => 'Để tạo một mảng mới chỉ chứa các phần tử thỏa mãn điều kiện, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let filteredArray = array.filter(item => item > 2);',
                     'blanks' => 'filter',
                 ],
                 [
-                    'question' => 'Để lấy phần tử cuối cùng của mảng, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]let lastItem = array[array.length - 1];[/code]',
+                    'question' => 'Để lấy phần tử cuối cùng của mảng, bạn có thể sử dụng thuộc tính [blank_1].<br>Ví dụ:<br>let lastItem = array[array.length - 1];',
                     'blanks' => 'index -1',
                 ],
                 [
-                    'question' => 'Khi bạn cần loại bỏ tất cả các phần tử khỏi mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]array.length = 0;[/code]',
+                    'question' => 'Khi bạn cần loại bỏ tất cả các phần tử khỏi mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>array.length = 0;',
                     'blanks' => 'length = 0',
                 ],
                 [
-                    'question' => 'Để lấy một đoạn con của chuỗi, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let substring = str.substring(0, 5);[/code]',
+                    'question' => 'Để lấy một đoạn con của chuỗi, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let substring = str.substring(0, 5);',
                     'blanks' => 'substring',
                 ],
                 [
-                    'question' => 'Khi bạn cần thay thế một phần của chuỗi, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let newStr = str.replace("old", "new");[/code]',
+                    'question' => 'Khi bạn cần thay thế một phần của chuỗi, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let newStr = str.replace("old", "new");',
                     'blanks' => 'replace',
                 ],
                 [
-                    'question' => 'Để chuyển đổi một chuỗi thành số nguyên, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let num = parseInt(str);[/code]',
+                    'question' => 'Để chuyển đổi một chuỗi thành số nguyên, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let num = parseInt(str);',
                     'blanks' => 'parseInt',
                 ],
                 [
-                    'question' => 'Khi bạn cần lặp qua các ký tự của một chuỗi, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]for (let char of str) { console.log(char); }[/code]',
+                    'question' => 'Khi bạn cần lặp qua các ký tự của một chuỗi, bạn có thể sử dụng cú pháp [blank_1].<br>Ví dụ:<br>for (let char of str) { console.log(char); }',
                     'blanks' => 'for...of',
                 ],
                 [
-                    'question' => 'Để kiểm tra xem một chuỗi có chứa một giá trị cụ thể không, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let contains = str.includes("value");[/code]',
+                    'question' => 'Để kiểm tra xem một chuỗi có chứa một giá trị cụ thể không, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let contains = str.includes("value");',
                     'blanks' => 'includes',
                 ],
                 [
-                    'question' => 'Khi bạn cần lấy chỉ số của một ký tự trong chuỗi, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let index = str.indexOf("char");[/code]',
+                    'question' => 'Khi bạn cần lấy chỉ số của một ký tự trong chuỗi, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let index = str.indexOf("char");',
                     'blanks' => 'indexOf',
                 ],
                 [
-                    'question' => 'Để thay đổi tất cả các ký tự của chuỗi thành chữ hoa, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let upperStr = str.toUpperCase();[/code]',
+                    'question' => 'Để thay đổi tất cả các ký tự của chuỗi thành chữ hoa, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let upperStr = str.toUpperCase();',
                     'blanks' => 'toUpperCase',
                 ],
                 [
-                    'question' => 'Khi bạn cần chuyển đổi chuỗi thành chữ thường, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let lowerStr = str.toLowerCase();[/code]',
+                    'question' => 'Khi bạn cần chuyển đổi chuỗi thành chữ thường, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let lowerStr = str.toLowerCase();',
                     'blanks' => 'toLowerCase',
                 ],
                 [
-                    'question' => 'Để cắt một chuỗi từ chỉ số bắt đầu đến chỉ số kết thúc, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let slicedStr = str.slice(0, 5);[/code]',
+                    'question' => 'Để cắt một chuỗi từ chỉ số bắt đầu đến chỉ số kết thúc, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let slicedStr = str.slice(0, 5);',
                     'blanks' => 'slice',
                 ],
                 [
-                    'question' => 'Khi bạn cần kiểm tra một chuỗi có phải là số không, bạn có thể sử dụng hàm [blank_1]. Ví dụ: [code]let isNumber = !isNaN(str);[/code]',
+                    'question' => 'Khi bạn cần kiểm tra một chuỗi có phải là số không, bạn có thể sử dụng hàm [blank_1].<br>Ví dụ:<br>let isNumber = !isNaN(str);',
                     'blanks' => 'isNaN',
                 ],
                 [
-                    'question' => 'Để so sánh hai chuỗi trong JavaScript, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let isEqual = str1.localeCompare(str2);[/code]',
+                    'question' => 'Để so sánh hai chuỗi trong JavaScript, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let isEqual = str1.localeCompare(str2);',
                     'blanks' => 'localeCompare',
                 ],
                 [
-                    'question' => 'Khi bạn cần kiểm tra một chuỗi có phải là số không, bạn có thể sử dụng hàm [blank_1]. Ví dụ: [code]let isNumber = !isNaN(str);[/code]',
+                    'question' => 'Khi bạn cần kiểm tra một chuỗi có phải là số không, bạn có thể sử dụng hàm [blank_1].<br>Ví dụ:<br>let isNumber = !isNaN(str);',
                     'blanks' => 'isNaN',
                 ],
                 [
-                    'question' => 'Để chuyển đổi một chuỗi thành chữ hoa, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let upperStr = str.toUpperCase();[/code]',
+                    'question' => 'Để chuyển đổi một chuỗi thành chữ hoa, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let upperStr = str.toUpperCase();',
                     'blanks' => 'toUpperCase',
                 ],
                 [
-                    'question' => 'Khi bạn cần thay thế một phần của chuỗi, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let newStr = str.replace("old", "new");[/code]',
+                    'question' => 'Khi bạn cần thay thế một phần của chuỗi, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let newStr = str.replace("old", "new");',
                     'blanks' => 'replace',
                 ],
                 [
-                    'question' => 'Để tìm chỉ số của phần tử trong mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let index = array.indexOf("value");[/code]',
+                    'question' => 'Để tìm chỉ số của phần tử trong mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let index = array.indexOf("value");',
                     'blanks' => 'indexOf',
                 ],
                 [
-                    'question' => 'Khi bạn cần tìm một phần tử trong mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let foundItem = array.find(item => item === "value");[/code]',
+                    'question' => 'Khi bạn cần tìm một phần tử trong mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let foundItem = array.find(item => item === "value");',
                     'blanks' => 'find',
                 ],
                 [
-                    'question' => 'Để tạo một Promise mới và thực hiện hành động sau khi Promise hoàn thành, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]new Promise((resolve, reject) => { resolve("Done"); }).then(result => console.log(result));[/code]',
+                    'question' => 'Để tạo một Promise mới và thực hiện hành động sau khi Promise hoàn thành, bạn có thể sử dụng cú pháp [blank_1].<br>Ví dụ:<br>new Promise((resolve, reject) => { resolve("Done"); }).then(result => console.log(result));',
                     'blanks' => 'Promise.then',
                 ],
                 [
-                    'question' => 'Để chuyển đổi một số thành chuỗi, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let str = num.toString();[/code]',
+                    'question' => 'Để chuyển đổi một số thành chuỗi, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let str = num.toString();',
                     'blanks' => 'toString',
                 ],
                 [
-                    'question' => 'Khi bạn cần kiểm tra một chuỗi có chứa một giá trị cụ thể không, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let contains = str.includes("value");[/code]',
+                    'question' => 'Khi bạn cần kiểm tra một chuỗi có chứa một giá trị cụ thể không, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let contains = str.includes("value");',
                     'blanks' => 'includes',
                 ],
                 [
-                    'question' => 'Để lấy độ dài của chuỗi, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]let length = str.length;[/code]',
+                    'question' => 'Để lấy độ dài của chuỗi, bạn có thể sử dụng thuộc tính [blank_1].<br>Ví dụ:<br>let length = str.length;',
                     'blanks' => 'length',
                 ],
                 [
-                    'question' => 'Khi bạn cần loại bỏ khoảng trắng đầu và cuối chuỗi, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let trimmedStr = str.trim();[/code]',
+                    'question' => 'Khi bạn cần loại bỏ khoảng trắng đầu và cuối chuỗi, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let trimmedStr = str.trim();',
                     'blanks' => 'trim',
                 ],
                 [
-                    'question' => 'Để kiểm tra xem một chuỗi có phải là số không, bạn có thể sử dụng hàm [blank_1]. Ví dụ: [code]let isNumber = !isNaN(str);[/code]',
+                    'question' => 'Để kiểm tra xem một chuỗi có phải là số không, bạn có thể sử dụng hàm [blank_1].<br>Ví dụ:<br>let isNumber = !isNaN(str);',
                     'blanks' => 'isNaN',
                 ],
                 [
-                    'question' => 'Khi bạn cần so sánh hai chuỗi, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let isEqual = str1.localeCompare(str2);[/code]',
+                    'question' => 'Khi bạn cần so sánh hai chuỗi, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let isEqual = str1.localeCompare(str2);',
                     'blanks' => 'localeCompare',
                 ],
                 [
-                    'question' => 'Để chuyển đổi một chuỗi thành số thập phân, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let num = parseFloat(str);[/code]',
+                    'question' => 'Để chuyển đổi một chuỗi thành số thập phân, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let num = parseFloat(str);',
                     'blanks' => 'parseFloat',
                 ],
                 [
-                    'question' => 'Khi bạn cần lấy một đoạn con của chuỗi, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let substring = str.substring(0, 5);[/code]',
+                    'question' => 'Khi bạn cần lấy một đoạn con của chuỗi, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let substring = str.substring(0, 5);',
                     'blanks' => 'substring',
                 ],
                 [
-                    'question' => 'Để kiểm tra xem một chuỗi có chứa một giá trị cụ thể không, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let contains = str.includes("value");[/code]',
+                    'question' => 'Để kiểm tra xem một chuỗi có chứa một giá trị cụ thể không, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let contains = str.includes("value");',
                     'blanks' => 'includes',
                 ],
                 [
-                    'question' => 'Để loại bỏ khoảng trắng đầu và cuối của chuỗi, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let trimmedStr = str.trim();[/code]',
+                    'question' => 'Để loại bỏ khoảng trắng đầu và cuối của chuỗi, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let trimmedStr = str.trim();',
                     'blanks' => 'trim',
                 ],
                 [
-                    'question' => 'Để kiểm tra nếu một đối tượng có một thuộc tính cụ thể, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]if (obj.hasOwnProperty("property")) { /* ... */ }[/code]',
+                    'question' => 'Để kiểm tra nếu một đối tượng có một thuộc tính cụ thể, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>if (obj.hasOwnProperty("property")) { /* ... */ }',
                     'blanks' => 'hasOwnProperty',
                 ],
                 [
-                    'question' => 'Khi bạn cần sử dụng một hàm trong JavaScript mà không cần khai báo biến trước, bạn có thể sử dụng [blank_1]. Ví dụ: [code]function greet() { console.log("Hello"); }[/code]',
+                    'question' => 'Khi bạn cần sử dụng một hàm trong JavaScript mà không cần khai báo biến trước, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>function greet() { console.log("Hello"); }',
                     'blanks' => 'function declaration',
                 ],
                 [
-                    'question' => 'Để kiểm tra nếu một đối tượng là một instance của một lớp, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]obj instanceof MyClass[/code]',
+                    'question' => 'Để kiểm tra nếu một đối tượng là một instance của một lớp, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>obj instanceof MyClass',
                     'blanks' => 'instanceof',
                 ],
                 [
-                    'question' => 'Khi bạn cần lấy các giá trị của các thuộc tính trong một đối tượng, bạn có thể sử dụng [blank_1]. Ví dụ: [code]Object.values(obj)[/code]',
+                    'question' => 'Khi bạn cần lấy các giá trị của các thuộc tính trong một đối tượng, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>Object.values(obj)',
                     'blanks' => 'Object.values',
                 ],
                 [
-                    'question' => 'Để chờ cho một Promise hoàn thành và lấy kết quả, bạn có thể sử dụng từ khóa [blank_1]. Ví dụ: [code]async function fetchData() { let data = await fetch("url"); }[/code]',
+                    'question' => 'Để chờ cho một Promise hoàn thành và lấy kết quả, bạn có thể sử dụng từ khóa [blank_1].<br>Ví dụ:<br>async function fetchData() { let data = await fetch("url"); }',
                     'blanks' => 'await',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một đối tượng mới từ một lớp, bạn có thể sử dụng từ khóa [blank_1]. Ví dụ: [code]let instance = new MyClass();[/code]',
+                    'question' => 'Khi bạn cần tạo một đối tượng mới từ một lớp, bạn có thể sử dụng từ khóa [blank_1].<br>Ví dụ:<br>let instance = new MyClass();',
                     'blanks' => 'new',
                 ],
                 [
-                    'question' => 'Để tạo một hàm có thể nhận số lượng tham số biến đổi, bạn có thể sử dụng [blank_1]. Ví dụ: [code]function myFunction(...args) { /* ... */ }[/code]',
+                    'question' => 'Để tạo một hàm có thể nhận số lượng tham số biến đổi, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>function myFunction(...args) { /* ... */ }',
                     'blanks' => 'rest parameter',
                 ],
                 [
-                    'question' => 'Để xử lý lỗi trong JavaScript, bạn có thể sử dụng khối [blank_1]. Ví dụ: [code]try { /* ... */ } catch (error) { /* ... */ }[/code]',
+                    'question' => 'Để xử lý lỗi trong JavaScript, bạn có thể sử dụng khối [blank_1].<br>Ví dụ:<br>try { /* ... */ } catch (error) { /* ... */ }',
                     'blanks' => 'try-catch',
                 ],
                 [
-                    'question' => 'Khi bạn cần làm việc với một đối tượng và muốn sao chép tất cả thuộc tính của nó, bạn có thể sử dụng [blank_1]. Ví dụ: [code]let newObj = { ...oldObj };[/code]',
+                    'question' => 'Khi bạn cần làm việc với một đối tượng và muốn sao chép tất cả thuộc tính của nó, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>let newObj = { ...oldObj };',
                     'blanks' => 'spread operator',
                 ],
                 [
-                    'question' => 'Để thực hiện một hành động cho mỗi phần tử trong một mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]arr.forEach(item => console.log(item));[/code]',
+                    'question' => 'Để thực hiện một hành động cho mỗi phần tử trong một mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>arr.forEach(item => console.log(item));',
                     'blanks' => 'forEach',
                 ],
                 [
-                    'question' => 'Để lấy một phần tử của mảng từ cuối, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let last = arr.pop();[/code]',
+                    'question' => 'Để lấy một phần tử của mảng từ cuối, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let last = arr.pop();',
                     'blanks' => 'pop',
                 ],
                 [
-                    'question' => 'Khi bạn cần tìm kiếm phần tử trong mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let found = arr.find(item => item === "value");[/code]',
+                    'question' => 'Khi bạn cần tìm kiếm phần tử trong mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let found = arr.find(item => item === "value");',
                     'blanks' => 'find',
                 ],
                 [
-                    'question' => 'Để chuyển đổi một mảng thành chuỗi, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let str = arr.join(", ");[/code]',
+                    'question' => 'Để chuyển đổi một mảng thành chuỗi, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let str = arr.join(", ");',
                     'blanks' => 'join',
                 ],
                 [
-                    'question' => 'Khi bạn cần làm tròn một số, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let rounded = Math.round(num);[/code]',
+                    'question' => 'Khi bạn cần làm tròn một số, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let rounded = Math.round(num);',
                     'blanks' => 'Math.round',
                 ],
                 [
-                    'question' => 'Để loại bỏ phần tử cuối cùng của mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]arr.pop();[/code]',
+                    'question' => 'Để loại bỏ phần tử cuối cùng của mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>arr.pop();',
                     'blanks' => 'pop',
                 ],
                 [
-                    'question' => 'Để thay thế một phần của chuỗi, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let newStr = str.replace("old", "new");[/code]',
+                    'question' => 'Để thay thế một phần của chuỗi, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let newStr = str.replace("old", "new");',
                     'blanks' => 'replace',
                 ],
                 [
-                    'question' => 'Khi bạn cần lấy giá trị của một thuộc tính từ một đối tượng, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]let value = obj["property"];[/code]',
+                    'question' => 'Khi bạn cần lấy giá trị của một thuộc tính từ một đối tượng, bạn có thể sử dụng cú pháp [blank_1].<br>Ví dụ:<br>let value = obj["property"];',
                     'blanks' => 'bracket notation',
                 ],
                 [
-                    'question' => 'Để chuyển đổi một chuỗi thành số thập phân, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let num = parseFloat(str);[/code]',
+                    'question' => 'Để chuyển đổi một chuỗi thành số thập phân, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let num = parseFloat(str);',
                     'blanks' => 'parseFloat',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một Promise mới và thực hiện hành động sau khi Promise hoàn thành, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]new Promise((resolve, reject) => { resolve("Done"); }).then(result => console.log(result));[/code]',
+                    'question' => 'Khi bạn cần tạo một Promise mới và thực hiện hành động sau khi Promise hoàn thành, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>new Promise((resolve, reject) => { resolve("Done"); }).then(result => console.log(result));',
                     'blanks' => 'Promise.then',
                 ],
                 [
-                    'question' => 'Để tạo một đối tượng từ một lớp trong JavaScript, bạn có thể sử dụng từ khóa [blank_1]. Ví dụ: [code]let instance = new MyClass();[/code]',
+                    'question' => 'Để tạo một đối tượng từ một lớp trong JavaScript, bạn có thể sử dụng từ khóa [blank_1].<br>Ví dụ:<br>let instance = new MyClass();',
                     'blanks' => 'new',
                 ],
                 [
-                    'question' => 'Khi bạn cần gán một giá trị mặc định cho tham số hàm, bạn có thể sử dụng [blank_1]. Ví dụ: [code]function myFunction(param = "default") { /* ... */ }[/code]',
+                    'question' => 'Khi bạn cần gán một giá trị mặc định cho tham số hàm, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>function myFunction(param = "default") { /* ... */ }',
                     'blanks' => 'default parameter',
                 ],
                 [
-                    'question' => 'Để kiểm tra xem một biến có phải là một đối tượng không, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]typeof variable === "object";[/code]',
+                    'question' => 'Để kiểm tra xem một biến có phải là một đối tượng không, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>typeof variable === "object";',
                     'blanks' => 'typeof',
                 ],
                 [
-                    'question' => 'Khi bạn cần loại bỏ khoảng trắng đầu và cuối của chuỗi, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let trimmedStr = str.trim();[/code]',
+                    'question' => 'Khi bạn cần loại bỏ khoảng trắng đầu và cuối của chuỗi, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let trimmedStr = str.trim();',
                     'blanks' => 'trim',
                 ],
                 [
-                    'question' => 'Để tìm tất cả các phần tử trong mảng thỏa mãn điều kiện, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let filtered = arr.filter(item => item > 2);[/code]',
+                    'question' => 'Để tìm tất cả các phần tử trong mảng thỏa mãn điều kiện, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let filtered = arr.filter(item => item > 2);',
                     'blanks' => 'filter',
                 ],
                 [
-                    'question' => 'Khi bạn cần thêm một phần tử vào đầu mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]arr.unshift(item);[/code]',
+                    'question' => 'Khi bạn cần thêm một phần tử vào đầu mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>arr.unshift(item);',
                     'blanks' => 'unshift',
                 ],
                 [
-                    'question' => 'Để tạo một hàm tạm thời mà không cần đặt tên, bạn có thể sử dụng [blank_1]. Ví dụ: [code]let add = (a, b) => a + b;[/code]',
+                    'question' => 'Để tạo một hàm tạm thời mà không cần đặt tên, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>let add = (a, b) => a + b;',
                     'blanks' => 'arrow function',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một đối tượng từ một lớp trong JavaScript, bạn có thể sử dụng từ khóa [blank_1]. Ví dụ: [code]let instance = new MyClass();[/code]',
+                    'question' => 'Khi bạn cần tạo một đối tượng từ một lớp trong JavaScript, bạn có thể sử dụng từ khóa [blank_1].<br>Ví dụ:<br>let instance = new MyClass();',
                     'blanks' => 'new',
                 ],
                 [
-                    'question' => 'Để tạo một mảng mới từ mảng gốc với các phần tử đã được ánh xạ, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let mappedArray = arr.map(item => item * 2);[/code]',
+                    'question' => 'Để tạo một mảng mới từ mảng gốc với các phần tử đã được ánh xạ, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let mappedArray = arr.map(item => item * 2);',
                     'blanks' => 'map',
                 ],
                 [
-                    'question' => 'Khi bạn cần kiểm tra một đối tượng có phải là một mảng không, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]Array.isArray(obj);[/code]',
+                    'question' => 'Khi bạn cần kiểm tra một đối tượng có phải là một mảng không, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>Array.isArray(obj);',
                     'blanks' => 'Array.isArray',
                 ],
                 [
-                    'question' => 'Để lấy phần tử đầu tiên trong mảng, bạn có thể sử dụng chỉ số [blank_1]. Ví dụ: [code]let first = arr[0];[/code]',
+                    'question' => 'Để lấy phần tử đầu tiên trong mảng, bạn có thể sử dụng chỉ số [blank_1].<br>Ví dụ:<br>let first = arr[0];',
                     'blanks' => 'index 0',
                 ],
                 [
-                    'question' => 'Khi bạn cần tìm tất cả các phần tử trong mảng thỏa mãn điều kiện, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let filtered = arr.filter(item => item > 2);[/code]',
+                    'question' => 'Khi bạn cần tìm tất cả các phần tử trong mảng thỏa mãn điều kiện, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let filtered = arr.filter(item => item > 2);',
                     'blanks' => 'filter',
                 ],
                 [
-                    'question' => 'Để sắp xếp các phần tử trong mảng theo thứ tự tăng dần, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]arr.sort((a, b) => a - b);[/code]',
+                    'question' => 'Để sắp xếp các phần tử trong mảng theo thứ tự tăng dần, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>arr.sort((a, b) => a - b);',
                     'blanks' => 'sort',
                 ],
                 [
-                    'question' => 'Khi bạn cần xóa phần tử đầu tiên trong mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]arr.shift();[/code]',
+                    'question' => 'Khi bạn cần xóa phần tử đầu tiên trong mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>arr.shift();',
                     'blanks' => 'shift',
                 ],
                 [
-                    'question' => 'Để kiểm tra xem một chuỗi có bắt đầu bằng một chuỗi con cụ thể không, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let startsWith = str.startsWith("prefix");[/code]',
+                    'question' => 'Để kiểm tra xem một chuỗi có bắt đầu bằng một chuỗi con cụ thể không, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let startsWith = str.startsWith("prefix");',
                     'blanks' => 'startsWith',
                 ],
                 [
-                    'question' => 'Khi bạn cần kiểm tra một giá trị có phải là một số hay không, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]Number.isFinite(value);[/code]',
+                    'question' => 'Khi bạn cần kiểm tra một giá trị có phải là một số hay không, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>Number.isFinite(value);',
                     'blanks' => 'Number.isFinite',
                 ],
                 [
-                    'question' => 'Để thay thế tất cả các sự xuất hiện của một chuỗi trong chuỗi gốc, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let newStr = str.replaceAll("old", "new");[/code]',
+                    'question' => 'Để thay thế tất cả các sự xuất hiện của một chuỗi trong chuỗi gốc, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let newStr = str.replaceAll("old", "new");',
                     'blanks' => 'replaceAll',
                 ],
                 [
-                    'question' => 'Để tính tổng các giá trị trong một mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let sum = arr.reduce((acc, curr) => acc + curr, 0);[/code]',
+                    'question' => 'Để tính tổng các giá trị trong một mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let sum = arr.reduce((acc, curr) => acc + curr, 0);',
                     'blanks' => 'reduce',
                 ],
                 [
-                    'question' => 'Khi bạn cần chuyển đổi một chuỗi thành số nguyên, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let num = parseInt(str);[/code]',
+                    'question' => 'Khi bạn cần chuyển đổi một chuỗi thành số nguyên, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let num = parseInt(str);',
                     'blanks' => 'parseInt',
                 ],
                 [
-                    'question' => 'Để kiểm tra nếu một đối tượng có một thuộc tính cụ thể, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]if (obj.hasOwnProperty("property")) { /* ... */ }[/code]',
+                    'question' => 'Để kiểm tra nếu một đối tượng có một thuộc tính cụ thể, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>if (obj.hasOwnProperty("property")) { /* ... */ }',
                     'blanks' => 'hasOwnProperty',
                 ],
                 [
-                    'question' => 'Khi bạn cần lặp qua các phần tử của mảng, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]for (let item of arr) { console.log(item); }[/code]',
+                    'question' => 'Khi bạn cần lặp qua các phần tử của mảng, bạn có thể sử dụng cú pháp [blank_1].<br>Ví dụ:<br>for (let item of arr) { console.log(item); }',
                     'blanks' => 'for...of',
                 ],
                 [
-                    'question' => 'Để lấy phần tử cuối cùng của mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let last = arr[arr.length - 1];[/code]',
+                    'question' => 'Để lấy phần tử cuối cùng của mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let last = arr[arr.length - 1];',
                     'blanks' => 'index -1',
                 ],
                 [
-                    'question' => 'Để lấy giá trị của thuộc tính trong đối tượng, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]let value = obj.property;[/code]',
+                    'question' => 'Để lấy giá trị của thuộc tính trong đối tượng, bạn có thể sử dụng cú pháp [blank_1].<br>Ví dụ:<br>let value = obj.property;',
                     'blanks' => 'dot notation',
                 ],
                 [
-                    'question' => 'Khi bạn cần thay thế một phần của chuỗi, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let newStr = str.replace("old", "new");[/code]',
+                    'question' => 'Khi bạn cần thay thế một phần của chuỗi, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let newStr = str.replace("old", "new");',
                     'blanks' => 'replace',
                 ],
                 [
-                    'question' => 'Để loại bỏ phần tử cuối cùng của mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]arr.pop();[/code]',
+                    'question' => 'Để loại bỏ phần tử cuối cùng của mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>arr.pop();',
                     'blanks' => 'pop',
                 ],
                 [
-                    'question' => 'Khi bạn cần thêm một phần tử vào cuối mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]arr.push(item);[/code]',
+                    'question' => 'Khi bạn cần thêm một phần tử vào cuối mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>arr.push(item);',
                     'blanks' => 'push',
                 ],
                 [
-                    'question' => 'Để chuyển đổi một chuỗi thành số thập phân, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let num = parseFloat(str);[/code]',
+                    'question' => 'Để chuyển đổi một chuỗi thành số thập phân, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let num = parseFloat(str);',
                     'blanks' => 'parseFloat',
                 ],
                 [
-                    'question' => 'Khi bạn cần nối các chuỗi với nhau, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let combined = str1.concat(str2);[/code]',
+                    'question' => 'Khi bạn cần nối các chuỗi với nhau, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let combined = str1.concat(str2);',
                     'blanks' => 'concat',
                 ],
                 [
-                    'question' => 'Để kiểm tra nếu một giá trị có phải là NaN không, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let isNotANumber = Number.isNaN(value);[/code]',
+                    'question' => 'Để kiểm tra nếu một giá trị có phải là NaN không, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let isNotANumber = Number.isNaN(value);',
                     'blanks' => 'Number.isNaN',
                 ],
                 [
-                    'question' => 'Khi bạn cần chuyển đổi một số thành chuỗi, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let str = num.toString();[/code]',
+                    'question' => 'Khi bạn cần chuyển đổi một số thành chuỗi, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let str = num.toString();',
                     'blanks' => 'toString',
                 ],
                 [
-                    'question' => 'Để kiểm tra xem một chuỗi có kết thúc bằng một chuỗi con cụ thể không, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let endsWith = str.endsWith("suffix");[/code]',
+                    'question' => 'Để kiểm tra xem một chuỗi có kết thúc bằng một chuỗi con cụ thể không, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let endsWith = str.endsWith("suffix");',
                     'blanks' => 'endsWith',
                 ],
                 [
-                    'question' => 'Để định nghĩa một lớp trong JavaScript, bạn có thể sử dụng từ khóa [blank_1]. Ví dụ: [code]class MyClass { constructor() { this.value = 42; } }[/code]',
+                    'question' => 'Để định nghĩa một lớp trong JavaScript, bạn có thể sử dụng từ khóa [blank_1].<br>Ví dụ:<br>class MyClass { constructor() { this.value = 42; } }',
                     'blanks' => 'class',
                 ],
                 [
-                    'question' => 'Khi bạn cần xử lý lỗi trong một Promise, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]promise.catch(error => console.error(error));[/code]',
+                    'question' => 'Khi bạn cần xử lý lỗi trong một Promise, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>promise.catch(error => console.error(error));',
                     'blanks' => 'catch',
                 ],
                 [
-                    'question' => 'Để khai báo một hàm async trong JavaScript, bạn có thể sử dụng từ khóa [blank_1]. Ví dụ: [code]async function fetchData() { return "data"; }[/code]',
+                    'question' => 'Để khai báo một hàm async trong JavaScript, bạn có thể sử dụng từ khóa [blank_1].<br>Ví dụ:<br>async function fetchData() { return "data"; }',
                     'blanks' => 'async',
                 ],
                 [
-                    'question' => 'Để kiểm tra xem một giá trị có phải là một đối tượng không, bạn có thể sử dụng [blank_1]. Ví dụ: [code]typeof value === "object" && value !== null;[/code]',
+                    'question' => 'Để kiểm tra xem một giá trị có phải là một đối tượng không, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>typeof value === "object" && value !== null;',
                     'blanks' => 'typeof',
                 ],
                 [
-                    'question' => 'Để thực hiện một hành động sau khi Promise hoàn thành và kết quả đã có, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]promise.then(result => console.log(result));[/code]',
+                    'question' => 'Để thực hiện một hành động sau khi Promise hoàn thành và kết quả đã có, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>promise.then(result => console.log(result));',
                     'blanks' => 'then',
                 ],
                 [
-                    'question' => 'Khi bạn cần định nghĩa một hàm với giá trị mặc định cho tham số, bạn có thể sử dụng [blank_1]. Ví dụ: [code]function greet(name = "World") { console.log("Hello, " + name); }[/code]',
+                    'question' => 'Khi bạn cần định nghĩa một hàm với giá trị mặc định cho tham số, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>function greet(name = "World") { console.log("Hello, " + name); }',
                     'blanks' => 'default parameter',
                 ],
                 [
-                    'question' => 'Để chuyển đổi một mảng thành một đối tượng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let obj = Object.fromEntries(entries);[/code]',
+                    'question' => 'Để chuyển đổi một mảng thành một đối tượng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let obj = Object.fromEntries(entries);',
                     'blanks' => 'Object.fromEntries',
                 ],
                 [
-                    'question' => 'Khi bạn cần sử dụng các thuộc tính hoặc phương thức của một đối tượng cha trong lớp con, bạn có thể sử dụng từ khóa [blank_1]. Ví dụ: [code]super.method();[/code]',
+                    'question' => 'Khi bạn cần sử dụng các thuộc tính hoặc phương thức của một đối tượng cha trong lớp con, bạn có thể sử dụng từ khóa [blank_1].<br>Ví dụ:<br>super.method();',
                     'blanks' => 'super',
                 ],
                 [
-                    'question' => 'Để tạo một Promise mới và thực hiện hành động sau khi Promise hoàn thành, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]new Promise((resolve, reject) => { resolve("Done"); }).finally(() => console.log("Completed"));[/code]',
+                    'question' => 'Để tạo một Promise mới và thực hiện hành động sau khi Promise hoàn thành, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>new Promise((resolve, reject) => { resolve("Done"); }).finally(() => console.log("Completed"));',
                     'blanks' => 'finally',
                 ],
                 [
-                    'question' => 'Khi bạn cần kiểm tra xem một giá trị có phải là một số nguyên không, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]Number.isInteger(value);[/code]',
+                    'question' => 'Khi bạn cần kiểm tra xem một giá trị có phải là một số nguyên không, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>Number.isInteger(value);',
                     'blanks' => 'Number.isInteger',
                 ],
                 [
-                    'question' => 'Để thêm thuộc tính vào một đối tượng, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]obj["newProp"] = "value";[/code]',
+                    'question' => 'Để thêm thuộc tính vào một đối tượng, bạn có thể sử dụng cú pháp [blank_1].<br>Ví dụ:<br>obj["newProp"] = "value";',
                     'blanks' => 'bracket notation',
                 ],
                 [
-                    'question' => 'Khi bạn cần ánh xạ các phần tử của một mảng thành các giá trị mới, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let squared = arr.map(x => x * x);[/code]',
+                    'question' => 'Khi bạn cần ánh xạ các phần tử của một mảng thành các giá trị mới, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let squared = arr.map(x => x * x);',
                     'blanks' => 'map',
                 ],
                 [
-                    'question' => 'Để xác định nếu một giá trị là một đối tượng rỗng, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]Object.keys(obj).length === 0;[/code]',
+                    'question' => 'Để xác định nếu một giá trị là một đối tượng rỗng, bạn có thể sử dụng cú pháp [blank_1].<br>Ví dụ:<br>Object.keys(obj).length === 0;',
                     'blanks' => 'Object.keys',
                 ],
                 [
-                    'question' => 'Khi bạn cần truyền tham số vào hàm mà không biết số lượng tham số trước, bạn có thể sử dụng [blank_1]. Ví dụ: [code]function sum(...numbers) { return numbers.reduce((a, b) => a + b, 0); }[/code]',
+                    'question' => 'Khi bạn cần truyền tham số vào hàm mà không biết số lượng tham số trước, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>function sum(...numbers) { return numbers.reduce((a, b) => a + b, 0); }',
                     'blanks' => 'rest parameter',
                 ],
                 [
-                    'question' => 'Để gán giá trị mặc định cho một thuộc tính khi nó không có giá trị, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]let { a = 1, b = 2 } = obj;[/code]',
+                    'question' => 'Để gán giá trị mặc định cho một thuộc tính khi nó không có giá trị, bạn có thể sử dụng cú pháp [blank_1].<br>Ví dụ:<br>let { a = 1, b = 2 } = obj;',
                     'blanks' => 'destructuring',
                 ],
                 [
-                    'question' => 'Để lặp qua các thuộc tính của đối tượng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]for (let key in obj) { console.log(key, obj[key]); }[/code]',
+                    'question' => 'Để lặp qua các thuộc tính của đối tượng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>for (let key in obj) { console.log(key, obj[key]); }',
                     'blanks' => 'for...in',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một mảng mới từ một mảng gốc bằng cách lấy một phần của nó, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let slice = arr.slice(1, 3);[/code]',
+                    'question' => 'Khi bạn cần tạo một mảng mới từ một mảng gốc bằng cách lấy một phần của nó, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let slice = arr.slice(1, 3);',
                     'blanks' => 'slice',
                 ],
                 [
-                    'question' => 'Để sử dụng một hàm chỉ có thể thực thi một lần trong một chuỗi các thao tác, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let once = _.once(func);[/code]',
+                    'question' => 'Để sử dụng một hàm chỉ có thể thực thi một lần trong một chuỗi các thao tác, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let once = _.once(func);',
                     'blanks' => '_.once (Lodash)',
                 ],
                 [
-                    'question' => 'Để chuyển đổi đối tượng thành một mảng các cặp key-value, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let entries = Object.entries(obj);[/code]',
+                    'question' => 'Để chuyển đổi đối tượng thành một mảng các cặp key-value, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let entries = Object.entries(obj);',
                     'blanks' => 'Object.entries',
                 ],
                 [
-                    'question' => 'Khi bạn cần kiểm tra xem một giá trị có phải là một function không, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]typeof value === "function";[/code]',
+                    'question' => 'Khi bạn cần kiểm tra xem một giá trị có phải là một function không, bạn có thể sử dụng cú pháp [blank_1].<br>Ví dụ:<br>typeof value === "function";',
                     'blanks' => 'typeof',
                 ],
                 [
-                    'question' => 'Để hoán đổi giá trị của hai biến, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]let [a, b] = [b, a];[/code]',
+                    'question' => 'Để hoán đổi giá trị của hai biến, bạn có thể sử dụng cú pháp [blank_1].<br>Ví dụ:<br>let [a, b] = [b, a];',
                     'blanks' => 'array destructuring',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một iterator cho một đối tượng, bạn có thể sử dụng [blank_1]. Ví dụ: [code]let iterator = arr[Symbol.iterator]();[/code]',
+                    'question' => 'Khi bạn cần tạo một iterator cho một đối tượng, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>let iterator = arr[Symbol.iterator]();',
                     'blanks' => 'Symbol.iterator',
                 ],
                 [
-                    'question' => 'Để xác định xem một đối tượng có phải là instance của một lớp không, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]obj instanceof MyClass[/code]',
+                    'question' => 'Để xác định xem một đối tượng có phải là instance của một lớp không, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>obj instanceof MyClass',
                     'blanks' => 'instanceof',
                 ],
                 [
-                    'question' => 'Khi bạn cần thay thế tất cả sự xuất hiện của một chuỗi con trong chuỗi gốc, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let newStr = str.replace(/old/g, "new");[/code]',
+                    'question' => 'Khi bạn cần thay thế tất cả sự xuất hiện của một chuỗi con trong chuỗi gốc, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let newStr = str.replace(/old/g, "new");',
                     'blanks' => 'replace',
                 ],
                 [
-                    'question' => 'Để chuyển đổi một đối tượng thành chuỗi JSON, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let jsonStr = JSON.stringify(obj);[/code]',
+                    'question' => 'Để chuyển đổi một đối tượng thành chuỗi JSON, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let jsonStr = JSON.stringify(obj);',
                     'blanks' => 'JSON.stringify',
                 ],
                 [
-                    'question' => 'Khi bạn cần lấy phần tử ngẫu nhiên từ mảng, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]let random = arr[Math.floor(Math.random() * arr.length)];[/code]',
+                    'question' => 'Khi bạn cần lấy phần tử ngẫu nhiên từ mảng, bạn có thể sử dụng cú pháp [blank_1].<br>Ví dụ:<br>let random = arr[Math.floor(Math.random() * arr.length)];',
                     'blanks' => 'Math.random',
                 ],
                 [
-                    'question' => 'Để đợi một Promise hoàn thành và sau đó tiếp tục xử lý, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]promise.finally(() => console.log("Done"));[/code]',
+                    'question' => 'Để đợi một Promise hoàn thành và sau đó tiếp tục xử lý, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>promise.finally(() => console.log("Done"));',
                     'blanks' => 'finally',
                 ],
                 [
-                    'question' => 'Khi bạn cần lấy các phần tử đầu tiên của một mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let firstItems = arr.slice(0, 3);[/code]',
+                    'question' => 'Khi bạn cần lấy các phần tử đầu tiên của một mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let firstItems = arr.slice(0, 3);',
                     'blanks' => 'slice',
                 ],
                 [
-                    'question' => 'Để loại bỏ một phần tử từ một mảng tại vị trí cụ thể, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]arr.splice(index, 1);[/code]',
+                    'question' => 'Để loại bỏ một phần tử từ một mảng tại vị trí cụ thể, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>arr.splice(index, 1);',
                     'blanks' => 'splice',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một đối tượng từ các cặp key-value, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let obj = Object.fromEntries(entries);[/code]',
+                    'question' => 'Khi bạn cần tạo một đối tượng từ các cặp key-value, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let obj = Object.fromEntries(entries);',
                     'blanks' => 'Object.fromEntries',
                 ],
                 [
-                    'question' => 'Để nối nhiều chuỗi thành một chuỗi duy nhất, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let combined = str1.concat(str2);[/code]',
+                    'question' => 'Để nối nhiều chuỗi thành một chuỗi duy nhất, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let combined = str1.concat(str2);',
                     'blanks' => 'concat',
                 ],
                 [
-                    'question' => 'Để kiểm tra nếu một chuỗi có chứa một chuỗi con cụ thể không, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let contains = str.includes("sub");[/code]',
+                    'question' => 'Để kiểm tra nếu một chuỗi có chứa một chuỗi con cụ thể không, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let contains = str.includes("sub");',
                     'blanks' => 'includes',
                 ],
                 [
-                    'question' => 'Khi bạn cần lấy giá trị thuộc tính từ một đối tượng với cú pháp tính toán, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]let value = obj[key];[/code]',
+                    'question' => 'Khi bạn cần lấy giá trị thuộc tính từ một đối tượng với cú pháp tính toán, bạn có thể sử dụng cú pháp [blank_1].<br>Ví dụ:<br>let value = obj[key];',
                     'blanks' => 'bracket notation',
                 ],
                 [
-                    'question' => 'Để tạo một Promise và thực hiện hành động khi Promise được giải quyết, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]new Promise((resolve, reject) => { resolve("value"); }).then(result => console.log(result));[/code]',
+                    'question' => 'Để tạo một Promise và thực hiện hành động khi Promise được giải quyết, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>new Promise((resolve, reject) => { resolve("value"); }).then(result => console.log(result));',
                     'blanks' => 'then',
                 ],
                 [
-                    'question' => 'Khi bạn cần kiểm tra xem một giá trị có phải là NaN không, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]Number.isNaN(value);[/code]',
+                    'question' => 'Khi bạn cần kiểm tra xem một giá trị có phải là NaN không, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>Number.isNaN(value);',
                     'blanks' => 'Number.isNaN',
                 ],
                 [
-                    'question' => 'Để kiểm tra xem một đối tượng có chứa thuộc tính cụ thể không, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]obj.hasOwnProperty("property");[/code]',
+                    'question' => 'Để kiểm tra xem một đối tượng có chứa thuộc tính cụ thể không, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>obj.hasOwnProperty("property");',
                     'blanks' => 'hasOwnProperty',
                 ],
                 [
-                    'question' => 'Để biến đổi các phần tử trong mảng thành một mảng mới, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let uppercased = arr.map(str => str.toUpperCase());[/code]',
+                    'question' => 'Để biến đổi các phần tử trong mảng thành một mảng mới, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let uppercased = arr.map(str => str.toUpperCase());',
                     'blanks' => 'map',
                 ],
                 [
-                    'question' => 'Khi bạn cần lấy giá trị của thuộc tính trong đối tượng, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]let value = obj.property;[/code]',
+                    'question' => 'Khi bạn cần lấy giá trị của thuộc tính trong đối tượng, bạn có thể sử dụng cú pháp [blank_1].<br>Ví dụ:<br>let value = obj.property;',
                     'blanks' => 'dot notation',
                 ],
                 [
-                    'question' => 'Để kiểm tra xem một chuỗi có kết thúc bằng một chuỗi con không, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let endsWith = str.endsWith("suffix");[/code]',
+                    'question' => 'Để kiểm tra xem một chuỗi có kết thúc bằng một chuỗi con không, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let endsWith = str.endsWith("suffix");',
                     'blanks' => 'endsWith',
                 ],
                 [
-                    'question' => 'Để tạo một đối tượng mới từ một đối tượng gốc, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let newObj = Object.create(proto);[/code]',
+                    'question' => 'Để tạo một đối tượng mới từ một đối tượng gốc, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let newObj = Object.create(proto);',
                     'blanks' => 'Object.create',
                 ],
                 [
-                    'question' => 'Khi bạn cần kết hợp nhiều mảng thành một mảng duy nhất, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let combined = arr1.concat(arr2);[/code]',
+                    'question' => 'Khi bạn cần kết hợp nhiều mảng thành một mảng duy nhất, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let combined = arr1.concat(arr2);',
                     'blanks' => 'concat',
                 ],
                 [
-                    'question' => 'Để kiểm tra nếu một chuỗi có chứa một chuỗi con cụ thể, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let contains = str.includes("sub");[/code]',
+                    'question' => 'Để kiểm tra nếu một chuỗi có chứa một chuỗi con cụ thể, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let contains = str.includes("sub");',
                     'blanks' => 'includes',
                 ],
                 [
-                    'question' => 'Khi bạn cần làm việc với các phần tử trong mảng và thực hiện một hành động cho mỗi phần tử, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]arr.forEach(item => console.log(item));[/code]',
+                    'question' => 'Khi bạn cần làm việc với các phần tử trong mảng và thực hiện một hành động cho mỗi phần tử, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>arr.forEach(item => console.log(item));',
                     'blanks' => 'forEach',
                 ],
                 [
-                    'question' => 'Để tạo một hàm với một số lượng tham số không xác định, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]function sum(...numbers) { return numbers.reduce((a, b) => a + b, 0); }[/code]',
+                    'question' => 'Để tạo một hàm với một số lượng tham số không xác định, bạn có thể sử dụng cú pháp [blank_1].<br>Ví dụ:<br>function sum(...numbers) { return numbers.reduce((a, b) => a + b, 0); }',
                     'blanks' => 'rest parameter',
                 ],
                 [
-                    'question' => 'Để thay đổi giá trị của một thuộc tính trong đối tượng, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]obj.property = "newValue";[/code]',
+                    'question' => 'Để thay đổi giá trị của một thuộc tính trong đối tượng, bạn có thể sử dụng cú pháp [blank_1].<br>Ví dụ:<br>obj.property = "newValue";',
                     'blanks' => 'dot notation',
                 ],
                 [
-                    'question' => 'Khi bạn cần thực hiện một hành động sau khi Promise đã hoàn thành, bất kể kết quả là thành công hay lỗi, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]promise.finally(() => console.log("Completed"));[/code]',
+                    'question' => 'Khi bạn cần thực hiện một hành động sau khi Promise đã hoàn thành, bất kể kết quả là thành công hay lỗi, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>promise.finally(() => console.log("Completed"));',
                     'blanks' => 'finally',
                 ],
                 [
-                    'question' => 'Để kiểm tra xem một đối tượng có phải là một instance của một lớp không, bạn có thể sử dụng [blank_1]. Ví dụ: [code]obj instanceof MyClass[/code]',
+                    'question' => 'Để kiểm tra xem một đối tượng có phải là một instance của một lớp không, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>obj instanceof MyClass',
                     'blanks' => 'instanceof',
                 ],
                 [
-                    'question' => 'Khi bạn cần lấy tất cả các thuộc tính của đối tượng dưới dạng mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let keys = Object.keys(obj);[/code]',
+                    'question' => 'Khi bạn cần lấy tất cả các thuộc tính của đối tượng dưới dạng mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let keys = Object.keys(obj);',
                     'blanks' => 'Object.keys',
                 ],
                 [
-                    'question' => 'Để lấy tất cả các giá trị của đối tượng dưới dạng mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let values = Object.values(obj);[/code]',
+                    'question' => 'Để lấy tất cả các giá trị của đối tượng dưới dạng mảng, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let values = Object.values(obj);',
                     'blanks' => 'Object.values',
                 ],
                 [
-                    'question' => 'Khi bạn cần xóa thuộc tính từ một đối tượng, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]delete obj.property;[/code]',
+                    'question' => 'Khi bạn cần xóa thuộc tính từ một đối tượng, bạn có thể sử dụng cú pháp [blank_1].<br>Ví dụ:<br>delete obj.property;',
                     'blanks' => 'delete',
                 ],
                 [
-                    'question' => 'Để lấy giá trị của thuộc tính từ đối tượng với cú pháp tính toán, bạn có thể sử dụng [blank_1]. Ví dụ: [code]let value = obj[key];[/code]',
+                    'question' => 'Để lấy giá trị của thuộc tính từ đối tượng với cú pháp tính toán, bạn có thể sử dụng [blank_1].<br>Ví dụ:<br>let value = obj[key];',
                     'blanks' => 'bracket notation',
                 ],
                 [
-                    'question' => 'Để xác định nếu một đối tượng có một phương thức cụ thể, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]if (typeof obj.method === "function") { /* ... */ }[/code]',
+                    'question' => 'Để xác định nếu một đối tượng có một phương thức cụ thể, bạn có thể sử dụng cú pháp [blank_1].<br>Ví dụ:<br>if (typeof obj.method === "function") { /* ... */ }',
                     'blanks' => 'typeof',
                 ],
                 [
-                    'question' => 'Khi bạn cần chuyển đổi một chuỗi thành số nguyên, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let num = parseInt(str);[/code]',
+                    'question' => 'Khi bạn cần chuyển đổi một chuỗi thành số nguyên, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let num = parseInt(str);',
                     'blanks' => 'parseInt',
                 ],
                 [
-                    'question' => 'Để tạo một đối tượng từ các cặp key-value, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]let obj = Object.fromEntries(entries);[/code]',
+                    'question' => 'Để tạo một đối tượng từ các cặp key-value, bạn có thể sử dụng phương thức [blank_1].<br>Ví dụ:<br>let obj = Object.fromEntries(entries);',
                     'blanks' => 'Object.fromEntries',
                 ],
                 [
-                    'question' => 'Khi bạn cần sử dụng thuộc tính của đối tượng cha trong lớp con, bạn có thể sử dụng từ khóa [blank_1]. Ví dụ: [code]super.method();[/code]',
+                    'question' => 'Khi bạn cần sử dụng thuộc tính của đối tượng cha trong lớp con, bạn có thể sử dụng từ khóa [blank_1].<br>Ví dụ:<br>super.method();',
                     'blanks' => 'super',
                 ],
             ];

@@ -1540,7 +1540,7 @@ class dataHtmlSeeder extends Seeder
                     'blanks' => 'section,article,form',
                 ],
                 [
-                    'question' => 'Thẻ [blank_1] và [blank_2] định nghĩa một vùng chứa cho các mục trong danh sách có thứ tự và thẻ [blank_3] định nghĩa từng mục trong danh sách.',
+                    'question' => 'Thẻ [blank_1] định nghĩa một vùng chứa cho các mục trong danh sách có thứ tự và thẻ [blank_2] định nghĩa từng mục trong danh sách.',
                     'blanks' => 'ol,li',
                 ],
                 [

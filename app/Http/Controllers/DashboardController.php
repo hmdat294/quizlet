@@ -26,7 +26,7 @@ class DashboardController extends Controller
                 'questions' => Question::count(),
                 'results' => Result::count(),
                 'feedbacks' => Feedback::count(),
-                'stars' => Feedback::sum('star')/Feedback::count(),
+                'stars' => (Feedback::count() > 0) ? Feedback::sum('star') / Feedback::count() : 0,
             ];
 
             // Thống kê category
@@ -52,7 +52,7 @@ class DashboardController extends Controller
                 ];
             }
 
-            
+
             return view('backend.dashboard', compact('data', 'categoryNames', 'quizCounts', 'results', 'feedbacks'));
         }
 
