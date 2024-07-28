@@ -14,7 +14,7 @@ class dataAngularSeeder extends Seeder
         $this->questions_angular =
             [
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<h1>{{ title }}</h1>`,\n})\nexport class AppComponent {\n  title = \'Hello World\';\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<h1>{{ title }}</h1>`,<br>})<br>export class AppComponent {<br>  title = \'Hello World\';<br>}<br>```',
                     'option_1' => 'Hiển thị "Hello World"',
                     'option_2' => 'Hiển thị "title"',
                     'option_3' => 'Lỗi',
@@ -24,7 +24,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<button (click)="clickMe()">Click Me</button>`,\n})\nexport class AppComponent {\n  clickMe() {\n    alert(\'Clicked!\');\n  }\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<button (click)="clickMe()">Click Me</button>`,<br>})<br>export class AppComponent {<br>  clickMe() {<br>    alert(\'Clicked!\');<br>  }<br>}<br>```',
                     'option_1' => 'Hiển thị hộp thoại "Clicked!" khi nhấn nút',
                     'option_2' => 'Không có hành động gì',
                     'option_3' => 'Hiển thị lỗi',
@@ -34,7 +34,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<div *ngIf="isVisible">Visible</div>`,\n})\nexport class AppComponent {\n  isVisible = true;\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<div *ngIf="isVisible">Visible</div>`,<br>})<br>export class AppComponent {<br>  isVisible = true;<br>}<br>```',
                     'option_1' => 'Hiển thị "Visible"',
                     'option_2' => 'Không hiển thị gì',
                     'option_3' => 'Hiển thị lỗi',
@@ -44,7 +44,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ value | uppercase }}</p>`,\n})\nexport class AppComponent {\n  value = \'hello\';\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ value | uppercase }}</p>`,<br>})<br>export class AppComponent {<br>  value = \'hello\';<br>}<br>```',
                     'option_1' => 'Hiển thị "HELLO"',
                     'option_2' => 'Hiển thị "hello"',
                     'option_3' => 'Hiển thị lỗi',
@@ -54,7 +54,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<input [(ngModel)]="name"> <p>{{ name }}</p>`,\n})\nexport class AppComponent {\n  name = \'Angular\';\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<input [(ngModel)]="name"> <p>{{ name }}</p>`,<br>})<br>export class AppComponent {<br>  name = \'Angular\';<br>}<br>```',
                     'option_1' => 'Hiển thị ô input và tên đã nhập',
                     'option_2' => 'Hiển thị ô input và "Angular"',
                     'option_3' => 'Hiển thị lỗi',
@@ -64,7 +64,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<ul><li *ngFor="let item of items">{{ item }}</li></ul>`,\n})\nexport class AppComponent {\n  items = [\'One\', \'Two\', \'Three\'];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<ul><li *ngFor="let item of items">{{ item }}</li></ul>`,<br>})<br>export class AppComponent {<br>  items = [\'One\', \'Two\', \'Three\'];<br>}<br>```',
                     'option_1' => 'Hiển thị danh sách các mục',
                     'option_2' => 'Hiển thị lỗi',
                     'option_3' => 'Hiển thị danh sách rỗng',
@@ -74,7 +74,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<div [ngStyle]="{color: color}">Styled Text</div>`,\n})\nexport class AppComponent {\n  color = \'red\';\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<div [ngStyle]="{color: color}">Styled Text</div>`,<br>})<br>export class AppComponent {<br>  color = \'red\';<br>}<br>```',
                     'option_1' => 'Hiển thị văn bản với màu đỏ',
                     'option_2' => 'Hiển thị văn bản với màu mặc định',
                     'option_3' => 'Hiển thị lỗi',
@@ -84,7 +84,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<div [ngClass]="{active: isActive}">Class Binding</div>`,\n  styles: [`.active { color: green; }`]\n})\nexport class AppComponent {\n  isActive = true;\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<div [ngClass]="{active: isActive}">Class Binding</div>`,<br>  styles: [`.active { color: green; }`]<br>})<br>export class AppComponent {<br>  isActive = true;<br>}<br>```',
                     'option_1' => 'Hiển thị văn bản với lớp "active" màu xanh lá cây',
                     'option_2' => 'Hiển thị văn bản với màu mặc định',
                     'option_3' => 'Hiển thị lỗi',
@@ -94,7 +94,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ getMessage() }}</p>`,\n})\nexport class AppComponent {\n  getMessage() {\n    return \'Hello from method\';\n  }\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ getMessage() }}</p>`,<br>})<br>export class AppComponent {<br>  getMessage() {<br>    return \'Hello from method\';<br>  }<br>}<br>```',
                     'option_1' => 'Hiển thị "Hello from method"',
                     'option_2' => 'Hiển thị lỗi',
                     'option_3' => 'Hiển thị "getMessage()"',
@@ -104,7 +104,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<input [value]="value" (input)="value = $event.target.value">`,\n})\nexport class AppComponent {\n  value = \'Initial\';\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<input [value]="value" (input)="value = $event.target.value">`,<br>})<br>export class AppComponent {<br>  value = \'Initial\';<br>}<br>```',
                     'option_1' => 'Hiển thị ô input với giá trị "Initial"',
                     'option_2' => 'Hiển thị lỗi',
                     'option_3' => 'Hiển thị ô input không có giá trị',
@@ -114,7 +114,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<button [disabled]="isDisabled">Click</button>`,\n})\nexport class AppComponent {\n  isDisabled = false;\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<button [disabled]="isDisabled">Click</button>`,<br>})<br>export class AppComponent {<br>  isDisabled = false;<br>}<br>```',
                     'option_1' => 'Hiển thị nút không bị vô hiệu hóa',
                     'option_2' => 'Hiển thị nút bị vô hiệu hóa',
                     'option_3' => 'Hiển thị lỗi',
@@ -124,7 +124,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<h2>{{ title | slice:0:4 }}</h2>`,\n})\nexport class AppComponent {\n  title = \'Angular Rocks\';\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<h2>{{ title | slice:0:4 }}</h2>`,<br>})<br>export class AppComponent {<br>  title = \'Angular Rocks\';<br>}<br>```',
                     'option_1' => 'Hiển thị "Angl"',
                     'option_2' => 'Hiển thị "Angular"',
                     'option_3' => 'Hiển thị "Angular Rock"',
@@ -134,7 +134,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ 1 + 1 }}</p>`,\n})\nexport class AppComponent {}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ 1 + 1 }}</p>`,<br>})<br>export class AppComponent {}<br>```',
                     'option_1' => 'Hiển thị "2"',
                     'option_2' => 'Hiển thị "1 + 1"',
                     'option_3' => 'Hiển thị lỗi',
@@ -144,7 +144,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<input #myInput> <button (click)="logValue(myInput.value)">Log Value</button>`,\n})\nexport class AppComponent {\n  logValue(value: string) {\n    console.log(value);\n  }\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<input #myInput> <button (click)="logValue(myInput.value)">Log Value</button>`,<br>})<br>export class AppComponent {<br>  logValue(value: string) {<br>    console.log(value);<br>  }<br>}<br>```',
                     'option_1' => 'Hiển thị giá trị của ô input trong console khi nhấn nút',
                     'option_2' => 'Hiển thị lỗi',
                     'option_3' => 'Hiển thị giá trị của nút trong console',
@@ -154,7 +154,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<div [ngClass]="{highlighted: isHighlighted}">Text</div>`,\n  styles: [`.highlighted { background-color: yellow; }`]\n})\nexport class AppComponent {\n  isHighlighted = true;\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<div [ngClass]="{highlighted: isHighlighted}">Text</div>`,<br>  styles: [`.highlighted { background-color: yellow; }`]<br>})<br>export class AppComponent {<br>  isHighlighted = true;<br>}<br>```',
                     'option_1' => 'Hiển thị văn bản với nền màu vàng',
                     'option_2' => 'Hiển thị văn bản với nền màu mặc định',
                     'option_3' => 'Hiển thị lỗi',
@@ -164,7 +164,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ name?.length }}</p>`,\n})\nexport class AppComponent {\n  name?: string;\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ name?.length }}</p>`,<br>})<br>export class AppComponent {<br>  name?: string;<br>}<br>```',
                     'option_1' => 'Hiển thị "undefined"',
                     'option_2' => 'Hiển thị lỗi',
                     'option_3' => 'Hiển thị "0"',
@@ -174,7 +174,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<div *ngFor="let item of items; let i = index">{{ i }}: {{ item }}</div>`,\n})\nexport class AppComponent {\n  items = [\'Item1\', \'Item2\', \'Item3\'];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<div *ngFor="let item of items; let i = index">{{ i }}: {{ item }}</div>`,<br>})<br>export class AppComponent {<br>  items = [\'Item1\', \'Item2\', \'Item3\'];<br>}<br>```',
                     'option_1' => 'Hiển thị danh sách các mục kèm chỉ số',
                     'option_2' => 'Hiển thị lỗi',
                     'option_3' => 'Hiển thị danh sách các mục',
@@ -184,7 +184,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ value ?? "Default" }}</p>`,\n})\nexport class AppComponent {\n  value?: string;\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ value ?? "Default" }}</p>`,<br>})<br>export class AppComponent {<br>  value?: string;<br>}<br>```',
                     'option_1' => 'Hiển thị "Default"',
                     'option_2' => 'Hiển thị lỗi',
                     'option_3' => 'Hiển thị "value"',
@@ -194,7 +194,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ items.join(", ") }}</p>`,\n})\nexport class AppComponent {\n  items = [\'Angular\', \'React\', \'Vue\'];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ items.join(", ") }}</p>`,<br>})<br>export class AppComponent {<br>  items = [\'Angular\', \'React\', \'Vue\'];<br>}<br>```',
                     'option_1' => 'Hiển thị "Angular, React, Vue"',
                     'option_2' => 'Hiển thị "Angular React Vue"',
                     'option_3' => 'Hiển thị lỗi',
@@ -204,7 +204,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p [attr.data-name]="name">Name</p>`,\n})\nexport class AppComponent {\n  name = \'Angular\';\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p [attr.data-name]="name">Name</p>`,<br>})<br>export class AppComponent {<br>  name = \'Angular\';<br>}<br>```',
                     'option_1' => 'Hiển thị thẻ p với thuộc tính data-name="Angular"',
                     'option_2' => 'Hiển thị thẻ p với thuộc tính data-name không có giá trị',
                     'option_3' => 'Hiển thị lỗi',
@@ -214,7 +214,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<button (click)="toggle()">Toggle</button> <p>{{ isToggled ? "On" : "Off" }}</p>`,\n})\nexport class AppComponent {\n  isToggled = false;\n  toggle() {\n    this.isToggled = !this.isToggled;\n  }\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<button (click)="toggle()">Toggle</button> <p>{{ isToggled ? "On" : "Off" }}</p>`,<br>})<br>export class AppComponent {<br>  isToggled = false;<br>  toggle() {<br>    this.isToggled = !this.isToggled;<br>  }<br>}<br>```',
                     'option_1' => 'Hiển thị "On" hoặc "Off" tùy thuộc vào trạng thái',
                     'option_2' => 'Hiển thị lỗi',
                     'option_3' => 'Hiển thị "Toggle"',
@@ -224,7 +224,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p [ngModel]="name"></p>`,\n})\nexport class AppComponent {\n  name = \'Angular\';\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p [ngModel]="name"></p>`,<br>})<br>export class AppComponent {<br>  name = \'Angular\';<br>}<br>```',
                     'option_1' => 'Hiển thị giá trị của biến name trong thẻ p',
                     'option_2' => 'Hiển thị lỗi',
                     'option_3' => 'Hiển thị "name"',
@@ -234,7 +234,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ data?.length }}</p>`,\n})\nexport class AppComponent {\n  data?: number[] = [1, 2, 3];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ data?.length }}</p>`,<br>})<br>export class AppComponent {<br>  data?: number[] = [1, 2, 3];<br>}<br>```',
                     'option_1' => 'Hiển thị "3"',
                     'option_2' => 'Hiển thị "undefined"',
                     'option_3' => 'Hiển thị lỗi',
@@ -244,7 +244,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<input [(ngModel)]="value" placeholder="Enter value">`,\n})\nexport class AppComponent {\n  value = \'Test\';\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<input [(ngModel)]="value" placeholder="Enter value">`,<br>})<br>export class AppComponent {<br>  value = \'Test\';<br>}<br>```',
                     'option_1' => 'Hiển thị ô input với giá trị "Test"',
                     'option_2' => 'Hiển thị ô input không có giá trị',
                     'option_3' => 'Hiển thị lỗi',
@@ -254,7 +254,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<button (click)="increment()">Increment</button> <p>{{ counter }}</p>`,\n})\nexport class AppComponent {\n  counter = 0;\n  increment() {\n    this.counter++;\n  }\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<button (click)="increment()">Increment</button> <p>{{ counter }}</p>`,<br>})<br>export class AppComponent {<br>  counter = 0;<br>  increment() {<br>    this.counter++;<br>  }<br>}<br>```',
                     'option_1' => 'Hiển thị số tăng dần mỗi khi nhấn nút',
                     'option_2' => 'Hiển thị số không thay đổi',
                     'option_3' => 'Hiển thị lỗi',
@@ -264,7 +264,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p *ngIf="show">Visible</p>`,\n})\nexport class AppComponent {\n  show = false;\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p *ngIf="show">Visible</p>`,<br>})<br>export class AppComponent {<br>  show = false;<br>}<br>```',
                     'option_1' => 'Không hiển thị gì',
                     'option_2' => 'Hiển thị "Visible"',
                     'option_3' => 'Hiển thị lỗi',
@@ -274,7 +274,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<ul><li *ngFor="let item of items">{{ item }}</li></ul>`,\n})\nexport class AppComponent {\n  items = [];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<ul><li *ngFor="let item of items">{{ item }}</li></ul>`,<br>})<br>export class AppComponent {<br>  items = [];<br>}<br>```',
                     'option_1' => 'Hiển thị danh sách trống',
                     'option_2' => 'Hiển thị lỗi',
                     'option_3' => 'Hiển thị danh sách các mục',
@@ -284,7 +284,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p [style.color]="color">Colored Text</p>`,\n})\nexport class AppComponent {\n  color = \'blue\';\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p [style.color]="color">Colored Text</p>`,<br>})<br>export class AppComponent {<br>  color = \'blue\';<br>}<br>```',
                     'option_1' => 'Hiển thị văn bản với màu xanh dương',
                     'option_2' => 'Hiển thị văn bản với màu mặc định',
                     'option_3' => 'Hiển thị lỗi',
@@ -294,7 +294,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ text.toUpperCase() }}</p>`,\n})\nexport class AppComponent {\n  text = \'hello\';\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ text.toUpperCase() }}</p>`,<br>})<br>export class AppComponent {<br>  text = \'hello\';<br>}<br>```',
                     'option_1' => 'Hiển thị "HELLO"',
                     'option_2' => 'Hiển thị "hello"',
                     'option_3' => 'Hiển thị lỗi',
@@ -304,7 +304,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ getGreeting() }}</p>`,\n})\nexport class AppComponent {\n  getGreeting() {\n    return \'Hello World\';\n  }\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ getGreeting() }}</p>`,<br>})<br>export class AppComponent {<br>  getGreeting() {<br>    return \'Hello World\';<br>  }<br>}<br>```',
                     'option_1' => 'Hiển thị "Hello World"',
                     'option_2' => 'Hiển thị lỗi',
                     'option_3' => 'Hiển thị "getGreeting()"',
@@ -314,7 +314,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ value ?? "Fallback" }}</p>`,\n})\nexport class AppComponent {\n  value = null;\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ value ?? "Fallback" }}</p>`,<br>})<br>export class AppComponent {<br>  value = null;<br>}<br>```',
                     'option_1' => 'Hiển thị "Fallback"',
                     'option_2' => 'Hiển thị "null"',
                     'option_3' => 'Hiển thị lỗi',
@@ -324,7 +324,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ items.length }}</p>`,\n})\nexport class AppComponent {\n  items = [\'One\', \'Two\'];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ items.length }}</p>`,<br>})<br>export class AppComponent {<br>  items = [\'One\', \'Two\'];<br>}<br>```',
                     'option_1' => 'Hiển thị "2"',
                     'option_2' => 'Hiển thị "One, Two"',
                     'option_3' => 'Hiển thị lỗi',
@@ -334,7 +334,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<button (click)="showAlert()">Show Alert</button>`,\n})\nexport class AppComponent {\n  showAlert() {\n    alert(\'Hello!\');\n  }\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<button (click)="showAlert()">Show Alert</button>`,<br>})<br>export class AppComponent {<br>  showAlert() {<br>    alert(\'Hello!\');<br>  }<br>}<br>```',
                     'option_1' => 'Hiển thị hộp thoại với thông báo "Hello!" khi nhấn nút',
                     'option_2' => 'Hiển thị lỗi',
                     'option_3' => 'Hiển thị hộp thoại với thông báo "Show Alert"',
@@ -344,7 +344,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p [ngStyle]="{fontSize: size + \'px\'}">Resizable Text</p>`,\n})\nexport class AppComponent {\n  size = 20;\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p [ngStyle]="{fontSize: size + \'px\'}">Resizable Text</p>`,<br>})<br>export class AppComponent {<br>  size = 20;<br>}<br>```',
                     'option_1' => 'Hiển thị văn bản với kích thước font 20px',
                     'option_2' => 'Hiển thị văn bản với kích thước font mặc định',
                     'option_3' => 'Hiển thị lỗi',
@@ -354,7 +354,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ message.split(" ").length }}</p>`,\n})\nexport class AppComponent {\n  message = \'Hello Angular World\';\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ message.split(" ").length }}</p>`,<br>})<br>export class AppComponent {<br>  message = \'Hello Angular World\';<br>}<br>```',
                     'option_1' => 'Hiển thị "3"',
                     'option_2' => 'Hiển thị "Hello Angular World"',
                     'option_3' => 'Hiển thị lỗi',
@@ -364,7 +364,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ title.toLowerCase() }}</p>`,\n})\nexport class AppComponent {\n  title = \'Angular Basics\';\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ title.toLowerCase() }}</p>`,<br>})<br>export class AppComponent {<br>  title = \'Angular Basics\';<br>}<br>```',
                     'option_1' => 'Hiển thị "angular basics"',
                     'option_2' => 'Hiển thị "Angular Basics"',
                     'option_3' => 'Hiển thị lỗi',
@@ -374,7 +374,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ list.length > 0 ? list[0] : "Empty" }}</p>`,\n})\nexport class AppComponent {\n  list = [\'First\', \'Second\'];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ list.length > 0 ? list[0] : "Empty" }}</p>`,<br>})<br>export class AppComponent {<br>  list = [\'First\', \'Second\'];<br>}<br>```',
                     'option_1' => 'Hiển thị "First"',
                     'option_2' => 'Hiển thị "Empty"',
                     'option_3' => 'Hiển thị lỗi',
@@ -384,7 +384,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ value || "Fallback" }}</p>`,\n})\nexport class AppComponent {\n  value = \'\';\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ value || "Fallback" }}</p>`,<br>})<br>export class AppComponent {<br>  value = \'\';<br>}<br>```',
                     'option_1' => 'Hiển thị "Fallback"',
                     'option_2' => 'Hiển thị ""',
                     'option_3' => 'Hiển thị lỗi',
@@ -394,7 +394,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ numbers.reduce((a, b) => a + b, 0) }}</p>`,\n})\nexport class AppComponent {\n  numbers = [1, 2, 3, 4];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ numbers.reduce((a, b) => a + b, 0) }}</p>`,<br>})<br>export class AppComponent {<br>  numbers = [1, 2, 3, 4];<br>}<br>```',
                     'option_1' => 'Hiển thị "10"',
                     'option_2' => 'Hiển thị "1,2,3,4"',
                     'option_3' => 'Hiển thị lỗi',
@@ -404,7 +404,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ items.slice(1, 3) }}</p>`,\n})\nexport class AppComponent {\n  items = [\'a\', \'b\', \'c\', \'d\'];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ items.slice(1, 3) }}</p>`,<br>})<br>export class AppComponent {<br>  items = [\'a\', \'b\', \'c\', \'d\'];<br>}<br>```',
                     'option_1' => 'Hiển thị "b,c"',
                     'option_2' => 'Hiển thị "a,b,c,d"',
                     'option_3' => 'Hiển thị lỗi',
@@ -414,7 +414,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ numbers.filter(num => num > 2) }}</p>`,\n})\nexport class AppComponent {\n  numbers = [1, 2, 3, 4];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ numbers.filter(num => num > 2) }}</p>`,<br>})<br>export class AppComponent {<br>  numbers = [1, 2, 3, 4];<br>}<br>```',
                     'option_1' => 'Hiển thị "3,4"',
                     'option_2' => 'Hiển thị "1,2,3,4"',
                     'option_3' => 'Hiển thị lỗi',
@@ -424,7 +424,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ numbers.some(num => num > 2) }}</p>`,\n})\nexport class AppComponent {\n  numbers = [1, 2, 3, 4];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ numbers.some(num => num > 2) }}</p>`,<br>})<br>export class AppComponent {<br>  numbers = [1, 2, 3, 4];<br>}<br>```',
                     'option_1' => 'Hiển thị "true"',
                     'option_2' => 'Hiển thị "false"',
                     'option_3' => 'Hiển thị lỗi',
@@ -434,7 +434,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ numbers.every(num => num > 0) }}</p>`,\n})\nexport class AppComponent {\n  numbers = [1, 2, 3, 4];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ numbers.every(num => num > 0) }}</p>`,<br>})<br>export class AppComponent {<br>  numbers = [1, 2, 3, 4];<br>}<br>```',
                     'option_1' => 'Hiển thị "true"',
                     'option_2' => 'Hiển thị "false"',
                     'option_3' => 'Hiển thị lỗi',
@@ -444,7 +444,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ items.includes(\'b\') }}</p>`,\n})\nexport class AppComponent {\n  items = [\'a\', \'b\', \'c\'];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ items.includes(\'b\') }}</p>`,<br>})<br>export class AppComponent {<br>  items = [\'a\', \'b\', \'c\'];<br>}<br>```',
                     'option_1' => 'Hiển thị "true"',
                     'option_2' => 'Hiển thị "false"',
                     'option_3' => 'Hiển thị lỗi',
@@ -454,7 +454,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ items.length > 2 ? items[2] : items[0] }}</p>`,\n})\nexport class AppComponent {\n  items = [\'a\', \'b\', \'c\'];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ items.length > 2 ? items[2] : items[0] }}</p>`,<br>})<br>export class AppComponent {<br>  items = [\'a\', \'b\', \'c\'];<br>}<br>```',
                     'option_1' => 'Hiển thị "c"',
                     'option_2' => 'Hiển thị "b"',
                     'option_3' => 'Hiển thị "a"',
@@ -464,7 +464,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ items.join(", ") }}</p>`,\n})\nexport class AppComponent {\n  items = [\'a\', \'b\', \'c\'];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ items.join(", ") }}</p>`,<br>})<br>export class AppComponent {<br>  items = [\'a\', \'b\', \'c\'];<br>}<br>```',
                     'option_1' => 'Hiển thị "a, b, c"',
                     'option_2' => 'Hiển thị "a b c"',
                     'option_3' => 'Hiển thị lỗi',
@@ -474,7 +474,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ numbers.reduce((a, b) => a - b) }}</p>`,\n})\nexport class AppComponent {\n  numbers = [1, 2, 3, 4];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ numbers.reduce((a, b) => a - b) }}</p>`,<br>})<br>export class AppComponent {<br>  numbers = [1, 2, 3, 4];<br>}<br>```',
                     'option_1' => 'Hiển thị "-8"',
                     'option_2' => 'Hiển thị "-2"',
                     'option_3' => 'Hiển thị lỗi',
@@ -484,7 +484,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ numbers.find(num => num > 2) }}</p>`,\n})\nexport class AppComponent {\n  numbers = [1, 2, 3, 4];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ numbers.find(num => num > 2) }}</p>`,<br>})<br>export class AppComponent {<br>  numbers = [1, 2, 3, 4];<br>}<br>```',
                     'option_1' => 'Hiển thị "3"',
                     'option_2' => 'Hiển thị "4"',
                     'option_3' => 'Hiển thị lỗi',
@@ -494,7 +494,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ numbers.filter(num => num < 2) }}</p>`,\n})\nexport class AppComponent {\n  numbers = [1, 2, 3, 4];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ numbers.filter(num => num < 2) }}</p>`,<br>})<br>export class AppComponent {<br>  numbers = [1, 2, 3, 4];<br>}<br>```',
                     'option_1' => 'Hiển thị "1"',
                     'option_2' => 'Hiển thị "1,2"',
                     'option_3' => 'Hiển thị lỗi',
@@ -504,7 +504,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ numbers.reduce((a, b) => a * b) }}</p>`,\n})\nexport class AppComponent {\n  numbers = [1, 2, 3, 4];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ numbers.reduce((a, b) => a * b) }}</p>`,<br>})<br>export class AppComponent {<br>  numbers = [1, 2, 3, 4];<br>}<br>```',
                     'option_1' => 'Hiển thị "24"',
                     'option_2' => 'Hiển thị "10"',
                     'option_3' => 'Hiển thị lỗi',
@@ -514,7 +514,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ items.slice(-2) }}</p>`,\n})\nexport class AppComponent {\n  items = [\'a\', \'b\', \'c\', \'d\'];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ items.slice(-2) }}</p>`,<br>})<br>export class AppComponent {<br>  items = [\'a\', \'b\', \'c\', \'d\'];<br>}<br>```',
                     'option_1' => 'Hiển thị "c,d"',
                     'option_2' => 'Hiển thị "a,b"',
                     'option_3' => 'Hiển thị lỗi',
@@ -524,7 +524,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ items.pop() }}</p>`,\n})\nexport class AppComponent {\n  items = [\'a\', \'b\', \'c\'];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ items.pop() }}</p>`,<br>})<br>export class AppComponent {<br>  items = [\'a\', \'b\', \'c\'];<br>}<br>```',
                     'option_1' => 'Hiển thị "c"',
                     'option_2' => 'Hiển thị "a"',
                     'option_3' => 'Hiển thị lỗi',
@@ -534,7 +534,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ numbers.map(num => num * 2) }}</p>`,\n})\nexport class AppComponent {\n  numbers = [1, 2, 3, 4];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ numbers.map(num => num * 2) }}</p>`,<br>})<br>export class AppComponent {<br>  numbers = [1, 2, 3, 4];<br>}<br>```',
                     'option_1' => 'Hiển thị "2,4,6,8"',
                     'option_2' => 'Hiển thị "1,2,3,4"',
                     'option_3' => 'Hiển thị lỗi',
@@ -544,7 +544,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ data | json }}</p>`,\n})\nexport class AppComponent {\n  data = { name: \'Angular\', version: 14 };\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ data | json }}</p>`,<br>})<br>export class AppComponent {<br>  data = { name: \'Angular\', version: 14 };<br>}<br>```',
                     'option_1' => 'Hiển thị "{ "name": "Angular", "version": 14 }"',
                     'option_2' => 'Hiển thị "Angular, 14"',
                     'option_3' => 'Hiển thị lỗi',
@@ -554,7 +554,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ obj.key1 ?? "Default" }}</p>`,\n})\nexport class AppComponent {\n  obj = { key2: \'value\' };\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ obj.key1 ?? "Default" }}</p>`,<br>})<br>export class AppComponent {<br>  obj = { key2: \'value\' };<br>}<br>```',
                     'option_1' => 'Hiển thị "Default"',
                     'option_2' => 'Hiển thị "value"',
                     'option_3' => 'Hiển thị lỗi',
@@ -564,7 +564,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ numbers.sort() }}</p>`,\n})\nexport class AppComponent {\n  numbers = [4, 2, 5, 1, 3];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ numbers.sort() }}</p>`,<br>})<br>export class AppComponent {<br>  numbers = [4, 2, 5, 1, 3];<br>}<br>```',
                     'option_1' => 'Hiển thị "1,2,3,4,5"',
                     'option_2' => 'Hiển thị "4,2,5,1,3"',
                     'option_3' => 'Hiển thị lỗi',
@@ -574,7 +574,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ items.indexOf(\'apple\') }}</p>`,\n})\nexport class AppComponent {\n  items = [\'banana\', \'apple\', \'orange\'];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ items.indexOf(\'apple\') }}</p>`,<br>})<br>export class AppComponent {<br>  items = [\'banana\', \'apple\', \'orange\'];<br>}<br>```',
                     'option_1' => 'Hiển thị "1"',
                     'option_2' => 'Hiển thị "0"',
                     'option_3' => 'Hiển thị lỗi',
@@ -584,7 +584,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ text.repeat(2) }}</p>`,\n})\nexport class AppComponent {\n  text = \'Angular \';\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ text.repeat(2) }}</p>`,<br>})<br>export class AppComponent {<br>  text = \'Angular \';<br>}<br>```',
                     'option_1' => 'Hiển thị "Angular Angular "',
                     'option_2' => 'Hiển thị "Angular"',
                     'option_3' => 'Hiển thị lỗi',
@@ -594,7 +594,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ obj[\'key\'] }}</p>`,\n})\nexport class AppComponent {\n  obj = { key: \'Value\' };\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ obj[\'key\'] }}</p>`,<br>})<br>export class AppComponent {<br>  obj = { key: \'Value\' };<br>}<br>```',
                     'option_1' => 'Hiển thị "Value"',
                     'option_2' => 'Hiển thị "key"',
                     'option_3' => 'Hiển thị lỗi',
@@ -604,7 +604,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ (count > 5 ? count : 5) }}</p>`,\n})\nexport class AppComponent {\n  count = 3;\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ (count > 5 ? count : 5) }}</p>`,<br>})<br>export class AppComponent {<br>  count = 3;<br>}<br>```',
                     'option_1' => 'Hiển thị "5"',
                     'option_2' => 'Hiển thị "3"',
                     'option_3' => 'Hiển thị lỗi',
@@ -614,7 +614,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ user?.name }}</p>`,\n})\nexport class AppComponent {\n  user = null;\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ user?.name }}</p>`,<br>})<br>export class AppComponent {<br>  user = null;<br>}<br>```',
                     'option_1' => 'Hiển thị ""',
                     'option_2' => 'Hiển thị "null"',
                     'option_3' => 'Hiển thị lỗi',
@@ -624,7 +624,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ numbers.find(n => n % 2 === 0) }}</p>`,\n})\nexport class AppComponent {\n  numbers = [1, 3, 5, 8, 9];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ numbers.find(n => n % 2 === 0) }}</p>`,<br>})<br>export class AppComponent {<br>  numbers = [1, 3, 5, 8, 9];<br>}<br>```',
                     'option_1' => 'Hiển thị "8"',
                     'option_2' => 'Hiển thị "5"',
                     'option_3' => 'Hiển thị lỗi',
@@ -634,7 +634,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ items.filter(i => i.length > 5) }}</p>`,\n})\nexport class AppComponent {\n  items = [\'short\', \'a bit longer\', \'much longer item\'];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ items.filter(i => i.length > 5) }}</p>`,<br>})<br>export class AppComponent {<br>  items = [\'short\', \'a bit longer\', \'much longer item\'];<br>}<br>```',
                     'option_1' => 'Hiển thị "a bit longer, much longer item"',
                     'option_2' => 'Hiển thị "short"',
                     'option_3' => 'Hiển thị lỗi',
@@ -644,7 +644,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ items.reduce((acc, cur) => acc + cur, \'\') }}</p>`,\n})\nexport class AppComponent {\n  items = [\'A\', \'B\', \'C\'];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ items.reduce((acc, cur) => acc + cur, \'\') }}</p>`,<br>})<br>export class AppComponent {<br>  items = [\'A\', \'B\', \'C\'];<br>}<br>```',
                     'option_1' => 'Hiển thị "ABC"',
                     'option_2' => 'Hiển thị "A,B,C"',
                     'option_3' => 'Hiển thị lỗi',
@@ -654,7 +654,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ message.split(\' \').length }}</p>`,\n})\nexport class AppComponent {\n  message = \'Hello World!\'\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ message.split(\' \').length }}</p>`,<br>})<br>export class AppComponent {<br>  message = \'Hello World!\'<br>}<br>```',
                     'option_1' => 'Hiển thị "2"',
                     'option_2' => 'Hiển thị "3"',
                     'option_3' => 'Hiển thị lỗi',
@@ -664,7 +664,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ numbers.map(n => n * 3).filter(n => n > 5) }}</p>`,\n})\nexport class AppComponent {\n  numbers = [1, 2, 3];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ numbers.map(n => n * 3).filter(n => n > 5) }}</p>`,<br>})<br>export class AppComponent {<br>  numbers = [1, 2, 3];<br>}<br>```',
                     'option_1' => 'Hiển thị "6,9"',
                     'option_2' => 'Hiển thị "3,6"',
                     'option_3' => 'Hiển thị lỗi',
@@ -674,7 +674,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ (flag ? \'Yes\' : \'No\') }}</p>`,\n})\nexport class AppComponent {\n  flag = true;\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ (flag ? \'Yes\' : \'No\') }}</p>`,<br>})<br>export class AppComponent {<br>  flag = true;<br>}<br>```',
                     'option_1' => 'Hiển thị "Yes"',
                     'option_2' => 'Hiển thị "No"',
                     'option_3' => 'Hiển thị lỗi',
@@ -684,7 +684,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ items.join(\' - \') }}</p>`,\n})\nexport class AppComponent {\n  items = [\'one\', \'two\', \'three\'];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ items.join(\' - \') }}</p>`,<br>})<br>export class AppComponent {<br>  items = [\'one\', \'two\', \'three\'];<br>}<br>```',
                     'option_1' => 'Hiển thị "one - two - three"',
                     'option_2' => 'Hiển thị "one,two,three"',
                     'option_3' => 'Hiển thị lỗi',
@@ -694,7 +694,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].concat([3, 4]) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].concat([3, 4]) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1,2,3,4"',
                     'option_2' => 'Hiển thị "1,2"',
                     'option_3' => 'Hiển thị lỗi',
@@ -704,7 +704,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ items.slice(1, 3) }}</p>`,\n})\nexport class AppComponent {\n  items = [\'a\', \'b\', \'c\', \'d\'];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ items.slice(1, 3) }}</p>`,<br>})<br>export class AppComponent {<br>  items = [\'a\', \'b\', \'c\', \'d\'];<br>}<br>```',
                     'option_1' => 'Hiển thị "b,c"',
                     'option_2' => 'Hiển thị "a,b,c"',
                     'option_3' => 'Hiển thị lỗi',
@@ -714,7 +714,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ (3 ** 2) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ (3 ** 2) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "9"',
                     'option_2' => 'Hiển thị "6"',
                     'option_3' => 'Hiển thị lỗi',
@@ -724,7 +724,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ items.map(item => item.toUpperCase()) }}</p>`,\n})\nexport class AppComponent {\n  items = [\'angular\', \'typescript\'];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ items.map(item => item.toUpperCase()) }}</p>`,<br>})<br>export class AppComponent {<br>  items = [\'angular\', \'typescript\'];<br>}<br>```',
                     'option_1' => 'Hiển thị "ANGULAR,TYPESCRIPT"',
                     'option_2' => 'Hiển thị "angular,typescript"',
                     'option_3' => 'Hiển thị lỗi',
@@ -734,7 +734,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ items.includes(\'a\') }}</p>`,\n})\nexport class AppComponent {\n  items = [\'a\', \'b\', \'c\'];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ items.includes(\'a\') }}</p>`,<br>})<br>export class AppComponent {<br>  items = [\'a\', \'b\', \'c\'];<br>}<br>```',
                     'option_1' => 'Hiển thị "true"',
                     'option_2' => 'Hiển thị "false"',
                     'option_3' => 'Hiển thị lỗi',
@@ -744,7 +744,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ numbers.every(n => n > 0) }}</p>`,\n})\nexport class AppComponent {\n  numbers = [1, 2, 3, 4];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ numbers.every(n => n > 0) }}</p>`,<br>})<br>export class AppComponent {<br>  numbers = [1, 2, 3, 4];<br>}<br>```',
                     'option_1' => 'Hiển thị "true"',
                     'option_2' => 'Hiển thị "false"',
                     'option_3' => 'Hiển thị lỗi',
@@ -754,7 +754,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ numbers.some(n => n % 2 === 0) }}</p>`,\n})\nexport class AppComponent {\n  numbers = [1, 3, 5, 7];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ numbers.some(n => n % 2 === 0) }}</p>`,<br>})<br>export class AppComponent {<br>  numbers = [1, 3, 5, 7];<br>}<br>```',
                     'option_1' => 'Hiển thị "false"',
                     'option_2' => 'Hiển thị "true"',
                     'option_3' => 'Hiển thị lỗi',
@@ -764,7 +764,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ items.splice(1, 2) }}</p>`,\n})\nexport class AppComponent {\n  items = [\'a\', \'b\', \'c\', \'d\'];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ items.splice(1, 2) }}</p>`,<br>})<br>export class AppComponent {<br>  items = [\'a\', \'b\', \'c\', \'d\'];<br>}<br>```',
                     'option_1' => 'Hiển thị "b,c"',
                     'option_2' => 'Hiển thị "b,c,d"',
                     'option_3' => 'Hiển thị lỗi',
@@ -774,7 +774,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ {a: 1, b: 2} }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ {a: 1, b: 2} }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "[object Object]"',
                     'option_2' => 'Hiển thị "{a: 1, b: 2}"',
                     'option_3' => 'Hiển thị lỗi',
@@ -784,7 +784,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ items.pop() }}</p>`,\n})\nexport class AppComponent {\n  items = [\'a\', \'b\', \'c\'];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ items.pop() }}</p>`,<br>})<br>export class AppComponent {<br>  items = [\'a\', \'b\', \'c\'];<br>}<br>```',
                     'option_1' => 'Hiển thị "c"',
                     'option_2' => 'Hiển thị "a"',
                     'option_3' => 'Hiển thị lỗi',
@@ -794,7 +794,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ items.reverse() }}</p>`,\n})\nexport class AppComponent {\n  items = [\'one\', \'two\', \'three\'];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ items.reverse() }}</p>`,<br>})<br>export class AppComponent {<br>  items = [\'one\', \'two\', \'three\'];<br>}<br>```',
                     'option_1' => 'Hiển thị "three,two,one"',
                     'option_2' => 'Hiển thị "one,two,three"',
                     'option_3' => 'Hiển thị lỗi',
@@ -804,7 +804,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ items.slice(-2) }}</p>`,\n})\nexport class AppComponent {\n  items = [\'x\', \'y\', \'z\'];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ items.slice(-2) }}</p>`,<br>})<br>export class AppComponent {<br>  items = [\'x\', \'y\', \'z\'];<br>}<br>```',
                     'option_1' => 'Hiển thị "y,z"',
                     'option_2' => 'Hiển thị "x,y"',
                     'option_3' => 'Hiển thị lỗi',
@@ -814,7 +814,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ items.includes(\'z\') ? \'Found\' : \'Not found\' }}</p>`,\n})\nexport class AppComponent {\n  items = [\'x\', \'y\'];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ items.includes(\'z\') ? \'Found\' : \'Not found\' }}</p>`,<br>})<br>export class AppComponent {<br>  items = [\'x\', \'y\'];<br>}<br>```',
                     'option_1' => 'Hiển thị "Not found"',
                     'option_2' => 'Hiển thị "Found"',
                     'option_3' => 'Hiển thị lỗi',
@@ -824,7 +824,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ (1 + 2) * 3 }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ (1 + 2) * 3 }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "9"',
                     'option_2' => 'Hiển thị "6"',
                     'option_3' => 'Hiển thị lỗi',
@@ -834,7 +834,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ true && false }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ true && false }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "false"',
                     'option_2' => 'Hiển thị "true"',
                     'option_3' => 'Hiển thị lỗi',
@@ -844,7 +844,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ 5 * 5 == 25 ? \'Correct\' : \'Incorrect\' }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ 5 * 5 == 25 ? \'Correct\' : \'Incorrect\' }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "Correct"',
                     'option_2' => 'Hiển thị "Incorrect"',
                     'option_3' => 'Hiển thị lỗi',
@@ -854,7 +854,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ (4 % 2 === 0) ? \'Even\' : \'Odd\' }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ (4 % 2 === 0) ? \'Even\' : \'Odd\' }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "Even"',
                     'option_2' => 'Hiển thị "Odd"',
                     'option_3' => 'Hiển thị lỗi',
@@ -864,7 +864,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ Math.max(1, 2, 3, 4, 5) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ Math.max(1, 2, 3, 4, 5) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "5"',
                     'option_2' => 'Hiển thị "1"',
                     'option_3' => 'Hiển thị lỗi',
@@ -874,7 +874,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ (new Date().getDay() === 0) ? \'Sunday\' : \'Not Sunday\' }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ (new Date().getDay() === 0) ? \'Sunday\' : \'Not Sunday\' }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "Sunday" nếu hôm nay là Chủ nhật, ngược lại "Not Sunday"',
                     'option_2' => 'Hiển thị "Not Sunday" nếu hôm nay là Chủ nhật, ngược lại "Sunday"',
                     'option_3' => 'Hiển thị lỗi',
@@ -884,7 +884,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ Array(3).fill(1) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ Array(3).fill(1) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1,1,1"',
                     'option_2' => 'Hiển thị "[1,1,1]"',
                     'option_3' => 'Hiển thị lỗi',
@@ -894,7 +894,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2, 3].reduce((a, b) => a + b) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2, 3].reduce((a, b) => a + b) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "6"',
                     'option_2' => 'Hiển thị "1,2,3"',
                     'option_3' => 'Hiển thị lỗi',
@@ -904,7 +904,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2, 3].length }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2, 3].length }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "3"',
                     'option_2' => 'Hiển thị "6"',
                     'option_3' => 'Hiển thị lỗi',
@@ -914,7 +914,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ (3 * 2) / 6 }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ (3 * 2) / 6 }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1"',
                     'option_2' => 'Hiển thị "3"',
                     'option_3' => 'Hiển thị lỗi',
@@ -924,7 +924,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ (2 ** 3) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ (2 ** 3) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "8"',
                     'option_2' => 'Hiển thị "6"',
                     'option_3' => 'Hiển thị lỗi',
@@ -934,7 +934,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ items.shift() }}</p>`,\n})\nexport class AppComponent {\n  items = [\'x\', \'y\', \'z\'];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ items.shift() }}</p>`,<br>})<br>export class AppComponent {<br>  items = [\'x\', \'y\', \'z\'];<br>}<br>```',
                     'option_1' => 'Hiển thị "x"',
                     'option_2' => 'Hiển thị "z"',
                     'option_3' => 'Hiển thị lỗi',
@@ -944,7 +944,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ (5 + 3) % 4 }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ (5 + 3) % 4 }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "0"',
                     'option_2' => 'Hiển thị "8"',
                     'option_3' => 'Hiển thị lỗi',
@@ -954,7 +954,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ items.join(\'\') }}</p>`,\n})\nexport class AppComponent {\n  items = [\'a\', \'b\', \'c\'];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ items.join(\'\') }}</p>`,<br>})<br>export class AppComponent {<br>  items = [\'a\', \'b\', \'c\'];<br>}<br>```',
                     'option_1' => 'Hiển thị "abc"',
                     'option_2' => 'Hiển thị "a,b,c"',
                     'option_3' => 'Hiển thị lỗi',
@@ -964,7 +964,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].concat([3, 4]).reverse() }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].concat([3, 4]).reverse() }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "4,3,2,1"',
                     'option_2' => 'Hiển thị "1,2,3,4"',
                     'option_3' => 'Hiển thị lỗi',
@@ -974,7 +974,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ items.indexOf(\'b\') }}</p>`,\n})\nexport class AppComponent {\n  items = [\'a\', \'b\', \'c\'];\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ items.indexOf(\'b\') }}</p>`,<br>})<br>export class AppComponent {<br>  items = [\'a\', \'b\', \'c\'];<br>}<br>```',
                     'option_1' => 'Hiển thị "1"',
                     'option_2' => 'Hiển thị "2"',
                     'option_3' => 'Hiển thị lỗi',
@@ -984,7 +984,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ (1 + 2 + 3) / 3 }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ (1 + 2 + 3) / 3 }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "2"',
                     'option_2' => 'Hiển thị "3"',
                     'option_3' => 'Hiển thị lỗi',
@@ -994,7 +994,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ 10 / (5 - 3) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ 10 / (5 - 3) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "5"',
                     'option_2' => 'Hiển thị "2"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1004,7 +1004,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].map(x => x * 2) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].map(x => x * 2) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "2,4"',
                     'option_2' => 'Hiển thị "1,2"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1014,7 +1014,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ (10 - 3) % 4 }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ (10 - 3) % 4 }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1"',
                     'option_2' => 'Hiển thị "3"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1024,7 +1024,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2, 3].reduce((a, b) => a - b) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2, 3].reduce((a, b) => a - b) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "-4"',
                     'option_2' => 'Hiển thị "4"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1034,7 +1034,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ Math.floor(5.7) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ Math.floor(5.7) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "5"',
                     'option_2' => 'Hiển thị "6"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1044,7 +1044,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ Math.ceil(5.7) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ Math.ceil(5.7) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "6"',
                     'option_2' => 'Hiển thị "5"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1054,7 +1054,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ Math.round(5.5) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ Math.round(5.5) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "6"',
                     'option_2' => 'Hiển thị "5"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1064,7 +1064,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ Math.sqrt(16) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ Math.sqrt(16) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "4"',
                     'option_2' => 'Hiển thị "8"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1074,7 +1074,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ Math.pow(2, 3) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ Math.pow(2, 3) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "8"',
                     'option_2' => 'Hiển thị "9"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1084,7 +1084,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ 1 && 0 }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ 1 && 0 }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "0"',
                     'option_2' => 'Hiển thị "1"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1094,7 +1094,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ 0 || 1 }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ 0 || 1 }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1"',
                     'option_2' => 'Hiển thị "0"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1104,7 +1104,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ 1 || 0 }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ 1 || 0 }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1"',
                     'option_2' => 'Hiển thị "0"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1114,7 +1114,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ !!1 }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ !!1 }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "true"',
                     'option_2' => 'Hiển thị "false"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1124,7 +1124,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ !!0 }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ !!0 }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "false"',
                     'option_2' => 'Hiển thị "true"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1134,7 +1134,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ !1 }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ !1 }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "false"',
                     'option_2' => 'Hiển thị "true"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1144,7 +1144,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ !0 }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ !0 }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "true"',
                     'option_2' => 'Hiển thị "false"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1154,7 +1154,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ 1 === 1 }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ 1 === 1 }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "true"',
                     'option_2' => 'Hiển thị "false"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1164,7 +1164,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ 1 == 1 }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ 1 == 1 }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "true"',
                     'option_2' => 'Hiển thị "false"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1174,7 +1174,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ 1 === \'1\' }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ 1 === \'1\' }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "false"',
                     'option_2' => 'Hiển thị "true"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1184,7 +1184,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ 1 == \'1\' }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ 1 == \'1\' }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "true"',
                     'option_2' => 'Hiển thị "false"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1194,7 +1194,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].includes(2) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].includes(2) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "true"',
                     'option_2' => 'Hiển thị "false"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1204,7 +1204,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].indexOf(2) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].indexOf(2) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1"',
                     'option_2' => 'Hiển thị "2"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1214,7 +1214,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].lastIndexOf(2) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].lastIndexOf(2) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1"',
                     'option_2' => 'Hiển thị "2"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1224,7 +1224,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].find(x => x > 1) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].find(x => x > 1) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "2"',
                     'option_2' => 'Hiển thị "1"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1234,7 +1234,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].filter(x => x > 1) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].filter(x => x > 1) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "2"',
                     'option_2' => 'Hiển thị "1"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1244,7 +1244,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].some(x => x > 1) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].some(x => x > 1) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "true"',
                     'option_2' => 'Hiển thị "false"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1254,7 +1254,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].every(x => x > 0) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].every(x => x > 0) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "true"',
                     'option_2' => 'Hiển thị "false"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1264,7 +1264,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].map(x => x + 1) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].map(x => x + 1) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "2,3"',
                     'option_2' => 'Hiển thị "1,2"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1274,7 +1274,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].reduce((a, b) => a + b) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].reduce((a, b) => a + b) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "3"',
                     'option_2' => 'Hiển thị "2"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1284,7 +1284,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].sort() }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].sort() }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1,2"',
                     'option_2' => 'Hiển thị "2,1"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1294,7 +1294,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [2, 1].sort() }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [2, 1].sort() }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1,2"',
                     'option_2' => 'Hiển thị "2,1"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1304,7 +1304,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].reverse() }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].reverse() }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "2,1"',
                     'option_2' => 'Hiển thị "1,2"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1314,7 +1314,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].findIndex(x => x > 1) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].findIndex(x => x > 1) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1"',
                     'option_2' => 'Hiển thị "2"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1324,7 +1324,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].some(x => x < 1) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].some(x => x < 1) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "false"',
                     'option_2' => 'Hiển thị "true"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1334,7 +1334,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].every(x => x > 0) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].every(x => x > 0) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "true"',
                     'option_2' => 'Hiển thị "false"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1344,7 +1344,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].some(x => x > 0) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].some(x => x > 0) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "true"',
                     'option_2' => 'Hiển thị "false"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1354,7 +1354,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].every(x => x < 2) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].every(x => x < 2) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "true"',
                     'option_2' => 'Hiển thị "false"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1364,7 +1364,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].map(x => x + 1) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].map(x => x + 1) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "2,3"',
                     'option_2' => 'Hiển thị "1,2"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1374,7 +1374,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ (3 + 2) * 2 }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ (3 + 2) * 2 }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "10"',
                     'option_2' => 'Hiển thị "5"',
                     'option_3' => 'Hiển thị "7"',
@@ -1384,7 +1384,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ 0 / 0 }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ 0 / 0 }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "NaN"',
                     'option_2' => 'Hiển thị "0"',
                     'option_3' => 'Hiển thị "Infinity"',
@@ -1394,7 +1394,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].concat([3, 4]) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].concat([3, 4]) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1,2,3,4"',
                     'option_2' => 'Hiển thị "1,2"',
                     'option_3' => 'Hiển thị "3,4"',
@@ -1404,7 +1404,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].slice(1) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].slice(1) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "2"',
                     'option_2' => 'Hiển thị "1"',
                     'option_3' => 'Hiển thị "1,2"',
@@ -1414,7 +1414,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].splice(1, 1) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].splice(1, 1) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "2"',
                     'option_2' => 'Hiển thị "1"',
                     'option_3' => 'Hiển thị "1,2"',
@@ -1424,7 +1424,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].join("-") }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].join("-") }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1-2"',
                     'option_2' => 'Hiển thị "1,2"',
                     'option_3' => 'Hiển thị "2-1"',
@@ -1434,7 +1434,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].reverse() }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].reverse() }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "2,1"',
                     'option_2' => 'Hiển thị "1,2"',
                     'option_3' => 'Hiển thị lỗi',
@@ -1444,7 +1444,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].pop() }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].pop() }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "2"',
                     'option_2' => 'Hiển thị "1"',
                     'option_3' => 'Hiển thị "undefined"',
@@ -1454,7 +1454,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].push(3) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].push(3) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "3"',
                     'option_2' => 'Hiển thị "1,2,3"',
                     'option_3' => 'Hiển thị "1,2"',
@@ -1464,7 +1464,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].shift() }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].shift() }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1"',
                     'option_2' => 'Hiển thị "2"',
                     'option_3' => 'Hiển thị "undefined"',
@@ -1474,7 +1474,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].unshift(0) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].unshift(0) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "3"',
                     'option_2' => 'Hiển thị "1,2,0"',
                     'option_3' => 'Hiển thị "0,1,2"',
@@ -1484,7 +1484,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].fill(0) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].fill(0) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "0,0"',
                     'option_2' => 'Hiển thị "1,2"',
                     'option_3' => 'Hiển thị "undefined"',
@@ -1494,7 +1494,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ {a:1, b:2}.hasOwnProperty(\'a\') }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ {a:1, b:2}.hasOwnProperty(\'a\') }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "true"',
                     'option_2' => 'Hiển thị "false"',
                     'option_3' => 'Hiển thị "undefined"',
@@ -1504,7 +1504,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ Object.keys({a:1, b:2}) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ Object.keys({a:1, b:2}) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "a,b"',
                     'option_2' => 'Hiển thị "1,2"',
                     'option_3' => 'Hiển thị "Object"',
@@ -1514,7 +1514,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ Object.values({a:1, b:2}) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ Object.values({a:1, b:2}) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1,2"',
                     'option_2' => 'Hiển thị "a,b"',
                     'option_3' => 'Hiển thị "Object"',
@@ -1524,7 +1524,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ Object.entries({a:1, b:2}) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ Object.entries({a:1, b:2}) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "[[\'a\',1],[\'b\',2]]"',
                     'option_2' => 'Hiển thị "1,2"',
                     'option_3' => 'Hiển thị "a,b"',
@@ -1534,7 +1534,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ {a:1, b:2}.toString() }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ {a:1, b:2}.toString() }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "[object Object]"',
                     'option_2' => 'Hiển thị "1,2"',
                     'option_3' => 'Hiển thị "a,b"',
@@ -1544,7 +1544,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].find(x => x > 1) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].find(x => x > 1) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "2"',
                     'option_2' => 'Hiển thị "1"',
                     'option_3' => 'Hiển thị "undefined"',
@@ -1554,7 +1554,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].filter(x => x > 1) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].filter(x => x > 1) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "2"',
                     'option_2' => 'Hiển thị "1"',
                     'option_3' => 'Hiển thị "1,2"',
@@ -1564,7 +1564,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].map(x => x * 2) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].map(x => x * 2) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "2,4"',
                     'option_2' => 'Hiển thị "1,2"',
                     'option_3' => 'Hiển thị "1,4"',
@@ -1574,7 +1574,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].reduce((acc, val) => acc + val) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].reduce((acc, val) => acc + val) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "3"',
                     'option_2' => 'Hiển thị "1,2"',
                     'option_3' => 'Hiển thị "2"',
@@ -1584,7 +1584,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].some(x => x === 1) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].some(x => x === 1) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "true"',
                     'option_2' => 'Hiển thị "false"',
                     'option_3' => 'Hiển thị "1"',
@@ -1594,7 +1594,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].every(x => x > 0) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].every(x => x > 0) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "true"',
                     'option_2' => 'Hiển thị "false"',
                     'option_3' => 'Hiển thị "1"',
@@ -1604,7 +1604,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].filter(x => x > 1) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].filter(x => x > 1) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "2"',
                     'option_2' => 'Hiển thị "1"',
                     'option_3' => 'Hiển thị "1,2"',
@@ -1614,7 +1614,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].findIndex(x => x > 1) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].findIndex(x => x > 1) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1"',
                     'option_2' => 'Hiển thị "0"',
                     'option_3' => 'Hiển thị "-1"',
@@ -1624,7 +1624,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].indexOf(2) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].indexOf(2) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1"',
                     'option_2' => 'Hiển thị "0"',
                     'option_3' => 'Hiển thị "-1"',
@@ -1634,7 +1634,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].lastIndexOf(1) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].lastIndexOf(1) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "0"',
                     'option_2' => 'Hiển thị "1"',
                     'option_3' => 'Hiển thị "-1"',
@@ -1644,7 +1644,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].includes(2) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].includes(2) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "true"',
                     'option_2' => 'Hiển thị "false"',
                     'option_3' => 'Hiển thị "1"',
@@ -1654,7 +1654,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].find(x => x === 3) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].find(x => x === 3) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "undefined"',
                     'option_2' => 'Hiển thị "3"',
                     'option_3' => 'Hiển thị "2"',
@@ -1664,7 +1664,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ {a: 1, b: 2}["a"] }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ {a: 1, b: 2}["a"] }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1"',
                     'option_2' => 'Hiển thị "a"',
                     'option_3' => 'Hiển thị "b"',
@@ -1674,7 +1674,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2, 3].slice(-1) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2, 3].slice(-1) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "3"',
                     'option_2' => 'Hiển thị "1"',
                     'option_3' => 'Hiển thị "[3]"',
@@ -1684,7 +1684,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2, 3].splice(-1, 1) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2, 3].splice(-1, 1) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "3"',
                     'option_2' => 'Hiển thị "[3]"',
                     'option_3' => 'Hiển thị "1,2"',
@@ -1694,7 +1694,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].fill(3, 0, 1) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].fill(3, 0, 1) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "3,2"',
                     'option_2' => 'Hiển thị "1,3"',
                     'option_3' => 'Hiển thị "3,3"',
@@ -1704,7 +1704,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [...new Set([1, 1, 2])].join() }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [...new Set([1, 1, 2])].join() }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1,2"',
                     'option_2' => 'Hiển thị "1,1,2"',
                     'option_3' => 'Hiển thị "2,1"',
@@ -1714,7 +1714,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].map(x => x.toString()).reduce((acc, val) => acc + val) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].map(x => x.toString()).reduce((acc, val) => acc + val) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "12"',
                     'option_2' => 'Hiển thị "3"',
                     'option_3' => 'Hiển thị "21"',
@@ -1724,7 +1724,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].every(x => x < 3) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].every(x => x < 3) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "true"',
                     'option_2' => 'Hiển thị "false"',
                     'option_3' => 'Hiển thị "1"',
@@ -1734,7 +1734,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].some(x => x > 2) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].some(x => x > 2) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "false"',
                     'option_2' => 'Hiển thị "true"',
                     'option_3' => 'Hiển thị "2"',
@@ -1744,7 +1744,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].find(x => x > 1) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].find(x => x > 1) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "2"',
                     'option_2' => 'Hiển thị "1"',
                     'option_3' => 'Hiển thị "undefined"',
@@ -1754,7 +1754,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].findIndex(x => x === 2) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].findIndex(x => x === 2) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1"',
                     'option_2' => 'Hiển thị "0"',
                     'option_3' => 'Hiển thị "-1"',
@@ -1764,7 +1764,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].findIndex(x => x > 1) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].findIndex(x => x > 1) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1"',
                     'option_2' => 'Hiển thị "-1"',
                     'option_3' => 'Hiển thị "0"',
@@ -1774,7 +1774,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].flat() }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].flat() }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1,2"',
                     'option_2' => 'Hiển thị "[1,2]"',
                     'option_3' => 'Hiển thị "2,1"',
@@ -1784,7 +1784,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, [2]].flat() }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, [2]].flat() }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1,2"',
                     'option_2' => 'Hiển thị "[1,[2]]"',
                     'option_3' => 'Hiển thị "1, [2]"',
@@ -1794,7 +1794,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, [2]].flat(2) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, [2]].flat(2) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1,2"',
                     'option_2' => 'Hiển thị "[1,2]"',
                     'option_3' => 'Hiển thị "[1,[2]]"',
@@ -1804,7 +1804,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, [2, [3]]].flat(2) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, [2, [3]]].flat(2) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1,2,[3]"',
                     'option_2' => 'Hiển thị "[1,2,3]"',
                     'option_3' => 'Hiển thị "1,2,3"',
@@ -1814,7 +1814,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2, 3].find(x => x > 1) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2, 3].find(x => x > 1) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "2"',
                     'option_2' => 'Hiển thị "1"',
                     'option_3' => 'Hiển thị "undefined"',
@@ -1824,7 +1824,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].find(x => x === 3) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].find(x => x === 3) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "undefined"',
                     'option_2' => 'Hiển thị "3"',
                     'option_3' => 'Hiển thị "2"',
@@ -1834,7 +1834,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].some(x => x > 1) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].some(x => x > 1) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "true"',
                     'option_2' => 'Hiển thị "false"',
                     'option_3' => 'Hiển thị "2"',
@@ -1844,7 +1844,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].every(x => x < 3) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].every(x => x < 3) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "true"',
                     'option_2' => 'Hiển thị "false"',
                     'option_3' => 'Hiển thị "1"',
@@ -1854,7 +1854,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].map(x => x.toString()).reduce((acc, val) => acc + val) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].map(x => x.toString()).reduce((acc, val) => acc + val) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "12"',
                     'option_2' => 'Hiển thị "3"',
                     'option_3' => 'Hiển thị "21"',
@@ -1864,7 +1864,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].findIndex(x => x > 1) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].findIndex(x => x > 1) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1"',
                     'option_2' => 'Hiển thị "-1"',
                     'option_3' => 'Hiển thị "0"',
@@ -1874,7 +1874,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2].flat() }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2].flat() }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1,2"',
                     'option_2' => 'Hiển thị "[1,2]"',
                     'option_3' => 'Hiển thị "2,1"',
@@ -1884,7 +1884,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, [2]].flat() }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, [2]].flat() }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1,2"',
                     'option_2' => 'Hiển thị "[1,[2]]"',
                     'option_3' => 'Hiển thị "1, [2]"',
@@ -1894,7 +1894,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, [2]].flat(2) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, [2]].flat(2) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1,2"',
                     'option_2' => 'Hiển thị "[1,2]"',
                     'option_3' => 'Hiển thị "[1,[2]]"',
@@ -1904,7 +1904,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, [2, [3]]].flat(2) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, [2, [3]]].flat(2) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "1,2,[3]"',
                     'option_2' => 'Hiển thị "[1,2,3]"',
                     'option_3' => 'Hiển thị "1,2,3"',
@@ -1914,7 +1914,7 @@ class dataAngularSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```typescript\nimport { Component } from \'@angular/core\';\n@Component({\n  selector: \'app-root\',\n  template: `<p>{{ [1, 2, 3].find(x => x > 1) }}</p>`,\n})\nexport class AppComponent {\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```typescript<br>import { Component } from \'@angular/core\';<br>@Component({<br>  selector: \'app-root\',<br>  template: `<p>{{ [1, 2, 3].find(x => x > 1) }}</p>`,<br>})<br>export class AppComponent {<br>}<br>```',
                     'option_1' => 'Hiển thị "2"',
                     'option_2' => 'Hiển thị "1"',
                     'option_3' => 'Hiển thị "undefined"',
@@ -1928,1083 +1928,1083 @@ class dataAngularSeeder extends Seeder
         $this->essays_angular =
             [
                 [
-                    'question' => 'Để tạo một component mới trong Angular, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]ng generate [blank_2] my-component[/code]',
-                    'blanks' => 'component, component',
+                    'question' => 'Để tạo một component mới trong Angular, bạn có thể sử dụng lệnh [blank_1].<br>Ví dụ:<br>ng generate [blank_2] my-component',
+                    'blanks' => 'ng generate, component',
                 ],
                 [
-                    'question' => 'Trong Angular, để thêm một module vào ứng dụng, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]imports: [blank_2][/code]',
-                    'blanks' => 'imports, CommonModule',
+                    'question' => 'Trong Angular, để thêm một module vào ứng dụng, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>imports: [blank_2]',
+                    'blanks' => 'imports,CommonModule',
                 ],
                 [
-                    'question' => 'Để khai báo một dịch vụ (service) trong Angular, bạn cần sử dụng cú pháp [blank_1]. Ví dụ: [code]@Injectable({ providedIn: [blank_2] })[/code]',
-                    'blanks' => 'providedIn, root',
+                    'question' => 'Để khai báo một dịch vụ (service) trong Angular, bạn cần sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Injectable({ providedIn: [blank_2] })',
+                    'blanks' => 'providedIn,root',
                 ],
                 [
-                    'question' => 'Khi sử dụng Angular CLI để tạo một service, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]ng generate [blank_2] my-service[/code]',
-                    'blanks' => 'service, service',
+                    'question' => 'Khi sử dụng Angular CLI để tạo một service, bạn có thể sử dụng lệnh [blank_1].<br>Ví dụ:<br>ng generate [blank_2] my-service',
+                    'blanks' => 'ng generate,service',
                 ],
                 [
-                    'question' => 'Để tạo một route mới trong Angular, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]{ path: "[blank_2]", component: [blank_3] }[/code]',
-                    'blanks' => 'path, home, HomeComponent',
+                    'question' => 'Để tạo một route mới trong Angular, bạn có thể sử dụng lệnh [blank_1].<br>Ví dụ tạo Home:<br>{ path: "[blank_2]", component: [blank_3] }',
+                    'blanks' => 'path,home,HomeComponent',
                 ],
                 [
-                    'question' => 'Để liên kết dữ liệu giữa component và template trong Angular, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]{{ [blank_2] }}[/code]',
-                    'blanks' => 'interpolation, title',
+                    'question' => 'Để liên kết dữ liệu giữa component và template trong Angular, bạn có thể sử dụng lệnh [blank_1].<br>Ví dụ:<br>{{ [blank_2] }}',
+                    'blanks' => 'interpolation,title',
                 ],
                 [
-                    'question' => 'Trong Angular, để tạo một form và xử lý dữ liệu, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].value[/code]',
-                    'blanks' => 'formControlName, form',
+                    'question' => 'Trong Angular, để tạo một form và xử lý dữ liệu, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].value',
+                    'blanks' => 'formControlName,form',
                 ],
                 [
-                    'question' => 'Khi muốn lặp qua một danh sách trong Angular template, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]*ngFor="let [blank_2] of [blank_3]"[/code]',
-                    'blanks' => 'ngFor, item, items',
+                    'question' => 'Khi muốn lặp qua một danh sách trong Angular template, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>*ngFor="let [blank_2] of [blank_3]"',
+                    'blanks' => 'ngFor,item,items',
                 ],
                 [
-                    'question' => 'Để khai báo một pipe trong Angular, bạn cần sử dụng cú pháp [blank_1]. Ví dụ: [code]@Pipe({ name: "[blank_2]" })[/code]',
-                    'blanks' => 'name, uppercase',
+                    'question' => 'Để khai báo một pipe trong Angular, bạn cần sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Pipe({ name: "[blank_2]" })',
+                    'blanks' => 'name,uppercase',
                 ],
                 [
-                    'question' => 'Để thêm một module vào ứng dụng Angular, bạn cần sử dụng cú pháp [blank_1]. Ví dụ: [code]imports: [blank_2][/code]',
-                    'blanks' => 'imports, FormsModule',
+                    'question' => 'Để thêm một module vào ứng dụng Angular, bạn cần sử dụng lệnh [blank_1].<br>Ví dụ:<br>imports: [blank_2]',
+                    'blanks' => 'imports,FormsModule',
                 ],
                 [
-                    'question' => 'Để thực hiện điều hướng trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].navigate(["/[blank_3]"]);[/code]',
-                    'blanks' => 'Router, router, home',
+                    'question' => 'Để thực hiện điều hướng trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].navigate(["/[blank_3]"]);',
+                    'blanks' => 'Router,router,home',
                 ],
                 [
-                    'question' => 'Để định nghĩa một class trong Angular component, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]export class [blank_2] { }[/code]',
-                    'blanks' => 'class, AppComponent',
+                    'question' => 'Để định nghĩa một class trong Angular component, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>export class [blank_2] { }',
+                    'blanks' => 'class,AppComponent',
                 ],
                 [
-                    'question' => 'Để khai báo các biến trong Angular component, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Input() [blank_2]: string;[/code]',
-                    'blanks' => 'Input, title',
+                    'question' => 'Để khai báo các biến trong Angular component, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Input() [blank_2]: string;',
+                    'blanks' => 'Input,title',
                 ],
                 [
-                    'question' => 'Để áp dụng điều kiện trong Angular template, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]*ngIf="[blank_2]"[/code]',
-                    'blanks' => 'ngIf, isVisible',
+                    'question' => 'Để áp dụng điều kiện trong Angular template, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>*ngIf="[blank_2]"',
+                    'blanks' => 'ngIf,isVisible',
                 ],
                 [
-                    'question' => 'Để cập nhật một giá trị trong Angular component, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = "[blank_3]";[/code]',
-                    'blanks' => 'title, title, Angular',
+                    'question' => 'Để cập nhật một giá trị trong Angular component, bạn có thể sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = "[blank_3]";',
+                    'blanks' => 'title,title,Angular',
                 ],
                 [
-                    'question' => 'Khi bạn muốn sử dụng các thuộc tính CSS trong Angular, bạn có thể khai báo chúng trong [blank_1]. Ví dụ: [code].[blank_2] { color: [blank_3]; }[/code]',
-                    'blanks' => 'styleUrls, my-class, red',
+                    'question' => 'Khi bạn muốn sử dụng các thuộc tính CSS trong Angular, bạn có thể khai báo chúng trong [blank_1].<br>Ví dụ:<br>.[blank_2] { color: [blank_3]; }',
+                    'blanks' => 'styleUrls,my-class,red',
                 ],
                 [
-                    'question' => 'Để liên kết một sự kiện trong Angular template, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code](click)="[blank_2]()"[/code]',
-                    'blanks' => 'click, onClick',
+                    'question' => 'Để liên kết một sự kiện trong Angular template, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>(click)="[blank_2]()"',
+                    'blanks' => 'click,onClick',
                 ],
                 [
-                    'question' => 'Khi cần sử dụng dependency injection trong Angular, bạn khai báo dependency trong [blank_1]. Ví dụ: [code]constructor(private [blank_2]: [blank_3]) { }[/code]',
-                    'blanks' => 'constructor, service, MyService',
+                    'question' => 'Khi cần sử dụng dependency injection trong Angular, bạn khai báo dependency trong [blank_1].<br>Ví dụ:<br>constructor(private [blank_2]: [blank_3]) { }',
+                    'blanks' => 'constructor,service,MyService',
                 ],
                 [
-                    'question' => 'Để định nghĩa một module trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@NgModule({ declarations: [blank_2] })[/code]',
-                    'blanks' => 'NgModule, AppComponent',
+                    'question' => 'Để định nghĩa một module trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@NgModule({ declarations: [blank_2] })',
+                    'blanks' => 'NgModule,AppComponent',
                 ],
                 [
-                    'question' => 'Để xử lý sự kiện trong Angular, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code](submit)="[blank_2]()"[/code]',
-                    'blanks' => 'submit, onSubmit',
+                    'question' => 'Để xử lý sự kiện trong Angular, bạn có thể sử dụng lệnh [blank_1].<br>Ví dụ:<br>(submit)="[blank_2]()"',
+                    'blanks' => 'submit,onSubmit',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một Angular service và thêm nó vào provider, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]providers: [blank_2][/code]',
-                    'blanks' => 'providers, MyService',
+                    'question' => 'Khi bạn cần tạo một Angular service và thêm nó vào provider, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>providers: [blank_2]',
+                    'blanks' => 'providers,MyService',
                 ],
                 [
-                    'question' => 'Để thêm các directive vào Angular component, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Directive({ selector: "[blank_2]" })[/code]',
-                    'blanks' => 'selector, appHighlight',
+                    'question' => 'Để thêm các directive vào Angular component, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Directive({ selector: "[blank_2]" })',
+                    'blanks' => 'selector,appHighlight',
                 ],
                 [
-                    'question' => 'Để định nghĩa một route với phương thức GET và một component, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]{ path: "[blank_2]", component: [blank_3] }[/code]',
-                    'blanks' => 'path, home, HomeComponent',
+                    'question' => 'Để định nghĩa một route với phương thức GET và một component, bạn có thể sử dụng lệnh [blank_1].<br>Ví dụ:<br>{ path: "[blank_2]", component: [blank_3] }',
+                    'blanks' => 'path,home,HomeComponent',
                 ],
                 [
-                    'question' => 'Để sử dụng một dịch vụ trong Angular component, bạn cần khai báo trong [blank_1]. Ví dụ: [code]constructor(private [blank_2]: [blank_3]) { }[/code]',
-                    'blanks' => 'constructor, service, MyService',
+                    'question' => 'Để sử dụng một dịch vụ trong Angular component, bạn cần khai báo trong [blank_1].<br>Ví dụ:<br>constructor(private [blank_2]: [blank_3]) { }',
+                    'blanks' => 'constructor,service,MyService',
                 ],
                 [
-                    'question' => 'Để khai báo các phương thức trong Angular component, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]public [blank_2](): void { }[/code]',
-                    'blanks' => 'method, onClick',
+                    'question' => 'Để khai báo các phương thức trong Angular component, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>public [blank_2](): void { }',
+                    'blanks' => 'method,onClick',
                 ],
                 [
-                    'question' => 'Khi cần thực hiện một HTTP request trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].get("[blank_3]");[/code]',
-                    'blanks' => 'httpClient, httpClient, /api/data',
+                    'question' => 'Khi cần thực hiện một HTTP request trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].get("[blank_3]");',
+                    'blanks' => 'httpClient,httpClient,/api/data',
                 ],
                 [
-                    'question' => 'Để áp dụng một style cho component trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Component({ styles: [".[blank_2] { color: [blank_3]; }"] })[/code]',
-                    'blanks' => 'styles, my-class, blue',
+                    'question' => 'Để áp dụng một style cho component trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Component({ styles: [".[blank_2] { color: [blank_3]; }"] })',
+                    'blanks' => 'styles,my-class,blue',
                 ],
                 [
-                    'question' => 'Để thêm một pipe vào Angular component, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]{{ [blank_2] | [blank_3] }}[/code]',
-                    'blanks' => 'pipe, title, uppercase',
+                    'question' => 'Để thêm một pipe vào Angular component, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>{{ [blank_2] | [blank_3] }}',
+                    'blanks' => 'pipe,title,uppercase',
                 ],
                 [
-                    'question' => 'Để khai báo một biến trong Angular template, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]let [blank_2] = [blank_3][/code]',
-                    'blanks' => 'let, item, items',
+                    'question' => 'Để khai báo một biến trong Angular template, bạn có thể sử dụng lệnh [blank_1].<br>Ví dụ:<br>let [blank_2] = [blank_3]',
+                    'blanks' => 'let,item,items',
                 ],
                 [
-                    'question' => 'Để định nghĩa một module trong Angular, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]@NgModule({ imports: [blank_2] })[/code]',
-                    'blanks' => 'NgModule, RouterModule',
+                    'question' => 'Để định nghĩa một module trong Angular, bạn có thể sử dụng lệnh [blank_1].<br>Ví dụ:<br>@NgModule({ imports: [blank_2] })',
+                    'blanks' => 'NgModule,RouterModule',
                 ],
                 [
-                    'question' => 'Khi bạn cần khai báo một route với prefix, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]RouterModule.forRoot([ { path: "[blank_2]", component: [blank_3] } ])[/code]',
-                    'blanks' => 'forRoot, home, HomeComponent',
+                    'question' => 'Khi bạn cần khai báo một route với prefix, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>RouterModule.forRoot([ { path: "[blank_2]", component: [blank_3] } ])',
+                    'blanks' => 'forRoot,home,HomeComponent',
                 ],
                 [
-                    'question' => 'Để thêm một module vào imports trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]imports: [blank_2][/code]',
+                    'question' => 'Để thêm một module vào imports trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>imports: [blank_2]',
                     'blanks' => 'imports, HttpClientModule',
                 ],
                 [
-                    'question' => 'Để liên kết dữ liệu với Angular form, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code][blank_2]="[blank_3]"[/code]',
+                    'question' => 'Để liên kết dữ liệu với Angular form, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>[blank_2]="[blank_3]"',
                     'blanks' => 'formControlName, title, formControl',
                 ],
                 [
-                    'question' => 'Để khai báo một decorator trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Component({ selector: "[blank_2]", templateUrl: "[blank_3]" })[/code]',
+                    'question' => 'Để khai báo một decorator trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Component({ selector: "[blank_2]", templateUrl: "[blank_3]" })',
                     'blanks' => 'Component, app-root, ./app.component.html',
                 ],
                 [
-                    'question' => 'Khi bạn muốn sử dụng một service trong Angular component, bạn có thể inject nó bằng cú pháp [blank_1]. Ví dụ: [code]constructor(private [blank_2]: [blank_3]) { }[/code]',
+                    'question' => 'Khi bạn muốn sử dụng một service trong Angular component, bạn có thể inject nó bằng lệnh [blank_1].<br>Ví dụ:<br>constructor(private [blank_2]: [blank_3]) { }',
                     'blanks' => 'constructor, service, MyService',
                 ],
                 [
-                    'question' => 'Để tạo một reactive form trong Angular, bạn cần khai báo [blank_1]. Ví dụ: [code]this.[blank_2] = this.[blank_3].group({ [blank_4]: [blank_5] });[/code]',
-                    'blanks' => 'formGroup, formBuilder, fb, name, [""',
+                    'question' => 'Để tạo một reactive form trong Angular, bạn cần khai báo [blank_1].<br>Ví dụ:<br>this.[blank_2] = this.[blank_3].group({ [blank_4]: [blank_5] });',
+                    'blanks' => 'formGroup, formBuilder, fb, name, [""]',
                 ],
                 [
-                    'question' => 'Để định nghĩa một route trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]{ path: "[blank_2]", component: [blank_3] }[/code]',
+                    'question' => 'Để định nghĩa một route trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>{ path: "[blank_2]", component: [blank_3] }',
                     'blanks' => 'path, home, HomeComponent',
                 ],
                 [
-                    'question' => 'Để xử lý sự kiện trong Angular, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code](click)="[blank_2]()"[/code]',
+                    'question' => 'Để xử lý sự kiện trong Angular, bạn có thể sử dụng lệnh [blank_1].<br>Ví dụ:<br>(click)="[blank_2]()"',
                     'blanks' => 'click, onClick',
                 ],
                 [
-                    'question' => 'Để tạo một Angular component và chỉ định selector, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Component({ selector: "[blank_2]" })[/code]',
+                    'question' => 'Để tạo một Angular component và chỉ định selector, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Component({ selector: "[blank_2]" })',
                     'blanks' => 'selector, app-header',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một module trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@NgModule({ declarations: [blank_2] })[/code]',
+                    'question' => 'Khi bạn cần tạo một module trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@NgModule({ declarations: [blank_2] })',
                     'blanks' => 'NgModule, AppComponent',
                 ],
                 [
-                    'question' => 'Để sử dụng dependency injection trong Angular service, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]constructor(private [blank_2]: [blank_3]) { }[/code]',
+                    'question' => 'Để sử dụng dependency injection trong Angular service, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>constructor(private [blank_2]: [blank_3]) { }',
                     'blanks' => 'constructor, service, MyService',
                 ],
                 [
-                    'question' => 'Khi cần thực hiện HTTP request trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].get("[blank_3]")[/code]',
+                    'question' => 'Khi cần thực hiện HTTP request trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].get("[blank_3]")',
                     'blanks' => 'httpClient, httpClient, /api/data',
                 ],
                 [
-                    'question' => 'Để định nghĩa một class trong Angular component, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]export class [blank_2] { }[/code]',
+                    'question' => 'Để định nghĩa một class trong Angular component, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>export class [blank_2] { }',
                     'blanks' => 'class, AppComponent',
                 ],
                 [
-                    'question' => 'Để áp dụng điều kiện trong Angular template, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]*ngIf="[blank_2]"[/code]',
+                    'question' => 'Để áp dụng điều kiện trong Angular template, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>*ngIf="[blank_2]"',
                     'blanks' => 'ngIf, isVisible',
                 ],
                 [
-                    'question' => 'Để liên kết dữ liệu trong Angular form, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code][blank_2]="[blank_3]"[/code]',
+                    'question' => 'Để liên kết dữ liệu trong Angular form, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>[blank_2]="[blank_3]"',
                     'blanks' => 'formControlName, name, formControl',
                 ],
                 [
-                    'question' => 'Để tạo một directive trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Directive({ selector: "[blank_2]" })[/code]',
+                    'question' => 'Để tạo một directive trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Directive({ selector: "[blank_2]" })',
                     'blanks' => 'Directive, appHighlight',
                 ],
                 [
-                    'question' => 'Để định nghĩa một pipe trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Pipe({ name: "[blank_2]" })[/code]',
+                    'question' => 'Để định nghĩa một pipe trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Pipe({ name: "[blank_2]" })',
                     'blanks' => 'Pipe, uppercase',
                 ],
                 [
-                    'question' => 'Để khai báo một biến trong Angular component, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]public [blank_2] = "[blank_3]";[/code]',
+                    'question' => 'Để khai báo một biến trong Angular component, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>public [blank_2] = "[blank_3]";',
                     'blanks' => 'variable, title, Angular',
                 ],
                 [
-                    'question' => 'Để xử lý sự kiện click trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code](click)="[blank_2]()"[/code]',
+                    'question' => 'Để xử lý sự kiện click trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>(click)="[blank_2]()"',
                     'blanks' => 'click, onClick',
                 ],
                 [
-                    'question' => 'Để thực hiện điều hướng trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].navigate(["/[blank_3]"]);[/code]',
+                    'question' => 'Để thực hiện điều hướng trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].navigate(["/[blank_3]"]);',
                     'blanks' => 'Router, router, home',
                 ],
                 [
-                    'question' => 'Để định nghĩa một route trong Angular với một đường dẫn động, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]{ path: "[blank_2]", component: [blank_3] }[/code]',
+                    'question' => 'Để định nghĩa một route trong Angular với một đường dẫn động, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>{ path: "[blank_2]", component: [blank_3] }',
                     'blanks' => 'path, dynamic, DynamicComponent',
                 ],
                 [
-                    'question' => 'Để khai báo một module trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@NgModule({ declarations: [blank_2], imports: [blank_3] })[/code]',
+                    'question' => 'Để khai báo một module trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@NgModule({ declarations: [blank_2], imports: [blank_3] })',
                     'blanks' => 'NgModule, AppComponent, BrowserModule',
                 ],
                 [
-                    'question' => 'Để sử dụng một pipe trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]{{ [blank_2] | [blank_3] }}[/code]',
+                    'question' => 'Để sử dụng một pipe trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>{{ [blank_2] | [blank_3] }}',
                     'blanks' => 'pipe, title, uppercase',
                 ],
                 [
-                    'question' => 'Để định nghĩa một class trong Angular component, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]export class [blank_2] { }[/code]',
+                    'question' => 'Để định nghĩa một class trong Angular component, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>export class [blank_2] { }',
                     'blanks' => 'class, AppComponent',
                 ],
                 [
-                    'question' => 'Khi bạn cần sử dụng một module trong Angular, bạn cần khai báo nó trong [blank_1]. Ví dụ: [code]imports: [blank_2][/code]',
+                    'question' => 'Khi bạn cần sử dụng một module trong Angular, bạn cần khai báo nó trong [blank_1].<br>Ví dụ:<br>imports: [blank_2]',
                     'blanks' => 'imports, FormsModule',
                 ],
                 [
-                    'question' => 'Để tạo một Angular service và sử dụng dependency injection, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]constructor(private [blank_2]: [blank_3]) { }[/code]',
+                    'question' => 'Để tạo một Angular service và sử dụng dependency injection, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>constructor(private [blank_2]: [blank_3]) { }',
                     'blanks' => 'constructor, service, MyService',
                 ],
                 [
-                    'question' => 'Để khai báo một biến trong Angular template, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]let [blank_2] = [blank_3][/code]',
+                    'question' => 'Để khai báo một biến trong Angular template, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>let [blank_2] = [blank_3]',
                     'blanks' => 'let, item, items',
                 ],
                 [
-                    'question' => 'Để tạo một form và xử lý dữ liệu trong Angular, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].value[/code]',
+                    'question' => 'Để tạo một form và xử lý dữ liệu trong Angular, bạn có thể sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].value',
                     'blanks' => 'formControlName, form',
                 ],
                 [
-                    'question' => 'Để khai báo một route với prefix trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]RouterModule.forRoot([ { path: "[blank_2]", component: [blank_3] } ])[/code]',
+                    'question' => 'Để khai báo một route với prefix trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>RouterModule.forRoot([ { path: "[blank_2]", component: [blank_3] } ])',
                     'blanks' => 'forRoot, home, HomeComponent',
                 ],
                 [
-                    'question' => 'Để thực hiện điều hướng trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].navigate(["/[blank_3]"]);[/code]',
+                    'question' => 'Để thực hiện điều hướng trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].navigate(["/[blank_3]"]);',
                     'blanks' => 'Router, router, home',
                 ],
                 [
-                    'question' => 'Để tạo một Angular component và chỉ định selector, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Component({ selector: "[blank_2]" })[/code]',
+                    'question' => 'Để tạo một Angular component và chỉ định selector, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Component({ selector: "[blank_2]" })',
                     'blanks' => 'selector, app-header',
                 ],
                 [
-                    'question' => 'Để áp dụng điều kiện trong Angular template, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]*ngIf="[blank_2]"[/code]',
+                    'question' => 'Để áp dụng điều kiện trong Angular template, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>*ngIf="[blank_2]"',
                     'blanks' => 'ngIf, isVisible',
                 ],
                 [
-                    'question' => 'Để thêm một directive vào Angular component, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Directive({ selector: "[blank_2]" })[/code]',
+                    'question' => 'Để thêm một directive vào Angular component, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Directive({ selector: "[blank_2]" })',
                     'blanks' => 'Directive, appHighlight',
                 ],
                 [
-                    'question' => 'Để định nghĩa một pipe trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Pipe({ name: "[blank_2]" })[/code]',
+                    'question' => 'Để định nghĩa một pipe trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Pipe({ name: "[blank_2]" })',
                     'blanks' => 'Pipe, uppercase',
                 ],
                 [
-                    'question' => 'Khi bạn cần khai báo một route trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]{ path: "[blank_2]", component: [blank_3] }[/code]',
+                    'question' => 'Khi bạn cần khai báo một route trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>{ path: "[blank_2]", component: [blank_3] }',
                     'blanks' => 'path, home, HomeComponent',
                 ],
                 [
-                    'question' => 'Để thực hiện điều hướng trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].navigate(["/[blank_3]"]);[/code]',
+                    'question' => 'Để thực hiện điều hướng trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].navigate(["/[blank_3]"]);',
                     'blanks' => 'Router, router, home',
                 ],
                 [
-                    'question' => 'Để khai báo một biến trong Angular template, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]let [blank_2] = [blank_3][/code]',
+                    'question' => 'Để khai báo một biến trong Angular template, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>let [blank_2] = [blank_3]',
                     'blanks' => 'let, item, items',
                 ],
                 [
-                    'question' => 'Để tạo một service và thêm nó vào provider trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]providers: [blank_2][/code]',
+                    'question' => 'Để tạo một service và thêm nó vào provider trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>providers: [blank_2]',
                     'blanks' => 'providers, MyService',
                 ],
                 [
-                    'question' => 'Để áp dụng một style cho component trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Component({ styles: [".[blank_2] { color: [blank_3]; }"] })[/code]',
+                    'question' => 'Để áp dụng một style cho component trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Component({ styles: [".[blank_2] { color: [blank_3]; }"] })',
                     'blanks' => 'styles, my-class, blue',
                 ],
                 [
-                    'question' => 'Để xử lý sự kiện click trong Angular template, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code](click)="[blank_2]()"[/code]',
+                    'question' => 'Để xử lý sự kiện click trong Angular template, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>(click)="[blank_2]()',
                     'blanks' => 'click, onClick',
                 ],
                 [
-                    'question' => 'Khi bạn cần sử dụng một module trong Angular, bạn cần khai báo nó trong [blank_1]. Ví dụ: [code]imports: [blank_2][/code]',
+                    'question' => 'Khi bạn cần sử dụng một module trong Angular, bạn cần khai báo nó trong [blank_1].<br>Ví dụ:<br>imports: [blank_2]',
                     'blanks' => 'imports, FormsModule',
                 ],
                 [
-                    'question' => 'Để tạo một reactive form trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = this.[blank_3].group({ [blank_4]: [blank_5] });[/code]',
+                    'question' => 'Để tạo một reactive form trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = this.[blank_3].group({ [blank_4]: [blank_5] })',
                     'blanks' => 'formGroup, formBuilder, fb, name, ""',
                 ],
                 [
-                    'question' => 'Để khai báo một decorator trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Component({ selector: "[blank_2]", templateUrl: "[blank_3]" })[/code]',
+                    'question' => 'Để khai báo một decorator trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Component({ selector: "[blank_2]", templateUrl: "[blank_3]" })',
                     'blanks' => 'Component, app-root, ./app.component.html',
                 ],
                 [
-                    'question' => 'Khi cần thực hiện một HTTP request trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].get("[blank_3]")[/code]',
+                    'question' => 'Khi cần thực hiện một HTTP request trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].get("[blank_3]")',
                     'blanks' => 'httpClient, httpClient, /api/data',
                 ],
                 [
-                    'question' => 'Để liên kết dữ liệu giữa component và template trong Angular, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]{{ [blank_2] }}[/code]',
+                    'question' => 'Để liên kết dữ liệu giữa component và template trong Angular, bạn có thể sử dụng lệnh [blank_1].<br>Ví dụ:<br>{{ [blank_2] }}',
                     'blanks' => 'interpolation, title',
                 ],
                 [
-                    'question' => 'Để khai báo một dịch vụ trong Angular, bạn cần sử dụng cú pháp [blank_1]. Ví dụ: [code]@Injectable({ providedIn: [blank_2] })[/code]',
+                    'question' => 'Để khai báo một dịch vụ trong Angular, bạn cần sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Injectable({ providedIn: [blank_2] })',
                     'blanks' => 'providedIn, root',
                 ],
                 [
-                    'question' => 'Để tạo một route mới trong Angular, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]{ path: "[blank_2]", component: [blank_3] }[/code]',
+                    'question' => 'Để tạo một route mới trong Angular, bạn có thể sử dụng lệnh [blank_1].<br>Ví dụ:<br>{ path: "[blank_2]", component: [blank_3] }',
                     'blanks' => 'path, home, HomeComponent',
                 ],
                 [
-                    'question' => 'Để liên kết một sự kiện trong Angular template, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code](click)="[blank_2]()"[/code]',
+                    'question' => 'Để liên kết một sự kiện trong Angular template, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>(click)="[blank_2]()',
                     'blanks' => 'click, onClick',
                 ],
                 [
-                    'question' => 'Để tạo một module trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@NgModule({ declarations: [blank_2], imports: [blank_3] })[/code]',
+                    'question' => 'Để tạo một module trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@NgModule({ declarations: [blank_2], imports: [blank_3] })',
                     'blanks' => 'NgModule, AppComponent, BrowserModule',
                 ],
                 [
-                    'question' => 'Để tạo một component mới trong Angular, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]ng generate [blank_2] my-component[/code]',
+                    'question' => 'Để tạo một component mới trong Angular, bạn có thể sử dụng lệnh [blank_1].<br>Ví dụ:<br>ng generate [blank_2] my-component',
                     'blanks' => 'component, component',
                 ],
                 [
-                    'question' => 'Để khai báo một provider trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]providers: [{ provide: [blank_2], useClass: [blank_3] }] [/code]',
+                    'question' => 'Để khai báo một provider trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>providers: [{ provide: [blank_2], useClass: [blank_3] }]',
                     'blanks' => 'providers, MyService, MyServiceImpl',
                 ],
                 [
-                    'question' => 'Để tạo một interceptor trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Injectable() export class [blank_2] implements [blank_3] { }[/code]',
+                    'question' => 'Để tạo một interceptor trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Injectable() export class [blank_2] implements [blank_3] { }',
                     'blanks' => 'Interceptor, AuthInterceptor, HttpInterceptor',
                 ],
                 [
-                    'question' => 'Để định nghĩa một route với các tham số trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]{ path: "[blank_2]/:id", component: [blank_3] }[/code]',
+                    'question' => 'Để định nghĩa một route với các tham số trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>{ path: "[blank_2]/:id", component: [blank_3] }',
                     'blanks' => 'path, user, UserDetailComponent',
                 ],
                 [
-                    'question' => 'Để sử dụng module Lazy Loading trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]{ path: "[blank_2]", loadChildren: () => import("./[blank_3]").then(m => m.[blank_4]) }[/code]',
+                    'question' => 'Để sử dụng module Lazy Loading trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>{ path: "[blank_2]", loadChildren: () => import("./[blank_3]").then(m => m.[blank_4]) }',
                     'blanks' => 'loadChildren, module, lazy.module, LazyModule',
                 ],
                 [
-                    'question' => 'Để tạo một form group trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = this.[blank_3].group({ [blank_4]: [blank_5] });[/code]',
+                    'question' => 'Để tạo một form group trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = this.[blank_3].group({ [blank_4]: [blank_5] })',
                     'blanks' => 'formGroup, fb, formBuilder, name, ""',
                 ],
                 [
-                    'question' => 'Để thực hiện một HTTP POST request trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].post("[blank_3]", [blank_4])[/code]',
+                    'question' => 'Để thực hiện một HTTP POST request trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].post("[blank_3]", [blank_4])',
                     'blanks' => 'httpClient, httpClient, /api/save, data',
                 ],
                 [
-                    'question' => 'Khi tạo một custom directive trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Directive({ selector: "[blank_2]" })[/code]',
+                    'question' => 'Khi tạo một custom directive trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Directive({ selector: "[blank_2]" })',
                     'blanks' => 'Directive, appHighlight',
                 ],
                 [
-                    'question' => 'Để sử dụng các hooks trong Angular component, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]ngOnInit() { }[/code]',
+                    'question' => 'Để sử dụng các hooks trong Angular component, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>ngOnInit() { }',
                     'blanks' => 'ngOnInit',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular Router trong component, bạn có thể inject nó bằng cú pháp [blank_1]. Ví dụ: [code]constructor(private [blank_2]: [blank_3]) { }[/code]',
+                    'question' => 'Để sử dụng Angular Router trong component, bạn có thể inject nó bằng lệnh [blank_1].<br>Ví dụ:<br>constructor(private [blank_2]: [blank_3]) { }',
                     'blanks' => 'constructor, router, Router',
                 ],
                 [
-                    'question' => 'Để tạo một observable trong Angular service, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]return this.[blank_2].get("[blank_3]");[/code]',
+                    'question' => 'Để tạo một observable trong Angular service, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>return this.[blank_2].get("[blank_3]")',
                     'blanks' => 'httpClient, httpClient, /api/data',
                 ],
                 [
-                    'question' => 'Để tạo một pipe tùy chỉnh trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Pipe({ name: "[blank_2]" })[/code]',
+                    'question' => 'Để tạo một pipe tùy chỉnh trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Pipe({ name: "[blank_2]" })',
                     'blanks' => 'Pipe, customPipe',
                 ],
                 [
-                    'question' => 'Để định nghĩa một route với nested routes trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]{ path: "[blank_2]", children: [{ path: "[blank_3]", component: [blank_4] }] }[/code]',
+                    'question' => 'Để định nghĩa một route với nested routes trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>{ path: "[blank_2]", children: [{ path: "[blank_3]", component: [blank_4] }] }',
                     'blanks' => 'path, parent, child, ChildComponent',
                 ],
                 [
-                    'question' => 'Để khai báo một reactive form control trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = new [blank_3]("");[/code]',
+                    'question' => 'Để khai báo một reactive form control trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = new [blank_3]("")',
                     'blanks' => 'formControl, formControl, FormControl',
                 ],
                 [
-                    'question' => 'Khi bạn cần sử dụng một service trong Angular component, bạn cần khai báo nó trong [blank_1]. Ví dụ: [code]providers: [blank_2][/code]',
+                    'question' => 'Khi bạn cần sử dụng một service trong Angular component, bạn cần khai báo nó trong [blank_1].<br>Ví dụ:<br>providers: [blank_2]',
                     'blanks' => 'providers, MyService',
                 ],
                 [
-                    'question' => 'Để thực hiện điều hướng đến một route trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].navigate(["/[blank_3]"]);[/code]',
+                    'question' => 'Để thực hiện điều hướng đến một route trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].navigate(["/[blank_3]"])',
                     'blanks' => 'Router, router, home',
                 ],
                 [
-                    'question' => 'Để thêm một pipe vào Angular component, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]{{ [blank_2] | [blank_3] }}[/code]',
+                    'question' => 'Để thêm một pipe vào Angular component, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>{{ [blank_2] | [blank_3] }}',
                     'blanks' => 'pipe, title, customPipe',
                 ],
                 [
-                    'question' => 'Để định nghĩa một model trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]export class [blank_2] { [blank_3]: [blank_4]; }[/code]',
+                    'question' => 'Để định nghĩa một model trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>export class [blank_2] { [blank_3]: [blank_4]; }',
                     'blanks' => 'class, User, name, string',
                 ],
                 [
-                    'question' => 'Để sử dụng dependency injection trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]constructor(private [blank_2]: [blank_3]) { }[/code]',
+                    'question' => 'Để sử dụng dependency injection trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>constructor(private [blank_2]: [blank_3]) { }',
                     'blanks' => 'constructor, service, MyService',
                 ],
                 [
-                    'question' => 'Để khai báo một route guard trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Injectable({ providedIn: "[blank_2]" })[/code]',
+                    'question' => 'Để khai báo một route guard trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Injectable({ providedIn: "[blank_2]" })',
                     'blanks' => 'providedIn, root',
                 ],
                 [
-                    'question' => 'Khi bạn cần sử dụng một async pipe trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]{{ [blank_2] | async }}[/code]',
+                    'question' => 'Khi bạn cần sử dụng một async pipe trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>{{ [blank_2] | async }}',
                     'blanks' => 'async, data$',
                 ],
                 [
-                    'question' => 'Để khai báo một form trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = this.[blank_3].group({ [blank_4]: [blank_5] });[/code]',
+                    'question' => 'Để khai báo một form trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = this.[blank_3].group({ [blank_4]: [blank_5] })',
                     'blanks' => 'formGroup, fb, formBuilder, name, ""',
                 ],
                 [
-                    'question' => 'Để định nghĩa một custom validator trong Angular form, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]export function [blank_2](control: FormControl): { [blank_3]: boolean } | null { }[/code]',
+                    'question' => 'Để định nghĩa một custom validator trong Angular form, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>export function [blank_2](control: FormControl): { [blank_3]: boolean } | null { }',
                     'blanks' => 'validator, forbiddenNameValidator, forbiddenName',
                 ],
                 [
-                    'question' => 'Để khai báo một module trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@NgModule({ declarations: [blank_2], imports: [blank_3] })[/code]',
+                    'question' => 'Để khai báo một module trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@NgModule({ declarations: [blank_2], imports: [blank_3] })',
                     'blanks' => 'NgModule, AppComponent, BrowserModule',
                 ],
                 [
-                    'question' => 'Để xử lý sự kiện trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code](click)="[blank_2]()"[/code]',
+                    'question' => 'Để xử lý sự kiện trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>(click)="[blank_2]()"',
                     'blanks' => 'click, onClick',
                 ],
                 [
-                    'question' => 'Để thêm một form control vào một reactive form trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].addControl("[blank_3]", new [blank_4](""));[/code]',
+                    'question' => 'Để thêm một form control vào một reactive form trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].addControl("[blank_3]", new [blank_4](""))',
                     'blanks' => 'formGroup, form, formControlName, FormControl',
                 ],
                 [
-                    'question' => 'Khi cần xử lý sự kiện trong Angular, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code](change)="[blank_2]($event)"[/code]',
+                    'question' => 'Khi cần xử lý sự kiện trong Angular, bạn có thể sử dụng lệnh [blank_1].<br>Ví dụ:<br>(change)="[blank_2]($event)"',
                     'blanks' => 'change, onChange',
                 ],
                 [
-                    'question' => 'Để tạo một Angular service và sử dụng dependency injection, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]constructor(private [blank_2]: [blank_3]) { }[/code]',
+                    'question' => 'Để tạo một Angular service và sử dụng dependency injection, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>constructor(private [blank_2]: [blank_3]) { }',
                     'blanks' => 'constructor, service, MyService',
                 ],
                 [
-                    'question' => 'Để tạo một Angular component với template inline, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Component({ selector: "[blank_2]", template: "[blank_3]" })[/code]',
+                    'question' => 'Để tạo một Angular component với template inline, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Component({ selector: "[blank_2]", template: "[blank_3]" })',
                     'blanks' => 'Component, app-root, <h1>App</h1>',
                 ],
                 [
-                    'question' => 'Để tạo một module trong Angular và khai báo các component, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@NgModule({ declarations: [blank_2], imports: [blank_3] })[/code]',
+                    'question' => 'Để tạo một module trong Angular và khai báo các component, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@NgModule({ declarations: [blank_2], imports: [blank_3] })',
                     'blanks' => 'NgModule, AppComponent, BrowserModule',
                 ],
                 [
-                    'question' => 'Để tạo một pipe tùy chỉnh trong Angular và sử dụng cú pháp [blank_1]. Ví dụ: [code]@Pipe({ name: "[blank_2]" })[/code]',
+                    'question' => 'Để tạo một pipe tùy chỉnh trong Angular và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Pipe({ name: "[blank_2]" })',
                     'blanks' => 'Pipe, customPipe',
                 ],
                 [
-                    'question' => 'Để khai báo một form array trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = this.[blank_3].array([ [blank_4] ]);[/code]',
+                    'question' => 'Để khai báo một form array trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = this.[blank_3].array([ [blank_4] ])',
                     'blanks' => 'formArray, fb, formBuilder, formControl',
                 ],
                 [
-                    'question' => 'Để thực hiện điều hướng với query parameters trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].navigate(["/[blank_3]"], { queryParams: { [blank_4]: [blank_5] } });[/code]',
+                    'question' => 'Để thực hiện điều hướng với query parameters trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].navigate(["/[blank_3]"], { queryParams: { [blank_4]: [blank_5] } })',
                     'blanks' => 'Router, router, search, query, keyword',
                 ],
                 [
-                    'question' => 'Để tạo một dynamic component trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].createComponent([blank_3]);[/code]',
+                    'question' => 'Để tạo một dynamic component trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].createComponent([blank_3])',
                     'blanks' => 'viewContainerRef, viewContainerRef, MyDynamicComponent',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular form và thiết lập validation, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = this.[blank_3].group({ [blank_4]: ["", [blank_5]] });[/code]',
+                    'question' => 'Để khai báo một Angular form và thiết lập validation, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = this.[blank_3].group({ [blank_4]: ["", [blank_5]] })',
                     'blanks' => 'formGroup, fb, formBuilder, name, Validators.required',
                 ],
                 [
-                    'question' => 'Để áp dụng styles cho một Angular component, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Component({ styles: [".[blank_2] { color: [blank_3] }"] })[/code]',
+                    'question' => 'Để áp dụng styles cho một Angular component, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Component({ styles: [".[blank_2] { color: [blank_3] }"] })',
                     'blanks' => 'styles, my-class, red',
                 ],
                 [
-                    'question' => 'Để xử lý một asynchronous operation trong Angular, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].pipe([blank_3](data => console.log(data)));[/code]',
+                    'question' => 'Để xử lý một asynchronous operation trong Angular, bạn có thể sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].pipe([blank_3](data => console.log(data)))',
                     'blanks' => 'pipe, httpClient, tap',
                 ],
                 [
-                    'question' => 'Khi bạn muốn sử dụng các Angular services trong một module, bạn cần khai báo chúng trong [blank_1]. Ví dụ: [code]@NgModule({ providers: [blank_2] })[/code]',
+                    'question' => 'Khi bạn muốn sử dụng các Angular services trong một module, bạn cần khai báo chúng trong [blank_1].<br>Ví dụ:<br>@NgModule({ providers: [blank_2] })',
                     'blanks' => 'providers, MyService',
                 ],
                 [
-                    'question' => 'Để thực hiện kiểm tra (testing) một Angular service, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]TestBed.inject([blank_2])[/code]',
+                    'question' => 'Để thực hiện kiểm tra (testing) một Angular service, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>TestBed.inject([blank_2])',
                     'blanks' => 'TestBed, MyService',
                 ],
                 [
-                    'question' => 'Để định nghĩa một Angular guard và sử dụng cú pháp [blank_1]. Ví dụ: [code]@Injectable({ providedIn: "[blank_2]" })[/code]',
+                    'question' => 'Để định nghĩa một Angular guard và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Injectable({ providedIn: "[blank_2]" })',
                     'blanks' => 'providedIn, root',
                 ],
                 [
-                    'question' => 'Để thực hiện điều hướng dựa trên điều kiện trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]if ([blank_2]) { this.[blank_3].navigate(["/[blank_4]"]); }[/code]',
+                    'question' => 'Để thực hiện điều hướng dựa trên điều kiện trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>if ([blank_2]) { this.[blank_3].navigate(["/[blank_4]"]); }',
                     'blanks' => 'condition, isLoggedIn, router, home',
                 ],
                 [
-                    'question' => 'Để tạo một Angular directive tùy chỉnh và sử dụng cú pháp [blank_1]. Ví dụ: [code]@Directive({ selector: "[blank_2]" })[/code]',
+                    'question' => 'Để tạo một Angular directive tùy chỉnh và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Directive({ selector: "[blank_2]" })',
                     'blanks' => 'Directive, appHighlight',
                 ],
                 [
-                    'question' => 'Để sử dụng `ngModel` trong Angular, bạn cần khai báo module `FormsModule` trong [blank_1]. Ví dụ: [code]imports: [blank_2][/code]',
+                    'question' => 'Để sử dụng `ngModel` trong Angular, bạn cần khai báo module `FormsModule` trong [blank_1].<br>Ví dụ:<br>imports: [blank_2]',
                     'blanks' => 'imports, FormsModule',
                 ],
                 [
-                    'question' => 'Để định nghĩa một Angular module và sử dụng cú pháp [blank_1]. Ví dụ: [code]@NgModule({ declarations: [blank_2], imports: [blank_3] })[/code]',
+                    'question' => 'Để định nghĩa một Angular module và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@NgModule({ declarations: [blank_2], imports: [blank_3] })',
                     'blanks' => 'NgModule, AppComponent, BrowserModule',
                 ],
                 [
-                    'question' => 'Khi cần khai báo một Angular service với một provider tùy chỉnh, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Injectable({ providedIn: [blank_2] })[/code]',
+                    'question' => 'Khi cần khai báo một Angular service với một provider tùy chỉnh, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Injectable({ providedIn: [blank_2] })',
                     'blanks' => 'providedIn, root',
                 ],
                 [
-                    'question' => 'Để định nghĩa một Angular pipe với tham số, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Pipe({ name: "[blank_2]" })[/code]',
+                    'question' => 'Để định nghĩa một Angular pipe với tham số, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Pipe({ name: "[blank_2]" })',
                     'blanks' => 'Pipe, customPipe',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular Dependency Injection trong component, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]constructor(private [blank_2]: [blank_3]) { }[/code]',
+                    'question' => 'Để sử dụng Angular Dependency Injection trong component, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>constructor(private [blank_2]: [blank_3]) { }',
                     'blanks' => 'constructor, service, MyService',
                 ],
                 [
-                    'question' => 'Để tạo một Angular module và cấu hình các routes, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]const routes: Routes = [{ path: "[blank_2]", component: [blank_3] }]; @NgModule({ imports: [RouterModule.forRoot(routes)] })[/code]',
+                    'question' => 'Để tạo một Angular module và cấu hình các routes, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>const routes: Routes = [{ path: "[blank_2]", component: [blank_3] }]; @NgModule({ imports: [RouterModule.forRoot(routes)] })',
                     'blanks' => 'RouterModule, home, HomeComponent',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular form control với validation, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = new [blank_3]([blank_4], [blank_5]);[/code]',
+                    'question' => 'Để khai báo một Angular form control với validation, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = new [blank_3]([blank_4], [blank_5])',
                     'blanks' => 'formControl, name, FormControl, "", Validators.required',
                 ],
                 [
-                    'question' => 'Để tạo một Angular component với một template inline, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Component({ selector: "[blank_2]", template: "[blank_3]" })[/code]',
+                    'question' => 'Để tạo một Angular component với một template inline, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Component({ selector: "[blank_2]", template: "[blank_3]" })',
                     'blanks' => 'Component, app-root, <h1>App</h1>',
                 ],
                 [
-                    'question' => 'Để thực hiện HTTP PUT request trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].put("[blank_3]", [blank_4])[/code]',
+                    'question' => 'Để thực hiện HTTP PUT request trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].put("[blank_3]", [blank_4])',
                     'blanks' => 'httpClient, httpClient, /api/update, data',
                 ],
                 [
-                    'question' => 'Để sử dụng một Angular service trong component, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]constructor(private [blank_2]: [blank_3]) { }[/code]',
+                    'question' => 'Để sử dụng một Angular service trong component, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>constructor(private [blank_2]: [blank_3]) { }',
                     'blanks' => 'constructor, service, MyService',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular pipes trong templates, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]{{ [blank_2] | [blank_3] }}[/code]',
+                    'question' => 'Để sử dụng Angular pipes trong templates, bạn có thể sử dụng lệnh [blank_1].<br>Ví dụ:<br>{{ [blank_2] | [blank_3] }}',
                     'blanks' => 'pipe, title, uppercase',
                 ],
                 [
-                    'question' => 'Để định nghĩa một Angular component với lifecycle hooks, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]ngOnInit() { }[/code]',
+                    'question' => 'Để định nghĩa một Angular component với lifecycle hooks, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>ngOnInit() { }',
                     'blanks' => 'ngOnInit',
                 ],
                 [
-                    'question' => 'Để khai báo một route guard trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Injectable({ providedIn: "[blank_2]" })[/code]',
+                    'question' => 'Để khai báo một route guard trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Injectable({ providedIn: "[blank_2]" })',
                     'blanks' => 'providedIn, root',
                 ],
                 [
-                    'question' => 'Để sử dụng một observable trong Angular service, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].pipe([blank_3](data => console.log(data)));[/code]',
+                    'question' => 'Để sử dụng một observable trong Angular service, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].pipe([blank_3](data => console.log(data)));',
                     'blanks' => 'pipe, httpClient, tap',
                 ],
                 [
-                    'question' => 'Để định nghĩa một Angular module và cấu hình các component, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@NgModule({ declarations: [blank_2], imports: [blank_3] })[/code]',
+                    'question' => 'Để định nghĩa một Angular module và cấu hình các component, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@NgModule({ declarations: [blank_2], imports: [blank_3] })',
                     'blanks' => 'NgModule, AppComponent, BrowserModule',
                 ],
                 [
-                    'question' => 'Để tạo một Angular form với các validators tùy chỉnh, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = this.[blank_3].group({ [blank_4]: ["", [blank_5]] });[/code]',
+                    'question' => 'Để tạo một Angular form với các validators tùy chỉnh, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = this.[blank_3].group({ [blank_4]: ["", [blank_5]] });',
                     'blanks' => 'formGroup, fb, formBuilder, name, Validators.required',
                 ],
                 [
-                    'question' => 'Để thực hiện điều hướng đến một route với parameters trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].navigate(["/[blank_3]"], { queryParams: { [blank_4]: [blank_5] } });[/code]',
+                    'question' => 'Để thực hiện điều hướng đến một route với parameters trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].navigate(["/[blank_3]"], { queryParams: { [blank_4]: [blank_5] } });',
                     'blanks' => 'Router, router, search, query, keyword',
                 ],
                 [
-                    'question' => 'Để tạo một Angular directive và sử dụng cú pháp [blank_1]. Ví dụ: [code]@Directive({ selector: "[blank_2]" })[/code]',
+                    'question' => 'Để tạo một Angular directive và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Directive({ selector: "[blank_2]" })',
                     'blanks' => 'Directive, appHighlight',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular dependency injection trong một service, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]constructor(private [blank_2]: [blank_3]) { }[/code]',
+                    'question' => 'Để sử dụng Angular dependency injection trong một service, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>constructor(private [blank_2]: [blank_3]) { }',
                     'blanks' => 'constructor, httpClient, HttpClient',
                 ],
                 [
-                    'question' => 'Để định nghĩa một Angular service và đăng ký nó với dependency injection, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Injectable({ providedIn: "[blank_2]" })[/code]',
+                    'question' => 'Để định nghĩa một Angular service và đăng ký nó với dependency injection, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Injectable({ providedIn: "[blank_2]" })',
                     'blanks' => 'providedIn, root',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular form với một form array, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = this.[blank_3].array([ [blank_4] ]);[/code]',
+                    'question' => 'Để khai báo một Angular form với một form array, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = this.[blank_3].array([ [blank_4] ]);',
                     'blanks' => 'formArray, fb, formBuilder, formControl',
                 ],
                 [
-                    'question' => 'Để tạo một Angular pipe và sử dụng cú pháp [blank_1]. Ví dụ: [code]@Pipe({ name: "[blank_2]" })[/code]',
+                    'question' => 'Để tạo một Angular pipe và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Pipe({ name: "[blank_2]" })',
                     'blanks' => 'Pipe, customPipe',
                 ],
                 [
-                    'question' => 'Để định nghĩa một route trong Angular với nested routes, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]{ path: "[blank_2]", children: [{ path: "[blank_3]", component: [blank_4] }] }[/code]',
+                    'question' => 'Để định nghĩa một route trong Angular với nested routes, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>{ path: "[blank_2]", children: [{ path: "[blank_3]", component: [blank_4] }] }',
                     'blanks' => 'path, parent, child, ChildComponent',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular module với các routes, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]const routes: Routes = [{ path: "[blank_2]", component: [blank_3] }]; @NgModule({ imports: [RouterModule.forRoot(routes)] })[/code]',
+                    'question' => 'Để khai báo một Angular module với các routes, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>const routes: Routes = [{ path: "[blank_2]", component: [blank_3] }]; @NgModule({ imports: [RouterModule.forRoot(routes)] })',
                     'blanks' => 'RouterModule, home, HomeComponent',
                 ],
                 [
-                    'question' => 'Để thực hiện một HTTP DELETE request trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].delete("[blank_3]")[/code]',
+                    'question' => 'Để thực hiện một HTTP DELETE request trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].delete("[blank_3]")',
                     'blanks' => 'httpClient, httpClient, /api/delete',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular dependency injection trong một component, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]constructor(private [blank_2]: [blank_3]) { }[/code]',
+                    'question' => 'Để sử dụng Angular dependency injection trong một component, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>constructor(private [blank_2]: [blank_3]) { }',
                     'blanks' => 'constructor, service, MyService',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular form với các validators tùy chỉnh, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = this.[blank_3].group({ [blank_4]: ["", [blank_5]] });[/code]',
+                    'question' => 'Để khai báo một Angular form với các validators tùy chỉnh, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = this.[blank_3].group({ [blank_4]: ["", [blank_5]] });',
                     'blanks' => 'formGroup, fb, formBuilder, name, Validators.required',
                 ],
                 [
-                    'question' => 'Để tạo một dynamic component trong Angular và sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].createComponent([blank_3]);[/code]',
+                    'question' => 'Để tạo một dynamic component trong Angular và sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].createComponent([blank_3]);',
                     'blanks' => 'viewContainerRef, viewContainerRef, MyDynamicComponent',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular form và thiết lập validation, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = this.[blank_3].group({ [blank_4]: ["", [blank_5]] });[/code]',
+                    'question' => 'Để khai báo một Angular form và thiết lập validation, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = this.[blank_3].group({ [blank_4]: ["", [blank_5]] });',
                     'blanks' => 'formGroup, fb, formBuilder, name, Validators.required',
                 ],
                 [
-                    'question' => 'Để sử dụng `ngModel` trong Angular, bạn cần khai báo module `FormsModule` trong [blank_1]. Ví dụ: [code]imports: [blank_2][/code]',
+                    'question' => 'Để sử dụng `ngModel` trong Angular, bạn cần khai báo module `FormsModule` trong [blank_1].<br>Ví dụ:<br>imports: [blank_2]',
                     'blanks' => 'imports, FormsModule',
                 ],
                 [
-                    'question' => 'Để định nghĩa một Angular component với lifecycle hooks, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]ngOnInit() { }[/code]',
+                    'question' => 'Để định nghĩa một Angular component với lifecycle hooks, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>ngOnInit() { }',
                     'blanks' => 'ngOnInit',
                 ],
                 [
-                    'question' => 'Để tạo một Angular component với template inline, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Component({ selector: "[blank_2]", template: "[blank_3]" })[/code]',
+                    'question' => 'Để tạo một Angular component với template inline, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Component({ selector: "[blank_2]", template: "[blank_3]" })',
                     'blanks' => 'Component, app-root, <h1>App</h1>',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular pipes trong templates, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]{{ [blank_2] | [blank_3] }}[/code]',
+                    'question' => 'Để sử dụng Angular pipes trong templates, bạn có thể sử dụng lệnh [blank_1].<br>Ví dụ:<br>{{ [blank_2] | [blank_3] }}',
                     'blanks' => 'pipe, title, uppercase',
                 ],
                 [
-                    'question' => 'Để thực hiện điều hướng dựa trên điều kiện trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]if ([blank_2]) { this.[blank_3].navigate(["/[blank_4]"]); }[/code]',
+                    'question' => 'Để thực hiện điều hướng dựa trên điều kiện trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>if ([blank_2]) { this.[blank_3].navigate(["/[blank_4]"]); }',
                     'blanks' => 'condition, isLoggedIn, router, home',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular module với các component, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@NgModule({ declarations: [blank_2], imports: [blank_3] })[/code]',
+                    'question' => 'Để khai báo một Angular module với các component, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@NgModule({ declarations: [blank_2], imports: [blank_3] })',
                     'blanks' => 'NgModule, AppComponent, BrowserModule',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular dependency injection trong một service, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]constructor(private [blank_2]: [blank_3]) { }[/code]',
+                    'question' => 'Để sử dụng Angular dependency injection trong một service, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>constructor(private [blank_2]: [blank_3]) { }',
                     'blanks' => 'constructor, httpClient, HttpClient',
                 ],
                 [
-                    'question' => 'Để tạo một Angular directive và sử dụng cú pháp [blank_1]. Ví dụ: [code]@Directive({ selector: "[blank_2]" })[/code]',
+                    'question' => 'Để tạo một Angular directive và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Directive({ selector: "[blank_2]" })',
                     'blanks' => 'Directive, appHighlight',
                 ],
                 [
-                    'question' => 'Để thực hiện điều hướng đến một route với query parameters trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].navigate(["/[blank_3]"], { queryParams: { [blank_4]: [blank_5] } });[/code]',
+                    'question' => 'Để thực hiện điều hướng đến một route với query parameters trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].navigate(["/[blank_3]"], { queryParams: { [blank_4]: [blank_5] } });',
                     'blanks' => 'Router, router, search, query, keyword',
                 ],
                 [
-                    'question' => 'Để tạo một Angular pipe với tham số, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Pipe({ name: "[blank_2]" })[/code]',
+                    'question' => 'Để tạo một Angular pipe với tham số, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Pipe({ name: "[blank_2]" })',
                     'blanks' => 'Pipe, customPipe',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular forms trong một component, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].controls[blank_3].setValue("[blank_4]");[/code]',
+                    'question' => 'Để sử dụng Angular forms trong một component, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].controls[blank_3].setValue("[blank_4]");',
                     'blanks' => 'formGroup, form, name, value',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular module với các routes, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]const routes: Routes = [{ path: "[blank_2]", component: [blank_3] }]; @NgModule({ imports: [RouterModule.forRoot(routes)] })[/code]',
+                    'question' => 'Để khai báo một Angular module với các routes, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>const routes: Routes = [{ path: "[blank_2]", component: [blank_3] }]; @NgModule({ imports: [RouterModule.forRoot(routes)] })',
                     'blanks' => 'RouterModule, home, HomeComponent',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular pipes trong templates, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]{{ [blank_2] | [blank_3] }}[/code]',
+                    'question' => 'Để sử dụng Angular pipes trong templates, bạn có thể sử dụng lệnh [blank_1].<br>Ví dụ:<br>{{ [blank_2] | [blank_3] }}',
                     'blanks' => 'pipe, title, uppercase',
                 ],
                 [
-                    'question' => 'Để thực hiện điều hướng dựa trên điều kiện trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]if ([blank_2]) { this.[blank_3].navigate(["/[blank_4]"]); }[/code]',
+                    'question' => 'Để thực hiện điều hướng dựa trên điều kiện trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>if ([blank_2]) { this.[blank_3].navigate(["/[blank_4]"]); }',
                     'blanks' => 'condition, isLoggedIn, router, home',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular form control với validation, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = new [blank_3]([blank_4], [blank_5]);[/code]',
+                    'question' => 'Để khai báo một Angular form control với validation, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = new [blank_3]([blank_4], [blank_5]);',
                     'blanks' => 'formControl, name, FormControl, "", Validators.required',
                 ],
                 [
-                    'question' => 'Để thực hiện HTTP PUT request trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].put("[blank_3]", [blank_4])[/code]',
+                    'question' => 'Để thực hiện HTTP PUT request trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].put("[blank_3]", [blank_4])',
                     'blanks' => 'httpClient, httpClient, /api/update, data',
                 ],
                 [
-                    'question' => 'Để định nghĩa một Angular component với lifecycle hooks, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]ngOnInit() { }[/code]',
+                    'question' => 'Để định nghĩa một Angular component với lifecycle hooks, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>ngOnInit() { }',
                     'blanks' => 'ngOnInit',
                 ],
                 [
-                    'question' => 'Để thực hiện điều hướng với query parameters trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].navigate(["/[blank_3]"], { queryParams: { [blank_4]: [blank_5] } });[/code]',
+                    'question' => 'Để thực hiện điều hướng với query parameters trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].navigate(["/[blank_3]"], { queryParams: { [blank_4]: [blank_5] } });',
                     'blanks' => 'Router, router, search, query, keyword',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular form với một form array, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = this.[blank_3].array([ [blank_4] ]);[/code]',
+                    'question' => 'Để khai báo một Angular form với một form array, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = this.[blank_3].array([ [blank_4] ]);',
                     'blanks' => 'formArray, fb, formBuilder, formControl',
                 ],
                 [
-                    'question' => 'Để tạo một Angular component với template inline, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Component({ selector: "[blank_2]", template: "[blank_3]" })[/code]',
+                    'question' => 'Để tạo một Angular component với template inline, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Component({ selector: "[blank_2]", template: "[blank_3]" })',
                     'blanks' => 'Component, app-root, <h1>App</h1>',
                 ],
                 [
-                    'question' => 'Để thực hiện HTTP DELETE request trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].delete("[blank_3]")[/code]',
+                    'question' => 'Để thực hiện HTTP DELETE request trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].delete("[blank_3]")',
                     'blanks' => 'httpClient, httpClient, /api/delete',
                 ],
                 [
-                    'question' => 'Để định nghĩa một Angular guard và sử dụng cú pháp [blank_1]. Ví dụ: [code]@Injectable({ providedIn: "[blank_2]" })[/code]',
+                    'question' => 'Để định nghĩa một Angular guard và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Injectable({ providedIn: "[blank_2]" })',
                     'blanks' => 'providedIn, root',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular module và cấu hình các component, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@NgModule({ declarations: [blank_2], imports: [blank_3] })[/code]',
+                    'question' => 'Để khai báo một Angular module và cấu hình các component, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@NgModule({ declarations: [blank_2], imports: [blank_3] })',
                     'blanks' => 'NgModule, AppComponent, BrowserModule',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular Dependency Injection trong component, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]constructor(private [blank_2]: [blank_3]) { }[/code]',
+                    'question' => 'Để sử dụng Angular Dependency Injection trong component, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>constructor(private [blank_2]: [blank_3]) { }',
                     'blanks' => 'constructor, service, MyService',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular forms trong một component, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].controls[blank_3].setValue("[blank_4]");[/code]',
+                    'question' => 'Để sử dụng Angular forms trong một component, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].controls[blank_3].setValue("[blank_4]");',
                     'blanks' => 'formGroup, form, name, value',
                 ],
                 [
-                    'question' => 'Để tạo một Angular directive và sử dụng cú pháp [blank_1]. Ví dụ: [code]@Directive({ selector: "[blank_2]" })[/code]',
+                    'question' => 'Để tạo một Angular directive và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Directive({ selector: "[blank_2]" })',
                     'blanks' => 'Directive, appHighlight',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular dependency injection trong một service, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]constructor(private [blank_2]: [blank_3]) { }[/code]',
+                    'question' => 'Để sử dụng Angular dependency injection trong một service, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>constructor(private [blank_2]: [blank_3]) { }',
                     'blanks' => 'constructor, httpClient, HttpClient',
                 ],
                 [
-                    'question' => 'Để tạo một Angular module và cấu hình các routes, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]const routes: Routes = [{ path: "[blank_2]", component: [blank_3] }]; @NgModule({ imports: [RouterModule.forRoot(routes)] })[/code]',
+                    'question' => 'Để tạo một Angular module và cấu hình các routes, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>const routes: Routes = [{ path: "[blank_2]", component: [blank_3] }]; @NgModule({ imports: [RouterModule.forRoot(routes)] })',
                     'blanks' => 'RouterModule, home, HomeComponent',
                 ],
                 [
-                    'question' => 'Để thực hiện HTTP PUT request trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].put("[blank_3]", [blank_4])[/code]',
+                    'question' => 'Để thực hiện HTTP PUT request trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].put("[blank_3]", [blank_4])',
                     'blanks' => 'httpClient, httpClient, /api/update, data',
                 ],
                 [
-                    'question' => 'Để tạo một Angular pipe với tham số, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Pipe({ name: "[blank_2]" })[/code]',
+                    'question' => 'Để tạo một Angular pipe với tham số, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Pipe({ name: "[blank_2]" })',
                     'blanks' => 'Pipe, customPipe',
                 ],
                 [
-                    'question' => 'Để định nghĩa một Angular guard và sử dụng cú pháp [blank_1]. Ví dụ: [code]@Injectable({ providedIn: "[blank_2]" })[/code]',
+                    'question' => 'Để định nghĩa một Angular guard và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Injectable({ providedIn: "[blank_2]" })',
                     'blanks' => 'providedIn, root',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular module với các routes, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]const routes: Routes = [{ path: "[blank_2]", component: [blank_3] }]; @NgModule({ imports: [RouterModule.forRoot(routes)] })[/code]',
+                    'question' => 'Để khai báo một Angular module với các routes, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>const routes: Routes = [{ path: "[blank_2]", component: [blank_3] }]; @NgModule({ imports: [RouterModule.forRoot(routes)] })',
                     'blanks' => 'RouterModule, home, HomeComponent',
                 ],
                 [
-                    'question' => 'Để tạo một Angular directive và sử dụng cú pháp [blank_1]. Ví dụ: [code]@Directive({ selector: "[blank_2]" })[/code]',
+                    'question' => 'Để tạo một Angular directive và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Directive({ selector: "[blank_2]" })',
                     'blanks' => 'Directive, appHighlight',
                 ],
                 [
-                    'question' => 'Để thực hiện HTTP DELETE request trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].delete("[blank_3]")[/code]',
+                    'question' => 'Để thực hiện HTTP DELETE request trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].delete("[blank_3]")',
                     'blanks' => 'httpClient, httpClient, /api/delete',
                 ],
                 [
-                    'question' => 'Để định nghĩa một Angular component với lifecycle hooks, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]ngOnInit() { }[/code]',
+                    'question' => 'Để định nghĩa một Angular component với lifecycle hooks, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>ngOnInit() { }',
                     'blanks' => 'ngOnInit',
                 ],
                 [
-                    'question' => 'Để tạo một Angular component với template inline, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Component({ selector: "[blank_2]", template: "[blank_3]" })[/code]',
+                    'question' => 'Để tạo một Angular component với template inline, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Component({ selector: "[blank_2]", template: "[blank_3]" })',
                     'blanks' => 'Component, app-root, <h1>App</h1>',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular form control với validation, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = new [blank_3]([blank_4], [blank_5]);[/code]',
+                    'question' => 'Để khai báo một Angular form control với validation, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = new [blank_3]([blank_4], [blank_5]);',
                     'blanks' => 'formControl, name, FormControl, "", Validators.required',
                 ],
                 [
-                    'question' => 'Để định nghĩa một Angular service và đăng ký nó với dependency injection, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Injectable({ providedIn: "[blank_2]" })[/code]',
+                    'question' => 'Để định nghĩa một Angular service và đăng ký nó với dependency injection, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Injectable({ providedIn: "[blank_2]" })',
                     'blanks' => 'providedIn, root',
                 ],
                 [
-                    'question' => 'Để tạo một Angular form với các validators tùy chỉnh, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = this.[blank_3].group({ [blank_4]: ["", [blank_5]] });[/code]',
+                    'question' => 'Để tạo một Angular form với các validators tùy chỉnh, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = this.[blank_3].group({ [blank_4]: ["", [blank_5]] });',
                     'blanks' => 'formGroup, fb, formBuilder, name, Validators.required',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular pipes trong templates, bạn có thể sử dụng cú pháp [blank_1]. Ví dụ: [code]{{ [blank_2] | [blank_3] }}[/code]',
+                    'question' => 'Để sử dụng Angular pipes trong templates, bạn có thể sử dụng lệnh [blank_1].<br>Ví dụ:<br>{{ [blank_2] | [blank_3] }}',
                     'blanks' => 'pipe, title, uppercase',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular module và cấu hình các routes, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]const routes: Routes = [{ path: "[blank_2]", component: [blank_3] }]; @NgModule({ imports: [RouterModule.forRoot(routes)] })[/code]',
+                    'question' => 'Để khai báo một Angular module và cấu hình các routes, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>const routes: Routes = [{ path: "[blank_2]", component: [blank_3] }]; @NgModule({ imports: [RouterModule.forRoot(routes)] })',
                     'blanks' => 'RouterModule, home, HomeComponent',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular forms trong một component, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].controls[blank_3].setValue("[blank_4]");[/code]',
+                    'question' => 'Để sử dụng Angular forms trong một component, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].controls[blank_3].setValue("[blank_4]");',
                     'blanks' => 'formGroup, form, name, value',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular component với lazy loading, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]const routes: Routes = [{ path: "[blank_2]", loadChildren: () => import("./[blank_3]").then(m => m.[blank_4]) }];[/code]',
+                    'question' => 'Để khai báo một Angular component với lazy loading, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>const routes: Routes = [{ path: "[blank_2]", loadChildren: () => import("./[blank_3]").then(m => m.[blank_4]) }];',
                     'blanks' => 'loadChildren, feature, feature.module, FeatureModule',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular resolver để tải dữ liệu trước khi điều hướng đến một route, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]resolve: { data: [blank_2] }[/code]',
+                    'question' => 'Để sử dụng Angular resolver để tải dữ liệu trước khi điều hướng đến một route, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>resolve: { data: [blank_2] }',
                     'blanks' => 'dataResolver, DataResolver',
                 ],
                 [
-                    'question' => 'Để tạo một Angular service với method tùy chỉnh và sử dụng cú pháp [blank_1]. Ví dụ: [code]@Injectable({ providedIn: "[blank_2]" }) export class [blank_3] { [blank_4]() { return "Hello World"; } }[/code]',
+                    'question' => 'Để tạo một Angular service với method tùy chỉnh và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Injectable({ providedIn: "[blank_2]" }) export class [blank_3] { [blank_4]() { return "Hello World"; } }',
                     'blanks' => 'providedIn, root, MyService, getMessage',
                 ],
                 [
-                    'question' => 'Để thực hiện kiểm tra quyền truy cập trong Angular với route guards, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]canActivate: [blank_2] [/code]',
+                    'question' => 'Để thực hiện kiểm tra quyền truy cập trong Angular với route guards, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>canActivate: [blank_2]',
                     'blanks' => 'canActivate, AuthGuard',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular form control với validator tùy chỉnh, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = new [blank_3]([blank_4], [blank_5]);[/code]',
+                    'question' => 'Để khai báo một Angular form control với validator tùy chỉnh, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = new [blank_3]([blank_4], [blank_5]);',
                     'blanks' => 'formControl, name, FormControl, "", [blank_6]]',
                 ],
                 [
-                    'question' => 'Để tạo một Angular component với dynamic content, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Component({ selector: "[blank_2]", template: `<ng-container *ngComponentOutlet="[blank_3]"></ng-container>` })[/code]',
+                    'question' => 'Để tạo một Angular component với dynamic content, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Component({ selector: "[blank_2]", template: `<ng-container *ngComponentOutlet="[blank_3]"></ng-container>` })',
                     'blanks' => 'Component, app-dynamic, dynamicComponent',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular ngOnChanges lifecycle hook, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]ngOnChanges(changes: SimpleChanges) { [blank_2] }[/code]',
+                    'question' => 'Để sử dụng Angular ngOnChanges lifecycle hook, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>ngOnChanges(changes: SimpleChanges) { [blank_2] }',
                     'blanks' => 'ngOnChanges, console.log(changes)',
                 ],
                 [
-                    'question' => 'Để tạo một Angular service với HTTP request và sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].get("[blank_3]").subscribe([blank_4] => { [blank_5] });[/code]',
+                    'question' => 'Để tạo một Angular service với HTTP request và sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].get("[blank_3]").subscribe([blank_4] => { [blank_5] });',
                     'blanks' => 'httpClient, httpClient, /api/data, data, console.log(data)',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular form với form array và validators, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = this.[blank_3].array([ [blank_4] ]);[/code]',
+                    'question' => 'Để khai báo một Angular form với form array và validators, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = this.[blank_3].array([ [blank_4] ]);',
                     'blanks' => 'formArray, fb, formBuilder, new FormControl("", Validators.required)',
                 ],
                 [
-                    'question' => 'Để định nghĩa một Angular directive và sử dụng cú pháp [blank_1]. Ví dụ: [code]@Directive({ selector: "[blank_2]" })[/code]',
+                    'question' => 'Để định nghĩa một Angular directive và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Directive({ selector: "[blank_2]" })',
                     'blanks' => 'Directive, appHighlight',
                 ],
                 [
-                    'question' => 'Để tạo một Angular pipe với logic phức tạp và sử dụng cú pháp [blank_1]. Ví dụ: [code]@Pipe({ name: "[blank_2]" }) export class [blank_3] implements PipeTransform { transform(value: string, [blank_4]: string): string { return value + [blank_5]; } }[/code]',
+                    'question' => 'Để tạo một Angular pipe với logic phức tạp và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Pipe({ name: "[blank_2]" }) export class [blank_3] implements PipeTransform { transform(value: string, [blank_4]: string): string { return value + [blank_5]; } }',
                     'blanks' => 'Pipe, appendPipe, AppendPipe, appendString, " appended"',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular reactive forms với nested form groups, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = this.[blank_3].group({ [blank_4]: this.[blank_5].group({ [blank_6]: ["", [blank_7]] }) });[/code]',
+                    'question' => 'Để sử dụng Angular reactive forms với nested form groups, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = this.[blank_3].group({ [blank_4]: this.[blank_5].group({ [blank_6]: ["", [blank_7]] }) });',
                     'blanks' => 'formGroup, fb, formBuilder, nested, fb, formControl, Validators.required',
                 ],
                 [
-                    'question' => 'Để tạo một Angular module với các route guards, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]const routes: Routes = [{ path: "[blank_2]", component: [blank_3], canActivate: [blank_4] }]; @NgModule({ imports: [RouterModule.forRoot(routes)] })[/code]',
+                    'question' => 'Để tạo một Angular module với các route guards, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>const routes: Routes = [{ path: "[blank_2]", component: [blank_3], canActivate: [blank_4] }]; @NgModule({ imports: [RouterModule.forRoot(routes)] })',
                     'blanks' => 'RouterModule, secure, SecureComponent, AuthGuard',
                 ],
                 [
-                    'question' => 'Để định nghĩa một Angular guard và sử dụng cú pháp [blank_1]. Ví dụ: [code]@Injectable({ providedIn: "[blank_2]" }) export class [blank_3] implements CanActivate { canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean { return true; } }[/code]',
+                    'question' => 'Để định nghĩa một Angular guard và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Injectable({ providedIn: "[blank_2]" }) export class [blank_3] implements CanActivate { canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean { return true; } }',
                     'blanks' => 'providedIn, root, AuthGuard',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular lifecycle hooks trong một component, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Component({ selector: "[blank_2]", templateUrl: "[blank_3]" }) export class [blank_4] implements OnInit { ngOnInit() { } }[/code]',
+                    'question' => 'Để sử dụng Angular lifecycle hooks trong một component, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Component({ selector: "[blank_2]", templateUrl: "[blank_3]" }) export class [blank_4] implements OnInit { ngOnInit() { } }',
                     'blanks' => 'Component, app-root, app.component.html, AppComponent',
                 ],
                 [
-                    'question' => 'Để thực hiện một HTTP PATCH request trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].patch("[blank_3]", [blank_4])[/code]',
+                    'question' => 'Để thực hiện một HTTP PATCH request trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].patch("[blank_3]", [blank_4])',
                     'blanks' => 'httpClient, httpClient, /api/patch, data',
                 ],
                 [
-                    'question' => 'Để tạo một Angular component với dynamic inputs, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Component({ selector: "[blank_2]", template: `<p>{{ [blank_3] }}</p>` }) export class [blank_4] { @Input() [blank_5]: string; }[/code]',
+                    'question' => 'Để tạo một Angular component với dynamic inputs, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Component({ selector: "[blank_2]", template: `<p>{{ [blank_3] }}</p>` }) export class [blank_4] { @Input() [blank_5]: string; }',
                     'blanks' => 'Component, app-dynamic, message, DynamicComponent, message',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular form control với custom validator, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = new [blank_3]([blank_4], [blank_5]);[/code]',
-                    'blanks' => 'formControl, name, FormControl, "", this.customValidator]',
+                    'question' => 'Để khai báo một Angular form control với custom validator, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = new [blank_3]([blank_4], [blank_5]);',
+                    'blanks' => 'formControl, name, FormControl, "", this.customValidator',
                 ],
                 [
-                    'question' => 'Để tạo một Angular directive với host listener, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Directive({ selector: "[blank_2]" }) export class [blank_3] { @HostListener("click") onClick() { [blank_4] } }[/code]',
+                    'question' => 'Để tạo một Angular directive với host listener, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Directive({ selector: "[blank_2]" }) export class [blank_3] { @HostListener("click") onClick() { [blank_4] } }',
                     'blanks' => 'Directive, appClick, ClickDirective, console.log("Clicked!")',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular dependency injection trong một service và thực hiện HTTP request, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]constructor(private [blank_2]: [blank_3]) { [blank_4] }[/code]',
+                    'question' => 'Để sử dụng Angular dependency injection trong một service và thực hiện HTTP request, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>constructor(private [blank_2]: [blank_3]) { [blank_4] }',
                     'blanks' => 'constructor, httpClient, HttpClient, this.httpClient.get("/api/data")',
                 ],
                 [
-                    'question' => 'Để định nghĩa một Angular route với lazy-loaded modules, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]const routes: Routes = [{ path: "[blank_2]", loadChildren: () => import("./[blank_3]").then(m => m.[blank_4]) }];[/code]',
+                    'question' => 'Để định nghĩa một Angular route với lazy-loaded modules, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>const routes: Routes = [{ path: "[blank_2]", loadChildren: () => import("./[blank_3]").then(m => m.[blank_4]) }];',
                     'blanks' => 'loadChildren, feature, feature.module, FeatureModule',
                 ],
                 [
-                    'question' => 'Để tạo một Angular pipe với nhiều tham số, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Pipe({ name: "[blank_2]" }) export class [blank_3] implements PipeTransform { transform(value: string, [blank_4]: string, [blank_5]: number): string { return value + [blank_6]; } }[/code]',
+                    'question' => 'Để tạo một Angular pipe với nhiều tham số, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Pipe({ name: "[blank_2]" }) export class [blank_3] implements PipeTransform { transform(value: string, [blank_4]: string, [blank_5]: number): string { return value + [blank_6]; } }',
                     'blanks' => 'Pipe, appendPipe, AppendPipe, appendString, times, " appended"',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular ngOnChanges lifecycle hook để theo dõi thay đổi, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]ngOnChanges(changes: SimpleChanges) { if (changes.[blank_2]) { [blank_3] } }[/code]',
+                    'question' => 'Để sử dụng Angular ngOnChanges lifecycle hook để theo dõi thay đổi, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>ngOnChanges(changes: SimpleChanges) { if (changes.[blank_2]) { [blank_3] } }',
                     'blanks' => 'ngOnChanges, inputProperty, console.log("Changed!")',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular module với các imports và exports, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@NgModule({ imports: [BrowserModule, [blank_2]], exports: [ [blank_3] ] })[/code]',
+                    'question' => 'Để khai báo một Angular module với các imports và exports, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@NgModule({ imports: [BrowserModule, [blank_2]], exports: [ [blank_3] ] })',
                     'blanks' => 'CommonModule, SharedModule',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular pipes trong templates với tham số, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]{{ [blank_2] | [blank_3]:[blank_4] }}[/code]',
+                    'question' => 'Để sử dụng Angular pipes trong templates với tham số, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>{{ [blank_2] | [blank_3]:[blank_4] }}',
                     'blanks' => 'pipe, title, uppercase, locale',
                 ],
                 [
-                    'question' => 'Để tạo một Angular form với nested form controls và sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = this.[blank_3].group({ [blank_4]: this.[blank_5].control([blank_6]) });[/code]',
-                    'blanks' => 'formGroup, fb, formBuilder, name, fb, new FormControl("", Validators.required',
+                    'question' => 'Để tạo một Angular form với nested form controls và sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = this.[blank_3].group({ [blank_4]: this.[blank_5].control([blank_6]) });',
+                    'blanks' => 'formGroup, fb, formBuilder, name, fb, new FormControl("", Validators.required)',
                 ],
                 [
-                    'question' => 'Để tạo một Angular module với các dịch vụ toàn cục, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@NgModule({ providers: [{ provide: [blank_2], useClass: [blank_3] }] })[/code]',
+                    'question' => 'Để tạo một Angular module với các dịch vụ toàn cục, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@NgModule({ providers: [{ provide: [blank_2], useClass: [blank_3] }] })',
                     'blanks' => 'MyService, MyService',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular ngFor trong templates và hiển thị danh sách các phần tử, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]<div *ngFor="let [blank_2] of [blank_3]"> {{ [blank_4] }} </div>[/code]',
+                    'question' => 'Để sử dụng Angular ngFor trong templates và hiển thị danh sách các phần tử, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br><div *ngFor="let [blank_2] of [blank_3]"> {{ [blank_4] }} </div>',
                     'blanks' => 'item, items, item.name',
                 ],
                 [
-                    'question' => 'Để tạo một Angular service với custom HTTP headers, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].get("[blank_3]", { headers: new HttpHeaders({ [blank_4]: [blank_5] }) })[/code]',
+                    'question' => 'Để tạo một Angular service với custom HTTP headers, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].get("[blank_3]", { headers: new HttpHeaders({ [blank_4]: [blank_5] }) })',
                     'blanks' => 'httpClient, httpClient, /api/data, Authorization, Bearer token',
                 ],
                 [
-                    'question' => 'Để tạo một Angular form với custom validators và sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = this.[blank_3].group({ [blank_4]: ["", [blank_5]] });[/code]',
+                    'question' => 'Để tạo một Angular form với custom validators và sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = this.[blank_3].group({ [blank_4]: ["", [blank_5]] });',
                     'blanks' => 'formGroup, fb, formBuilder, name, customValidator',
                 ],
                 [
-                    'question' => 'Để định nghĩa một Angular component với content projection và sử dụng cú pháp [blank_1]. Ví dụ: [code]@Component({ selector: "[blank_2]", template: `<ng-content></ng-content>` })[/code]',
+                    'question' => 'Để định nghĩa một Angular component với content projection và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Component({ selector: "[blank_2]", template: `<ng-content></ng-content>` })',
                     'blanks' => 'Component, app-content',
                 ],
                 [
-                    'question' => 'Để thực hiện Angular HTTP request với observable, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].get("[blank_3]").pipe(map([blank_4] => [blank_5])).subscribe();[/code]',
+                    'question' => 'Để thực hiện Angular HTTP request với observable, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].get("[blank_3]").pipe(map([blank_4] => [blank_5])).subscribe();',
                     'blanks' => 'httpClient, httpClient, /api/data, data, processData(data)',
                 ],
                 [
-                    'question' => 'Để tạo một Angular directive với host binding, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Directive({ selector: "[blank_2]" }) export class [blank_3] { @HostBinding("style.backgroundColor") backgroundColor: string = "[blank_4]"; }[/code]',
+                    'question' => 'Để tạo một Angular directive với host binding, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Directive({ selector: "[blank_2]" }) export class [blank_3] { @HostBinding("style.backgroundColor") backgroundColor: string = "[blank_4]"; }',
                     'blanks' => 'Directive, appBackground, BackgroundDirective, yellow',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular form control với custom validation logic, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = new [blank_3]([blank_4], [blank_5]);[/code]',
-                    'blanks' => 'formControl, name, FormControl, "", this.customValidator]',
+                    'question' => 'Để khai báo một Angular form control với custom validation logic, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = new [blank_3]([blank_4], [blank_5]);',
+                    'blanks' => 'formControl, name, FormControl, "", this.customValidator',
                 ],
                 [
-                    'question' => 'Để thực hiện HTTP POST request với dữ liệu đa dạng trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].post("[blank_3]", { [blank_4]: [blank_5], [blank_6]: [blank_7] })[/code]',
+                    'question' => 'Để thực hiện HTTP POST request với dữ liệu đa dạng trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].post("[blank_3]", { [blank_4]: [blank_5], [blank_6]: [blank_7] })',
                     'blanks' => 'httpClient, httpClient, /api/post, name, "John", age, 30',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular lifecycle hooks để theo dõi thay đổi thuộc tính, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Input() [blank_2]: string; ngOnChanges(changes: SimpleChanges) { if (changes.[blank_3]) { [blank_4] } }[/code]',
+                    'question' => 'Để sử dụng Angular lifecycle hooks để theo dõi thay đổi thuộc tính, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Input() [blank_2]: string; ngOnChanges(changes: SimpleChanges) { if (changes.[blank_3]) { [blank_4] } }',
                     'blanks' => 'ngOnChanges, inputProperty, inputProperty, console.log("Property changed!")',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular module và cấu hình các providers, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@NgModule({ providers: [{ provide: [blank_2], useClass: [blank_3] }] })[/code]',
+                    'question' => 'Để khai báo một Angular module và cấu hình các providers, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@NgModule({ providers: [{ provide: [blank_2], useClass: [blank_3] }] })',
                     'blanks' => 'MyService, MyService',
                 ],
                 [
-                    'question' => 'Để tạo một Angular pipe với nhiều tham số và sử dụng cú pháp [blank_1]. Ví dụ: [code]@Pipe({ name: "[blank_2]" }) export class [blank_3] implements PipeTransform { transform(value: string, [blank_4]: string, [blank_5]: number): string { return value + [blank_6]; } }[/code]',
+                    'question' => 'Để tạo một Angular pipe với nhiều tham số và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Pipe({ name: "[blank_2]" }) export class [blank_3] implements PipeTransform { transform(value: string, [blank_4]: string, [blank_5]: number): string { return value + [blank_6]; } }',
                     'blanks' => 'Pipe, customPipe, CustomPipe, prefix, count, " prefix"',
                 ],
                 [
-                    'question' => 'Để định nghĩa một Angular module với các route guards và lazy loading, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]const routes: Routes = [{ path: "[blank_2]", loadChildren: () => import("./[blank_3]").then(m => m.[blank_4]), canActivate: [blank_5] }]; @NgModule({ imports: [RouterModule.forRoot(routes)] })[/code]',
+                    'question' => 'Để định nghĩa một Angular module với các route guards và lazy loading, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>const routes: Routes = [{ path: "[blank_2]", loadChildren: () => import("./[blank_3]").then(m => m.[blank_4]), canActivate: [blank_5] }]; @NgModule({ imports: [RouterModule.forRoot(routes)] })',
                     'blanks' => 'RouterModule, feature, feature.module, FeatureModule, AuthGuard',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular ngIf với điều kiện phức tạp trong templates, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]<div *ngIf="[blank_2] && [blank_3]">[blank_4]</div>[/code]',
+                    'question' => 'Để sử dụng Angular ngIf với điều kiện phức tạp trong templates, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br><div *ngIf="[blank_2] && [blank_3]">[blank_4]</div>',
                     'blanks' => 'condition1, condition2, content',
                 ],
                 [
-                    'question' => 'Để tạo một Angular directive với host binding và host listener, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Directive({ selector: "[blank_2]" }) export class [blank_3] { @HostBinding("style.backgroundColor") backgroundColor: string = "[blank_4]"; @HostListener("click") onClick() { [blank_5] } }[/code]',
+                    'question' => 'Để tạo một Angular directive với host binding và host listener, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Directive({ selector: "[blank_2]" }) export class [blank_3] { @HostBinding("style.backgroundColor") backgroundColor: string = "[blank_4]"; @HostListener("click") onClick() { [blank_5] } }',
                     'blanks' => 'Directive, appHighlight, HighlightDirective, yellow, console.log("Highlighted!")',
                 ],
                 [
-                    'question' => 'Để định nghĩa một Angular service với các phương thức tùy chỉnh và sử dụng cú pháp [blank_1]. Ví dụ: [code]@Injectable({ providedIn: "[blank_2]" }) export class [blank_3] { [blank_4]() { return "Hello World"; } }[/code]',
+                    'question' => 'Để định nghĩa một Angular service với các phương thức tùy chỉnh và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Injectable({ providedIn: "[blank_2]" }) export class [blank_3] { [blank_4]() { return "Hello World"; } }',
                     'blanks' => 'providedIn, root, MyService, getMessage',
                 ],
                 [
-                    'question' => 'Để tạo một Angular component với multiple templates và sử dụng cú pháp [blank_1]. Ví dụ: [code]@Component({ selector: "[blank_2]", templateUrl: "[blank_3]", styleUrls: ["[blank_4]"] })[/code]',
+                    'question' => 'Để tạo một Angular component với multiple templates và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Component({ selector: "[blank_2]", templateUrl: "[blank_3]", styleUrls: ["[blank_4]"] })',
                     'blanks' => 'Component, app-root, app.component.html, app.component.css',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular module với nhiều components và directives, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@NgModule({ declarations: [ [blank_2], [blank_3] ], imports: [BrowserModule], providers: [] })[/code]',
+                    'question' => 'Để khai báo một Angular module với nhiều components và directives, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@NgModule({ declarations: [ [blank_2], [blank_3] ], imports: [BrowserModule], providers: [] })',
                     'blanks' => 'NgModule, AppComponent, CustomDirective',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular forms trong một component với nested controls, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = this.[blank_3].group({ [blank_4]: this.[blank_5].array([ [blank_6] ]) });[/code]',
+                    'question' => 'Để sử dụng Angular forms trong một component với nested controls, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = this.[blank_3].group({ [blank_4]: this.[blank_5].array([ [blank_6] ]) });',
                     'blanks' => 'formGroup, fb, formBuilder, items, fb, new FormControl("", Validators.required)',
                 ],
                 [
-                    'question' => 'Để thực hiện một HTTP DELETE request trong Angular, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].delete("[blank_3]").subscribe();[/code]',
+                    'question' => 'Để thực hiện một HTTP DELETE request trong Angular, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].delete("[blank_3]").subscribe();',
                     'blanks' => 'httpClient, httpClient, /api/delete',
                 ],
                 [
-                    'question' => 'Để định nghĩa một Angular component với dynamic content projection, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Component({ selector: "[blank_2]", template: `<ng-content select="[blank_3]"></ng-content>` })[/code]',
+                    'question' => 'Để định nghĩa một Angular component với dynamic content projection, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Component({ selector: "[blank_2]", template: `<ng-content select="[blank_3]"></ng-content>` })',
                     'blanks' => 'Component, app-content, app-highlight',
                 ],
                 [
-                    'question' => 'Để tạo một Angular service với HTTP interceptors và sử dụng cú pháp [blank_1]. Ví dụ: [code]@Injectable() export class [blank_2] implements HttpInterceptor { intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> { [blank_3] } }[/code]',
+                    'question' => 'Để tạo một Angular service với HTTP interceptors và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Injectable() export class [blank_2] implements HttpInterceptor { intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> { [blank_3] } }',
                     'blanks' => 'MyInterceptor, MyInterceptor, return next.handle(req)',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular ngModel trong templates và bind dữ liệu, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]<input [(ngModel)]="[blank_2]" />[/code]',
+                    'question' => 'Để sử dụng Angular ngModel trong templates và bind dữ liệu, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br><input [(ngModel)]="[blank_2]" />',
                     'blanks' => 'modelProperty',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular form control với multiple validators và sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = new [blank_3]([blank_4], [blank_5]);[/code]',
+                    'question' => 'Để khai báo một Angular form control với multiple validators và sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = new [blank_3]([blank_4], [blank_5]);',
                     'blanks' => 'formControl, name, FormControl, "", [Validators.required, Validators.minLength(5)]',
                 ],
                 [
-                    'question' => 'Để tạo một Angular pipe với custom transformation và sử dụng cú pháp [blank_1]. Ví dụ: [code]@Pipe({ name: "[blank_2]" }) export class [blank_3] implements PipeTransform { transform(value: string, [blank_4]: number): string { return value + [blank_5]; } }[/code]',
+                    'question' => 'Để tạo một Angular pipe với custom transformation và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Pipe({ name: "[blank_2]" }) export class [blank_3] implements PipeTransform { transform(value: string, [blank_4]: number): string { return value + [blank_5]; } }',
                     'blanks' => 'Pipe, appendPipe, AppendPipe, suffix, " appended"',
                 ],
                 [
-                    'question' => 'Để định nghĩa một Angular route với canActivate guard và lazy loading, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]const routes: Routes = [{ path: "[blank_2]", loadChildren: () => import("./[blank_3]").then(m => m.[blank_4]), canActivate: [blank_5] }];[/code]',
+                    'question' => 'Để định nghĩa một Angular route với canActivate guard và lazy loading, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>const routes: Routes = [{ path: "[blank_2]", loadChildren: () => import("./[blank_3]").then(m => m.[blank_4]), canActivate: [blank_5] }];',
                     'blanks' => 'RouterModule, feature, feature.module, FeatureModule, AuthGuard',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular component với input và output properties, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Component({ selector: "[blank_2]", template: `<button (click)="[blank_3]()">Click me</button>` }) export class [blank_4] { @Input() [blank_5]: string; @Output() [blank_6] = new EventEmitter<void>(); [blank_7]() { this.[blank_6].emit(); } }[/code]',
+                    'question' => 'Để khai báo một Angular component với input và output properties, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Component({ selector: "[blank_2]", template: `<button (click)="[blank_3]()">Click me</button>` }) export class [blank_4] { @Input() [blank_5]: string; @Output() [blank_6] = new EventEmitter<void>(); [blank_7]() { this.[blank_6].emit(); } }',
                     'blanks' => 'Component, app-button, onClick, ButtonComponent, message, buttonClick, onClick',
                 ],
                 [
-                    'question' => 'Để tạo một Angular module với các imports, declarations, và providers, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@NgModule({ imports: [BrowserModule, [blank_2]], declarations: [ [blank_3] ], providers: [ [blank_4] ] })[/code]',
+                    'question' => 'Để tạo một Angular module với các imports, declarations, và providers, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@NgModule({ imports: [BrowserModule, [blank_2]], declarations: [ [blank_3] ], providers: [ [blank_4] ] })',
                     'blanks' => 'NgModule, SharedModule, AppComponent, MyService',
                 ],
                 [
-                    'question' => 'Để định nghĩa một Angular service với custom logic và thực hiện HTTP POST request, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Injectable({ providedIn: "[blank_2]" }) export class [blank_3] { [blank_4](data: any) { return this.[blank_5].post("/api/submit", data); } }[/code]',
+                    'question' => 'Để định nghĩa một Angular service với custom logic và thực hiện HTTP POST request, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Injectable({ providedIn: "[blank_2]" }) export class [blank_3] { [blank_4](data: any) { return this.[blank_5].post("/api/submit", data); } }',
                     'blanks' => 'providedIn, root, MyService, submitData, httpClient',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular form array với validators và sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = this.[blank_3].array([ [blank_4] ]);[/code]',
+                    'question' => 'Để khai báo một Angular form array với validators và sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = this.[blank_3].array([ [blank_4] ]);',
                     'blanks' => 'formArray, fb, formBuilder, new FormControl("", Validators.required)',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular ngFor để lặp qua danh sách và hiển thị các phần tử, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]<div *ngFor="let [blank_2] of [blank_3]"> {{ [blank_4] }} </div>[/code]',
+                    'question' => 'Để sử dụng Angular ngFor để lặp qua danh sách và hiển thị các phần tử, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br><div *ngFor="let [blank_2] of [blank_3]"> {{ [blank_4] }} </div>',
                     'blanks' => 'item, items, item.name',
                 ],
                 [
-                    'question' => 'Để tạo một Angular component với các lifecycle hooks và sử dụng cú pháp [blank_1]. Ví dụ: [code]@Component({ selector: "[blank_2]", template: `<p>{{ [blank_3] }}</p>` }) export class [blank_4] implements OnInit { ngOnInit() { [blank_5] } }[/code]',
+                    'question' => 'Để tạo một Angular component với các lifecycle hooks và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Component({ selector: "[blank_2]", template: `<p>{{ [blank_3] }}</p>` }) export class [blank_4] implements OnInit { ngOnInit() { [blank_5] } }',
                     'blanks' => 'Component, app-root, message, AppComponent, console.log("Component initialized")',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular HTTP interceptor để thêm custom headers, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Injectable() export class [blank_2] implements HttpInterceptor { intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> { const headers = req.headers.set("[blank_3]", "[blank_4]"); const clonedReq = req.clone({ headers }); return next.handle(clonedReq); } }[/code]',
+                    'question' => 'Để sử dụng Angular HTTP interceptor để thêm custom headers, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Injectable() export class [blank_2] implements HttpInterceptor { intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> { const headers = req.headers.set("[blank_3]", "[blank_4]"); const clonedReq = req.clone({ headers }); return next.handle(clonedReq); } }',
                     'blanks' => 'MyInterceptor, MyInterceptor, Authorization, Bearer token',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular form với nested controls và validators, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = this.[blank_3].group({ [blank_4]: this.[blank_5].control("", [blank_6]) });[/code]',
+                    'question' => 'Để khai báo một Angular form với nested controls và validators, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = this.[blank_3].group({ [blank_4]: this.[blank_5].control("", [blank_6]) });',
                     'blanks' => 'formGroup, fb, formBuilder, name, fb, Validators.required',
                 ],
                 [
-                    'question' => 'Để tạo một Angular directive với host listener và sử dụng cú pháp [blank_1]. Ví dụ: [code]@Directive({ selector: "[blank_2]" }) export class [blank_3] { @HostListener("click") onClick() { [blank_4] } }[/code]',
+                    'question' => 'Để tạo một Angular directive với host listener và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Directive({ selector: "[blank_2]" }) export class [blank_3] { @HostListener("click") onClick() { [blank_4] } }',
                     'blanks' => 'Directive, appClick, ClickDirective, console.log("Clicked!")',
                 ],
                 [
-                    'question' => 'Để định nghĩa một Angular component với content projection và sử dụng cú pháp [blank_1]. Ví dụ: [code]@Component({ selector: "[blank_2]", template: `<ng-content></ng-content>` })[/code]',
+                    'question' => 'Để định nghĩa một Angular component với content projection và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Component({ selector: "[blank_2]", template: `<ng-content></ng-content>` })',
                     'blanks' => 'Component, app-content',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular module với các providers toàn cục và sử dụng cú pháp [blank_1]. Ví dụ: [code]@NgModule({ providers: [{ provide: [blank_2], useClass: [blank_3] }] })[/code]',
+                    'question' => 'Để khai báo một Angular module với các providers toàn cục và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@NgModule({ providers: [{ provide: [blank_2], useClass: [blank_3] }] })',
                     'blanks' => 'MyService, MyService',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular ngModel trong một component với two-way data binding, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]<input [(ngModel)]="[blank_2]" />[/code]',
+                    'question' => 'Để sử dụng Angular ngModel trong một component với two-way data binding, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br><input [(ngModel)]="[blank_2]" />',
                     'blanks' => 'modelProperty',
                 ],
                 [
-                    'question' => 'Để tạo một Angular service với HTTP request và xử lý lỗi, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2].get("[blank_3]").pipe(catchError([blank_4] => { return throwError([blank_5]); })).subscribe();[/code]',
+                    'question' => 'Để tạo một Angular service với HTTP request và xử lý lỗi, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2].get("[blank_3]").pipe(catchError([blank_4] => { return throwError([blank_5]); })).subscribe();',
                     'blanks' => 'httpClient, httpClient, /api/data, error => console.error(error), error',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular module với các imports và providers, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@NgModule({ imports: [BrowserModule, [blank_2]], providers: [ [blank_3] ] })[/code]',
+                    'question' => 'Để khai báo một Angular module với các imports và providers, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@NgModule({ imports: [BrowserModule, [blank_2]], providers: [ [blank_3] ] })',
                     'blanks' => 'NgModule, SharedModule, MyService',
                 ],
                 [
-                    'question' => 'Để tạo một Angular component với custom styles và sử dụng cú pháp [blank_1]. Ví dụ: [code]@Component({ selector: "[blank_2]", template: `<div class="[blank_3]">Hello</div>`, styleUrls: ["[blank_4]"] })[/code]',
+                    'question' => 'Để tạo một Angular component với custom styles và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Component({ selector: "[blank_2]", template: `<div class="[blank_3]">Hello</div>`, styleUrls: ["[blank_4]"] })',
                     'blanks' => 'Component, app-root, custom-class, app.component.css',
                 ],
                 [
-                    'question' => 'Để định nghĩa một Angular module với lazy loaded feature và sử dụng cú pháp [blank_1]. Ví dụ: [code]const routes: Routes = [{ path: "[blank_2]", loadChildren: () => import("./[blank_3]").then(m => m.[blank_4]) }]; @NgModule({ imports: [RouterModule.forRoot(routes)] })[/code]',
+                    'question' => 'Để định nghĩa một Angular module với lazy loaded feature và sử dụng lệnh [blank_1].<br>Ví dụ:<br>const routes: Routes = [{ path: "[blank_2]", loadChildren: () => import("./[blank_3]").then(m => m.[blank_4]) }]; @NgModule({ imports: [RouterModule.forRoot(routes)] })',
                     'blanks' => 'RouterModule, feature, feature.module, FeatureModule',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular ngIf với điều kiện phức tạp trong templates, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]<div *ngIf="[blank_2] && [blank_3]">[blank_4]</div>[/code]',
+                    'question' => 'Để sử dụng Angular ngIf với điều kiện phức tạp trong templates, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br><div *ngIf="[blank_2] && [blank_3]">[blank_4]</div>',
                     'blanks' => 'condition1, condition2, content',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular form với multiple controls và validators, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = this.[blank_3].group({ [blank_4]: ["", Validators.required], [blank_5]: ["", Validators.minLength(5)] });[/code]',
+                    'question' => 'Để khai báo một Angular form với multiple controls và validators, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = this.[blank_3].group({ [blank_4]: ["", Validators.required], [blank_5]: ["", Validators.minLength(5)] });',
                     'blanks' => 'formGroup, fb, formBuilder, name, email',
                 ],
                 [
-                    'question' => 'Để tạo một Angular component với templateUrl và styleUrls, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Component({ selector: "[blank_2]", templateUrl: "[blank_3]", styleUrls: ["[blank_4]"] })[/code]',
+                    'question' => 'Để tạo một Angular component với templateUrl và styleUrls, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Component({ selector: "[blank_2]", templateUrl: "[blank_3]", styleUrls: ["[blank_4]"] })',
                     'blanks' => 'Component, app-root, app.component.html, app.component.css',
                 ],
                 [
-                    'question' => 'Để định nghĩa một Angular module với nhiều imports và providers, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@NgModule({ imports: [BrowserModule, [blank_2]], providers: [ [blank_3] ] })[/code]',
+                    'question' => 'Để định nghĩa một Angular module với nhiều imports và providers, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@NgModule({ imports: [BrowserModule, [blank_2]], providers: [ [blank_3] ] })',
                     'blanks' => 'NgModule, SharedModule, MyService',
                 ],
                 [
-                    'question' => 'Để khai báo một Angular form với form array và validators, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]this.[blank_2] = this.[blank_3].array([ [blank_4] ]);[/code]',
+                    'question' => 'Để khai báo một Angular form với form array và validators, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>this.[blank_2] = this.[blank_3].array([ [blank_4] ]);',
                     'blanks' => 'formArray, fb, formBuilder, new FormControl("", Validators.required)',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular ngModel trong một component với binding dữ liệu, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]<input [(ngModel)]="[blank_2]" />[/code]',
-                    'blanks' => 'modelProperty',
+                    'question' => 'Để sử dụng Angular ngModel trong một component với binding dữ liệu, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br><input [(ngModel)]="[blank_2]" />',
+                    'blanks' => 'ngModel, modelProperty',
                 ],
                 [
-                    'question' => 'Để tạo một Angular service với các phương thức tùy chỉnh và sử dụng cú pháp [blank_1]. Ví dụ: [code]@Injectable({ providedIn: "[blank_2]" }) export class [blank_3] { [blank_4]() { return "Hello World"; } }[/code]',
+                    'question' => 'Để tạo một Angular service với các phương thức tùy chỉnh và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Injectable({ providedIn: "[blank_2]" }) export class [blank_3] { [blank_4]() { return "Hello World"; } }',
                     'blanks' => 'providedIn, root, MyService, getMessage',
                 ],
                 [
-                    'question' => 'Để định nghĩa một Angular service với custom logic và thực hiện HTTP GET request, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]@Injectable({ providedIn: "[blank_2]" }) export class [blank_3] { [blank_4]() { return this.[blank_5].get("/api/data"); } }[/code]',
+                    'question' => 'Để định nghĩa một Angular service với custom logic và thực hiện HTTP GET request, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Injectable({ providedIn: "[blank_2]" }) export class [blank_3] { [blank_4]() { return this.[blank_5].get("/api/data"); } }',
                     'blanks' => 'providedIn, root, MyService, getData, httpClient',
                 ],
                 [
-                    'question' => 'Để sử dụng Angular ngFor để lặp qua danh sách và hiển thị các phần tử, bạn sử dụng cú pháp [blank_1]. Ví dụ: [code]<div *ngFor="let [blank_2] of [blank_3]"> {{ [blank_4] }} </div>[/code]',
-                    'blanks' => 'item, items, item.name',
+                    'question' => 'Để sử dụng Angular ngFor để lặp qua danh sách và hiển thị các phần tử, bạn sử dụng lệnh [blank_1].<br>Ví dụ:<br><div *ngFor="let [blank_2] of [blank_3]"> {{ [blank_4] }} </div>',
+                    'blanks' => 'ngFor, item, items, item.name',
                 ],
                 [
-                    'question' => 'Để tạo một Angular component với các lifecycle hooks và sử dụng cú pháp [blank_1]. Ví dụ: [code]@Component({ selector: "[blank_2]", template: `<p>{{ [blank_3] }}</p>` }) export class [blank_4] implements OnInit { ngOnInit() { [blank_5] } }[/code]',
+                    'question' => 'Để tạo một Angular component với các lifecycle hooks và sử dụng lệnh [blank_1].<br>Ví dụ:<br>@Component({ selector: "[blank_2]", template: `<p>{{ [blank_3] }}</p>` }) export class [blank_4] implements OnInit { ngOnInit() { [blank_5] } }',
                     'blanks' => 'Component, app-root, message, AppComponent, console.log("Component initialized")',
                 ],
             ];

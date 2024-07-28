@@ -117,7 +117,7 @@
                                                     $outputString = preg_replace_callback(
                                                         '/\[blank_(\d+)\]/',
                                                         function ($matches) use ($id){
-                                                            return '<input class="border-bottom border-0 border-2" type="text" name="essays['.$id.'][blank_' . $matches[1] . ']" required>
+                                                            return '<input class="border-bottom border-0 border-2" type="text" name="essays['.$id.'][blank_' . $matches[1] . ']">
                                                                 ';
                                                         },
                                                         $q['question'],
@@ -156,4 +156,21 @@
         var quiz = @json($limit);
         var total = quiz;
     </script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('text_form');
+
+        form.addEventListener('submit', function(event) {
+            // Lấy tất cả các input thuộc type text trong form
+            const essayInputs = form.querySelectorAll('input[type="text"]');
+
+            // Điền giá trị mặc định cho các ô trống
+            essayInputs.forEach(input => {
+                if (input.value.trim() === '') {
+                    input.value = ''; // Điền chuỗi rỗng nếu ô trống
+                }
+            });
+        });
+    });
+</script>
 @endsection

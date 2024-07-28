@@ -14,7 +14,7 @@ class dataReactSeeder extends Seeder
         $this->questions_react =
             [
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nfunction App() {\n  return <h1>Hello World</h1>;\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>function App() {<br>  return <h1>Hello World</h1>;<br>}<br>```',
                     'option_1' => 'Hiển thị "Hello World" trên trang web',
                     'option_2' => 'Hiển thị một lỗi vì không có thẻ đóng',
                     'option_3' => 'Hiển thị một component trống',
@@ -24,7 +24,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nclass Welcome extends React.Component {\n  render() {\n    return <h1>Welcome {this.props.name}</h1>;\n  }\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>class Welcome extends React.Component {<br>  render() {<br>    return <h1>Welcome {this.props.name}</h1>;<br>  }<br>}<br>```',
                     'option_1' => 'Hiển thị "Welcome" cộng với giá trị thuộc tính `name`',
                     'option_2' => 'Hiển thị "Welcome" mà không có thuộc tính `name`',
                     'option_3' => 'Gây lỗi vì không có thuộc tính `name`',
@@ -34,7 +34,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst element = <button>Click me</button>;\nReactDOM.render(element, document.getElementById(\'root\'));\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const element = <button>Click me</button>;<br>ReactDOM.render(element, document.getElementById(\'root\'));<br>```',
                     'option_1' => 'Hiển thị một nút bấm với nội dung "Click me"',
                     'option_2' => 'Hiển thị một thông báo lỗi',
                     'option_3' => 'Không hiển thị gì',
@@ -44,7 +44,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nfunction MyComponent() {\n  const [count, setCount] = React.useState(0);\n  return <button onClick={() => setCount(count + 1)}>{count}</button>;\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>function MyComponent() {<br>  const [count, setCount] = React.useState(0);<br>  return <button onClick={() => setCount(count + 1)}>{count}</button>;<br>}<br>```',
                     'option_1' => 'Hiển thị một nút bấm với số đếm và tăng số đếm khi nhấn nút',
                     'option_2' => 'Hiển thị một nút bấm với số đếm không thay đổi',
                     'option_3' => 'Hiển thị một thông báo lỗi khi nhấn nút',
@@ -54,7 +54,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst element = <div className="container">Hello</div>;\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const element = <div className="container">Hello</div>;<br>```',
                     'option_1' => 'Hiển thị một `div` với class là "container" và nội dung "Hello"',
                     'option_2' => 'Hiển thị một `div` mà không có class',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -64,7 +64,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nfunction Greeting(props) {\n  return <h1>Hello, {props.name}</h1>;\n}\nconst element = <Greeting name="Alice" />;\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>function Greeting(props) {<br>  return <h1>Hello, {props.name}</h1>;<br>}<br>const element = <Greeting name="Alice" />;<br>```',
                     'option_1' => 'Hiển thị "Hello, Alice"',
                     'option_2' => 'Hiển thị "Hello, {props.name}"',
                     'option_3' => 'Hiển thị "Hello," mà không có tên',
@@ -74,7 +74,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst MyComponent = () => <div>My Component</div>;\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const MyComponent = () => <div>My Component</div>;<br>```',
                     'option_1' => 'Hiển thị một `div` với nội dung "My Component"',
                     'option_2' => 'Hiển thị một component trống',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -84,7 +84,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [text, setText] = React.useState("");\n  return <input value={text} onChange={e => setText(e.target.value)} />;\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [text, setText] = React.useState("");<br>  return <input value={text} onChange={e => setText(e.target.value)} />;<br>};<br>```',
                     'option_1' => 'Hiển thị một ô input và cho phép người dùng nhập văn bản',
                     'option_2' => 'Hiển thị một ô input nhưng không cho phép nhập văn bản',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -94,7 +94,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nfunction List(props) {\n  return (\n    <ul>\n      {props.items.map(item => <li key={item}>{item}</li>)}\n    </ul>\n  );\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>function List(props) {<br>  return (<br>    <ul><br>      {props.items.map(item => <li key={item}>{item}</li>)}<br>    </ul><br>  );<br>}<br>```',
                     'option_1' => 'Hiển thị một danh sách các mục từ `props.items`',
                     'option_2' => 'Hiển thị một danh sách trống',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -104,7 +104,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nfunction Counter() {\n  const [count, setCount] = React.useState(0);\n  return <button onClick={() => setCount(count + 1)}>{count}</button>;\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>function Counter() {<br>  const [count, setCount] = React.useState(0);<br>  return <button onClick={() => setCount(count + 1)}>{count}</button>;<br>}<br>```',
                     'option_1' => 'Hiển thị một nút bấm với số đếm và tăng số đếm khi nhấn nút',
                     'option_2' => 'Hiển thị một nút bấm với số đếm không thay đổi',
                     'option_3' => 'Hiển thị một thông báo lỗi khi nhấn nút',
@@ -114,7 +114,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nfunction ConditionalRendering({ isLoggedIn }) {\n  return isLoggedIn ? <p>Welcome back!</p> : <p>Please sign up.</p>;\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>function ConditionalRendering({ isLoggedIn }) {<br>  return isLoggedIn ? <p>Welcome back!</p> : <p>Please sign up.</p>;<br>}<br>```',
                     'option_1' => 'Hiển thị "Welcome back!" nếu `isLoggedIn` là true, ngược lại hiển thị "Please sign up."',
                     'option_2' => 'Luôn luôn hiển thị "Welcome back!"',
                     'option_3' => 'Luôn luôn hiển thị "Please sign up."',
@@ -124,7 +124,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [value, setValue] = React.useState("");\n  return (\n    <input value={value} onChange={e => setValue(e.target.value)} />\n  );\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [value, setValue] = React.useState("");<br>  return (<br>    <input value={value} onChange={e => setValue(e.target.value)} /><br>  );<br>};<br>```',
                     'option_1' => 'Hiển thị một ô input với giá trị có thể thay đổi',
                     'option_2' => 'Hiển thị một ô input nhưng không thay đổi giá trị',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -134,7 +134,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst items = [1, 2, 3];\nconst listItems = items.map(item => <li key={item}>{item}</li>);\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const items = [1, 2, 3];<br>const listItems = items.map(item => <li key={item}>{item}</li>);<br>```',
                     'option_1' => 'Tạo một mảng các phần tử `li` với giá trị từ `items`',
                     'option_2' => 'Tạo một mảng các phần tử trống',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -144,7 +144,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nfunction Toggle() {\n  const [isOn, setIsOn] = React.useState(true);\n  return <button onClick={() => setIsOn(!isOn)}>{isOn ? "On" : "Off"}</button>;\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>function Toggle() {<br>  const [isOn, setIsOn] = React.useState(true);<br>  return <button onClick={() => setIsOn(!isOn)}>{isOn ? "On" : "Off"}</button>;<br>}<br>```',
                     'option_1' => 'Hiển thị một nút bấm với nội dung "On" hoặc "Off" tùy theo trạng thái `isOn`',
                     'option_2' => 'Hiển thị một nút bấm với nội dung cố định "On"',
                     'option_3' => 'Hiển thị một nút bấm với nội dung cố định "Off"',
@@ -154,7 +154,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst items = ["apple", "banana", "cherry"];\nconst listItems = items.map((item, index) => <li key={index}>{item}</li>);\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const items = ["apple", "banana", "cherry"];<br>const listItems = items.map((item, index) => <li key={index}>{item}</li>);<br>```',
                     'option_1' => 'Tạo một mảng các phần tử `li` với giá trị từ `items` và chỉ số làm key',
                     'option_2' => 'Tạo một mảng các phần tử trống',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -164,7 +164,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nfunction Profile({ user }) {\n  return <div>Name: {user.name}</div>;\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>function Profile({ user }) {<br>  return <div>Name: {user.name}</div>;<br>}<br>```',
                     'option_1' => 'Hiển thị tên người dùng từ thuộc tính `user`',
                     'option_2' => 'Hiển thị một thông báo lỗi vì không có thuộc tính `name`',
                     'option_3' => 'Hiển thị một component trống',
@@ -174,7 +174,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst MyForm = () => {\n  const [input, setInput] = React.useState("");\n  const handleSubmit = (e) => {\n    e.preventDefault();\n    alert(`Submitted: ${input}`);\n  };\n  return (\n    <form onSubmit={handleSubmit}>\n      <input value={input} onChange={(e) => setInput(e.target.value)} />\n      <button type="submit">Submit</button>\n    </form>\n  );\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const MyForm = () => {<br>  const [input, setInput] = React.useState("");<br>  const handleSubmit = (e) => {<br>    e.preventDefault();<br>    alert(`Submitted: ${input}`);<br>  };<br>  return (<br>    <form onSubmit={handleSubmit}><br>      <input value={input} onChange={(e) => setInput(e.target.value)} /><br>      <button type="submit">Submit</button><br>    </form><br>  );<br>};<br>```',
                     'option_1' => 'Hiển thị một biểu mẫu với ô input và nút bấm gửi, hiển thị cảnh báo với giá trị của ô input khi gửi',
                     'option_2' => 'Hiển thị một biểu mẫu nhưng không thể gửi',
                     'option_3' => 'Hiển thị một thông báo lỗi khi gửi biểu mẫu',
@@ -184,7 +184,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  return <div style={{ color: "red" }}>Styled Text</div>;\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  return <div style={{ color: "red" }}>Styled Text</div>;<br>};<br>```',
                     'option_1' => 'Hiển thị một `div` với văn bản "Styled Text" có màu đỏ',
                     'option_2' => 'Hiển thị một `div` với văn bản "Styled Text" không có màu',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -194,7 +194,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst List = ({ items }) => (\n  <ul>\n    {items.map((item, index) => (\n      <li key={index}>{item}</li>\n    ))}\n  </ul>\n);\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const List = ({ items }) => (<br>  <ul><br>    {items.map((item, index) => (<br>      <li key={index}>{item}</li><br>    ))}<br>  </ul><br>);<br>```',
                     'option_1' => 'Tạo một danh sách các mục từ thuộc tính `items`',
                     'option_2' => 'Tạo một danh sách trống',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -204,7 +204,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nfunction ClickMe() {\n  const handleClick = () => {\n    alert("Button clicked");\n  };\n  return <button onClick={handleClick}>Click me</button>;\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>function ClickMe() {<br>  const handleClick = () => {<br>    alert("Button clicked");<br>  };<br>  return <button onClick={handleClick}>Click me</button>;<br>}<br>```',
                     'option_1' => 'Hiển thị một nút bấm và cảnh báo khi nhấn nút',
                     'option_2' => 'Hiển thị một nút bấm mà không có hành động khi nhấn nút',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -214,7 +214,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst Header = ({ title }) => <h1>{title}</h1>;\nconst App = () => <Header title="My Title" />;\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const Header = ({ title }) => <h1>{title}</h1>;<br>const App = () => <Header title="My Title" />;<br>```',
                     'option_1' => 'Hiển thị một tiêu đề với nội dung "My Title"',
                     'option_2' => 'Hiển thị một tiêu đề trống',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -224,7 +224,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nfunction App() {\n  const [count, setCount] = React.useState(0);\n  return <button onClick={() => setCount(count + 1)}>{count}</button>;\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>function App() {<br>  const [count, setCount] = React.useState(0);<br>  return <button onClick={() => setCount(count + 1)}>{count}</button>;<br>}<br>```',
                     'option_1' => 'Hiển thị một nút bấm với số đếm và tăng số đếm khi nhấn nút',
                     'option_2' => 'Hiển thị một nút bấm với số đếm không thay đổi',
                     'option_3' => 'Hiển thị một thông báo lỗi khi nhấn nút',
@@ -234,7 +234,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [isOpen, setIsOpen] = React.useState(false);\n  return (\n    <div>\n      <button onClick={() => setIsOpen(!isOpen)}>\n        {isOpen ? "Close" : "Open"}\n      </button>\n      {isOpen && <p>The content is visible</p>}\n    </div>\n  );\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [isOpen, setIsOpen] = React.useState(false);<br>  return (<br>    <div><br>      <button onClick={() => setIsOpen(!isOpen)}><br>        {isOpen ? "Close" : "Open"}<br>      </button><br>      {isOpen && <p>The content is visible</p>}<br>    </div><br>  );<br>};<br>```',
                     'option_1' => 'Hiển thị một nút bấm có nội dung "Open" hoặc "Close" và nội dung "The content is visible" nếu `isOpen` là true',
                     'option_2' => 'Hiển thị một nút bấm nhưng không có nội dung bổ sung',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -244,7 +244,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nfunction UserGreeting(props) {\n  return <h1>Welcome back!</h1>;\n}\nfunction GuestGreeting(props) {\n  return <h1>Please sign up.</h1>;\n}\nfunction Greeting(props) {\n  const isLoggedIn = props.isLoggedIn;\n  if (isLoggedIn) {\n    return <UserGreeting />;\n  }\n  return <GuestGreeting />;\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>function UserGreeting(props) {<br>  return <h1>Welcome back!</h1>;<br>}<br>function GuestGreeting(props) {<br>  return <h1>Please sign up.</h1>;<br>}<br>function Greeting(props) {<br>  const isLoggedIn = props.isLoggedIn;<br>  if (isLoggedIn) {<br>    return <UserGreeting />;<br>  }<br>  return <GuestGreeting />;<br>}<br>```',
                     'option_1' => 'Hiển thị "Welcome back!" nếu `isLoggedIn` là true, ngược lại hiển thị "Please sign up."',
                     'option_2' => 'Luôn luôn hiển thị "Welcome back!"',
                     'option_3' => 'Luôn luôn hiển thị "Please sign up."',
@@ -254,7 +254,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  return (\n    <div>\n      <h1>Hello</h1>\n      <h2>World</h2>\n    </div>\n  );\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  return (<br>    <div><br>      <h1>Hello</h1><br>      <h2>World</h2><br>    </div><br>  );<br>};<br>```',
                     'option_1' => 'Hiển thị "Hello" và "World" trong các thẻ h1 và h2 tương ứng',
                     'option_2' => 'Hiển thị một thông báo lỗi',
                     'option_3' => 'Hiển thị "Hello" nhưng không có "World"',
@@ -264,7 +264,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nfunction ListItem(props) {\n  return <li>{props.value}</li>;\n}\nfunction List(props) {\n  return (\n    <ul>\n      {props.items.map((item, index) => <ListItem key={index} value={item} />)}\n    </ul>\n  );\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>function ListItem(props) {<br>  return <li>{props.value}</li>;<br>}<br>function List(props) {<br>  return (<br>    <ul><br>      {props.items.map((item, index) => <ListItem key={index} value={item} />)}<br>    </ul><br>  );<br>}<br>```',
                     'option_1' => 'Tạo một danh sách các mục từ thuộc tính `items` và mỗi mục là một phần tử `li`',
                     'option_2' => 'Tạo một danh sách trống',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -274,7 +274,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nfunction App() {\n  const [show, setShow] = React.useState(true);\n  return (\n    <div>\n      <button onClick={() => setShow(!show)}>Toggle</button>\n      {show && <p>This is visible</p>}\n    </div>\n  );\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>function App() {<br>  const [show, setShow] = React.useState(true);<br>  return (<br>    <div><br>      <button onClick={() => setShow(!show)}>Toggle</button><br>      {show && <p>This is visible</p>}<br>    </div><br>  );<br>}<br>```',
                     'option_1' => 'Hiển thị một nút bấm và nội dung "This is visible" khi `show` là true',
                     'option_2' => 'Hiển thị một nút bấm nhưng không có nội dung bổ sung',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -284,7 +284,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [text, setText] = React.useState("Hello");\n  return <input value={text} onChange={(e) => setText(e.target.value)} />;\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [text, setText] = React.useState("Hello");<br>  return <input value={text} onChange={(e) => setText(e.target.value)} />;<br>};<br>```',
                     'option_1' => 'Hiển thị một ô input với giá trị "Hello" và cho phép người dùng thay đổi giá trị',
                     'option_2' => 'Hiển thị một ô input nhưng không thay đổi giá trị',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -294,7 +294,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nfunction Form() {\n  const [input, setInput] = React.useState("");\n  const handleSubmit = (e) => {\n    e.preventDefault();\n    alert(`Submitted: ${input}`);\n  };\n  return (\n    <form onSubmit={handleSubmit}>\n      <input value={input} onChange={(e) => setInput(e.target.value)} />\n      <button type="submit">Submit</button>\n    </form>\n  );\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>function Form() {<br>  const [input, setInput] = React.useState("");<br>  const handleSubmit = (e) => {<br>    e.preventDefault();<br>    alert(`Submitted: ${input}`);<br>  };<br>  return (<br>    <form onSubmit={handleSubmit}><br>      <input value={input} onChange={(e) => setInput(e.target.value)} /><br>      <button type="submit">Submit</button><br>    </form><br>  );<br>}<br>```',
                     'option_1' => 'Hiển thị một biểu mẫu với ô input và nút bấm gửi, và cảnh báo với giá trị của ô input khi gửi',
                     'option_2' => 'Hiển thị một biểu mẫu nhưng không thể gửi',
                     'option_3' => 'Hiển thị một thông báo lỗi khi gửi biểu mẫu',
@@ -304,7 +304,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst MyComponent = () => {\n  const [isVisible, setIsVisible] = React.useState(true);\n  return (\n    <div>\n      <button onClick={() => setIsVisible(!isVisible)}>Toggle</button>\n      {isVisible && <p>Content is visible</p>}\n    </div>\n  );\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const MyComponent = () => {<br>  const [isVisible, setIsVisible] = React.useState(true);<br>  return (<br>    <div><br>      <button onClick={() => setIsVisible(!isVisible)}>Toggle</button><br>      {isVisible && <p>Content is visible</p>}<br>    </div><br>  );<br>};<br>```',
                     'option_1' => 'Hiển thị một nút bấm và nội dung "Content is visible" khi `isVisible` là true',
                     'option_2' => 'Hiển thị một nút bấm nhưng không có nội dung bổ sung',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -314,7 +314,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nfunction App() {\n  return <h1>Hello, React!</h1>;\n}\nconst root = ReactDOM.createRoot(document.getElementById("root"));\nroot.render(<App />);\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>function App() {<br>  return <h1>Hello, React!</h1>;<br>}<br>const root = ReactDOM.createRoot(document.getElementById("root"));<br>root.render(<App />);<br>```',
                     'option_1' => 'Hiển thị "Hello, React!" trên trang web',
                     'option_2' => 'Hiển thị một thông báo lỗi',
                     'option_3' => 'Không hiển thị gì',
@@ -324,7 +324,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst MyComponent = () => <div>{1 + 1}</div>;\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const MyComponent = () => <div>{1 + 1}</div>;<br>```',
                     'option_1' => 'Hiển thị "2"',
                     'option_2' => 'Hiển thị "1 + 1"',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -334,7 +334,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nfunction User({ name }) {\n  return <h1>Hello, {name}</h1>;\n}\nconst App = () => <User name="Bob" />;\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>function User({ name }) {<br>  return <h1>Hello, {name}</h1>;<br>}<br>const App = () => <User name="Bob" />;<br>```',
                     'option_1' => 'Hiển thị "Hello, Bob"',
                     'option_2' => 'Hiển thị "Hello, {name}"',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -344,7 +344,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nfunction App() {\n  return (\n    <div>\n      <p>This is a paragraph</p>\n      <p>This is another paragraph</p>\n    </div>\n  );\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>function App() {<br>  return (<br>    <div><br>      <p>This is a paragraph</p><br>      <p>This is another paragraph</p><br>    </div><br>  );<br>}<br>```',
                     'option_1' => 'Hiển thị hai đoạn văn bản trong các thẻ `p`',
                     'option_2' => 'Hiển thị một đoạn văn bản và một thông báo lỗi',
                     'option_3' => 'Hiển thị một đoạn văn bản trống',
@@ -354,7 +354,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [count, setCount] = React.useState(0);\n  return <button onClick={() => setCount(count + 1)}>{count}</button>;\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [count, setCount] = React.useState(0);<br>  return <button onClick={() => setCount(count + 1)}>{count}</button>;<br>};<br>```',
                     'option_1' => 'Hiển thị một nút bấm với số đếm và tăng số đếm khi nhấn nút',
                     'option_2' => 'Hiển thị một nút bấm với số đếm không thay đổi',
                     'option_3' => 'Hiển thị một thông báo lỗi khi nhấn nút',
@@ -364,7 +364,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nfunction App() {\n  return (\n    <div>\n      <h1>Welcome</h1>\n      <p>To the React world!</p>\n    </div>\n  );\n}\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>function App() {<br>  return (<br>    <div><br>      <h1>Welcome</h1><br>      <p>To the React world!</p><br>    </div><br>  );<br>}<br>```',
                     'option_1' => 'Hiển thị một tiêu đề và một đoạn văn bản',
                     'option_2' => 'Hiển thị một thông báo lỗi',
                     'option_3' => 'Hiển thị một tiêu đề và một đoạn văn bản nhưng không đúng định dạng',
@@ -374,7 +374,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [value, setValue] = React.useState("initial");\n  React.useEffect(() => {\n    setValue("updated");\n  }, []);\n  return <div>{value}</div>;\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [value, setValue] = React.useState("initial");<br>  React.useEffect(() => {<br>    setValue("updated");<br>  }, []);<br>  return <div>{value}</div>;<br>};<br>```',
                     'option_1' => 'Hiển thị "updated"',
                     'option_2' => 'Hiển thị "initial"',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -384,7 +384,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [data, setData] = React.useState(null);\n  React.useEffect(() => {\n    fetch("https://api.example.com/data")\n      .then((response) => response.json())\n      .then((result) => setData(result));\n  }, []);\n  return <div>{data ? data.message : "Loading..."}</div>;\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [data, setData] = React.useState(null);<br>  React.useEffect(() => {<br>    fetch("https://api.example.com/data")<br>      .then((response) => response.json())<br>      .then((result) => setData(result));<br>  }, []);<br>  return <div>{data ? data.message : "Loading..."}</div>;<br>};<br>```',
                     'option_1' => 'Hiển thị "Loading..." khi dữ liệu chưa được tải và thông điệp khi dữ liệu đã được tải',
                     'option_2' => 'Hiển thị "Loading..." mãi mãi',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -394,7 +394,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [count, setCount] = React.useState(0);\n  return (\n    <div>\n      <button onClick={() => setCount(count + 1)}>Increment</button>\n      <p>Count: {count}</p>\n    </div>\n  );\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [count, setCount] = React.useState(0);<br>  return (<br>    <div><br>      <button onClick={() => setCount(count + 1)}>Increment</button><br>      <p>Count: {count}</p><br>    </div><br>  );<br>};<br>```',
                     'option_1' => 'Hiển thị một nút bấm để tăng giá trị và hiển thị giá trị hiện tại của biến `count`',
                     'option_2' => 'Hiển thị một nút bấm nhưng không thay đổi giá trị của `count`',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -404,7 +404,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [isToggled, setIsToggled] = React.useState(false);\n  return (\n    <button onClick={() => setIsToggled(!isToggled)}>\n      {isToggled ? "On" : "Off"}\n    </button>\n  );\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [isToggled, setIsToggled] = React.useState(false);<br>  return (<br>    <button onClick={() => setIsToggled(!isToggled)}><br>      {isToggled ? "On" : "Off"}<br>    </button><br>  );<br>};<br>```',
                     'option_1' => 'Hiển thị một nút bấm với văn bản "On" hoặc "Off" tùy thuộc vào trạng thái `isToggled`',
                     'option_2' => 'Hiển thị một nút bấm với văn bản "On" liên tục',
                     'option_3' => 'Hiển thị một nút bấm với văn bản "Off" liên tục',
@@ -414,7 +414,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst MyComponent = () => {\n  return <div className="container">{[1, 2, 3].map(num => <span key={num}>{num}</span>)}</div>;\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const MyComponent = () => {<br>  return <div className="container">{[1, 2, 3].map(num => <span key={num}>{num}</span>)}</div>;<br>};<br>```',
                     'option_1' => 'Hiển thị các số 1, 2, 3 trong các thẻ `span` bên trong một `div` có lớp `container`',
                     'option_2' => 'Hiển thị một `div` trống',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -424,7 +424,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [data, setData] = React.useState([]);\n  React.useEffect(() => {\n    const timer = setTimeout(() => setData([1, 2, 3]), 1000);\n    return () => clearTimeout(timer);\n  }, []);\n  return <div>{data.join(", ")}</div>;\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [data, setData] = React.useState([]);<br>  React.useEffect(() => {<br>    const timer = setTimeout(() => setData([1, 2, 3]), 1000);<br>    return () => clearTimeout(timer);<br>  }, []);<br>  return <div>{data.join(", ")}</div>;<br>};<br>```',
                     'option_1' => 'Hiển thị "1, 2, 3" sau 1 giây',
                     'option_2' => 'Hiển thị một thông báo lỗi',
                     'option_3' => 'Hiển thị dữ liệu trống',
@@ -434,7 +434,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [text, setText] = React.useState("text");\n  return (\n    <div>\n      <input value={text} onChange={e => setText(e.target.value)} />\n      <p>{text}</p>\n    </div>\n  );\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [text, setText] = React.useState("text");<br>  return (<br>    <div><br>      <input value={text} onChange={e => setText(e.target.value)} /><br>      <p>{text}</p><br>    </div><br>  );<br>};<br>```',
                     'option_1' => 'Hiển thị một ô input với giá trị "text" và hiển thị giá trị này dưới dạng văn bản trong thẻ `p`',
                     'option_2' => 'Hiển thị một ô input nhưng không thay đổi giá trị văn bản trong thẻ `p`',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -444,7 +444,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [count, setCount] = React.useState(0);\n  const increment = () => setCount(c => c + 1);\n  return <button onClick={increment}>Increment</button>;\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [count, setCount] = React.useState(0);<br>  const increment = () => setCount(c => c + 1);<br>  return <button onClick={increment}>Increment</button>;<br>};<br>```',
                     'option_1' => 'Hiển thị một nút bấm và tăng giá trị `count` khi nút được nhấn',
                     'option_2' => 'Hiển thị một nút bấm nhưng không thay đổi giá trị `count`',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -454,7 +454,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [show, setShow] = React.useState(true);\n  return (\n    <div>\n      <button onClick={() => setShow(prev => !prev)}>Toggle</button>\n      {show && <p>Visible</p>}\n    </div>\n  );\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [show, setShow] = React.useState(true);<br>  return (<br>    <div><br>      <button onClick={() => setShow(prev => !prev)}>Toggle</button><br>      {show && <p>Visible</p>}<br>    </div><br>  );<br>};<br>```',
                     'option_1' => 'Hiển thị một nút bấm và văn bản "Visible" nếu `show` là true',
                     'option_2' => 'Hiển thị một nút bấm nhưng không có văn bản',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -464,7 +464,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst MyComponent = () => {\n  return <div>{[1, 2, 3].map(num => <span key={num}>{num}</span>)}</div>;\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const MyComponent = () => {<br>  return <div>{[1, 2, 3].map(num => <span key={num}>{num}</span>)}</div>;<br>};<br>```',
                     'option_1' => 'Hiển thị các số 1, 2, 3 trong các thẻ `span` bên trong một `div`',
                     'option_2' => 'Hiển thị một `div` trống',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -474,7 +474,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [count, setCount] = React.useState(0);\n  return (\n    <div>\n      <button onClick={() => setCount(count + 1)}>Increment</button>\n      <p>{count}</p>\n    </div>\n  );\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [count, setCount] = React.useState(0);<br>  return (<br>    <div><br>      <button onClick={() => setCount(count + 1)}>Increment</button><br>      <p>{count}</p><br>    </div><br>  );<br>};<br>```',
                     'option_1' => 'Hiển thị một nút bấm để tăng giá trị và hiển thị giá trị hiện tại của biến `count`',
                     'option_2' => 'Hiển thị một nút bấm nhưng không thay đổi giá trị của `count`',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -484,7 +484,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [text, setText] = React.useState("text");\n  return (\n    <input value={text} onChange={e => setText(e.target.value)} />\n  );\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [text, setText] = React.useState("text");<br>  return (<br>    <input value={text} onChange={e => setText(e.target.value)} /><br>  );<br>};<br>```',
                     'option_1' => 'Hiển thị một ô input với giá trị "text" và cho phép thay đổi giá trị của nó',
                     'option_2' => 'Hiển thị một ô input nhưng không thay đổi giá trị của nó',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -494,7 +494,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [items, setItems] = React.useState(["item1", "item2"]);\n  return (\n    <ul>\n      {items.map((item, index) => <li key={index}>{item}</li>)}</ul>\n  );\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [items, setItems] = React.useState(["item1", "item2"]);<br>  return (<br>    <ul><br>      {items.map((item, index) => <li key={index}>{item}</li>)}</ul><br>  );<br>};<br>```',
                     'option_1' => 'Hiển thị danh sách các mục từ mảng `items` trong các thẻ `li` bên trong một thẻ `ul`',
                     'option_2' => 'Hiển thị một `ul` trống',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -504,7 +504,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [show, setShow] = React.useState(false);\n  return (\n    <div>\n      <button onClick={() => setShow(!show)}>Toggle</button>\n      {show && <p>Visible</p>}\n    </div>\n  );\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [show, setShow] = React.useState(false);<br>  return (<br>    <div><br>      <button onClick={() => setShow(!show)}>Toggle</button><br>      {show && <p>Visible</p>}<br>    </div><br>  );<br>};<br>```',
                     'option_1' => 'Hiển thị một nút bấm và văn bản "Visible" khi `show` là true',
                     'option_2' => 'Hiển thị một nút bấm nhưng không có văn bản',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -514,7 +514,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [data, setData] = React.useState(null);\n  React.useEffect(() => {\n    fetch("https://api.example.com/data")\n      .then((response) => response.json())\n      .then((result) => setData(result));\n  }, []);\n  return <div>{data ? data.message : "Loading..."}</div>;\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [data, setData] = React.useState(null);<br>  React.useEffect(() => {<br>    fetch("https://api.example.com/data")<br>      .then((response) => response.json())<br>      .then((result) => setData(result));<br>  }, []);<br>  return <div>{data ? data.message : "Loading..."}</div>;<br>};<br>```',
                     'option_1' => 'Hiển thị "Loading..." khi dữ liệu chưa được tải và thông điệp khi dữ liệu đã được tải',
                     'option_2' => 'Hiển thị "Loading..." mãi mãi',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -524,7 +524,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [count, setCount] = React.useState(0);\n  const increment = () => setCount(c => c + 1);\n  return <button onClick={increment}>Increment</button>;\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [count, setCount] = React.useState(0);<br>  const increment = () => setCount(c => c + 1);<br>  return <button onClick={increment}>Increment</button>;<br>};<br>```',
                     'option_1' => 'Hiển thị một nút bấm và tăng giá trị `count` khi nút được nhấn',
                     'option_2' => 'Hiển thị một nút bấm nhưng không thay đổi giá trị `count`',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -534,7 +534,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [text, setText] = React.useState("Hello");\n  return (\n    <div>\n      <button onClick={() => setText("World")}>Change Text</button>\n      <p>{text}</p>\n    </div>\n  );\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [text, setText] = React.useState("Hello");<br>  return (<br>    <div><br>      <button onClick={() => setText("World")}>Change Text</button><br>      <p>{text}</p><br>    </div><br>  );<br>};<br>```',
                     'option_1' => 'Hiển thị một nút bấm để thay đổi văn bản từ "Hello" thành "World" và hiển thị giá trị văn bản hiện tại trong thẻ `p`',
                     'option_2' => 'Hiển thị một nút bấm nhưng không thay đổi giá trị văn bản trong thẻ `p`',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -544,7 +544,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [show, setShow] = React.useState(false);\n  return (\n    <div>\n      <button onClick={() => setShow(!show)}>Toggle</button>\n      {show && <p>Now you see me</p>}\n    </div>\n  );\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [show, setShow] = React.useState(false);<br>  return (<br>    <div><br>      <button onClick={() => setShow(!show)}>Toggle</button><br>      {show && <p>Now you see me</p>}<br>    </div><br>  );<br>};<br>```',
                     'option_1' => 'Hiển thị một nút bấm và văn bản "Now you see me" khi `show` là true',
                     'option_2' => 'Hiển thị một nút bấm nhưng không có văn bản',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -554,7 +554,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [list, setList] = React.useState(["item1", "item2"]);\n  return (\n    <ul>\n      {list.map((item, index) => <li key={index}>{item}</li>)}</ul>\n  );\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [list, setList] = React.useState(["item1", "item2"]);<br>  return (<br>    <ul><br>      {list.map((item, index) => <li key={index}>{item}</li>)}</ul><br>  );<br>};<br>```',
                     'option_1' => 'Hiển thị danh sách các mục từ mảng `list` trong các thẻ `li` bên trong một thẻ `ul`',
                     'option_2' => 'Hiển thị một `ul` trống',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -564,7 +564,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [text, setText] = React.useState("");\n  return (\n    <div>\n      <input type="text" value={text} onChange={e => setText(e.target.value)} />\n      <p>{text}</p>\n    </div>\n  );\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [text, setText] = React.useState("");<br>  return (<br>    <div><br>      <input type="text" value={text} onChange={e => setText(e.target.value)} /><br>      <p>{text}</p><br>    </div><br>  );<br>};<br>```',
                     'option_1' => 'Hiển thị một ô input và giá trị của ô input sẽ được hiển thị trong thẻ `p`',
                     'option_2' => 'Hiển thị một ô input nhưng không hiển thị giá trị trong thẻ `p`',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -574,7 +574,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [count, setCount] = React.useState(0);\n  return (\n    <div>\n      <button onClick={() => setCount(c => c + 1)}>Increment</button>\n      <p>{count}</p>\n    </div>\n  );\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [count, setCount] = React.useState(0);<br>  return (<br>    <div><br>      <button onClick={() => setCount(c => c + 1)}>Increment</button><br>      <p>{count}</p><br>    </div><br>  );<br>};<br>```',
                     'option_1' => 'Hiển thị một nút bấm và giá trị `count` sẽ được tăng lên mỗi khi nút được nhấn',
                     'option_2' => 'Hiển thị một nút bấm nhưng không thay đổi giá trị của `count`',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -584,7 +584,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [value, setValue] = React.useState("");\n  return (\n    <input value={value} onChange={e => setValue(e.target.value)} />\n  );\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [value, setValue] = React.useState("");<br>  return (<br>    <input value={value} onChange={e => setValue(e.target.value)} /><br>  );<br>};<br>```',
                     'option_1' => 'Hiển thị một ô input với giá trị có thể thay đổi',
                     'option_2' => 'Hiển thị một ô input nhưng giá trị không thay đổi',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -594,7 +594,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [show, setShow] = React.useState(true);\n  return (\n    <div>\n      <button onClick={() => setShow(!show)}>Toggle</button>\n      {show && <p>Content</p>}\n    </div>\n  );\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [show, setShow] = React.useState(true);<br>  return (<br>    <div><br>      <button onClick={() => setShow(!show)}>Toggle</button><br>      {show && <p>Content</p>}<br>    </div><br>  );<br>};<br>```',
                     'option_1' => 'Hiển thị một nút bấm và văn bản "Content" khi `show` là true',
                     'option_2' => 'Hiển thị một nút bấm nhưng không có văn bản',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -604,7 +604,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [data, setData] = React.useState(null);\n  React.useEffect(() => {\n    fetch("https://api.example.com/data")\n      .then((response) => response.json())\n      .then((result) => setData(result));\n  }, []);\n  return <div>{data ? data.message : "Loading..."}</div>;\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [data, setData] = React.useState(null);<br>  React.useEffect(() => {<br>    fetch("https://api.example.com/data")<br>      .then((response) => response.json())<br>      .then((result) => setData(result));<br>  }, []);<br>  return <div>{data ? data.message : "Loading..."}</div>;<br>};<br>```',
                     'option_1' => 'Hiển thị "Loading..." khi dữ liệu chưa được tải và thông điệp khi dữ liệu đã được tải',
                     'option_2' => 'Hiển thị "Loading..." mãi mãi',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -614,7 +614,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [count, setCount] = React.useState(0);\n  const increment = () => setCount(c => c + 1);\n  return <button onClick={increment}>Increment</button>;\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [count, setCount] = React.useState(0);<br>  const increment = () => setCount(c => c + 1);<br>  return <button onClick={increment}>Increment</button>;<br>};<br>```',
                     'option_1' => 'Hiển thị một nút bấm và tăng giá trị `count` khi nút được nhấn',
                     'option_2' => 'Hiển thị một nút bấm nhưng không thay đổi giá trị `count`',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -624,7 +624,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [show, setShow] = React.useState(false);\n  return (\n    <div>\n      <button onClick={() => setShow(!show)}>Toggle</button>\n      {show && <p>Now you see me</p>}\n    </div>\n  );\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [show, setShow] = React.useState(false);<br>  return (<br>    <div><br>      <button onClick={() => setShow(!show)}>Toggle</button><br>      {show && <p>Now you see me</p>}<br>    </div><br>  );<br>};<br>```',
                     'option_1' => 'Hiển thị một nút bấm và văn bản "Now you see me" khi `show` là true',
                     'option_2' => 'Hiển thị một nút bấm nhưng không có văn bản',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -634,7 +634,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [text, setText] = React.useState("Hello");\n  return (\n    <div>\n      <button onClick={() => setText("World")}>Change Text</button>\n      <p>{text}</p>\n    </div>\n  );\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [text, setText] = React.useState("Hello");<br>  return (<br>    <div><br>      <button onClick={() => setText("World")}>Change Text</button><br>      <p>{text}</p><br>    </div><br>  );<br>};<br>```',
                     'option_1' => 'Hiển thị một nút bấm để thay đổi văn bản từ "Hello" thành "World" và hiển thị giá trị văn bản hiện tại trong thẻ `p`',
                     'option_2' => 'Hiển thị một nút bấm nhưng không thay đổi giá trị văn bản trong thẻ `p`',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -644,7 +644,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [count, setCount] = React.useState(0);\n  return (\n    <div>\n      <button onClick={() => setCount(count + 1)}>Increment</button>\n      <p>{count}</p>\n    </div>\n  );\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [count, setCount] = React.useState(0);<br>  return (<br>    <div><br>      <button onClick={() => setCount(count + 1)}>Increment</button><br>      <p>{count}</p><br>    </div><br>  );<br>};<br>```',
                     'option_1' => 'Hiển thị một nút bấm để tăng giá trị và hiển thị giá trị hiện tại của biến `count`',
                     'option_2' => 'Hiển thị một nút bấm nhưng không thay đổi giá trị của `count`',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -654,7 +654,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [text, setText] = React.useState("");\n  return (\n    <div>\n      <input type="text" value={text} onChange={e => setText(e.target.value)} />\n      <p>{text}</p>\n    </div>\n  );\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [text, setText] = React.useState("");<br>  return (<br>    <div><br>      <input type="text" value={text} onChange={e => setText(e.target.value)} /><br>      <p>{text}</p><br>    </div><br>  );<br>};<br>```',
                     'option_1' => 'Hiển thị một ô input và giá trị của ô input sẽ được hiển thị trong thẻ `p`',
                     'option_2' => 'Hiển thị một ô input nhưng không hiển thị giá trị trong thẻ `p`',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -664,7 +664,7 @@ class dataReactSeeder extends Seeder
                     'updated_at' => now(),
                 ],
                 [
-                    'question' => 'Kết quả của đoạn mã sau là gì?\n\n```jsx\nconst App = () => {\n  const [show, setShow] = React.useState(true);\n  return (\n    <div>\n      <button onClick={() => setShow(!show)}>Toggle</button>\n      {show && <p>Content</p>}\n    </div>\n  );\n};\n```',
+                    'question' => 'Kết quả của đoạn mã sau là gì?<br><br>```jsx<br>const App = () => {<br>  const [show, setShow] = React.useState(true);<br>  return (<br>    <div><br>      <button onClick={() => setShow(!show)}>Toggle</button><br>      {show && <p>Content</p>}<br>    </div><br>  );<br>};<br>```',
                     'option_1' => 'Hiển thị một nút bấm và văn bản "Content" khi `show` là true',
                     'option_2' => 'Hiển thị một nút bấm nhưng không có văn bản',
                     'option_3' => 'Hiển thị một thông báo lỗi',
@@ -677,703 +677,703 @@ class dataReactSeeder extends Seeder
         $this->essays_react =
             [
                 [
-                    'question' => 'Để tạo một component trong React, bạn có thể sử dụng [blank_1]. Ví dụ: [code]function MyComponent() { return <div>Hello</div>; }[/code]',
+                    'question' => 'Để tạo một component trong React, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>function MyComponent() { return <div>Hello</div>; }',
                     'blanks' => 'function',
                 ],
                 [
-                    'question' => 'Trong React, để quản lý trạng thái của một component, bạn có thể sử dụng [blank_1]. Ví dụ: [code]const [count, setCount] = useState(0);[/code]',
+                    'question' => 'Trong React, để quản lý trạng thái của một component, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>const [count, setCount] = useState(0);',
                     'blanks' => 'useState',
                 ],
                 [
-                    'question' => 'Để hiển thị một component con trong một component cha, bạn có thể sử dụng [blank_1]. Ví dụ: [code]<ChildComponent />[/code]',
+                    'question' => 'Để hiển thị một component con trong một component cha, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br><ChildComponent />',
                     'blanks' => 'JSX',
                 ],
                 [
-                    'question' => 'Để truyền props từ component cha xuống component con, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]<ChildComponent name="John" />[/code]',
+                    'question' => 'Để truyền props từ component cha xuống component con, bạn có thể sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><ChildComponent name="John" />',
                     'blanks' => 'props',
                 ],
                 [
-                    'question' => 'Để cập nhật trạng thái trong React, bạn sử dụng hàm [blank_1]. Ví dụ: [code]setCount(count + 1);[/code]',
+                    'question' => 'Để cập nhật trạng thái trong React, bạn sử dụng hàm [blank_1]. <br>Ví dụ: <br>setCount(count + 1);',
                     'blanks' => 'setCount',
                 ],
                 [
-                    'question' => 'Trong React, để quản lý các sự kiện như click, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]<button onClick={handleClick}>Click me</button>[/code]',
+                    'question' => 'Trong React, để quản lý các sự kiện như click, bạn có thể sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><button onClick={handleClick}>Click me</button>',
                     'blanks' => 'onClick',
                 ],
                 [
-                    'question' => 'Để xử lý sự kiện trong React, bạn có thể tạo một hàm sự kiện như sau: [code]function handleClick() { [blank_1] }[/code]',
+                    'question' => 'Để xử lý sự kiện trong React, bạn có thể tạo một hàm sự kiện như sau: <br>function handleClick() { [blank_1] }',
                     'blanks' => 'console.log("Button clicked")',
                 ],
                 [
-                    'question' => 'Khi sử dụng React, để render một danh sách các phần tử, bạn có thể sử dụng hàm [blank_1]. Ví dụ: [code]{items.map(item => <li key={item.id}>{item.name}</li>)}</code>',
+                    'question' => 'Khi sử dụng React, để render một danh sách các phần tử, bạn có thể sử dụng hàm [blank_1]. <br>Ví dụ: <br>{items.map(item => <li key={item.id}>{item.name}</li>)}</code>',
                     'blanks' => 'map',
                 ],
                 [
-                    'question' => 'Để tạo một component có thể nhận dữ liệu từ các component cha, bạn sử dụng [blank_1]. Ví dụ: [code]function ChildComponent(props) { return <div>{props.name}</div>; }[/code]',
+                    'question' => 'Để tạo một component có thể nhận dữ liệu từ các component cha, bạn sử dụng [blank_1]. <br>Ví dụ: <br>function ChildComponent(props) { return <div>{props.name}</div>; }',
                     'blanks' => 'props',
                 ],
                 [
-                    'question' => 'Trong React, để thay đổi giá trị của một input, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]<input value={value} onChange={handleChange} />[/code]',
+                    'question' => 'Trong React, để thay đổi giá trị của một input, bạn có thể sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><input value={value} onChange={handleChange} />',
                     'blanks' => 'value',
                 ],
                 [
-                    'question' => 'Để tạo một hook tùy chỉnh trong React, bạn có thể định nghĩa hàm bắt đầu bằng từ [blank_1]. Ví dụ: [code]function useCustomHook() { return value; }[/code]',
+                    'question' => 'Để tạo một hook tùy chỉnh trong React, bạn có thể định nghĩa hàm bắt đầu bằng từ [blank_1]. <br>Ví dụ: <br>function useCustomHook() { return value; }',
                     'blanks' => 'use',
                 ],
                 [
-                    'question' => 'Để sử dụng hiệu ứng phụ trong React, bạn có thể sử dụng hook [blank_1]. Ví dụ: [code]useEffect(() => { [blank_2] }, [blank_3]);[/code]',
+                    'question' => 'Để sử dụng hiệu ứng phụ trong React, bạn có thể sử dụng hook [blank_1]. <br>Ví dụ: <br>useEffect(() => { [blank_2] }, [blank_3]);',
                     'blanks' => 'useEffect,console.log("Component mounted"),[]',
                 ],
                 [
-                    'question' => 'Khi sử dụng React Router, bạn có thể tạo các route bằng cách sử dụng component [blank_1]. Ví dụ: [code]<Route path="/home" component={HomePage} />[/code]',
+                    'question' => 'Khi sử dụng React Router, bạn có thể tạo các route bằng cách sử dụng component [blank_1]. <br>Ví dụ: <br><Route path="/home" component={HomePage} />',
                     'blanks' => 'Route',
                 ],
                 [
-                    'question' => 'Trong React, để đảm bảo một component chỉ được render khi các props thay đổi, bạn có thể sử dụng [blank_1]. Ví dụ: [code]React.memo(Component)[/code]',
+                    'question' => 'Trong React, để đảm bảo một component chỉ được render khi các props thay đổi, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>React.memo(Component)',
                     'blanks' => 'React.memo',
                 ],
                 [
-                    'question' => 'Để kiểm tra kiểu dữ liệu của props trong React, bạn có thể sử dụng [blank_1]. Ví dụ: [code]Component.propTypes = { name: PropTypes.string.isRequired };[/code]',
+                    'question' => 'Để kiểm tra kiểu dữ liệu của props trong React, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>Component.propTypes = { name: PropTypes.string.isRequired };',
                     'blanks' => 'PropTypes',
                 ],
                 [
-                    'question' => 'Để cung cấp giá trị mặc định cho props trong React, bạn có thể sử dụng [blank_1]. Ví dụ: [code]Component.defaultProps = { name: "Default Name" };[/code]',
+                    'question' => 'Để cung cấp giá trị mặc định cho props trong React, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>Component.defaultProps = { name: "Default Name" };',
                     'blanks' => 'defaultProps',
                 ],
                 [
-                    'question' => 'Trong React, để cập nhật một giá trị trong state, bạn sử dụng hàm [blank_1]. Ví dụ: [code]setState({ count: count + 1 });[/code]',
+                    'question' => 'Trong React, để cập nhật một giá trị trong state, bạn sử dụng hàm [blank_1]. <br>Ví dụ: <br>setState({ count: count + 1 });',
                     'blanks' => 'setState',
                 ],
                 [
-                    'question' => 'Để tạo một form đơn giản trong React, bạn có thể sử dụng [blank_1]. Ví dụ: [code]<form onSubmit={handleSubmit}><input type="text" name="name" /></form>[/code]',
+                    'question' => 'Để tạo một form đơn giản trong React, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br><form onSubmit={handleSubmit}><input type="text" name="name" /></form>',
                     'blanks' => 'form',
                 ],
                 [
-                    'question' => 'Để thay đổi lớp CSS của một phần tử trong React, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]<div className={isActive ? "active" : "inactive"}></div>[/code]',
+                    'question' => 'Để thay đổi lớp CSS của một phần tử trong React, bạn có thể sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><div className={isActive ? "active" : "inactive"}></div>',
                     'blanks' => 'className',
                 ],
                 [
-                    'question' => 'Khi sử dụng React, để cập nhật giá trị của một thuộc tính HTML, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]<div id={elementId}></div>[/code]',
+                    'question' => 'Khi sử dụng React, để cập nhật giá trị của một thuộc tính HTML, bạn có thể sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><div id={elementId}></div>',
                     'blanks' => 'id',
                 ],
                 [
-                    'question' => 'Để điều chỉnh kích thước của một phần tử trong React, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]<div style={{ width: "100px", height: "100px" }}></div>[/code]',
+                    'question' => 'Để điều chỉnh kích thước của một phần tử trong React, bạn có thể sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><div style={{ width: "100px", height: "100px" }}></div>',
                     'blanks' => 'style',
                 ],
                 [
-                    'question' => 'Trong React, để render các phần tử con, bạn có thể sử dụng [blank_1]. Ví dụ: [code]return <>{children}</>;[/code]',
+                    'question' => 'Trong React, để render các phần tử con, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>return <>{children}</>;',
                     'blanks' => 'children',
                 ],
                 [
-                    'question' => 'Để sử dụng hook `useState` trong React, bạn cần phải gọi nó trong [blank_1]. Ví dụ: [code]const [state, setState] = useState(initialState);[/code]',
+                    'question' => 'Để sử dụng hook `useState` trong React, bạn cần phải gọi nó trong [blank_1]. <br>Ví dụ: <br>const [state, setState] = useState(initialState);',
                     'blanks' => 'component function',
                 ],
                 [
-                    'question' => 'Để thay đổi giá trị của state khi có một sự kiện xảy ra, bạn có thể sử dụng [blank_1]. Ví dụ: [code]<button onClick={() => setCount(count + 1)}>Increase</button>[/code]',
+                    'question' => 'Để thay đổi giá trị của state khi có một sự kiện xảy ra, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br><button onClick={() => setCount(count + 1)}>Increase</button>',
                     'blanks' => 'onClick',
                 ],
                 [
-                    'question' => 'Để điều chỉnh vị trí của một phần tử trong React, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]style={{ position: "absolute", top: "10px", left: "10px" }}[/code]',
+                    'question' => 'Để điều chỉnh vị trí của một phần tử trong React, bạn có thể sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br>style={{ position: "absolute", top: "10px", left: "10px" }}',
                     'blanks' => 'position',
                 ],
                 [
-                    'question' => 'Trong React, để thay đổi nội dung của một thẻ, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]<div>{content}</div>[/code]',
+                    'question' => 'Trong React, để thay đổi nội dung của một thẻ, bạn có thể sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><div>{content}</div>',
                     'blanks' => 'content',
                 ],
                 [
-                    'question' => 'Để sử dụng React Context, bạn cần phải tạo [blank_1]. Ví dụ: [code]const MyContext = React.createContext();[/code]',
+                    'question' => 'Để sử dụng React Context, bạn cần phải tạo [blank_1]. <br>Ví dụ: <br>const MyContext = React.createContext();',
                     'blanks' => 'context',
                 ],
                 [
-                    'question' => 'Để lấy giá trị từ React Context, bạn sử dụng hook [blank_1]. Ví dụ: [code]const value = useContext(MyContext);[/code]',
+                    'question' => 'Để lấy giá trị từ React Context, bạn sử dụng hook [blank_1]. <br>Ví dụ: <br>const value = useContext(MyContext);',
                     'blanks' => 'useContext',
                 ],
                 [
-                    'question' => 'Để cập nhật giá trị của một input text trong React, bạn sử dụng thuộc tính [blank_1]. Ví dụ: [code]<input value={text} onChange={handleChange} />[/code]',
+                    'question' => 'Để cập nhật giá trị của một input text trong React, bạn sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><input value={text} onChange={handleChange} />',
                     'blanks' => 'value',
                 ],
                 [
-                    'question' => 'Trong React, để thay đổi trạng thái của một checkbox, bạn sử dụng thuộc tính [blank_1]. Ví dụ: [code]<input type="checkbox" checked={isChecked} onChange={handleChange} />[/code]',
+                    'question' => 'Trong React, để thay đổi trạng thái của một checkbox, bạn sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><input type="checkbox" checked={isChecked} onChange={handleChange} />',
                     'blanks' => 'checked',
                 ],
                 [
-                    'question' => 'Để sử dụng một component từ thư viện bên ngoài trong React, bạn cần phải [blank_1]. Ví dụ: [code]import { Component } from "library";[/code]',
+                    'question' => 'Để sử dụng một component từ thư viện bên ngoài trong React, bạn cần phải [blank_1]. <br>Ví dụ: <br>import { Component } from "library";',
                     'blanks' => 'import',
                 ],
                 [
-                    'question' => 'Để thêm một phần tử HTML vào DOM khi render, bạn có thể sử dụng [blank_1]. Ví dụ: [code]ReactDOM.render(<App />, document.getElementById("root"));[/code]',
+                    'question' => 'Để thêm một phần tử HTML vào DOM khi render, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>ReactDOM.render(<App />, document.getElementById("root"));',
                     'blanks' => 'ReactDOM.render',
                 ],
                 [
-                    'question' => 'Trong React, để đảm bảo component không được render lại khi không cần thiết, bạn có thể sử dụng [blank_1]. Ví dụ: [code]React.memo(MyComponent);[/code]',
+                    'question' => 'Trong React, để đảm bảo component không được render lại khi không cần thiết, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>React.memo(MyComponent);',
                     'blanks' => 'React.memo',
                 ],
                 [
-                    'question' => 'Để thiết lập default value cho một component input trong React, bạn sử dụng thuộc tính [blank_1]. Ví dụ: [code]<input defaultValue="Default" />[/code]',
+                    'question' => 'Để thiết lập default value cho một component input trong React, bạn sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><input defaultValue="Default" />',
                     'blanks' => 'defaultValue',
                 ],
                 [
-                    'question' => 'Để sử dụng hook `useEffect` với các dependencies, bạn cần phải truyền [blank_1]. Ví dụ: [code]useEffect(() => { [blank_2] }, [blank_3]);[/code]',
+                    'question' => 'Để sử dụng hook `useEffect` với các dependencies, bạn cần phải truyền [blank_1]. <br>Ví dụ: <br>useEffect(() => { [blank_2] }, [blank_3]);',
                     'blanks' => 'dependencies',
                 ],
                 [
-                    'question' => 'Để thay đổi kiểu font của văn bản trong React, bạn sử dụng thuộc tính [blank_1]. Ví dụ: [code]<div style={{ fontFamily: "Arial" }}>Text</div>[/code]',
+                    'question' => 'Để thay đổi kiểu font của văn bản trong React, bạn sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><div style={{ fontFamily: "Arial" }}>Text</div>',
                     'blanks' => 'fontFamily',
                 ],
                 [
-                    'question' => 'Để cấu hình các thuộc tính của phần tử trong React, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]<div style={{ color: "red", fontSize: "16px" }}></div>[/code]',
+                    'question' => 'Để cấu hình các thuộc tính của phần tử trong React, bạn có thể sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><div style={{ color: "red", fontSize: "16px" }}></div>',
                     'blanks' => 'style',
                 ],
                 [
-                    'question' => 'Trong React, để tạo một component dạng class, bạn cần phải kế thừa từ lớp [blank_1]. Ví dụ: [code]class MyComponent extends React.Component { render() { return <div>Hello</div>; } }[/code]',
+                    'question' => 'Trong React, để tạo một component dạng class, bạn cần phải kế thừa từ lớp [blank_1]. <br>Ví dụ: <br>class MyComponent extends React.Component { render() { return <div>Hello</div>; } }',
                     'blanks' => 'React.Component',
                 ],
                 [
-                    'question' => 'Để truyền giá trị từ component cha xuống component con trong React, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]<ChildComponent name="John" />[/code]',
+                    'question' => 'Để truyền giá trị từ component cha xuống component con trong React, bạn có thể sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><ChildComponent name="John" />',
                     'blanks' => 'props',
                 ],
                 [
-                    'question' => 'Trong React, để thiết lập một default value cho một component, bạn sử dụng thuộc tính [blank_1]. Ví dụ: [code]Component.defaultProps = { name: "Default" };[/code]',
+                    'question' => 'Trong React, để thiết lập một default value cho một component, bạn sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br>Component.defaultProps = { name: "Default" };',
                     'blanks' => 'defaultProps',
                 ],
                 [
-                    'question' => 'Để tạo một form đơn giản với React, bạn có thể sử dụng [blank_1]. Ví dụ: [code]<form onSubmit={handleSubmit}><input type="text" name="name" /></form>[/code]',
+                    'question' => 'Để tạo một form đơn giản với React, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br><form onSubmit={handleSubmit}><input type="text" name="name" /></form>',
                     'blanks' => 'form',
                 ],
                 [
-                    'question' => 'Để quản lý sự thay đổi giá trị của input trong React, bạn có thể sử dụng [blank_1]. Ví dụ: [code]const [value, setValue] = useState("");[/code]',
+                    'question' => 'Để quản lý sự thay đổi giá trị của input trong React, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>const [value, setValue] = useState("");',
                     'blanks' => 'useState',
                 ],
                 [
-                    'question' => 'Để thiết lập các thuộc tính cho một phần tử trong React, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]<div style={{ margin: "10px" }}></div>[/code]',
+                    'question' => 'Để thiết lập các thuộc tính cho một phần tử trong React, bạn có thể sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><div style={{ margin: "10px" }}></div>',
                     'blanks' => 'style',
                 ],
                 [
-                    'question' => 'Trong React, để tạo một điều kiện cho việc render, bạn có thể sử dụng [blank_1]. Ví dụ: [code]return isLoggedIn ? <Logout /> : <Login />;[/code]',
+                    'question' => 'Trong React, để tạo một điều kiện cho việc render, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>return isLoggedIn ? <Logout /> : <Login />;',
                     'blanks' => 'conditional rendering',
                 ],
                 [
-                    'question' => 'Để đảm bảo rằng một component chỉ được tạo ra một lần, bạn có thể sử dụng hook [blank_1]. Ví dụ: [code]useMemo(() => computeExpensiveValue(), [dependencies]);[/code]',
+                    'question' => 'Để đảm bảo rằng một component chỉ được tạo ra một lần, bạn có thể sử dụng hook [blank_1]. <br>Ví dụ: <br>useMemo(() => computeExpensiveValue(), [dependencies]);',
                     'blanks' => 'useMemo',
                 ],
                 [
-                    'question' => 'Để tạo một component có thể nhận props và state, bạn cần định nghĩa nó bằng cách sử dụng [blank_1]. Ví dụ: [code]class MyComponent extends React.Component { render() { return <div>{this.props.text}</div>; } }[/code]',
+                    'question' => 'Để tạo một component có thể nhận props và state, bạn cần định nghĩa nó bằng cách sử dụng [blank_1]. <br>Ví dụ: <br>class MyComponent extends React.Component { render() { return <div>{this.props.text}</div>; } }',
                     'blanks' => 'class',
                 ],
                 [
-                    'question' => 'Để xử lý sự kiện form submit trong React, bạn có thể sử dụng hàm [blank_1]. Ví dụ: [code]function handleSubmit(event) { event.preventDefault(); }[/code]',
+                    'question' => 'Để xử lý sự kiện form submit trong React, bạn có thể sử dụng hàm [blank_1]. <br>Ví dụ: <br>function handleSubmit(event) { event.preventDefault(); }',
                     'blanks' => 'handleSubmit',
                 ],
                 [
-                    'question' => 'Để tạo một button trong React và gán sự kiện cho nó, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]<button onClick={handleClick}>Click me</button>[/code]',
+                    'question' => 'Để tạo một button trong React và gán sự kiện cho nó, bạn có thể sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><button onClick={handleClick}>Click me</button>',
                     'blanks' => 'onClick',
                 ],
                 [
-                    'question' => 'Để quản lý các phần tử danh sách trong React, bạn có thể sử dụng hàm [blank_1]. Ví dụ: [code]{items.map(item => <li key={item.id}>{item.name}</li>)}</code>',
+                    'question' => 'Để quản lý các phần tử danh sách trong React, bạn có thể sử dụng hàm [blank_1]. <br>Ví dụ: <br>{items.map(item => <li key={item.id}>{item.name}</li>)}</code>',
                     'blanks' => 'map',
                 ],
                 [
-                    'question' => 'Để tạo một component đơn giản sử dụng function trong React, bạn có thể viết [blank_1]. Ví dụ: [code]function MyComponent() { return <div>Hello</div>; }[/code]',
+                    'question' => 'Để tạo một component đơn giản sử dụng function trong React, bạn có thể viết [blank_1]. <br>Ví dụ: <br>function MyComponent() { return <div>Hello</div>; }',
                     'blanks' => 'function',
                 ],
                 [
-                    'question' => 'Trong React, để sử dụng một component con trong component cha, bạn có thể gọi nó trong JSX như sau: [blank_1]. Ví dụ: [code]<ChildComponent />[/code]',
+                    'question' => 'Trong React, để sử dụng một component con trong component cha, bạn có thể gọi nó trong JSX như sau: [blank_1]. <br>Ví dụ: <br><ChildComponent />',
                     'blanks' => 'JSX',
                 ],
                 [
-                    'question' => 'Để quản lý sự thay đổi của giá trị trong một ô input, bạn sử dụng thuộc tính [blank_1]. Ví dụ: [code]<input value={inputValue} onChange={handleChange} />[/code]',
+                    'question' => 'Để quản lý sự thay đổi của giá trị trong một ô input, bạn sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><input value={inputValue} onChange={handleChange} />',
                     'blanks' => 'value',
                 ],
                 [
-                    'question' => 'Khi sử dụng React, để gán giá trị cho thuộc tính của một phần tử, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]<div id={elementId}></div>[/code]',
+                    'question' => 'Khi sử dụng React, để gán giá trị cho thuộc tính của một phần tử, bạn có thể sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><div id={elementId}></div>',
                     'blanks' => 'id',
                 ],
                 [
-                    'question' => 'Để tạo một danh sách các phần tử từ một mảng trong React, bạn có thể sử dụng hàm [blank_1]. Ví dụ: [code]{items.map(item => <li key={item.id}>{item.name}</li>)}</code>',
+                    'question' => 'Để tạo một danh sách các phần tử từ một mảng trong React, bạn có thể sử dụng hàm [blank_1]. <br>Ví dụ: <br>{items.map(item => <li key={item.id}>{item.name}</li>)}</code>',
                     'blanks' => 'map',
                 ],
                 [
-                    'question' => 'Để sử dụng một thư viện bên ngoài trong React, bạn cần [blank_1]. Ví dụ: [code]import { LibraryComponent } from "library";[/code]',
+                    'question' => 'Để sử dụng một thư viện bên ngoài trong React, bạn cần [blank_1]. <br>Ví dụ: <br>import { LibraryComponent } from "library";',
                     'blanks' => 'import',
                 ],
                 [
-                    'question' => 'Để sử dụng hook `useEffect` mà không có dependencies, bạn chỉ cần truyền [blank_1]. Ví dụ: [code]useEffect(() => { [blank_2] }, []);[/code]',
+                    'question' => 'Để sử dụng hook `useEffect` mà không có dependencies, bạn chỉ cần truyền [blank_1]. <br>Ví dụ: <br>useEffect(() => { [blank_2] }, []);',
                     'blanks' => '[],console.log("Component mounted")',
                 ],
                 [
-                    'question' => 'Để thiết lập thuộc tính cho một phần tử trong React, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]<div style={{ color: "blue" }}></div>[/code]',
+                    'question' => 'Để thiết lập thuộc tính cho một phần tử trong React, bạn có thể sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><div style={{ color: "blue" }}></div>',
                     'blanks' => 'style',
                 ],
                 [
-                    'question' => 'Để truyền dữ liệu từ component cha xuống component con trong React, bạn có thể sử dụng [blank_1]. Ví dụ: [code]<ChildComponent data={data} />[/code]',
+                    'question' => 'Để truyền dữ liệu từ component cha xuống component con trong React, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br><ChildComponent data={data} />',
                     'blanks' => 'props',
                 ],
                 [
-                    'question' => 'Trong React, để cấu hình trạng thái của một component, bạn có thể sử dụng hook [blank_1]. Ví dụ: [code]const [count, setCount] = useState(0);[/code]',
+                    'question' => 'Trong React, để cấu hình trạng thái của một component, bạn có thể sử dụng hook [blank_1]. <br>Ví dụ: <br>const [count, setCount] = useState(0);',
                     'blanks' => 'useState',
                 ],
                 [
-                    'question' => 'Để quản lý sự thay đổi giá trị của một thuộc tính trong React, bạn sử dụng thuộc tính [blank_1]. Ví dụ: [code]<input value={inputValue} onChange={handleChange} />[/code]',
+                    'question' => 'Để quản lý sự thay đổi giá trị của một thuộc tính trong React, bạn sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><input value={inputValue} onChange={handleChange} />',
                     'blanks' => 'value',
                 ],
                 [
-                    'question' => 'Để thực hiện một hành động khi một sự kiện xảy ra, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]<button onClick={handleClick}>Click me</button>[/code]',
+                    'question' => 'Để thực hiện một hành động khi một sự kiện xảy ra, bạn có thể sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><button onClick={handleClick}>Click me</button>',
                     'blanks' => 'onClick',
                 ],
                 [
-                    'question' => 'Trong React, để sử dụng một hook như `useState`, bạn cần phải gọi nó trong [blank_1]. Ví dụ: [code]const [count, setCount] = useState(0);[/code]',
+                    'question' => 'Trong React, để sử dụng một hook như `useState`, bạn cần phải gọi nó trong [blank_1]. <br>Ví dụ: <br>const [count, setCount] = useState(0);',
                     'blanks' => 'component function',
                 ],
                 [
-                    'question' => 'Để tạo một form đơn giản trong React và xử lý submit, bạn sử dụng [blank_1]. Ví dụ: [code]<form onSubmit={handleSubmit}><input type="text" /></form>[/code]',
+                    'question' => 'Để tạo một form đơn giản trong React và xử lý submit, bạn sử dụng [blank_1]. <br>Ví dụ: <br><form onSubmit={handleSubmit}><input type="text" /></form>',
                     'blanks' => 'form',
                 ],
                 [
-                    'question' => 'Để làm việc với một input trong React, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]<input value={inputValue} onChange={handleChange} />[/code]',
+                    'question' => 'Để làm việc với một input trong React, bạn có thể sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><input value={inputValue} onChange={handleChange} />',
                     'blanks' => 'value',
                 ],
                 [
-                    'question' => 'Để sử dụng một component khác trong React, bạn cần phải [blank_1]. Ví dụ: [code]import MyComponent from "./MyComponent";[/code]',
+                    'question' => 'Để sử dụng một component khác trong React, bạn cần phải [blank_1]. <br>Ví dụ: <br>import MyComponent from "./MyComponent";',
                     'blanks' => 'import',
                 ],
                 [
-                    'question' => 'Để kiểm tra xem một component có phải là một component React hay không, bạn có thể sử dụng [blank_1]. Ví dụ: [code]React.isValidElement(element)[/code]',
+                    'question' => 'Để kiểm tra xem một component có phải là một component React hay không, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>React.isValidElement(element)',
                     'blanks' => 'React.isValidElement',
                 ],
                 [
-                    'question' => 'Trong React, để sử dụng một thuộc tính CSS cho một phần tử, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]<div style={{ color: "red" }}></div>[/code]',
+                    'question' => 'Trong React, để sử dụng một thuộc tính CSS cho một phần tử, bạn có thể sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><div style={{ color: "red" }}></div>',
                     'blanks' => 'style',
                 ],
                 [
-                    'question' => 'Để điều chỉnh layout của các phần tử trong React, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]<div style={{ display: "flex" }}></div>[/code]',
+                    'question' => 'Để điều chỉnh layout của các phần tử trong React, bạn có thể sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><div style={{ display: "flex" }}></div>',
                     'blanks' => 'display',
                 ],
                 [
-                    'question' => 'Để sử dụng một hàm sự kiện trong React, bạn cần phải gán nó vào thuộc tính [blank_1]. Ví dụ: [code]<button onClick={handleClick}>Click me</button>[/code]',
+                    'question' => 'Để sử dụng một hàm sự kiện trong React, bạn cần phải gán nó vào thuộc tính [blank_1]. <br>Ví dụ: <br><button onClick={handleClick}>Click me</button>',
                     'blanks' => 'onClick',
                 ],
                 [
-                    'question' => 'Để tạo một component và sử dụng nó trong React, bạn cần viết [blank_1]. Ví dụ: [code]function MyComponent() { return <div>Content</div>; }[/code]',
+                    'question' => 'Để tạo một component và sử dụng nó trong React, bạn cần viết [blank_1]. <br>Ví dụ: <br>function MyComponent() { return <div>Content</div>; }',
                     'blanks' => 'function',
                 ],
                 [
-                    'question' => 'Khi bạn muốn cập nhật một giá trị trong state, bạn có thể sử dụng hàm [blank_1]. Ví dụ: [code]setState(newValue);[/code]',
+                    'question' => 'Khi bạn muốn cập nhật một giá trị trong state, bạn có thể sử dụng hàm [blank_1]. <br>Ví dụ: <br>setState(newValue);',
                     'blanks' => 'setState',
                 ],
                 [
-                    'question' => 'Để sử dụng thuộc tính CSS inline trong React, bạn cần sử dụng thuộc tính [blank_1]. Ví dụ: [code]<div style={{ backgroundColor: "blue" }}></div>[/code]',
+                    'question' => 'Để sử dụng thuộc tính CSS inline trong React, bạn cần sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><div style={{ backgroundColor: "blue" }}></div>',
                     'blanks' => 'style',
                 ],
                 [
-                    'question' => 'Để render một danh sách các phần tử trong React, bạn có thể sử dụng hàm [blank_1]. Ví dụ: [code]items.map(item => <li key={item.id}>{item.name}</li>)</code>',
+                    'question' => 'Để render một danh sách các phần tử trong React, bạn có thể sử dụng hàm [blank_1]. <br>Ví dụ: <br>items.map(item => <li key={item.id}>{item.name}</li>)</code>',
                     'blanks' => 'map',
                 ],
                 [
-                    'question' => 'Để thay đổi giá trị của một thuộc tính HTML trong React, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]<input value={inputValue} />[/code]',
+                    'question' => 'Để thay đổi giá trị của một thuộc tính HTML trong React, bạn có thể sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><input value={inputValue} />',
                     'blanks' => 'value',
                 ],
                 [
-                    'question' => 'Để điều chỉnh các thuộc tính của một phần tử HTML trong React, bạn cần sử dụng thuộc tính [blank_1]. Ví dụ: [code]<div style={{ margin: "10px" }}></div>[/code]',
+                    'question' => 'Để điều chỉnh các thuộc tính của một phần tử HTML trong React, bạn cần sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><div style={{ margin: "10px" }}></div>',
                     'blanks' => 'style',
                 ],
                 [
-                    'question' => 'Để xử lý sự kiện form submit trong React, bạn sử dụng hàm [blank_1]. Ví dụ: [code]function handleSubmit(event) { event.preventDefault(); }[/code]',
+                    'question' => 'Để xử lý sự kiện form submit trong React, bạn sử dụng hàm [blank_1]. <br>Ví dụ: <br>function handleSubmit(event) { event.preventDefault(); }',
                     'blanks' => 'handleSubmit',
                 ],
                 [
-                    'question' => 'Khi bạn sử dụng React Router, để tạo route bạn sử dụng component [blank_1]. Ví dụ: [code]<Route path="/home" component={HomePage} />[/code]',
+                    'question' => 'Khi bạn sử dụng React Router, để tạo route bạn sử dụng component [blank_1]. <br>Ví dụ: <br><Route path="/home" component={HomePage} />',
                     'blanks' => 'Route',
                 ],
                 [
-                    'question' => 'Để sử dụng React Context, bạn cần phải tạo [blank_1]. Ví dụ: [code]const MyContext = React.createContext();[/code]',
+                    'question' => 'Để sử dụng React Context, bạn cần phải tạo [blank_1]. <br>Ví dụ: <br>const MyContext = React.createContext();',
                     'blanks' => 'context',
                 ],
                 [
-                    'question' => 'Để thay đổi giá trị của một thuộc tính trong React, bạn sử dụng thuộc tính [blank_1]. Ví dụ: [code]<div id={elementId}></div>[/code]',
+                    'question' => 'Để thay đổi giá trị của một thuộc tính trong React, bạn sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><div id={elementId}></div>',
                     'blanks' => 'id',
                 ],
                 [
-                    'question' => 'Để tạo một form với một ô nhập dữ liệu trong React, bạn có thể sử dụng [blank_1]. Ví dụ: [code]<input type="text" value={inputValue} onChange={handleChange} />[/code]',
+                    'question' => 'Để tạo một form với một ô nhập dữ liệu trong React, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br><input type="text" value={inputValue} onChange={handleChange} />',
                     'blanks' => 'input',
                 ],
                 [
-                    'question' => 'Để thiết lập một thuộc tính cho một phần tử trong React, bạn cần sử dụng thuộc tính [blank_1]. Ví dụ: [code]<div style={{ color: "green" }}></div>[/code]',
+                    'question' => 'Để thiết lập một thuộc tính cho một phần tử trong React, bạn cần sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><div style={{ color: "green" }}></div>',
                     'blanks' => 'style',
                 ],
                 [
-                    'question' => 'Để tạo một component với khả năng cập nhật state từ bên ngoài, bạn có thể sử dụng [blank_1]. Ví dụ: [code]const MyComponent = ({ value }) => { return <div>{value}</div>; }[/code]',
+                    'question' => 'Để tạo một component với khả năng cập nhật state từ bên ngoài, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>const MyComponent = ({ value }) => { return <div>{value}</div>; }',
                     'blanks' => 'props',
                 ],
                 [
-                    'question' => 'Khi bạn cần thực hiện side effects trong một component, bạn sử dụng hook [blank_1]. Ví dụ: [code]useEffect(() => { [blank_2] }, [blank_3]);[/code]',
+                    'question' => 'Khi bạn cần thực hiện side effects trong một component, bạn sử dụng hook [blank_1]. <br>Ví dụ: <br>useEffect(() => { [blank_2] }, [blank_3]);',
                     'blanks' => 'useEffect, console.log("Component mounted"), [dependencies]',
                 ],
                 [
-                    'question' => 'Để tạo một custom hook trong React, bạn cần viết một hàm bắt đầu bằng [blank_1]. Ví dụ: [code]function useCustomHook() { const [state, setState] = useState(); return [state, setState]; }[/code]',
+                    'question' => 'Để tạo một custom hook trong React, bạn cần viết một hàm bắt đầu bằng [blank_1]. <br>Ví dụ: <br>function useCustomHook() { const [state, setState] = useState(); return [state, setState]; }',
                     'blanks' => 'use',
                 ],
                 [
-                    'question' => 'Để xử lý sự kiện trên một phần tử trong React, bạn cần sử dụng thuộc tính [blank_1]. Ví dụ: [code]<button onClick={handleClick}>Click me</button>[/code]',
+                    'question' => 'Để xử lý sự kiện trên một phần tử trong React, bạn cần sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><button onClick={handleClick}>Click me</button>',
                     'blanks' => 'onClick',
                 ],
                 [
-                    'question' => 'Để cấu hình routing trong ứng dụng React, bạn sử dụng thư viện [blank_1]. Ví dụ: [code]import { BrowserRouter as Router, Route } from "react-router-dom";[/code]',
+                    'question' => 'Để cấu hình routing trong ứng dụng React, bạn sử dụng thư viện [blank_1]. <br>Ví dụ: <br>import { BrowserRouter as Router, Route } from "react-router-dom";',
                     'blanks' => 'react-router-dom',
                 ],
                 [
-                    'question' => 'Để sử dụng Context API trong React, bạn cần tạo [blank_1] và [blank_2]. Ví dụ: [code]const MyContext = React.createContext();[/code]',
+                    'question' => 'Để sử dụng Context API trong React, bạn cần tạo [blank_1] và [blank_2]. <br>Ví dụ: <br>const MyContext = React.createContext();',
                     'blanks' => 'context, provider',
                 ],
                 [
-                    'question' => 'Để kết nối một component với Redux store, bạn sử dụng hàm [blank_1]. Ví dụ: [code]import { connect } from "react-redux";[/code]',
+                    'question' => 'Để kết nối một component với Redux store, bạn sử dụng hàm [blank_1]. <br>Ví dụ: <br>import { connect } from "react-redux";',
                     'blanks' => 'connect',
                 ],
                 [
-                    'question' => 'Để tối ưu hóa hiệu suất của một component, bạn có thể sử dụng hook [blank_1]. Ví dụ: [code]const memoizedValue = useMemo(() => computeExpensiveValue(), [dependencies]);[/code]',
+                    'question' => 'Để tối ưu hóa hiệu suất của một component, bạn có thể sử dụng hook [blank_1]. <br>Ví dụ: <br>const memoizedValue = useMemo(() => computeExpensiveValue(), [dependencies]);',
                     'blanks' => 'useMemo',
                 ],
                 [
-                    'question' => 'Để tạo một component có thể nhận ref từ parent component, bạn cần sử dụng [blank_1]. Ví dụ: [code]const forwardRefComponent = React.forwardRef((props, ref) => <div ref={ref} />);[/code]',
+                    'question' => 'Để tạo một component có thể nhận ref từ parent component, bạn cần sử dụng [blank_1]. <br>Ví dụ: <br>const forwardRefComponent = React.forwardRef((props, ref) => <div ref={ref} />);',
                     'blanks' => 'React.forwardRef',
                 ],
                 [
-                    'question' => 'Để xử lý các hành động bất đồng bộ trong Redux, bạn có thể sử dụng [blank_1]. Ví dụ: [code]import { createAsyncThunk } from "@reduxjs/toolkit";[/code]',
+                    'question' => 'Để xử lý các hành động bất đồng bộ trong Redux, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>import { createAsyncThunk } from "@reduxjs/toolkit";',
                     'blanks' => 'createAsyncThunk',
                 ],
                 [
-                    'question' => 'Khi bạn muốn tạo một component có khả năng lấy dữ liệu từ API, bạn có thể sử dụng hook [blank_1]. Ví dụ: [code]const [data, setData] = useState(); useEffect(() => { fetchData(); }, []);[/code]',
+                    'question' => 'Khi bạn muốn tạo một component có khả năng lấy dữ liệu từ API, bạn có thể sử dụng hook [blank_1]. <br>Ví dụ: <br>const [data, setData] = useState(); useEffect(() => { fetchData(); }, []);',
                     'blanks' => 'useEffect',
                 ],
                 [
-                    'question' => 'Để quản lý trạng thái toàn cục trong React, bạn có thể sử dụng thư viện [blank_1]. Ví dụ: [code]import { Provider } from "react-redux";[/code]',
+                    'question' => 'Để quản lý trạng thái toàn cục trong React, bạn có thể sử dụng thư viện [blank_1]. <br>Ví dụ: <br>import { Provider } from "react-redux";',
                     'blanks' => 'redux',
                 ],
                 [
-                    'question' => 'Để đảm bảo rằng một component chỉ render khi các props thay đổi, bạn có thể sử dụng hook [blank_1]. Ví dụ: [code]const memoizedComponent = React.memo(Component);[/code]',
+                    'question' => 'Để đảm bảo rằng một component chỉ render khi các props thay đổi, bạn có thể sử dụng hook [blank_1]. <br>Ví dụ: <br>const memoizedComponent = React.memo(Component);',
                     'blanks' => 'React.memo',
                 ],
                 [
-                    'question' => 'Để tạo một HOC (Higher-Order Component) trong React, bạn cần viết một hàm nhận một component và trả về [blank_1]. Ví dụ: [code]function withEnhancement(WrappedComponent) { return function(props) { return <WrappedComponent {...props} />; }; }[/code]',
+                    'question' => 'Để tạo một HOC (Higher-Order Component) trong React, bạn cần viết một hàm nhận một component và trả về [blank_1]. <br>Ví dụ: <br>function withEnhancement(WrappedComponent) { return function(props) { return <WrappedComponent {...props} />; }; }',
                     'blanks' => 'component',
                 ],
                 [
-                    'question' => 'Khi bạn muốn sử dụng một thư viện CSS trong React, bạn có thể [blank_1]. Ví dụ: [code]import "./styles.css";[/code]',
+                    'question' => 'Khi bạn muốn sử dụng một thư viện CSS trong React, bạn có thể [blank_1]. <br>Ví dụ: <br>import "./styles.css";',
                     'blanks' => 'import',
                 ],
                 [
-                    'question' => 'Để sử dụng các thuộc tính động trong inline styling của React, bạn cần sử dụng [blank_1]. Ví dụ: [code]<div style={{ color: colorValue }}>Text</div>[/code]',
+                    'question' => 'Để sử dụng các thuộc tính động trong inline styling của React, bạn cần sử dụng [blank_1]. <br>Ví dụ: <br><div style={{ color: colorValue }}>Text</div>',
                     'blanks' => 'style',
                 ],
                 [
-                    'question' => 'Để xử lý sự kiện form submit trong React, bạn có thể sử dụng hàm [blank_1]. Ví dụ: [code]function handleSubmit(event) { event.preventDefault(); }[/code]',
+                    'question' => 'Để xử lý sự kiện form submit trong React, bạn có thể sử dụng hàm [blank_1]. <br>Ví dụ: <br>function handleSubmit(event) { event.preventDefault(); }',
                     'blanks' => 'handleSubmit',
                 ],
                 [
-                    'question' => 'Để quản lý trạng thái của một component bằng hook, bạn sử dụng [blank_1]. Ví dụ: [code]const [state, setState] = useState(initialState);[/code]',
+                    'question' => 'Để quản lý trạng thái của một component bằng hook, bạn sử dụng [blank_1]. <br>Ví dụ: <br>const [state, setState] = useState(initialState);',
                     'blanks' => 'useState',
                 ],
                 [
-                    'question' => 'Để truyền dữ liệu từ component cha xuống component con, bạn sử dụng [blank_1]. Ví dụ: [code]<ChildComponent data={data} />[/code]',
+                    'question' => 'Để truyền dữ liệu từ component cha xuống component con, bạn sử dụng [blank_1]. <br>Ví dụ: <br><ChildComponent data={data} />',
                     'blanks' => 'props',
                 ],
                 [
-                    'question' => 'Để thiết lập các giá trị mặc định cho props trong một component, bạn sử dụng [blank_1]. Ví dụ: [code]Component.defaultProps = { name: "Default" };[/code]',
+                    'question' => 'Để thiết lập các giá trị mặc định cho props trong một component, bạn sử dụng [blank_1]. <br>Ví dụ: <br>Component.defaultProps = { name: "Default" };',
                     'blanks' => 'defaultProps',
                 ],
                 [
-                    'question' => 'Để tạo một route trong ứng dụng React sử dụng React Router, bạn sử dụng component [blank_1]. Ví dụ: [code]<Route path="/path" component={Component} />[/code]',
+                    'question' => 'Để tạo một route trong ứng dụng React sử dụng React Router, bạn sử dụng component [blank_1]. <br>Ví dụ: <br><Route path="/path" component={Component} />',
                     'blanks' => 'Route',
                 ],
                 [
-                    'question' => 'Để sử dụng React Context API trong một component, bạn cần sử dụng hook [blank_1]. Ví dụ: [code]const contextValue = useContext(MyContext);[/code]',
+                    'question' => 'Để sử dụng React Context API trong một component, bạn cần sử dụng hook [blank_1]. <br>Ví dụ: <br>const contextValue = useContext(MyContext);',
                     'blanks' => 'useContext',
                 ],
                 [
-                    'question' => 'Để thay đổi giá trị của một thuộc tính trong React khi có sự kiện, bạn cần sử dụng [blank_1]. Ví dụ: [code]<input value={value} onChange={e => setValue(e.target.value)} />[/code]',
+                    'question' => 'Để thay đổi giá trị của một thuộc tính trong React khi có sự kiện, bạn cần sử dụng [blank_1]. <br>Ví dụ: <br><input value={value} onChange={e => setValue(e.target.value)} />',
                     'blanks' => 'onChange',
                 ],
                 [
-                    'question' => 'Khi bạn muốn kiểm tra xem một component có được render không, bạn có thể sử dụng [blank_1]. Ví dụ: [code]ReactDOM.render(<App />, document.getElementById("root"));[/code]',
+                    'question' => 'Khi bạn muốn kiểm tra xem một component có được render không, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>ReactDOM.render(<App />, document.getElementById("root"));',
                     'blanks' => 'ReactDOM.render',
                 ],
                 [
-                    'question' => 'Để tối ưu hóa hiệu suất của một component bằng cách ngăn chặn việc render lại không cần thiết, bạn có thể sử dụng [blank_1]. Ví dụ: [code]const MemoizedComponent = React.memo(MyComponent);[/code]',
+                    'question' => 'Để tối ưu hóa hiệu suất của một component bằng cách ngăn chặn việc render lại không cần thiết, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>const MemoizedComponent = React.memo(MyComponent);',
                     'blanks' => 'React.memo',
                 ],
                 [
-                    'question' => 'Để thiết lập các thuộc tính cho phần tử React, bạn cần sử dụng thuộc tính [blank_1]. Ví dụ: [code]<div style={{ color: "blue", margin: "10px" }}>Content</div>[/code]',
+                    'question' => 'Để thiết lập các thuộc tính cho phần tử React, bạn cần sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><div style={{ color: "blue", margin: "10px" }}>Content</div>',
                     'blanks' => 'style',
                 ],
                 [
-                    'question' => 'Để quản lý trạng thái của các phần tử trong danh sách, bạn có thể sử dụng hook [blank_1]. Ví dụ: [code]const [items, setItems] = useState([]);[/code]',
+                    'question' => 'Để quản lý trạng thái của các phần tử trong danh sách, bạn có thể sử dụng hook [blank_1]. <br>Ví dụ: <br>const [items, setItems] = useState([]);',
                     'blanks' => 'useState',
                 ],
                 [
-                    'question' => 'Để tạo một component có thể nhận ref từ parent component, bạn có thể sử dụng [blank_1]. Ví dụ: [code]const ForwardedComponent = React.forwardRef((props, ref) => <div ref={ref} />);[/code]',
+                    'question' => 'Để tạo một component có thể nhận ref từ parent component, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>const ForwardedComponent = React.forwardRef((props, ref) => <div ref={ref} />);',
                     'blanks' => 'React.forwardRef',
                 ],
                 [
-                    'question' => 'Khi bạn cần cấu hình các thuộc tính cho phần tử dựa trên một điều kiện, bạn có thể sử dụng [blank_1]. Ví dụ: [code]const className = isActive ? "active" : "inactive";[/code]',
+                    'question' => 'Khi bạn cần cấu hình các thuộc tính cho phần tử dựa trên một điều kiện, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>const className = isActive ? "active" : "inactive";',
                     'blanks' => 'conditional rendering',
                 ],
                 [
-                    'question' => 'Để đảm bảo rằng một component chỉ được tạo ra một lần trong ứng dụng, bạn có thể sử dụng hook [blank_1]. Ví dụ: [code]const memoizedValue = useMemo(() => computeExpensiveValue(), [dependencies]);[/code]',
+                    'question' => 'Để đảm bảo rằng một component chỉ được tạo ra một lần trong ứng dụng, bạn có thể sử dụng hook [blank_1]. <br>Ví dụ: <br>const memoizedValue = useMemo(() => computeExpensiveValue(), [dependencies]);',
                     'blanks' => 'useMemo',
                 ],
                 [
-                    'question' => 'Để sử dụng một component từ một thư viện bên ngoài, bạn cần [blank_1]. Ví dụ: [code]import { Button } from "library";[/code]',
+                    'question' => 'Để sử dụng một component từ một thư viện bên ngoài, bạn cần [blank_1]. <br>Ví dụ: <br>import { Button } from "library";',
                     'blanks' => 'import',
                 ],
                 [
-                    'question' => 'Khi bạn cần theo dõi một giá trị trong component và cập nhật khi giá trị thay đổi, bạn sử dụng hook [blank_1]. Ví dụ: [code]useEffect(() => { console.log(value); }, [value]);[/code]',
+                    'question' => 'Khi bạn cần theo dõi một giá trị trong component và cập nhật khi giá trị thay đổi, bạn sử dụng hook [blank_1]. <br>Ví dụ: <br>useEffect(() => { console.log(value); }, [value]);',
                     'blanks' => 'useEffect',
                 ],
                 [
-                    'question' => 'Để sử dụng một thuộc tính CSS động trong React, bạn có thể sử dụng [blank_1]. Ví dụ: [code]<div style={{ color: colorValue }}>Text</div>[/code]',
+                    'question' => 'Để sử dụng một thuộc tính CSS động trong React, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br><div style={{ color: colorValue }}>Text</div>',
                     'blanks' => 'style',
                 ],
                 [
-                    'question' => 'Để tạo một component có khả năng chấp nhận các thuộc tính tùy chọn, bạn có thể sử dụng [blank_1]. Ví dụ: [code]function MyComponent({ optionalProp }) { return <div>{optionalProp}</div>; }[/code]',
+                    'question' => 'Để tạo một component có khả năng chấp nhận các thuộc tính tùy chọn, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>function MyComponent({ optionalProp }) { return <div>{optionalProp}</div>; }',
                     'blanks' => 'props',
                 ],
                 [
-                    'question' => 'Để kiểm tra xem một component có phải là component chức năng hay không, bạn có thể sử dụng [blank_1]. Ví dụ: [code]typeof Component === "function"[/code]',
+                    'question' => 'Để kiểm tra xem một component có phải là component chức năng hay không, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>typeof Component === "function"',
                     'blanks' => 'typeof',
                 ],
                 [
-                    'question' => 'Để tích hợp React với một thư viện bên ngoài, bạn có thể sử dụng [blank_1]. Ví dụ: [code]import { ExternalComponent } from "external-library";[/code]',
+                    'question' => 'Để tích hợp React với một thư viện bên ngoài, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>import { ExternalComponent } from "external-library";',
                     'blanks' => 'import',
                 ],
                 [
-                    'question' => 'Khi bạn muốn thực hiện một hành động sau khi một component được render, bạn có thể sử dụng hook [blank_1]. Ví dụ: [code]useEffect(() => { doSomething(); }, []);[/code]',
+                    'question' => 'Khi bạn muốn thực hiện một hành động sau khi một component được render, bạn có thể sử dụng hook [blank_1]. <br>Ví dụ: <br>useEffect(() => { doSomething(); }, []);',
                     'blanks' => 'useEffect',
                 ],
                 [
-                    'question' => 'Để kiểm tra giá trị của một thuộc tính trong component, bạn có thể sử dụng [blank_1]. Ví dụ: [code]console.log(props.someValue);[/code]',
+                    'question' => 'Để kiểm tra giá trị của một thuộc tính trong component, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>console.log(props.someValue);',
                     'blanks' => 'props',
                 ],
                 [
-                    'question' => 'Để sử dụng một component từ thư viện bên ngoài trong ứng dụng của bạn, bạn cần phải [blank_1]. Ví dụ: [code]import { LibraryComponent } from "library";[/code]',
+                    'question' => 'Để sử dụng một component từ thư viện bên ngoài trong ứng dụng của bạn, bạn cần phải [blank_1]. <br>Ví dụ: <br>import { LibraryComponent } from "library";',
                     'blanks' => 'import',
                 ],
                 [
-                    'question' => 'Để tạo một component mà có thể lấy props từ parent, bạn cần sử dụng [blank_1]. Ví dụ: [code]function MyComponent(props) { return <div>{props.title}</div>; }[/code]',
+                    'question' => 'Để tạo một component mà có thể lấy props từ parent, bạn cần sử dụng [blank_1]. <br>Ví dụ: <br>function MyComponent(props) { return <div>{props.title}</div>; }',
                     'blanks' => 'props',
                 ],
                 [
-                    'question' => 'Để tạo một list động trong React, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]items.map(item => <li key={item.id}>{item.name}</li>)</code>',
+                    'question' => 'Để tạo một list động trong React, bạn có thể sử dụng phương thức [blank_1]. <br>Ví dụ: <br>items.map(item => <li key={item.id}>{item.name}</li>)</code>',
                     'blanks' => 'map',
                 ],
                 [
-                    'question' => 'Để cập nhật trạng thái của một component khi có sự kiện xảy ra, bạn có thể sử dụng [blank_1]. Ví dụ: [code]const [value, setValue] = useState(""); const handleChange = (e) => setValue(e.target.value);[/code]',
+                    'question' => 'Để cập nhật trạng thái của một component khi có sự kiện xảy ra, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>const [value, setValue] = useState(""); const handleChange = (e) => setValue(e.target.value);',
                     'blanks' => 'useState',
                 ],
                 [
-                    'question' => 'Để điều chỉnh layout của các phần tử trong React, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]<div style={{ display: "flex" }}></div>[/code]',
+                    'question' => 'Để điều chỉnh layout của các phần tử trong React, bạn có thể sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><div style={{ display: "flex" }}></div>',
                     'blanks' => 'display',
                 ],
                 [
-                    'question' => 'Để xử lý sự kiện click trên một nút, bạn có thể sử dụng thuộc tính [blank_1]. Ví dụ: [code]<button onClick={handleClick}>Click me</button>[/code]',
+                    'question' => 'Để xử lý sự kiện click trên một nút, bạn có thể sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><button onClick={handleClick}>Click me</button>',
                     'blanks' => 'onClick',
                 ],
                 [
-                    'question' => 'Để tạo một component có thể được sử dụng nhiều lần trong ứng dụng, bạn cần [blank_1]. Ví dụ: [code]function Button(props) { return <button>{props.label}</button>; }[/code]',
+                    'question' => 'Để tạo một component có thể được sử dụng nhiều lần trong ứng dụng, bạn cần [blank_1]. <br>Ví dụ: <br>function Button(props) { return <button>{props.label}</button>; }',
                     'blanks' => 'props',
                 ],
                 [
-                    'question' => 'Để quản lý trạng thái global trong ứng dụng React với Redux, bạn cần tạo [blank_1] và [blank_2]. Ví dụ: [code]const store = createStore(rootReducer);[/code]',
+                    'question' => 'Để quản lý trạng thái global trong ứng dụng React với Redux, bạn cần tạo [blank_1] và [blank_2]. <br>Ví dụ: <br>const store = createStore(rootReducer);',
                     'blanks' => 'store, rootReducer',
                 ],
                 [
-                    'question' => 'Khi bạn sử dụng `useReducer` để quản lý trạng thái phức tạp trong một component, bạn cần định nghĩa [blank_1] và [blank_2]. Ví dụ: [code]const [state, dispatch] = useReducer(reducer, initialState);[/code]',
+                    'question' => 'Khi bạn sử dụng `useReducer` để quản lý trạng thái phức tạp trong một component, bạn cần định nghĩa [blank_1] và [blank_2]. <br>Ví dụ: <br>const [state, dispatch] = useReducer(reducer, initialState);',
                     'blanks' => 'reducer, initialState',
                 ],
                 [
-                    'question' => 'Để kết nối một component với Redux store, bạn cần sử dụng hàm [blank_1] và [blank_2]. Ví dụ: [code]const mapStateToProps = state => ({ data: state.data }); const mapDispatchToProps = dispatch => ({ fetchData: () => dispatch(fetchData()) });[/code]',
+                    'question' => 'Để kết nối một component với Redux store, bạn cần sử dụng hàm [blank_1] và [blank_2]. <br>Ví dụ: <br>const mapStateToProps = state => ({ data: state.data }); const mapDispatchToProps = dispatch => ({ fetchData: () => dispatch(fetchData()) });',
                     'blanks' => 'connect, mapDispatchToProps',
                 ],
                 [
-                    'question' => 'Để tạo một React Hook mà có thể được sử dụng bởi các component khác, bạn nên định nghĩa một hàm với tiền tố [blank_1]. Ví dụ: [code]function useCustomHook() { const [state, setState] = useState(); return [state, setState]; }[/code]',
+                    'question' => 'Để tạo một React Hook mà có thể được sử dụng bởi các component khác, bạn nên định nghĩa một hàm với tiền tố [blank_1]. <br>Ví dụ: <br>function useCustomHook() { const [state, setState] = useState(); return [state, setState]; }',
                     'blanks' => 'use',
                 ],
                 [
-                    'question' => 'Khi bạn muốn lazy load một component trong React, bạn có thể sử dụng [blank_1]. Ví dụ: [code]const LazyComponent = React.lazy(() => import("./LazyComponent"));[/code]',
+                    'question' => 'Khi bạn muốn lazy load một component trong React, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>const LazyComponent = React.lazy(() => import("./LazyComponent"));',
                     'blanks' => 'React.lazy',
                 ],
                 [
-                    'question' => 'Để đảm bảo rằng một component chỉ render lại khi một giá trị cụ thể thay đổi, bạn có thể sử dụng hook [blank_1]. Ví dụ: [code]const memoizedValue = useMemo(() => computeExpensiveValue(), [dependencies]);[/code]',
+                    'question' => 'Để đảm bảo rằng một component chỉ render lại khi một giá trị cụ thể thay đổi, bạn có thể sử dụng hook [blank_1]. <br>Ví dụ: <br>const memoizedValue = useMemo(() => computeExpensiveValue(), [dependencies]);',
                     'blanks' => 'useMemo',
                 ],
                 [
-                    'question' => 'Khi bạn cần sử dụng `ref` trong một component mà không thay đổi giá trị của `ref`, bạn có thể sử dụng [blank_1]. Ví dụ: [code]const inputRef = useRef();[/code]',
+                    'question' => 'Khi bạn cần sử dụng `ref` trong một component mà không thay đổi giá trị của `ref`, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>const inputRef = useRef();',
                     'blanks' => 'useRef',
                 ],
                 [
-                    'question' => 'Để sử dụng HOC (Higher-Order Component) trong React, bạn cần viết một hàm nhận một component và trả về [blank_1]. Ví dụ: [code]function withExtraProps(WrappedComponent) { return (props) => <WrappedComponent extraProp={value} {...props} />; }[/code]',
+                    'question' => 'Để sử dụng HOC (Higher-Order Component) trong React, bạn cần viết một hàm nhận một component và trả về [blank_1]. <br>Ví dụ: <br>function withExtraProps(WrappedComponent) { return (props) => <WrappedComponent extraProp={value} {...props} />; }',
                     'blanks' => 'component',
                 ],
                 [
-                    'question' => 'Khi bạn muốn tạo một component với khả năng nhận `ref`, bạn có thể sử dụng [blank_1]. Ví dụ: [code]const ForwardedComponent = React.forwardRef((props, ref) => <div ref={ref} />);[/code]',
+                    'question' => 'Khi bạn muốn tạo một component với khả năng nhận `ref`, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>const ForwardedComponent = React.forwardRef((props, ref) => <div ref={ref} />);',
                     'blanks' => 'React.forwardRef',
                 ],
                 [
-                    'question' => 'Để sử dụng Context API để cung cấp dữ liệu cho nhiều component, bạn cần định nghĩa [blank_1] và [blank_2]. Ví dụ: [code]const MyContext = React.createContext();[/code]',
+                    'question' => 'Để sử dụng Context API để cung cấp dữ liệu cho nhiều component, bạn cần định nghĩa [blank_1] và [blank_2]. <br>Ví dụ: <br>const MyContext = React.createContext();',
                     'blanks' => 'context, provider',
                 ],
                 [
-                    'question' => 'Để thực hiện các hành động bất đồng bộ trong Redux, bạn có thể sử dụng middleware [blank_1]. Ví dụ: [code]import thunk from "redux-thunk";[/code]',
+                    'question' => 'Để thực hiện các hành động bất đồng bộ trong Redux, bạn có thể sử dụng middleware [blank_1]. <br>Ví dụ: <br>import thunk from "redux-thunk";',
                     'blanks' => 'redux-thunk',
                 ],
                 [
-                    'question' => 'Để xử lý một form với nhiều input trong React, bạn có thể sử dụng [blank_1]. Ví dụ: [code]const handleChange = (event) => { setValues({ ...values, [event.target.name]: event.target.value }); }[/code]',
+                    'question' => 'Để xử lý một form với nhiều input trong React, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>const handleChange = (event) => { setValues({ ...values, [event.target.name]: event.target.value }); }',
                     'blanks' => 'onChange',
                 ],
                 [
-                    'question' => 'Để tối ưu hóa hiệu suất của một component khi nhận props, bạn có thể sử dụng [blank_1]. Ví dụ: [code]const MemoizedComponent = React.memo(MyComponent);[/code]',
+                    'question' => 'Để tối ưu hóa hiệu suất của một component khi nhận props, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>const MemoizedComponent = React.memo(MyComponent);',
                     'blanks' => 'React.memo',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo một component có khả năng hủy bỏ sự kiện khi component bị unmount, bạn có thể sử dụng [blank_1]. Ví dụ: [code]useEffect(() => { const timer = setTimeout(() => { console.log("Tick"); }, 1000); return () => clearTimeout(timer); }, []);[/code]',
+                    'question' => 'Khi bạn cần tạo một component có khả năng hủy bỏ sự kiện khi component bị unmount, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>useEffect(() => { const timer = setTimeout(() => { console.log("Tick"); }, 1000); return () => clearTimeout(timer); }, []);',
                     'blanks' => 'useEffect',
                 ],
                 [
-                    'question' => 'Để xử lý các props truyền vào trong một component và đảm bảo rằng các giá trị của props không thay đổi bất thường, bạn có thể sử dụng [blank_1]. Ví dụ: [code]MyComponent.propTypes = { name: PropTypes.string.isRequired };[/code]',
+                    'question' => 'Để xử lý các props truyền vào trong một component và đảm bảo rằng các giá trị của props không thay đổi bất thường, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>MyComponent.propTypes = { name: PropTypes.string.isRequired };',
                     'blanks' => 'PropTypes',
                 ],
                 [
-                    'question' => 'Để tạo một component có thể nhận các thuộc tính động từ parent, bạn có thể sử dụng [blank_1]. Ví dụ: [code]function DynamicComponent(props) { return <div {...props}>Dynamic</div>; }[/code]',
+                    'question' => 'Để tạo một component có thể nhận các thuộc tính động từ parent, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>function DynamicComponent(props) { return <div {...props}>Dynamic</div>; }',
                     'blanks' => 'spread operator',
                 ],
                 [
-                    'question' => 'Khi bạn cần tạo các route động trong ứng dụng React với React Router, bạn sử dụng [blank_1]. Ví dụ: [code]import { Route, Switch } from "react-router-dom";[/code]',
+                    'question' => 'Khi bạn cần tạo các route động trong ứng dụng React với React Router, bạn sử dụng [blank_1]. <br>Ví dụ: <br>import { Route, Switch } from "react-router-dom";',
                     'blanks' => 'Switch',
                 ],
                 [
-                    'question' => 'Để đảm bảo rằng một component chỉ được render một lần, bạn có thể sử dụng hook [blank_1]. Ví dụ: [code]const [state, setState] = useState(); useEffect(() => { initialize(); }, []);[/code]',
+                    'question' => 'Để đảm bảo rằng một component chỉ được render một lần, bạn có thể sử dụng hook [blank_1]. <br>Ví dụ: <br>const [state, setState] = useState(); useEffect(() => { initialize(); }, []);',
                     'blanks' => 'useEffect',
                 ],
                 [
-                    'question' => 'Để kết hợp nhiều reducer trong một Redux store, bạn sử dụng hàm [blank_1]. Ví dụ: [code]import { combineReducers } from "redux"; const rootReducer = combineReducers({ user: userReducer, posts: postsReducer });[/code]',
+                    'question' => 'Để kết hợp nhiều reducer trong một Redux store, bạn sử dụng hàm [blank_1]. <br>Ví dụ: <br>import { combineReducers } from "redux"; const rootReducer = combineReducers({ user: userReducer, posts: postsReducer });',
                     'blanks' => 'combineReducers',
                 ],
                 [
-                    'question' => 'Để tích hợp React với hệ thống điều hướng bên ngoài, bạn có thể sử dụng [blank_1]. Ví dụ: [code]import { useHistory } from "react-router-dom";[/code]',
+                    'question' => 'Để tích hợp React với hệ thống điều hướng bên ngoài, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>import { useHistory } from "react-router-dom";',
                     'blanks' => 'useHistory',
                 ],
                 [
-                    'question' => 'Khi bạn muốn tạo một component có thể lấy dữ liệu từ một API và cập nhật trạng thái của component, bạn có thể sử dụng [blank_1]. Ví dụ: [code]useEffect(() => { fetchData(); }, []);[/code]',
+                    'question' => 'Khi bạn muốn tạo một component có thể lấy dữ liệu từ một API và cập nhật trạng thái của component, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>useEffect(() => { fetchData(); }, []);',
                     'blanks' => 'useEffect',
                 ],
                 [
-                    'question' => 'Để tạo một component có thể sử dụng các thuộc tính tùy chọn, bạn có thể định nghĩa các giá trị mặc định với [blank_1]. Ví dụ: [code]Component.defaultProps = { color: "blue" };[/code]',
+                    'question' => 'Để tạo một component có thể sử dụng các thuộc tính tùy chọn, bạn có thể định nghĩa các giá trị mặc định với [blank_1]. <br>Ví dụ: <br>Component.defaultProps = { color: "blue" };',
                     'blanks' => 'defaultProps',
                 ],
                 [
-                    'question' => 'Để xử lý sự kiện form submit trong một component, bạn cần định nghĩa một hàm [blank_1]. Ví dụ: [code]const handleSubmit = (event) => { event.preventDefault(); handleData(); }[/code]',
+                    'question' => 'Để xử lý sự kiện form submit trong một component, bạn cần định nghĩa một hàm [blank_1]. <br>Ví dụ: <br>const handleSubmit = (event) => { event.preventDefault(); handleData(); }',
                     'blanks' => 'handleSubmit',
                 ],
                 [
-                    'question' => 'Để kiểm tra xem một component có nhận được props hợp lệ không, bạn có thể sử dụng [blank_1]. Ví dụ: [code]const Component = (props) => { return <div>{props.title}</div>; }; Component.propTypes = { title: PropTypes.string.isRequired };[/code]',
+                    'question' => 'Để kiểm tra xem một component có nhận được props hợp lệ không, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>const Component = (props) => { return <div>{props.title}</div>; }; Component.propTypes = { title: PropTypes.string.isRequired };',
                     'blanks' => 'propTypes',
                 ],
                 [
-                    'question' => 'Để kết nối một component với Redux store và dispatch các actions, bạn cần sử dụng [blank_1]. Ví dụ: [code]const mapDispatchToProps = dispatch => ({ fetchData: () => dispatch(fetchData()) });[/code]',
+                    'question' => 'Để kết nối một component với Redux store và dispatch các actions, bạn cần sử dụng [blank_1]. <br>Ví dụ: <br>const mapDispatchToProps = dispatch => ({ fetchData: () => dispatch(fetchData()) });',
                     'blanks' => 'mapDispatchToProps',
                 ],
                 [
-                    'question' => 'Để tạo một component có khả năng nhận `ref` từ parent component, bạn có thể sử dụng [blank_1]. Ví dụ: [code]const Input = React.forwardRef((props, ref) => <input ref={ref} />);[/code]',
+                    'question' => 'Để tạo một component có khả năng nhận `ref` từ parent component, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>const Input = React.forwardRef((props, ref) => <input ref={ref} />);',
                     'blanks' => 'React.forwardRef',
                 ],
                 [
-                    'question' => 'Khi bạn muốn render một danh sách các phần tử từ một mảng, bạn có thể sử dụng phương thức [blank_1]. Ví dụ: [code]items.map(item => <ListItem key={item.id} {...item} />)[/code]',
+                    'question' => 'Khi bạn muốn render một danh sách các phần tử từ một mảng, bạn có thể sử dụng phương thức [blank_1]. <br>Ví dụ: <br>items.map(item => <ListItem key={item.id} {...item} />)',
                     'blanks' => 'map',
                 ],
                 [
-                    'question' => 'Để sử dụng một Context trong React, bạn cần tạo một [blank_1] và một [blank_2]. Ví dụ: [code]const MyContext = React.createContext();[/code]',
+                    'question' => 'Để sử dụng một Context trong React, bạn cần tạo một [blank_1] và một [blank_2]. <br>Ví dụ: <br>const MyContext = React.createContext();',
                     'blanks' => 'context, provider',
                 ],
                 [
-                    'question' => 'Khi bạn muốn áp dụng các lớp CSS động vào một component, bạn có thể sử dụng [blank_1]. Ví dụ: [code]const className = isActive ? "active" : "inactive"; return <div className={className}>Text</div>[/code]',
+                    'question' => 'Khi bạn muốn áp dụng các lớp CSS động vào một component, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>const className = isActive ? "active" : "inactive"; return <div className={className}>Text</div>',
                     'blanks' => 'className',
                 ],
                 [
-                    'question' => 'Để làm việc với các trạng thái phức tạp trong React, bạn có thể sử dụng [blank_1]. Ví dụ: [code]const [state, dispatch] = useReducer(reducer, initialState);[/code]',
+                    'question' => 'Để làm việc với các trạng thái phức tạp trong React, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>const [state, dispatch] = useReducer(reducer, initialState);',
                     'blanks' => 'useReducer',
                 ],
                 [
-                    'question' => 'Để xử lý các sự kiện trên một phần tử, bạn có thể sử dụng [blank_1]. Ví dụ: [code]const handleClick = () => { console.log("Clicked"); }; return <button onClick={handleClick}>Click me</button>[/code]',
+                    'question' => 'Để xử lý các sự kiện trên một phần tử, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>const handleClick = () => { console.log("Clicked"); }; return <button onClick={handleClick}>Click me</button>',
                     'blanks' => 'onClick',
                 ],
                 [
-                    'question' => 'Khi bạn muốn tối ưu hóa việc render một component, bạn có thể sử dụng [blank_1]. Ví dụ: [code]const MemoizedComponent = React.memo(MyComponent);[/code]',
+                    'question' => 'Khi bạn muốn tối ưu hóa việc render một component, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>const MemoizedComponent = React.memo(MyComponent);',
                     'blanks' => 'React.memo',
                 ],
                 [
-                    'question' => 'Để gọi một API và xử lý dữ liệu trong một component, bạn có thể sử dụng [blank_1]. Ví dụ: [code]useEffect(() => { fetch("api/data").then(response => response.json()).then(data => setData(data)); }, []);[/code]',
+                    'question' => 'Để gọi một API và xử lý dữ liệu trong một component, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>useEffect(() => { fetch("api/data").then(response => response.json()).then(data => setData(data)); }, []);',
                     'blanks' => 'fetch',
                 ],
                 [
-                    'question' => 'Khi bạn muốn quản lý trạng thái của nhiều component con, bạn có thể sử dụng [blank_1]. Ví dụ: [code]<Context.Provider value={contextValue}>{children}</Context.Provider>[/code]',
+                    'question' => 'Khi bạn muốn quản lý trạng thái của nhiều component con, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br><Context.Provider value={contextValue}>{children}</Context.Provider>',
                     'blanks' => 'Context.Provider',
                 ],
                 [
-                    'question' => 'Để gán giá trị cho thuộc tính CSS trong JSX, bạn sử dụng thuộc tính [blank_1]. Ví dụ: [code]<div style={{ color: "red", backgroundColor: "blue" }}>Text</div>[/code]',
+                    'question' => 'Để gán giá trị cho thuộc tính CSS trong JSX, bạn sử dụng thuộc tính [blank_1]. <br>Ví dụ: <br><div style={{ color: "red", backgroundColor: "blue" }}>Text</div>',
                     'blanks' => 'style',
                 ],
                 [
-                    'question' => 'Khi bạn cần theo dõi một giá trị có thể thay đổi qua các lần render, bạn có thể sử dụng hook [blank_1]. Ví dụ: [code]const [count, setCount] = useState(0);[/code]',
+                    'question' => 'Khi bạn cần theo dõi một giá trị có thể thay đổi qua các lần render, bạn có thể sử dụng hook [blank_1]. <br>Ví dụ: <br>const [count, setCount] = useState(0);',
                     'blanks' => 'useState',
                 ],
                 [
-                    'question' => 'Để kết hợp các Redux reducers vào một reducer chính, bạn có thể sử dụng [blank_1]. Ví dụ: [code]const rootReducer = combineReducers({ user: userReducer, posts: postsReducer });[/code]',
+                    'question' => 'Để kết hợp các Redux reducers vào một reducer chính, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>const rootReducer = combineReducers({ user: userReducer, posts: postsReducer });',
                     'blanks' => 'combineReducers',
                 ],
                 [
-                    'question' => 'Khi bạn muốn render một component với thuộc tính `ref`, bạn cần sử dụng [blank_1]. Ví dụ: [code]const RefComponent = React.forwardRef((props, ref) => <input ref={ref} />);[/code]',
+                    'question' => 'Khi bạn muốn render một component với thuộc tính `ref`, bạn cần sử dụng [blank_1]. <br>Ví dụ: <br>const RefComponent = React.forwardRef((props, ref) => <input ref={ref} />);',
                     'blanks' => 'React.forwardRef',
                 ],
                 [
-                    'question' => 'Để tạo một component có thể lấy giá trị từ `context`, bạn có thể sử dụng [blank_1]. Ví dụ: [code]const value = useContext(MyContext);[/code]',
+                    'question' => 'Để tạo một component có thể lấy giá trị từ `context`, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>const value = useContext(MyContext);',
                     'blanks' => 'useContext',
                 ],
                 [
-                    'question' => 'Để kiểm tra giá trị của một prop trong một component, bạn có thể sử dụng [blank_1]. Ví dụ: [code]Component.propTypes = { title: PropTypes.string.isRequired };[/code]',
+                    'question' => 'Để kiểm tra giá trị của một prop trong một component, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>Component.propTypes = { title: PropTypes.string.isRequired };',
                     'blanks' => 'propTypes',
                 ],
                 [
-                    'question' => 'Khi bạn muốn thực hiện một hành động sau khi một component được render, bạn sử dụng hook [blank_1]. Ví dụ: [code]useEffect(() => { console.log("Component rendered"); }, []);[/code]',
+                    'question' => 'Khi bạn muốn thực hiện một hành động sau khi một component được render, bạn sử dụng hook [blank_1]. <br>Ví dụ: <br>useEffect(() => { console.log("Component rendered"); }, []);',
                     'blanks' => 'useEffect',
                 ],
                 [
-                    'question' => 'Để đảm bảo rằng một component chỉ được render lại khi các props thay đổi, bạn có thể sử dụng [blank_1]. Ví dụ: [code]const MemoizedComponent = React.memo(MyComponent);[/code]',
+                    'question' => 'Để đảm bảo rằng một component chỉ được render lại khi các props thay đổi, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>const MemoizedComponent = React.memo(MyComponent);',
                     'blanks' => 'React.memo',
                 ],
                 [
-                    'question' => 'Khi bạn muốn quản lý các sự kiện từ form trong React, bạn sử dụng [blank_1]. Ví dụ: [code]const handleChange = (e) => { setValue(e.target.value); }[/code]',
+                    'question' => 'Khi bạn muốn quản lý các sự kiện từ form trong React, bạn sử dụng [blank_1]. <br>Ví dụ: <br>const handleChange = (e) => { setValue(e.target.value); }',
                     'blanks' => 'handleChange',
                 ],
                 [
-                    'question' => 'Để làm việc với các giá trị phức tạp trong Redux, bạn có thể sử dụng [blank_1]. Ví dụ: [code]import { applyMiddleware } from "redux";[/code]',
+                    'question' => 'Để làm việc với các giá trị phức tạp trong Redux, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>import { applyMiddleware } from "redux";',
                     'blanks' => 'applyMiddleware',
                 ],
                 [
-                    'question' => 'Khi bạn muốn sử dụng một component từ thư viện bên ngoài, bạn cần thực hiện [blank_1]. Ví dụ: [code]import { ExternalComponent } from "external-library";[/code]',
+                    'question' => 'Khi bạn muốn sử dụng một component từ thư viện bên ngoài, bạn cần thực hiện [blank_1]. <br>Ví dụ: <br>import { ExternalComponent } from "external-library";',
                     'blanks' => 'import',
                 ],
                 [
-                    'question' => 'Để xử lý các hiệu ứng bên ngoài như kết nối đến một API, bạn có thể sử dụng [blank_1]. Ví dụ: [code]useEffect(() => { fetchData(); }, []);[/code]',
+                    'question' => 'Để xử lý các hiệu ứng bên ngoài như kết nối đến một API, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>useEffect(() => { fetchData(); }, []);',
                     'blanks' => 'useEffect',
                 ],
                 [
-                    'question' => 'Để theo dõi sự thay đổi của một giá trị trong component, bạn có thể sử dụng [blank_1]. Ví dụ: [code]useEffect(() => { console.log(value); }, [value]);[/code]',
+                    'question' => 'Để theo dõi sự thay đổi của một giá trị trong component, bạn có thể sử dụng [blank_1]. <br>Ví dụ: <br>useEffect(() => { console.log(value); }, [value]);',
                     'blanks' => 'useEffect',
                 ],
                 [
-                    'question' => 'Để quản lý trạng thái toàn cục trong ứng dụng React, bạn cần sử dụng [blank_1]. Ví dụ: [code]const store = createStore(rootReducer);[/code]',
+                    'question' => 'Để quản lý trạng thái toàn cục trong ứng dụng React, bạn cần sử dụng [blank_1]. <br>Ví dụ: <br>const store = createStore(rootReducer);',
                     'blanks' => 'createStore',
                 ],
                 [
-                    'question' => 'Để tối ưu hóa việc render một component, bạn có thể sử dụng hook [blank_1]. Ví dụ: [code]const memoizedValue = useMemo(() => computeExpensiveValue(), [dependencies]);[/code]',
+                    'question' => 'Để tối ưu hóa việc render một component, bạn có thể sử dụng hook [blank_1]. <br>Ví dụ: <br>const memoizedValue = useMemo(() => computeExpensiveValue(), [dependencies]);',
                     'blanks' => 'useMemo',
                 ],
             ];

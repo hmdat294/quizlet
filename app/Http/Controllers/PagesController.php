@@ -148,35 +148,6 @@ class PagesController extends Controller
 
             // Trả về view với dữ liệu
             return view('frontend.start_quiz', compact('quiz', 'allQuestions', 'limit'));
-            // $ques = [];
-            // $ess = [];
-
-            // foreach ($questions as $item) {
-            //     array_push($ques, [
-            //         "id" => $item->id,
-            //         "quiz_id" => $item->quiz_id,
-            //         "question" => $item->question,
-            //         "option_1" => $item->option_1,
-            //         "option_2" => $item->option_2,
-            //         "option_3" => $item->option_3,
-            //         "option_4" => $item->option_4,
-            //         "answer" => $item->answer
-            //     ]);
-            // }
-
-            // foreach ($essays as $item) {
-            //     array_push($ess, [
-            //         "id" => $item->id,
-            //         "quiz_id" => $item->quiz_id,
-            //         "question" => $item->question,
-            //         "blanks" => $item->blanks
-            //     ]);
-            // }
-
-            // $allQuestions = array_merge($ques, $ess);
-
-
-            // return view('frontend.start_quiz', compact('quiz', 'allQuestions', 'limit'));
         } else {
             return redirect("login")->withSuccess('Vui lòng đăng nhập để làm bài.');
         }
