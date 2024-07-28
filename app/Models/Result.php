@@ -15,12 +15,12 @@ class Result extends Model
         'created_at' => 'datetime:Y-m-d',
     ];
 
-    // protected $fillable = [
-    //     'test_id',
-    //     'user_id',
-    //     'is_pass',
-    //     'score',
-    // ];
+    protected $fillable = [
+        'user_id',
+        'quiz_id',
+        'score',
+        'count_quiz'
+    ];
 
     public function quiz()
     {

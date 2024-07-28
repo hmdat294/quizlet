@@ -28,22 +28,30 @@
 
             <div class="blog-posts text-center">
 
-                <h2 class="font-weight-bold mb-4 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1500" style="animation-delay: 1500ms;">Coding Skill Quizzes</h2>
+                <h2 class="font-weight-bold mb-4 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1500" style="animation-delay: 1500ms;">Danh sách danh mục</h2>
                 <hr>
+
                 <div class="row">
 
-                    @foreach ($categories as $category)
-                    <div class="col-md-3 col-lg-3 mb-3 p-3 appear-animation animated bounce appear-animation-visible" data-appear-animation="bounce" data-appear-animation-delay="400" style="animation-delay: 400ms;">
-                        <div class="card border-0 profile-tabs">
-                            <div class="card-body text-center d-flex flex-column justify-content-between align-items-center" style="height: 250px;">
-                                <img src="{{ asset('frontend/img/category/'.$category->image) }}" alt="{{ $category->title }}" class="" width="100px">
-                                <a href="{{ route('quiz.view', [$category->id, 0]) }}" class="button px-4 py-2 mt-3">View {{ $category->title }}</a>
-                            </div>
-                        </div>
+                    <div class="col-3">
+                    <img src="{{ asset('frontend/img/logos/suynghi.gif') }}" alt="LOGO" class="" width="100%">
+
                     </div>
-                    @endforeach
+
+                    <div class="row col-9">
+
+                        @foreach ($categories as $category)
+                        <a href="{{ route('quiz.view', [$category->id, 3]) }}" class="col-md-4 col-lg-4 appear-animation animated fadeInUpShorter appear-animation-visible category" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400" style="animation-delay: 400ms;">
+                            <div>
+                                <img src="{{ asset('frontend/img/category/'.$category->image) }}" alt="{{ $category->title }}" class="" width="100px">
+                            </div>
+                        </a>
+                        @endforeach
+
+                    </div>
 
                 </div>
+
 
                 {{-- <div class="row">
                         <div class="col">

@@ -78,13 +78,15 @@ class PagesController extends Controller
     /**
      * Display the specified resource.
      */
-    public function viewQuiz($id)
+    public function viewQuiz($id, $type)
     {
         // dd($level);
 
-        $quizs = Quiz::where('category_id', $id)->get();
+        $quizs = ($type >= 0 && $type <= 2) ?
+            Quiz::where('category_id', $id)->where('type', $type)->get() :
+            Quiz::where('category_id', $id)->get();
 
-        return view('frontend.view_quiz', compact('quizs', 'id'));
+        return view('frontend.view_quiz', compact('quizs', 'id', 'type'));
     }
 
 
@@ -244,20 +246,29 @@ class PagesController extends Controller
     }
 
 
-    public function feedback(Request $request)
+    public function feedback(Request $request, $id)
     {
-        $feedback = $request->validate([
+
+        // dd($request->all(), $id);
+        $request->validate([
             'user_id' => 'required',
             'quiz_id' => 'required',
             'star' => 'required|min:1',
             'content' => 'required',
         ]);
 
-        $flag = Feedback::create($feedback);
+
+        $flag = Feedback::create([
+            'result_id' => $id,
+            'user_id' => $request->user_id,
+            'quiz_id' => $request->quiz_id,
+            'star' => $request->star,
+            'content' => $request->content,
+        ]);
 
         if ($flag) {
 
-            $results = Result::where('quiz_id', $request->quiz_id)->latest()->first();
+            $results = Result::where('id', $id)->latest()->first();
 
             Mail::to(Auth::user()->email)->send(
                 new MailFeedback(

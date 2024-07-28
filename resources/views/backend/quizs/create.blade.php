@@ -55,16 +55,6 @@
                             <div class="invalid-feedback">Vui lòng chọn loại câu hỏi.</div>
                         </div>
 
-                        <div class="row">
-                            <label for="level" class="form-label">Chọn loại cấp độ:</label>
-                            <select class="form-select" id="level" name="level">
-                                <option selected disabled value="">Chọn loại cấp độ</option>
-                                <option value="0">Cơ bản</option>
-                                <option value="1">Trung bình</option>
-                                <option value="2">Nâng cao</option>
-                            </select>
-                            <div class="invalid-feedback">Vui lòng chọn loại cấp độ.</div>
-                        </div>
                     </div>
                 </div>
             </div>

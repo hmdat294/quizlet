@@ -54,10 +54,7 @@
                 <div class="login100-pic p-5">
 
                     <div class="d-flex justify-content-center align-items-center">
-                        <img src="{{ asset('frontend/img/logos/logoquizlet.png') }}" alt="LOGO" class="" height="300px;">
-                    </div>
-                    <div class="text-center text-white" style="font-family: Poppins;transform: translateY(-50px);">
-                        <h1>Let's start the Quiz</h1>
+                        <img src="{{ asset('frontend/img/logos/banner-register.gif') }}" alt="LOGO" class="" height="400px;">
                     </div>
 
                 </div>
