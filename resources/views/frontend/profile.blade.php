@@ -53,7 +53,6 @@
                     <form action="{{ route('profile.update', $user->id) }}" method="post" class="needs-validation">
                         @csrf
                         <div class="form-group row">
-
                             <label class="col-md-4 font-weight-bold text-dark col-form-label form-control-label text-4 required">Tên</label>
                             <div class="col-md-8">
                                 <input class="form-control" name="name" required type="text" value="{{ $user->name }}">
@@ -64,17 +63,7 @@
                         <div class="form-group row">
                             <label class="col-md-4 font-weight-bold text-dark col-form-label form-control-label text-4 required">Email</label>
                             <div class="col-md-8">
-                                <input class="form-control" required type="email" name="email" value=" {{ $user->email }}">
-
-
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label class="col-md-4 font-weight-bold text-dark col-form-label form-control-label text-4 required">Mật khẩu</label>
-                            <div class="col-md-8">
-                                <input class="form-control" required name="password" type="password" value="">
-
+                                <input class="form-control" required type="email" value=" {{ $user->email }}" readonly>
                             </div>
                         </div>
 

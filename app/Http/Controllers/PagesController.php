@@ -48,24 +48,17 @@ class PagesController extends Controller
 
     public function profileUpdate(Request $request, $id)
     {
-
-
         $request->validate([
             'name' => 'required',
-            'email' => 'required',
-            'password' => 'required|min:6',
         ]);
 
         $user = User::find($id);
 
         $user->update([
             'name' => $request->name,
-            'email' => $request->email,
-            'password' => Hash::make($request->password)
         ]);
 
         return redirect()->route('home')->with('success', 'Cập nhật thông tin thành công.');
-        // return view('frontend.profile', compact('user'));
     }
 
     public function quizzes()

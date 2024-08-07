@@ -123,7 +123,7 @@
         </div>
 
         <div class="card-body">
-            <table class="table table-striped table-bordered">
+            <table id="example2" class="table table-striped table-bordered">
                 <thead>
                     <th>#</th>
                     <th>Tên</th>
