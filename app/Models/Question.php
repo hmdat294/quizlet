@@ -8,22 +8,19 @@ use Illuminate\Database\Eloquent\Model;
 class Question extends Model
 {
     use HasFactory;
-
+    protected $table = 'questions';
     protected $fillable = [
+        'quiz_id',
         'question',
         'option_1',
         'option_2',
         'option_3',
         'option_4',
         'answer',
-        'is_image',
-        'test_id',
     ];
 
-    // protected $guarded = []; //TODO::use fillable
-
-    public function test()
+    public function Quiz()
     {
-        return $this->belongsTo(Test::class);
+        return $this->belongsTo(Quiz::class);
     }
 }

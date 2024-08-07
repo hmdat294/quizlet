@@ -124,7 +124,7 @@ $(function() {
 
 
 // chart 2
-    
+
     var options = {
             chart: {
                 height: 340,
@@ -210,21 +210,21 @@ $(function() {
                     }
                 }
             }]
-            
+
         }
 
        var chart = new ApexCharts(
             document.querySelector("#application-by-source"),
             options
         );
-        
+
         chart.render();
 
 
 
 
 // chart 3
-  
+
   var options = {
             chart: {
                 width: 150,
@@ -299,14 +299,14 @@ $(function() {
             colors: ["#5204ce"],
             series: [64],
             labels: ['Screening Calls'],
-            
+
         }
 
        var chart = new ApexCharts(
             document.querySelector("#screening-calls"),
             options
         );
-        
+
         chart.render();
 
 
@@ -314,7 +314,7 @@ $(function() {
 
 
 // chart 4
-  
+
   var options = {
             chart: {
                 width: 150,
@@ -389,21 +389,21 @@ $(function() {
             colors: ["#f1076f"],
             series: [76],
             labels: ['Assignments'],
-            
+
         }
 
        var chart = new ApexCharts(
             document.querySelector("#assignments"),
             options
         );
-        
+
         chart.render();
 
 
 
 
 // chart 5
-  
+
   var options = {
             chart: {
                 width: 150,
@@ -478,21 +478,21 @@ $(function() {
             colors: ["#00f260"],
             series: [83],
             labels: ['interviews'],
-            
+
         }
 
        var chart = new ApexCharts(
             document.querySelector("#interviews"),
             options
         );
-        
+
         chart.render();
 
 
 
 
 // chart 6
-   
+
    var options = {
       chart: {
         height: 335,
@@ -682,7 +682,7 @@ var options = {
             document.querySelector("#top-referrers"),
             options
         );
-        
+
         chart.render();
 
 
@@ -718,7 +718,7 @@ var options1 = {
         data: [25, 66, 41, 59, 25, 44, 12, 36, 9, 21]
       }],
       stroke: {
-              width: 2.5, 
+              width: 2.5,
               curve: 'smooth',
               dashArray: [0]
          },
@@ -777,7 +777,7 @@ var options1 = {
         data: [12, 14, 2, 47, 32, 44, 14, 55, 41, 69]
       }],
       stroke: {
-                width: 2.5, 
+                width: 2.5,
                 curve: 'smooth',
                 dashArray: [0]
          },
@@ -837,7 +837,7 @@ var options1 = {
         data: [47, 45, 74, 32, 56, 31, 44, 33, 45, 19]
       }],
       stroke: {
-                width: 2.5, 
+                width: 2.5,
                 curve: 'smooth',
                 dashArray: [0]
          },
@@ -897,7 +897,7 @@ var options1 = {
         data: [15, 75, 47, 65, 14, 32, 19, 54, 44, 61]
       }],
       stroke: {
-                width: 2.5, 
+                width: 2.5,
                 curve: 'smooth',
                 dashArray: [0]
          },
@@ -925,7 +925,7 @@ var options1 = {
     new ApexCharts(document.querySelector("#starter-this-month"), options1).render();
 
 
-  
+
   // chart 12
 
 
@@ -961,7 +961,7 @@ var options1 = {
                 }
             },
             stroke: {
-                width: 0,   
+                width: 0,
                 curve: 'smooth',
             },
       dataLabels: {
@@ -1025,13 +1025,13 @@ var options1 = {
             document.querySelector("#bounce-rate"),
             options
         );
-        
+
         chart.render();
 
 
 
     // chart 13
-    
+
 
     var options = {
             chart: {
@@ -1088,7 +1088,7 @@ var options1 = {
             grid:{
                 show: true,
                 borderColor: 'rgba(66, 59, 116, 0.15)',
-            }, 
+            },
             fill: {
                 type: 'gradient',
                 gradient: {
@@ -1102,7 +1102,7 @@ var options1 = {
                     stops: [0, 100, 100, 100]
                 },
             },
-            colors: ["#cddc35"], 
+            colors: ["#cddc35"],
             yaxis: {
                 axisBorder: {
                     show: false
@@ -1191,7 +1191,7 @@ var options = {
                 enabled: false
             },
             stroke: {
-                width: 0, 
+                width: 0,
                 curve: 'smooth'
             },
             series: [{
@@ -1204,7 +1204,7 @@ var options = {
 
             xaxis: {
                 type: 'month',
-                categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],                
+                categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
             },
             yaxis: {
                 axisBorder: {
@@ -1265,7 +1265,7 @@ var options = {
                     },
                     legend: {
                         offsetX: -20,
-                        fontSize: "12px", 
+                        fontSize: "12px",
                     }
                 }
             }]
@@ -1276,7 +1276,7 @@ var options = {
             options
         );
 
-        chart.render();          
+        chart.render();
 
 
 

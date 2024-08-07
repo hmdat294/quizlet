@@ -55,7 +55,7 @@ input[type="checkbox"] {
 
 .profile-tabs {
     border-radius: 10px;
-    background: lavender;
+    box-shadow: 0 0 15px rgb(200, 200, 200);
 }
 
 #footer .footer-copyright p {
@@ -70,10 +70,11 @@ section.section {
 .button {
     background-color: #5ce1e6;
     color: #120a30;
-    border-radius: 100px;
+    border-radius: 7px;
     box-shadow: 0 0 15px #5ce1e6;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -81,4 +82,60 @@ section.section {
     text-decoration: none;
     background-color: #00f7ff;
     box-shadow: 0 0 15px #00f7ff;
+}
+
+.table th {
+    text-align: center;
+}
+
+.star-rating {
+    cursor: pointer;
+}
+
+.star-rating>span {
+    font-size: 40px;
+    color: #ddd;
+    transition: color 0.2s;
+}
+
+.star-rating>span:hover,
+.star-rating>span.selected {
+    color: #f5b301;
+}
+
+.category {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.category>div {
+    height: 180px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(200, 200, 200) inset;
+    display: grid;
+    place-items: center;
+}
+
+.category>div:hover {
+    box-shadow: 0 0 15px rgb(200, 200, 200);
+}
+
+
+.quiz>a {
+    text-decoration: none;
+    color: #120a30;
+}
+
+.quiz>a>div {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(200, 200, 200) inset;
+    min-height: 270px;
+}
+
+.quiz>a>div:hover {
+    box-shadow: 0 0 15px rgb(200, 200, 200);
 }

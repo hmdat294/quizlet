@@ -24,8 +24,8 @@
 
 <body>
 
-    <div class="limiter">
 
+    <div class="limiter">
         <div class="container container-login100">
 
             <div class="d-flex justify-content-between align-items-center w-100">
@@ -46,10 +46,7 @@
                 <div class="login100-pic p-5">
 
                     <div class="d-flex justify-content-center align-items-center">
-                        <img src="{{ asset('frontend/img/logos/logoquizlet.png') }}" alt="LOGO" class="" height="300px;">
-                    </div>
-                    <div class="text-center text-white" style="font-family: Poppins;transform: translateY(-50px);">
-                        <h1>Let's start the Quiz</h1>
+                        <img src="{{ asset('frontend/img/logos/banner-login.gif') }}" alt="LOGO" class="" height="300px;">
                     </div>
 
                 </div>
@@ -70,7 +67,6 @@
 
                     <div class="wrap-input100 validate-input" data-validate="Password is required">
                         <input class="input100" type="password" name="password" placeholder="Mật khẩu">
-
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
                             <i class="fa fa-lock" aria-hidden="true"></i>
@@ -84,11 +80,13 @@
                     </div>
 
                     <div class="text-center pt-4">
-                        <span class="txt1">
-                            Quên
-                        </span>
-                        <a class="txt2" href="#">
-                            mật khẩu?
+                        <a href="{{ route('forgot') }}">
+                            <span class="txt1">
+                                Quên
+                            </span>
+                            <span class="txt2">
+                                mật khẩu?
+                            </span>
                         </a>
                     </div>
 
@@ -104,7 +102,7 @@
     <script src="{{ asset('frontend/vendor/select2/select2.min.js') }}"></script>
 
     <script src="{{ asset('frontend/js/main.js') }}"></script>
-
+    @include('sweetalert::alert')
 </body>
 
 </html>

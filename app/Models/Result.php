@@ -8,23 +8,23 @@ use Illuminate\Database\Eloquent\Model;
 class Result extends Model
 {
     use HasFactory;
-
+    protected $table = 'results';
     protected $guarded = [];
 
     protected $casts = [
         'created_at' => 'datetime:Y-m-d',
     ];
 
-    // protected $fillable = [
-    //     'test_id',
-    //     'user_id',
-    //     'is_pass',
-    //     'score',
-    // ];
+    protected $fillable = [
+        'user_id',
+        'quiz_id',
+        'score',
+        'count_quiz'
+    ];
 
-    public function test()
+    public function quiz()
     {
-        return $this->belongsTo(Test::class);
+        return $this->belongsTo(Quiz::class);
     }
 
     public function user()

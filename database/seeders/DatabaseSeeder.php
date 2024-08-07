@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\Category;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
 use \App\Models\User;
@@ -18,12 +20,16 @@ class DatabaseSeeder extends Seeder
         // Question::factory()->count(300)->create();
 
         User::factory()->create([
-            'name' => 'Admin',
-            'email' => 'admin@admin.com',
+            'name' => 'Hồ Minh Đạt',
+            'email' => 'hodat2092004@gmail.com',
             'email_verified_at' => now(),
-            'password' => '123456', // password
+            'password' => password_hash('123456', PASSWORD_BCRYPT),
             'is_admin' => 1,
-            'remember_token' => Str::random(10),
+            'remember_token' => null,
         ]);
+
+        $this->call(CategorySeeder::class);
+        $this->call(QuizSeeder::class);
+        $this->call(QuestionAndEssaySeeder::class);
     }
 }

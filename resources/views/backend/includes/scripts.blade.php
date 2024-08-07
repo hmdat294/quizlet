@@ -9,54 +9,51 @@
  <script src="{{ asset('backend/plugins/peity/jquery.peity.min.js') }}"></script>
  <script src="{{ asset('backend/plugins/datatable/js/jquery.dataTables.min.js') }}"></script>
  <script src="{{ asset('backend/plugins/datatable/js/dataTables.bootstrap5.min.js') }}"></script>
- <script src="{{ asset('backend/js/dashboard-eCommerce.js') }}"></script>
+ <script src="{{ asset('backend/js/dashboard-analytics.js') }}"></script>
  <!--app JS-->
  <script src="{{ asset('backend/js/app.js') }}"></script>
 
  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
-
+ {{-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> --}}
+ @yield('custom_script')
  <script type="text/javascript">
      $('.show_confirm').click(function(event) {
          var form = $(this).closest("form");
          var name = $(this).data("name");
          event.preventDefault();
          swal({
-                 title: `Are you sure you want to delete this record?`
-                 , text: "If you delete this, it will be gone forever."
-                 , icon: "warning"
-                 , buttons: true
-                 , dangerMode: true
-             , })
+                 title: `Bạn có chắc muốn xoá dữ liệu này kể cả những dữ liệu liên quan`,
+                 text: "Khi xoá sẽ không thể khôi phục được!",
+                 icon: "warning",
+                 buttons: true,
+                 dangerMode: true,
+             })
              .then((willDelete) => {
                  if (willDelete) {
                      form.submit();
                  }
              });
      });
-
  </script>
  <script>
      $(document).ready(function() {
          $('#example').DataTable();
      });
-
  </script>
  <script>
      $(document).ready(function() {
          var table = $('#example2').DataTable({
-             lengthChange: false
-             , buttons: ['excel', 'pdf', 'print']
+             lengthChange: false,
+             buttons: ['excel', 'pdf', 'print']
          });
 
          table.buttons().container()
              .appendTo('#example2_wrapper .col-md-6:eq(0)');
      });
-
  </script>
  <script>
      //  new PerfectScrollbar('.product-list');
      //  new PerfectScrollbar('.customers-list');
-
  </script>
  <script>
      // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -79,5 +76,4 @@
                  }, false)
              })
      })()
-
  </script>

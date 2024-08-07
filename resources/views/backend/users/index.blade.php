@@ -14,12 +14,12 @@
                 </ol>
             </nav>
         </div>
-        <div class="ms-auto">
+        <!-- <div class="ms-auto">
             <div class="btn-group">
                 <a class="btn btn-primary" href="{{ route('users.create') }}">
                     <i class="bx bxs-plus-square"></i>Add New User</a>
             </div>
-        </div>
+        </div> -->
     </div>
     <!--end breadcrumb-->
 
@@ -55,18 +55,12 @@
 
                             </td>
                             <td>
-                                <form action="{{ route('users.destroy', $user->id) }}" method="POST">
-
-                                    <a class="btn btn-sm btn-primary" href="{{ route('users.edit', $user->id) }}"><i class="lni lni-pencil-alt"></i></a>
-
+                                <a class="btn btn-sm btn-primary" href="{{ route('users.edit', $user->id) }}"><i class="bi bi-pencil-square"></i></a>
+                                <!-- <form action="{{ route('users.destroy', $user->id) }}" method="POST">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="button" id="delete-user" class="btn btn-sm btn-danger show_confirm"><i class="lni lni-trash"></i></button>
-
-
-
-
-                                </form>
+                                    <button type="button" id="delete-user" class="btn btn-sm btn-danger show_confirm"><i class="bi bi-trash"></i></button>
+                                </form> -->
                             </td>
                         </tr>
                         @endforeach
